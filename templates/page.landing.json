@@ -1299,7 +1299,8 @@
         "group_GQcgfA"
       ],
       "custom_css": [
-        "h3,h4 {line-height: 1.8em; color: #fffffe; font-weight: 700;}"
+        "h3,h4 {color: #fffffe; font-weight: 700; line-height: 1.2em; margin-bottom: 24px;}",
+        "@media screen and (max-width: 768px) {h4 {line-height: 1.1em; margin-bottom: 20px; }}"
       ],
       "name": "Why most weight vests end up in the closet",
       "settings": {
