@@ -1445,6 +1445,7 @@
                     "heading": "Specs",
                     "open_by_default": false,
                     "icon": "none",
+                    "image_upload": "shopify://shop_images/Icon_Frame.png",
                     "width": 20
                   },
                   "blocks": {
@@ -1485,6 +1486,7 @@
                     "heading": "Use it for",
                     "open_by_default": false,
                     "icon": "none",
+                    "image_upload": "shopify://shop_images/Icon_Frame.png",
                     "width": 20
                   },
                   "blocks": {
@@ -1525,6 +1527,7 @@
                     "heading": "Materials",
                     "open_by_default": false,
                     "icon": "none",
+                    "image_upload": "shopify://shop_images/Icon_Frame.png",
                     "width": 20
                   },
                   "blocks": {
