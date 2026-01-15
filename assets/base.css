@@ -4788,7 +4788,7 @@ h3 {
 h4,h5,p, span, summary, details, li, ul,
 .custom-typography, .custom-typography>* {
   font-family: 'Interstate'!IMPORTANT;
-  letter-spacing: 0px;
+  letter-spacing: -.25px;
 }
 a.size-style.button span{
   letter-spacing: -1px;
