@@ -1,0 +1,800 @@
+
+<div class="section-background color-{{ section.settings.color_scheme }}"></div>
+<div
+  class="section section--{{ section.settings.section_width }} timeline-section color-{{ section.settings.color_scheme }} spacing-style"
+  style="{% render 'spacing-style', settings: section.settings %}"
+  {% if request.visual_preview_mode %}
+    data-shopify-visual-preview
+  {% endif %}
+>
+  <div class="timeline-container page-width">
+    {% comment %} Timeline images positioned absolutely {% endcomment %}
+    {% if section.settings.image_1 != blank %}
+      <div class="timeline-image timeline-image-1">
+        {{
+          section.settings.image_1
+          | image_url: width: 800
+          | image_tag:
+            width: section.settings.image_1.width,
+            widths: '400, 600, 800',
+            height: section.settings.image_1.height,
+            alt: section.settings.image_1.alt,
+            class: 'timeline-image__img'
+        }}
+      </div>
+    {% endif %}
+    
+    {% if section.settings.image_2 != blank %}
+      <div class="timeline-image timeline-image-2">
+        {{
+          section.settings.image_2
+          | image_url: width: 800
+          | image_tag:
+            width: section.settings.image_2.width,
+            widths: '400, 600, 800',
+            height: section.settings.image_2.height,
+            alt: section.settings.image_2.alt,
+            class: 'timeline-image__img'
+        }}
+      </div>
+    {% endif %}
+    
+    {% if section.settings.image_3 != blank %}
+      <div class="timeline-image timeline-image-3">
+        {{
+          section.settings.image_3
+          | image_url: width: 800
+          | image_tag:
+            width: section.settings.image_3.width,
+            widths: '400, 600, 800',
+            height: section.settings.image_3.height,
+            alt: section.settings.image_3.alt,
+            class: 'timeline-image__img'
+        }}
+      </div>
+    {% endif %}
+
+    {% comment %} Section heading and subheading {% endcomment %}
+    {% if section.settings.heading != blank or section.settings.subheading != blank %}
+      <div class="timeline-header">
+        {% if section.settings.heading != blank %}
+          <h2 class="timeline-heading">{{ section.settings.heading }}</h2>
+        {% endif %}
+        {% if section.settings.subheading != blank %}
+          <p class="timeline-subheading">{{ section.settings.subheading }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    {% comment %} Timeline line {% endcomment %}
+    <div class="timeline-line"></div>
+
+    {% comment %} Timeline items {% endcomment %}
+    <div class="timeline-items">
+      {% for block in section.blocks %}
+        {% liquid
+          assign box_position = block.settings.box_position | default: 'left'
+          if box_position == 'left'
+            assign content_class = 'timeline-content--left'
+            assign title_class = 'timeline-title--right'
+          else
+            assign content_class = 'timeline-content--right'
+            assign title_class = 'timeline-title--left'
+          endif
+        %}
+        <div class="timeline-item timeline-item--{{ box_position }}" {{ block.shopify_attributes }}>
+          <div class="timeline-year">
+            <span class="timeline-year__text">{{ block.settings.year }}</span>
+          </div>
+          
+          <div class="timeline-content {{ content_class }}">
+            <div class="timeline-content__text">
+              <span class="timeline-content__year-mobile">{{ block.settings.year_title }}</span>
+              <rte-formatter class="timeline-content__rich-text rte">{{ block.settings.box_text }}</rte-formatter>
+            </div>
+          </div>
+          
+          <div class="timeline-title {{ title_class }}">
+            <div class="timeline-title__text">{{ block.settings.year_title }}</div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% stylesheet %}
+  .timeline-section {
+    position: relative;
+  }.timeline-container.page-width {
+}
+
+  .timeline-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-inline: var(--page-margin);
+  }
+
+  .timeline-line {
+    position: absolute;
+    left: 120px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    border-left: 2px dashed rgb(var(--color-border-rgb));
+    z-index: 1;
+  }
+
+  .timeline-items {
+    position: relative;
+    z-index: 2;
+    padding-left: 200px;
+  }
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 80px;
+    display: block;
+  }
+
+  .timeline-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .timeline-year {
+    position: absolute;
+    left: -200px;
+    top: 0;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+  }
+
+  .timeline-year__text {
+    font-weight: 600;
+    font-size: 1rem;
+    color: rgb(var(--color-foreground));
+    display: block;
+    border: 2px dashed rgb(var(--color-border-rgb));
+    padding: 8px 16px;
+    border-radius: 4px;
+    background: rgb(var(--color-background));
+  }
+
+  .timeline-content {
+    background: rgba(var(--color-background-rgb), 0.95);
+    padding: 24px 32px;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    max-width: 480px;
+    position: relative;
+  }
+
+  .timeline-content--left {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .timeline-content--right {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .timeline-title {
+    position: absolute;
+    top: 0;
+    max-width: 220px;
+    padding-top: 8px;
+  }
+
+  .timeline-title--left {
+    left: 0;
+    right: auto;
+    text-align: left;
+    padding-right: 20px;
+  }
+
+  .timeline-title--right {
+    right: 0;
+    left: auto;
+    text-align: right;
+    padding-left: 20px;
+  }
+
+  .timeline-title__text {
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgb(var(--color-foreground-heading));
+    line-height: 1.4;
+  }
+
+  .timeline-content__text {
+    color: rgb(var(--color-foreground));
+  }
+
+  .timeline-content__year-mobile {
+    display: none;
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin-bottom: 12px;
+    color: rgb(var(--color-foreground-heading));
+  }
+
+  .timeline-content__rich-text {
+    line-height: 1.6;
+    font-size: 0.9375rem;
+  }
+
+  .timeline-content__rich-text p {
+    margin: 0;
+  }
+
+  .timeline-content__rich-text p + p {
+    margin-top: 12px;
+  }
+
+  .timeline-image {
+    position: absolute;
+    z-index: 0;
+    width: 180px;
+    height: auto;
+    pointer-events: none;
+  }
+
+  .timeline-image__img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .timeline-image-1 {
+    top: 8%;
+    right: 0;
+  }
+
+  .timeline-image-2 {
+    top: 45%;
+    left: 0;
+  }
+
+  .timeline-image-3 {
+    bottom: 0;
+    right: 0;
+  }
+
+  @media screen and (max-width: 749px) {
+    .timeline-section {
+      padding-block: 40px;
+    }
+
+    .timeline-container {
+      padding-inline: 20px;
+    }
+
+    .timeline-line {
+      left: 30px;
+    }
+
+    .timeline-items {
+      padding-left: 0;
+    }
+
+    .timeline-item {
+      margin-bottom: 40px;
+      padding-left: 60px;
+    }
+
+    .timeline-year {
+      left: 0;
+      width: 50px;
+      padding-right: 10px;
+    }
+
+    .timeline-year__text {
+      display: none;
+    }
+
+    .timeline-content {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      max-width: 100%;
+      width: 100%;
+      padding: 20px;
+    }
+
+    .timeline-title {
+      position: static;
+      max-width: 100%;
+      padding-top: 0;
+      margin-top: 12px;
+      text-align: left !important;
+    }
+
+    .timeline-title__text {
+      font-size: 0.8125rem;
+    }
+
+    .timeline-content__year-mobile {
+      display: block;
+    }
+
+    .timeline-image {
+      display: none;
+    }
+  }
+
+  .timeline-container.page-width {
+    max-width: 100%;
+}
+
+.timeline-section {
+    display: block;
+}
+
+.timeline-items {
+    padding: 0;
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.timeline-content.timeline-content--left {
+    margin: 0;
+}
+
+.timeline-title {
+    position: static;
+}
+
+.timeline-content--right {
+    margin: 0;
+}
+
+.timeline-title__text {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+
+.timeline-title {
+    max-width: 340px;
+    text-align: initial;
+}
+
+.timeline-items {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.timeline-content--left {
+    order: 1;
+}
+
+.timeline-title--right {
+    order: 3;
+}
+
+.timeline-title.timeline-title--left {
+    order: 1;
+}
+
+.timeline-content.timeline-content--right {
+    order: 3;
+}
+
+.timeline-year {
+    order: 2;
+    position: static;
+    min-width: 95px;
+    padding: 0;
+    justify-content: center;
+    align-items: flex-start;
+    width: 200px;
+}
+
+.timeline-content {
+    width: calc(50% - 100px);
+}
+
+.timeline-title {
+    max-width: 100%;
+    width: calc(50% - 100px);
+    padding: 0;
+}
+
+span.timeline-year__text {
+    width: auto;
+    text-align: center;
+    border: 1px solid border: 1px solid #0000004D;
+    border: 1px dashed #0000004D;
+    border-radius: 0;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 16px 24px;
+    background: #Fff;
+}
+
+.timeline-content {
+    background: #F5F7F8;
+    box-shadow: -2px 1px 6px 0px #C2C7C799;
+    box-shadow: -10px 5px 11px 0px #C2C7C785;
+    box-shadow: -22px 11px 15px 0px #C2C7C74F;
+    box-shadow: -39px 19px 18px 0px #C2C7C717;
+    box-shadow: -62px 30px 19px 0px #C2C7C703;
+    border-radius: 0;
+}
+
+.timeline-content__text p {
+    font-size: 18px;
+    line-height: 1.3em;
+}
+
+.timeline-title.timeline-title--left {
+    text-align: right;
+}
+
+.timeline-line {
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    border: 0;
+    border-right: 1px dashed #0000004D;
+}
+
+.timeline-item:last-child .timeline-year {
+    background: #Fff;
+}
+
+.timeline-header {
+    text-align: center;
+    margin-bottom: 60px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.timeline-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: rgb(var(--color-foreground-heading));
+}
+
+.timeline-subheading {
+    font-size: 1.125rem;
+    color: rgb(var(--color-foreground));
+    margin: 0;
+}
+
+@media screen and (max-width: 749px) {
+    .timeline-header {
+        margin-bottom: 40px;
+        padding: 0 20px;
+    }
+
+    .timeline-heading {
+        font-size: 1.5rem;
+    }
+
+    .timeline-subheading {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 768px) {
+.timeline-title {
+    display: none;
+}
+
+span.timeline-content__year-mobile {
+    font-size: 22px;
+}
+
+.timeline-content__rich-text p {
+    font-size: 18px;
+    line-height: 1.3em;
+}
+
+.timeline-line {}
+}
+
+
+
+@media screen and (max-width: 768px) {
+.timeline-year {
+    /* display: none; */
+}
+
+.timeline-content {
+    order: 4;
+    width: calc(100% - 100px);
+}
+
+.timeline-item {
+    padding-left: 0;
+}
+
+span.timeline-year__text {
+    display: block;
+    font-size: 20px;
+}
+
+.timeline-year {
+    width: 70px;
+    min-width: 70px;
+}
+
+.timeline-line {
+    transform: none;
+    left: 53px;
+}
+
+}
+.timeline-header {
+    background: #fff;
+    margin-bottom: 0;
+    padding-bottom: 50px;
+}
+.timeline-content{
+    box-shadow: -10px 5px 11px 0px #C2C7C785;
+}
+
+h2.timeline-heading {
+    font-size: 44px;
+    letter-spacing: 0;
+}
+
+@media screen and (max-width: 768px) {
+span.timeline-content__year-mobile {
+    font-weight: 400;
+}
+
+.timeline-image {
+    display: initial;
+}
+
+.timeline-image.timeline-image-1 {
+    top: 250px;
+    width: 250px;
+}
+
+h2.timeline-heading {
+    font-size: 33px!Important;
+}
+
+.timeline-image.timeline-image-2 {
+    z-index: -1;
+    width: 220px;
+    left: -30px;
+}
+
+.timeline-image.timeline-image-3 {
+    display: none;
+}
+
+.timeline-item:last-child .timeline-year span.timeline-year__text {
+    padding: 16px 14px;
+}
+
+.timeline-item:last-child .timeline-year {
+}
+}
+
+
+.timeline-items {
+    padding-bottom: 60px;
+}
+
+.timeline-line {
+    height: calc(100% - 60px);
+}
+
+
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Timeline",
+  "tag": "section",
+  "class": "section-wrapper",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "THE EVOLUTION OF A BETTER LEAD TEST"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "It's a bad day to be lead."
+    },
+    {
+      "type": "header",
+      "content": "Images"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_3",
+      "label": "Image 3"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "Section width",
+      "options": [
+        {
+          "value": "page-width",
+          "label": "Page width"
+        },
+        {
+          "value": "full-width",
+          "label": "Full width"
+        }
+      ],
+      "default": "page-width"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "timeline_item",
+      "name": "Timeline Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "year",
+          "label": "Year",
+          "default": "2019"
+        },
+        {
+          "type": "text",
+          "id": "year_title",
+          "label": "Year Title",
+          "default": "THE PROBLEM IDENTIFIED"
+        },
+        {
+          "type": "richtext",
+          "id": "box_text",
+          "label": "Box Text",
+          "default": "<p>Eric discovered that reliable lead testing cost $10+ per test, making proactive testing inaccessible for most families.</p>"
+        },
+        {
+          "type": "select",
+          "id": "box_position",
+          "label": "Box Position",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "left"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Timeline",
+      "blocks": [
+        {
+          "type": "timeline_item",
+          "settings": {
+            "year": "2019",
+            "year_title": "THE PROBLEM IDENTIFIED",
+            "box_text": "<p>Eric discovered that reliable lead testing cost $10+ per test, making proactive testing inaccessible for most families.</p>",
+            "box_position": "left"
+          }
+        },
+        {
+          "type": "timeline_item",
+          "settings": {
+            "year": "2020",
+            "year_title": "FIRST SOLUTION LAUNCHED",
+            "box_text": "<p>He created an affordable lead paint test and launched it on Amazon, helping identify lead in paint—the most common source of exposure.</p>",
+            "box_position": "right"
+          }
+        },
+        {
+          "type": "timeline_item",
+          "settings": {
+            "year": "2021",
+            "year_title": "PROOF OF DEMAND",
+            "box_text": "<p>After selling hundreds of thousands of tests, it became clear that lead exposure extended far beyond paint alone.</p>",
+            "box_position": "left"
+          }
+        },
+        {
+          "type": "timeline_item",
+          "settings": {
+            "year": "2022",
+            "year_title": "EXPANDING THE MISSION",
+            "box_text": "<p>Development began on a multi-surface lead test capable of detecting lead in ceramics, plastics, metals, rubber, dust, and more.</p>",
+            "box_position": "right"
+          }
+        },
+        {
+          "type": "timeline_item",
+          "settings": {
+            "year": "2024",
+            "year_title": "BREAKTHROUGH INNOVATION",
+            "box_text": "<p>The launch of FloresSpec: a spray-and-shine test that reveals lead with a bright green glow, making detection fast, clear, and unmistakable.</p>",
+            "box_position": "left"
+          }
+        },
+        {
+          "type": "timeline_item",
+          "settings": {
+            "year": "TODAY",
+            "year_title": "IMPACT & EDUCATION",
+            "box_text": "<p>Tens of thousands of families have safely identified and removed lead from their homes, supported by a 500,000+ person community focused on one core belief: \"Test with kits, not kids.\"</p>",
+            "box_position": "right"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+

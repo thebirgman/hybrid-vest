@@ -1,0 +1,717 @@
+<style>
+
+.tabbed-media__carousel .swiper-slide iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.tabbed-media__tabs {
+  display: flex;
+  gap: 1.5rem;
+  border-bottom: 1px solid #E5E5E5;
+  margin-bottom: 1.5rem;
+}
+
+.tabbed-media__tab {
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.tabbed-media__tab--active {
+  border-bottom: 2px solid;
+}
+
+.tabbed-media__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+@media (min-width: 768px) {
+  .tabbed-media__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.tabbed-media__bullets h3 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.tabbed-media__bullets ul {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.tabbed-media__carousel {
+  position: relative;
+}
+
+.tabbed-media__media {
+  width: 100%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.tabbed-media__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.tabbed-media__nav svg {
+  cursor: pointer;
+}
+
+.tabbed-media__playicon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.tabbed-media__playicon {
+    border-radius: 200px;
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(4px);
+    display: flex;
+    width: 50px;
+    height: 50px;
+    padding: 5px 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+}
+
+.tabbed-media__tabs {
+    border: 0;
+    gap: 40px;
+}
+
+/* Base */
+.tabbed-media__carousel {
+  position: relative;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI Variable", "Segoe UI",
+               Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", sans-serif;
+}
+
+.tabbed-media__carousel .swiper-container,
+.tabbed-media__carousel .swiper {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.tabbed-media__carousel .swiper-wrapper {
+  align-items: stretch;
+}
+
+.tabbed-media__carousel .swiper-slide {
+  width: 100% !important;
+}
+
+/* Media items */
+.tabbed-media__media {
+  position: relative;
+}
+
+.tabbed-media__media video,
+.tabbed-media__media .tabbed-media__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Center play button overlay */
+.tabbed-media__playicon {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.35);
+  transition: transform 160ms ease, opacity 160ms ease, background 160ms ease;
+  border: 1px solid rgba(255,255,255,0.6);
+  cursor: pointer;
+}
+.tabbed-media__playicon:hover { transform: translate(-50%, -50%) scale(1.05); }
+.tabbed-media__playicon.is-playing { opacity: 0; pointer-events: none; }
+
+/* Nav arrows overlaid like the design */
+.tabbed-media__nav {
+  --arrow-color: currentColor;
+  pointer-events: none; /* let only buttons capture clicks */
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: clamp(8px, 2vw, 16px);
+}
+
+.tabbed-media__nav .prev,
+.tabbed-media__nav .next {
+  pointer-events: all;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  background: rgba(0,0,0,0.0);
+  cursor: pointer;
+  user-select: none;
+}
+
+.tabbed-media__nav svg { display: block; }
+
+/* Make sure custom arrow color propagates */
+.tabbed-media__nav path,
+.tabbed-media__nav circle {
+  stroke: var(--arrow-color);
+}
+
+/* Small screens */
+@media (max-width: 767px) {
+  .tabbed-media__nav .prev,
+  .tabbed-media__nav .next {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+button.tabbed-media__playicon {
+    border-radius: 200px;
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(4px);
+    border: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.tabbed-media__carousel {
+  width: 100%
+}
+
+.tabbed-media__nav {
+    transform: none;
+    z-index: 2;
+}
+.tabbed-media__carousel {
+    margin-top: -60px;
+}
+@media screen and (max-width: 768px) {
+{% comment %} .tabbed-media__content[style*="grid"] {
+    display: flex!important;
+    flex-direction: column-reverse;
+} {% endcomment %}
+
+
+
+.tabbed-media__carousel {
+  margin-top: 0;
+  order: 1;
+}
+
+.tabbed-media__bullets {
+  order: 2
+}
+
+.tabbed-media__nav {
+    position: static;
+    justify-content: center;
+    gap: 15px;
+}
+}
+
+
+.tabbed-media__carousel .swiper-wrapper {
+    min-height: 360px;
+}
+
+@media screen and (max-width: 768px) {
+.tabbed-media__carousel .swiper-wrapper {
+    min-height: 50vw;
+}
+}
+
+.tabbed-media__nav .swiper-button-disabled {
+    opacity: .4;
+}
+
+.tabbed-media__tab:not(.tabbed-media__tab--active) {
+    color: #939393;
+    font-weight: 400;
+}
+
+.tabbed-media__tab.tabbed-media__tab--active {
+    font-weight: 600;
+}
+</style>
+<div class="section-background color-{{ section.settings.color_scheme }}"></div>
+<div
+  class="section section--{{ section.settings.section_width }} color-{{ section.settings.color_scheme }}"
+  data-testid="ui-test-section"
+
+  {% if request.visual_preview_mode %}
+    data-shopify-visual-preview
+  {% endif %}
+
+  style="
+    {% if section.settings.section_height == 'custom' %}
+      --section-min-height: {{ section.settings.section_height_custom }}svh;
+    {% elsif section.settings.section_height == 'full-screen' %}
+      --section-min-height: 100svh;
+    {% elsif section.settings.section_height != '' %}
+      --section-min-height: var(--section-height-{{ section.settings.section_height }});
+    {% endif %}
+
+    {% if section.settings.section_height != '' %}
+     --section-preview-height: 600px;
+     {% endif %}
+  "
+>
+    <div
+      class="
+        spacing-style
+        layout-panel-flex
+        layout-panel-flex--{{ section.settings.content_direction }}
+        section-content-wrapper
+       
+      "
+      style="
+        {% render 'layout-panel-style', settings: section.settings %}
+        {% render 'spacing-style', settings: section.settings %}
+      "
+      data-testid="section-content"
+    >
+<div class="tabbed-media__wrapper">
+  <div class="tabbed-media__inner">
+    <div class="tabbed-media__tabs">
+      {% for block in section.blocks %}
+        <div 
+          class="tabbed-media__tab {% if forloop.first %}tabbed-media__tab--active{% endif %}"
+          style="border-color: {{ block.settings.tab_active_color }};"
+          data-tab-index="{{ forloop.index0 }}">
+          {{ block.settings.tab_title }}
+        </div>
+      {% endfor %}
+    </div>
+
+    {% for block in section.blocks %}
+      <div 
+        class="tabbed-media__content" 
+        data-tab-content-index="{{ forloop.index0 }}" 
+        {% unless forloop.first %}style="display:none;"{% endunless %}>
+
+        <div class="tabbed-media__bullets">
+          <h3>{{ block.settings.heading }}</h3>
+          <div class="rte">{{ block.settings.description }}</div>
+        </div>
+
+       <div class="tabbed-media__carousel" data-carousel-index="{{ forloop.index0 }}">
+  <div class="swiper-container">
+    {%assign counterMedia = 0 %}
+    <div class="swiper-wrapper">
+      {% for i in (1..7) %}
+        {% capture image_id %}image_{{ i }}{% endcapture %}
+        {% capture video_id %}video_{{ i }}{% endcapture %}
+        {% capture video_url_id %}video_url_{{ i }}{% endcapture %}
+        {% assign image = block.settings[image_id] %}
+        {% assign video = block.settings[video_id] %}
+        {% assign video_url = block.settings[video_url_id] %}
+
+        {% if video %}
+          {%assign counterMedia = counterMedia | plus: 1 %}
+        <div class="tabbed-media__media swiper-slide">
+          {{ video | video_tag: controls: true, preload: 'metadata', image_size: '800x' }}
+          <button class="tabbed-media__playicon" type="button" aria-label="Play/Pause">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <path d="M0.90625 1.27539C0.90625 0.50559 1.73958 0.0242795 2.40625 0.40918L10.5908 5.13379C11.2574 5.51864 11.2572 6.48121 10.5908 6.86621L2.40625 11.5918C1.73958 11.9767 0.90625 11.4954 0.90625 10.7256V1.27539Z" fill="white"/>
+            </svg>
+          </button>
+        </div>
+      {% elsif video_url contains "youtube.com" or video_url contains "youtu.be" %}
+        {%assign counterMedia = counterMedia | plus: 1 %}
+        <div class="tabbed-media__media swiper-slide">
+          <iframe 
+            src="{{ video_url | replace: 'watch?v=', 'embed/' }}?rel=0&showinfo=0" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      {% elsif video_url contains "vimeo.com" %}
+        {%assign counterMedia = counterMedia | plus: 1 %}
+        <div class="tabbed-media__media swiper-slide">
+          <iframe 
+            src="https://player.vimeo.com/video/{{ video_url | split: '/' | last }}" 
+            frameborder="0" 
+            allow="autoplay; fullscreen; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
+        {% elsif image %}
+          {%assign counterMedia = counterMedia | plus: 1 %}
+          <div class="tabbed-media__media swiper-slide">
+            {{ image
+              | image_url: width: 1600
+              | image_tag: sizes: '(min-width: 768px) 50vw, 100vw', loading: 'lazy', class: 'tabbed-media__img' }}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    {% if counterMedia > 1 %}
+    <div class="tabbed-media__nav" style="--arrow-color: {{ block.settings.arrow_color }}">
+      <div class="prev" role="button" aria-label="Previous slide" tabindex="0">
+       <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+          <circle cx="19" cy="19" r="14.25" stroke="#282828" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M22 11.9609L15 18.4609L22 24.9609" stroke="#282828" stroke-linecap="square" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="next" role="button" aria-label="Next slide" tabindex="0">
+        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+          <circle cx="14.25" cy="14.25" r="14.25" transform="matrix(-1 0 0 1 33.25 4.75)" stroke="{{ block.settings.arrow_color }}" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M16 11.9609L23 18.4609L16 24.9609" stroke="{{ block.settings.arrow_color }}" stroke-linecap="square" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+    {%endif %}
+  </div>
+</div>
+
+      </div>
+    {% endfor %}
+  </div>
+</div>
+</div>
+</div>
+{% javascript %}
+(function(){
+  // Initialize each tabbed media wrapper independently
+  document.querySelectorAll('.tabbed-media__wrapper').forEach((wrapper) => {
+    
+    // --- Pause all videos helper (scoped to this wrapper) ---
+    function pauseAllVideos() {
+      wrapper.querySelectorAll('.tabbed-media__media video').forEach(v => {
+        v.pause();
+        const icon = v.closest('.tabbed-media__media')?.querySelector('.tabbed-media__playicon');
+        if(icon) icon.style.display = '';
+      });
+    }
+
+    // --- Swiper initialization setup (must be before tabs) ---
+    // Store swiper instances for each carousel
+    const swiperInstances = new Map();
+
+    function waitForSwiper(callback) {
+      if (typeof Swiper !== 'undefined') {
+        callback();
+      } else {
+        const checkInterval = setInterval(() => {
+          if (typeof Swiper !== 'undefined') {
+            clearInterval(checkInterval);
+            callback();
+          }
+        }, 100);
+      }
+    }
+
+    function initializeSwiper(root) {
+      // Check if swiper already exists for this carousel
+      if (swiperInstances.has(root)) {
+        const existingSwiper = swiperInstances.get(root);
+        if (existingSwiper && existingSwiper instanceof Swiper) {
+          // Update existing swiper
+          existingSwiper.update();
+          existingSwiper.updateAutoHeight();
+          return existingSwiper;
+        }
+      }
+
+      const swiperEl = root.querySelector('.swiper-container, .swiper');
+      if (!swiperEl) return null;
+
+      const prevEl = root.querySelector('.tabbed-media__nav .prev');
+      const nextEl = root.querySelector('.tabbed-media__nav .next');
+
+      // Ensure all media items have swiper-slide class
+      root.querySelectorAll('.swiper-wrapper > .tabbed-media__media').forEach(s => {
+        s.classList.add('swiper-slide');
+      });
+
+      const swiper = new Swiper(swiperEl, {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        speed: 500,
+        autoHeight: true,
+        navigation: { prevEl, nextEl },
+        watchSlidesProgress: true,
+        preventClicks: true,
+        preventClicksPropagation: true
+      });
+
+      // Store the instance
+      swiperInstances.set(root, swiper);
+
+      // Pause hidden videos when sliding (scoped to this carousel)
+      function pauseHiddenVideos() {
+        root.querySelectorAll('video').forEach((v) => {
+          const slide = v.closest('.swiper-slide');
+          if (!slide || !slide.classList.contains('swiper-slide-active')) {
+            if (!v.paused) v.pause();
+            slide?.querySelector('.tabbed-media__playicon')?.classList.remove('is-playing');
+          }
+        });
+      }
+      swiper.on('slideChangeTransitionStart', pauseHiddenVideos);
+
+      // Play button functionality (scoped to this carousel)
+      root.querySelectorAll('.tabbed-media__playicon').forEach((btn) => {
+        const video = btn.previousElementSibling;
+        if (!(video && video.tagName === 'VIDEO')) return;
+
+        btn.addEventListener('click', () => {
+          if (video.paused) {
+            video.play();
+            btn.classList.add('is-playing');
+          } else {
+            video.pause();
+            btn.classList.remove('is-playing');
+          }
+        });
+
+        video.addEventListener('play', () => btn.classList.add('is-playing'));
+        video.addEventListener('pause', () => btn.classList.remove('is-playing'));
+        video.addEventListener('ended', () => btn.classList.remove('is-playing'));
+      });
+
+      return swiper;
+    }
+
+    // --- Tabs: click to switch (scoped to this wrapper) ---
+    const tabs = wrapper.querySelectorAll('.tabbed-media__tab');
+    const contents = wrapper.querySelectorAll('[data-tab-content-index]');
+    
+    tabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('tabbed-media__tab--active'));
+        contents.forEach(c => c.style.display = 'none');
+        tab.classList.add('tabbed-media__tab--active');
+        const active = wrapper.querySelector(`[data-tab-content-index='${index}']`);
+        if (active) active.style.display = 'grid';
+        pauseAllVideos();
+        
+        // Update swiper when tab changes (after display change)
+        setTimeout(() => {
+          if (active) {
+            const carousel = active.querySelector('.tabbed-media__carousel');
+            if (carousel) {
+              const swiper = swiperInstances.get(carousel);
+              if (swiper && swiper instanceof Swiper) {
+                swiper.update();
+                swiper.updateAutoHeight();
+              } else if (typeof Swiper !== 'undefined') {
+                // Initialize if it doesn't exist yet
+                initializeSwiper(carousel);
+              }
+            }
+          }
+        }, 50);
+      });
+    });
+
+    // --- Video slides: click anywhere to play (scoped to this wrapper) ---
+    wrapper.querySelectorAll('.tabbed-media__media').forEach(slide => {
+      const video = slide.querySelector('video');
+      if (!video) return;
+
+      slide.style.cursor = 'pointer';
+      const playIcon = slide.querySelector('.tabbed-media__playicon');
+
+      const playVideo = () => {
+        if (video.paused) {
+          video.setAttribute('controls', 'controls');
+          video.setAttribute('playsinline', '');
+          // Pause other videos in this wrapper first
+          wrapper.querySelectorAll('.tabbed-media__media video').forEach(v => { 
+            if (v !== video) v.pause(); 
+          });
+          video.play().catch(()=>{});
+        }
+      };
+
+      slide.addEventListener('click', (e) => {
+        if (e.target.closest('.tabbed-media__nav, a, button')) return;
+        playVideo();
+      });
+
+      video.addEventListener('play', () => { if (playIcon) playIcon.style.display = 'none'; });
+      video.addEventListener('pause', () => { if (playIcon) playIcon.style.display = ''; });
+      video.addEventListener('ended', () => {
+        if (playIcon) playIcon.style.display = '';
+        video.removeAttribute('controls');
+      });
+    });
+
+    // Initialize all carousels when Swiper is available
+    waitForSwiper(() => {
+      wrapper.querySelectorAll('.tabbed-media__carousel').forEach((root) => {
+        initializeSwiper(root);
+      });
+    });
+  }); // End of wrapper forEach
+})();
+{% endjavascript %}
+{% schema %}
+{
+  "name": "Tabbed Media + Bullets",
+  "class": "shopify-section--ns-tabbed-media-bullets",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Colors",
+      "info": "Gradient replaces solid colors when set."
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:settings.color_scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "color_background",
+      "id": "background_gradient",
+      "label": "Background gradient"
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "t:settings.width",
+      "options": [
+        {
+          "value": "page-width",
+          "label": "t:options.page"
+        },
+        {
+          "value": "full-width",
+          "label": "t:options.full"
+        }
+      ],
+      "default": "page-width"
+    },
+    {
+      "type": "header",
+      "content": "t:content.padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "t:settings.top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "t:settings.bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tab",
+      "name": "Tab Block",
+      "settings": [
+        { "type": "text", "id": "tab_title", "label": "Tab Title" },
+        { "type": "text", "id": "heading", "label": "Heading" },
+        { "type": "richtext", "id": "description", "label": "Description" },
+        { "type": "color", "id": "tab_active_color", "label": "Tab Active Color" },
+        { "type": "color", "id": "arrow_color", "label": "Arrow Icon Color" },
+        {
+            "type": "header",
+            "content": "Media Carousel"
+            },
+        { "type": "image_picker", "id": "image_1", "label": "Image 1" },
+{ "type": "video", "id": "video_1", "label": "Shopify Video 1" },
+{ "type": "text", "id": "video_url_1", "label": "External Video URL 1 (YouTube/Vimeo)" },
+
+{ "type": "image_picker", "id": "image_2", "label": "Image 2" },
+{ "type": "video", "id": "video_2", "label": "Shopify Video 2" },
+{ "type": "text", "id": "video_url_2", "label": "External Video URL 2 (YouTube/Vimeo)" },
+
+{ "type": "image_picker", "id": "image_3", "label": "Image 3" },
+{ "type": "video", "id": "video_3", "label": "Shopify Video 3" },
+{ "type": "text", "id": "video_url_3", "label": "External Video URL 3 (YouTube/Vimeo)" },
+
+{ "type": "image_picker", "id": "image_4", "label": "Image 4" },
+{ "type": "video", "id": "video_4", "label": "Shopify Video 4" },
+{ "type": "text", "id": "video_url_4", "label": "External Video URL 4 (YouTube/Vimeo)" },
+
+{ "type": "image_picker", "id": "image_5", "label": "Image 5" },
+{ "type": "video", "id": "video_5", "label": "Shopify Video 5" },
+{ "type": "text", "id": "video_url_5", "label": "External Video URL 5 (YouTube/Vimeo)" },
+
+{ "type": "image_picker", "id": "image_6", "label": "Image 6" },
+{ "type": "video", "id": "video_6", "label": "Shopify Video 6" },
+{ "type": "text", "id": "video_url_6", "label": "External Video URL 6 (YouTube/Vimeo)" },
+
+{ "type": "image_picker", "id": "image_7", "label": "Image 7" },
+{ "type": "video", "id": "video_7", "label": "Shopify Video 7" },
+{ "type": "text", "id": "video_url_7", "label": "External Video URL 7 (YouTube/Vimeo)" }
+
+
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tabbed Media + Bullets",
+      "category": "Media",
+      "blocks": [
+        {
+          "type": "tab",
+          "settings": {
+            "tab_title": "How to assemble",
+            "heading": "Eiusmod tempor incididunt labore",
+            "description": "<ul><li>Lorem ipsum dolor sit amet</li><li>Consectetur adipiscing elit</li><li>Sed do eiusmod tempor</li></ul>",
+            "tab_active_color": "#000000",
+            "arrow_color": "#282828"
+          }
+        },
+        {
+          "type": "tab",
+          "settings": {
+            "tab_title": "How to use",
+            "heading": "Ut enim ad minim veniam",
+            "description": "<ul><li>Quis nostrud exercitation</li><li>Ullamco laboris nisi</li><li>Ut aliquip ex ea commodo</li></ul>",
+            "tab_active_color": "#888888",
+            "arrow_color": "#888888"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

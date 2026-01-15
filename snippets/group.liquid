@@ -1,0 +1,170 @@
+{%- doc -%}
+  Renders block content for all blocks that extend the group block.
+
+  @param {string} children - The DOM content of the group block.
+  @param {object} settings - The settings of the group block.
+  @param {string} shopify_attributes - String with Shopify attributes for the editor.
+  @param {string} [class] - Custom classes for the group block.
+  @param {string} [style] - Custom inline styles for the group block.
+  @param {number} [child_count] - Number of child blocks.
+{%- enddoc -%}
+
+{%- liquid
+  assign child_count = child_count | default: 0
+  assign use_mobile_slider = false
+  if settings.slider_on_mobile and child_count > 1
+    assign use_mobile_slider = true
+  endif
+-%}
+
+<div
+  class="
+    group-block
+    group-block--height-{{ settings.height }}
+    group-block--width-{{ settings.width }}
+    border-style
+    spacing-style
+    size-style
+    {% if settings.inherit_color_scheme == false %} color-{{ settings.color_scheme }}{% endif %}
+
+    {%- if settings.custom_class != blank -%}
+      {{ settings.custom_class }}
+    {%- endif -%}
+
+    {{ class }}
+  "
+  style="
+    {% render 'border-override', settings: settings %}
+    {% render 'spacing-style', settings: settings %}
+    {% render 'size-style', settings: settings %}
+    {{ style }}
+  "
+  {{ shopify_attributes }}
+  data-testid="group-block"
+>
+  {%- if settings.link != blank -%}
+    <a
+      href="{{ settings.link }}"
+      class="group-block__link"
+      {% if settings.open_in_new_tab %}
+        target="_blank" rel="noopener"
+      {% endif %}
+    ></a>
+  {%- endif -%}
+
+  <div class="group-block__media-wrapper">
+    {% render 'background-media',
+      background_media: settings.background_media,
+      background_video: settings.video,
+      background_video_position: settings.video_position,
+      background_image: settings.background_image,
+      background_image_position: settings.background_image_position,
+      placeholder: settings.placeholder
+    %}
+    {% if settings.toggle_overlay %}
+      {% render 'overlay', settings: settings, layer: '0' %}
+    {% endif %}
+  </div>
+
+  <div
+  class="
+    group-block-content
+    {% if request.design_mode %}group-block-content--design-mode{% endif %}
+    layout-panel-flex
+    layout-panel-flex--{{ settings.content_direction | default: 'column' }}
+    {% if settings.vertical_on_mobile %} mobile-column{% endif %}
+    {% if settings.reverse_on_mobile %} reverse-on-mobile{% endif %}
+    {% if use_mobile_slider %}group-block-content--mobile-slider{% endif %}
+  "
+    style="{% render 'layout-panel-style', settings: settings, gap_mobile_variable_name: 'group-gap-mobile' %}"
+  >
+    {{- children -}}
+  </div>
+</div>
+
+
+{% stylesheet %}
+  .group-block__link {
+    position: absolute;
+    inset: 0;
+  }
+
+  .group-block__link ~ :is(.group-block-content, .group-block__media-wrapper) {
+    pointer-events: none;
+
+    :is(a, button, input, textarea, select) {
+      pointer-events: auto;
+    }
+  }
+
+  /* Needs the .group-block__link ~ to be specific enough to take effect. */
+  .group-block__link ~ .group-block-content--design-mode {
+    pointer-events: auto;
+  }
+
+  /* Mobile slider styles - only apply on mobile */
+  @media (max-width: 768px) {
+    .group-block-content--mobile-slider {
+      display: flex;
+      flex-direction: row !important;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: thin;
+      gap: var(--group-gap-mobile, 12px);
+    }
+
+    .group-block-content--mobile-slider > * {
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+      width: calc(100% - var(--group-gap-mobile, 12px));
+      min-width: calc(100% - var(--group-gap-mobile, 12px));
+      max-width: calc(100% - var(--group-gap-mobile, 12px));
+    }
+
+    /* Hide scrollbar on webkit browsers */
+    .group-block-content--mobile-slider::-webkit-scrollbar {
+      height: 4px;
+    }
+
+    .group-block-content--mobile-slider::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .group-block-content--mobile-slider::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 2px;
+    }
+  }
+
+  /* Desktop: keep normal flex layout */
+  @media (min-width: 749px) {
+    .group-block-content--mobile-slider {
+      overflow-x: visible;
+      scroll-snap-type: none;
+    }
+
+    .group-block-content--mobile-slider > * {
+      width: auto;
+      min-width: auto;
+      max-width: none;
+      flex: 1 1 auto;
+    }
+  }
+
+@media (max-width: 768px) {
+
+  /* Case 1: NOT vertical on mobile → reverse row */
+  .group-block-content.reverse-on-mobile:not(.mobile-column) {
+    flex-direction: row-reverse !important;
+  }
+
+  /* Case 2: vertical on mobile → reverse column */
+  .group-block-content.reverse-on-mobile.mobile-column {
+    flex-direction: column-reverse !important;
+  }
+}
+
+
+{% endstylesheet %}

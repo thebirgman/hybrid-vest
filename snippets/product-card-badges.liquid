@@ -1,0 +1,262 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+PRODUCT BADGES COMPONENT
+----------------------------------------------------------------------------------------------------------------------
+This component is used in product listing and product page to render the badges of a given product
+
+********************************************
+Supported variables
+********************************************
+* product: the product to render the badges
+* types: the types of badge to output. Can be "custom", "sold_out" or "discount" (or a combination separated by comma). If nothing is set, all badges are outputted.
+* form_id: an optional form ID to use to update the badges when a given variant changes
+* block: an optional block to output theme editor attributes
+* class: an extra class added on the container
+* card_type: default or teaser
+* settings: theme settings object
+{%- endcomment -%}
+
+{%- assign card_type = card_type | default: 'default' -%}
+{%- assign badge_types = types | default: 'custom, sold_out, discount' | split: ',' -%}
+{%- assign variant = product.selected_or_first_available_variant -%}
+
+{% if card_type == 'default' %}
+  {% assign show_discount = settings.show_discount | default: true %}
+  {% assign show_sold_out_badge = settings.show_sold_out_badge | default: true %}
+  {% assign discount_mode = settings.discount_mode | default: 'percentage' %}
+{% else %}
+  {% assign badge_key = card_type | append: '_show_sold_out_badge' %}
+  {% assign discount_mode_key = card_type | append: '_discount_mode' %}
+  {% assign discount_key = card_type | append: '_show_discount' %}
+  {% assign show_sold_out_badge = settings[badge_key] | default: true %}
+  {% assign discount_mode = settings[discount_mode_key] | default: 'percentage' %}
+  {% assign show_discount = settings[discount_key] | default: true %}
+{% endif %}
+
+{%- capture badges -%}
+  {%- assign flash_deal_price_metafield = product.metafields.custom.flash_deal_price -%}
+  {%- assign has_flash_deal = false -%}
+  {%- assign is_product_card = false -%}
+  
+  {%- if flash_deal_price_metafield != blank -%}
+    {%- assign has_flash_deal = true -%}
+  {%- endif -%}
+  
+  
+  {%- assign is_product_card = true -%}
+  
+
+  {%- for badge_type in badge_types -%}
+    {%- assign stripped_badge_type = badge_type | strip -%}
+
+  
+    
+    {%- case stripped_badge_type -%}
+      {%- when 'custom' -%}
+        {%- if has_flash_deal and is_product_card -%}
+        
+          {%- comment -%}Replace custom badge with flash deal badge{%- endcomment -%}
+          <span class="badge badge--flash-deal product-badges__badge product-badges__badge--rectangle">
+            <span>{{ metaobjects.special_pricing["evergreen-special"].collection_list_badge.value }}</span>
+          </span>
+        {%- else -%}
+          {%- assign custom_badges = product.metafields.custom.badges.value -%}
+          {%- for custom_badge in custom_badges -%}
+            <span class="badge test badge--primary product-badges__badge product-badges__badge--rectangle"><span>{{ custom_badge }}</span></span>
+          {%- endfor -%}
+          <span style="display:none">{{ template.suffix }}</span>
+        {%- endif -%}
+
+      {%- when 'sold_out' -%}
+        {%- if show_sold_out_badge -%}
+          {%- if variant.available == false or form_id != blank -%}
+            <sold-out-badge {% if variant.available %}hidden{% endif %} {% if form_id != blank %}form="{{ form_id }}"{% endif %} class="badge badge--sold-out product-badges__badge product-badges__badge--rectangle">
+              <span>
+                {{- 'content.product_badge_sold_out' | t | default: 'Sold out' -}}
+              </span>
+            </sold-out-badge>
+          {%- endif -%}
+        {%- endif -%}
+
+      {%- when 'discount' -%}
+        {%- if show_discount -%}
+          {%- assign is_variant_on_sale = false -%}
+          {%- if variant.available and variant.compare_at_price > variant.price -%}
+            {%- assign is_variant_on_sale = true -%}
+          {%- endif -%}
+          
+          {%- if form_id != blank or is_variant_on_sale -%}
+            {%- if has_flash_deal and is_product_card -%}
+              {%- comment -%}Calculate savings based on flash deal price{%- endcomment -%}
+              {%- assign flash_deal_price_value = flash_deal_price_metafield | times: 100 -%}
+              {%- if product.title contains 'NordBench' or product.title contains 'Zero Sled' -%}
+                {%- assign discount_mode = 'saving' -%}
+                {%- capture savings -%}{{ variant.compare_at_price | minus: flash_deal_price_value | money }}{%- endcapture -%}
+              {%- elsif discount_mode == 'percentage' -%}
+                {%- assign savings = variant.compare_at_price | minus: flash_deal_price_value | times: 100.0 | divided_by: variant.compare_at_price | round | append: '%' -%}
+              {%- else -%}
+                {%- capture savings -%}{{ variant.compare_at_price | minus: flash_deal_price_value | money }}{%- endcapture -%}
+              {%- endif -%}
+            {%- elsif product.title contains 'NordBench' or product.title contains 'Zero Sled' -%}
+              {%- assign custom_variant_price = variant.price -%}
+              {%- assign discount_mode = 'saving' -%}
+              {%- capture savings -%}{{ variant.compare_at_price | minus: custom_variant_price  | money }}{%- endcapture -%}
+            {%- elsif discount_mode == 'percentage' -%}
+              {%- assign custom_variant_price = variant.price -%}
+              {%- assign savings = variant.compare_at_price | minus: custom_variant_price | times: 100.0 | divided_by: variant.compare_at_price | round | append: '%' -%}
+            {%- else -%}
+              {%- assign custom_variant_price = variant.price -%}
+              {%- capture savings -%}{{ variant.compare_at_price | minus: custom_variant_price | money }}{%- endcapture -%}
+            {%- endif -%}
+            
+            {%- comment -%}
+            When showing for product card (form_id == blank) and that the product price varies, we show a sale badge without explicit saving
+            as it can cause confusion
+            {%- endcomment -%}
+            <on-sale-badge data-product-id="{{ product.id }}" data-variant-id="{{ variant.id }}" {% unless is_variant_on_sale %}hidden{% endunless %} {% if show_discount %}discount-mode="{{ discount_mode | escape }}"{% endif %} {% if form_id != blank %}form="{{ form_id }}"{% endif %} class="badge badge--on-sale product-badges__badge product-badges__badge--rectangle">
+              <span>
+                {%- if form_id == blank and product.price_varies -%}
+                  {{- 'content.product_badge_save' | t | default: 'Save ' }}
+                {%- else -%}
+                  {%- if discount_mode == 'percentage' -%}
+                    {{ 'content.product_badge_save' | t | default: 'Save' }} {{ savings }} 
+                  {%- else -%}
+                    {{  'content.product_badge_save' | t | default: 'Save' }} {{ savings }}
+                  {%- endif -%}
+                {%- endif -%}
+              </span>
+              {% comment %}
+              {%- if template contains 'product' -%}
+                <span style="color:#ffc350">
+                  +10% OFF IN CART
+                </span>
+              {%- endif -%}
+              {%- endcomment -%}
+            </on-sale-badge>
+          {%- endif -%}
+        {%- endif -%}
+    {%- endcase -%}
+  {%- endfor -%}
+{%- endcapture -%}
+
+{%- if badges != blank -%}
+  {%- if class != blank -%}
+    {%- assign badge_class = class -%}
+  {%- else -%}
+    {%- assign badge_class = 'product-badges product-badges--' | append: settings.badge_position -%}
+  {%- endif -%}
+  <div 
+    class="{{ badge_class }}"
+  style="
+    --badge-border-radius: {{ settings.badge_corner_radius }}px;
+      --badge-font-family: var(--font-{{ settings.badge_font_family }}--family); 
+      --badge-font-weight: var(--font-{{ settings.badge_font_family }}--weight); 
+      --badge-text-transform: {{ settings.badge_text_transform }};
+    "
+    {{ block.shopify_attributes }}
+  >
+    {{- badges -}}
+    </div>
+  {%- endif -%}
+
+{% stylesheet %}
+  .product-badges {
+    --badge-inset: max(var(--padding-xs), calc((var(--border-radius) + var(--padding-xs)) * (1 - cos(45deg))));
+
+    position: absolute;
+    z-index: var(--layer-flat);
+  }
+
+  .product-badges--bottom-left {
+    bottom: calc(var(--badge-inset) + var(--padding-block-start));
+    left: calc(var(--badge-inset) + var(--padding-inline-start));
+  }
+
+  .product-badges--top-left {
+    top: calc(var(--badge-inset) + var(--padding-block-start));
+    left: calc(var(--badge-inset) + var(--padding-inline-start));
+  }
+
+  .product-badges--top-right {
+    top: calc(var(--badge-inset) + var(--padding-block-start));
+    right: calc(var(--badge-inset) + var(--padding-inline-start));
+  }
+
+  .product-badges__badge {
+    --badge-font-size: var(--font-size--xs);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-foreground);
+    background: var(--color-background);
+    font-size: var(--badge-font-size);
+    font-family: var(--badge-font-family);
+    font-weight: var(--badge-font-weight);
+    text-transform: var(--badge-text-transform);
+    border-radius: var(--badge-border-radius);
+  }
+
+  .product-badges__badge--rectangle {
+    padding-block: var(--badge-rectangle-padding-block);
+    padding-inline: var(--badge-rectangle-padding-inline);
+  }
+
+  .badge--flash-deal {
+    color: var(--color-foreground);
+    background: var(--color-background);
+  }
+
+  .badge--primary {
+    color: var(--color-primary-badge-text);
+    background: var(--color-primary-badge-background);
+  }
+
+  .badge--sold-out {
+    color: var(--color-secondary-badge-text);
+    background: var(--color-secondary-badge-background);
+  }
+
+  .badge--on-sale {
+    color: var(--color-secondary-badge-text);
+    background: var(--color-secondary-badge-background);
+  }
+
+  sold-out-badge,
+  on-sale-badge {
+    display: inline-block;
+  }
+
+  sold-out-badge[hidden],
+  on-sale-badge[hidden] {
+    display: none;
+  }
+
+  .product-badges__badge {
+    display: flex;
+    width: auto;
+}
+
+.product-badges--top-left {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+}
+span.badge.badge--flash-deal {
+    background-color: #ffc914 !important;
+    color: #fe3428 !important;
+}
+
+.product-badges__badge {
+    font-weight: 600;
+}
+
+.product-badges--top-left {
+    gap: 8px;
+}
+.badge--primary:nth-child(n+2){
+  display: none;
+}
+{% endstylesheet %}
