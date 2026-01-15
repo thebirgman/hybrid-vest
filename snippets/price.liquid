@@ -1,6 +1,7 @@
 {%- liquid
   assign show_unit_price = show_unit_price | default: false
   assign show_sale_price_first = show_sale_price_first | default: false
+  assign show_discount_badge_setting = show_discount_badge_setting | default: false
 
   assign selected_variant = product_resource.selected_or_first_available_variant
   assign price_raw = selected_variant.price
@@ -18,6 +19,14 @@
   assign show_compare_price = false
   if compare_at_price_raw > price_raw
     assign show_compare_price = true
+  endif
+
+  # Calculate discount badge (only on PDP when enabled)
+  assign show_discount_badge = false
+  assign discount_amount = 0
+  if is_product_card == false and show_compare_price and show_discount_badge_setting
+    assign show_discount_badge = true
+    assign discount_amount = compare_at_price_raw | minus: price_raw
   endif
 
   if product_resource == blank
@@ -69,7 +78,7 @@
   endif
 -%}
 
-<div ref="priceContainer">
+<div ref="priceContainer" class="price-container{% if show_discount_badge %} price-container--with-discount{% endif %}">
   {% if has_flash_deal %}
     {% if show_sale_price_first == false and product_resource.compare_at_price > product_resource.price %}
       <span role="group">
@@ -123,6 +132,10 @@
     {% endif %}
   {% endif %}
 
+  {%- if show_discount_badge -%}
+    <span class="price-discount-badge badge badge--primary badge--discount">{{ discount_amount | money }} OFF</span>
+  {%- endif -%}
+
   {% if selected_variant.unit_price and show_unit_price %}
     {% liquid
       if use_currency
@@ -142,5 +155,26 @@
 {% stylesheet %}
   span.price.flash-deal-card-price {
     color: #fe3428!important;
-}
+  }
+
+  .price-container {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .price-discount-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: var(--font-size--xs, 0.75rem);
+    font-weight: 400;
+    color: var(--color-primary-badge-text);
+    background-color: var(--color-primary-badge-background);
+    border: 1px solid var(--color-primary-badge-text);
+    white-space: nowrap;
+  }
 {% endstylesheet %}
