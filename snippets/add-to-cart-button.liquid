@@ -20,7 +20,10 @@
   endif
   
   assign selected_variant = product.selected_or_first_available_variant
-  assign variant_price = selected_variant.price | money
+  assign variant_price = selected_variant.price | money_without_trailing_zeros
+  if selected_variant.price  < selected_variant.compare_at_price
+    assign compare_price = selected_variant.compare_at_price | money_without_trailing_zeros
+  endif
 -%}
 
 <add-to-cart-component
@@ -47,14 +50,7 @@
     <span
       class="add-to-cart-text"
     >
-      {% if can_add_to_cart and show_icon != false %}
-        <span
-          aria-hidden="true"
-          class="svg-wrapper add-to-cart-icon"
-        >
-          {{- 'icon-add-to-cart.svg' | inline_asset_content -}}
-        </span>
-      {% endif %}
+      
       <span class="add-to-cart-text__content{% if icon_only_on_mobile %} is-visually-hidden-mobile{% endif %}">
         <span>
           <span class="add-to-cart-text__main" ref="addToCartTextMain">
@@ -62,12 +58,32 @@
           </span>
           {% if show_price and can_add_to_cart %}
             <span class="add-to-cart-text__separator"> | </span>
+             {% if compare_price != blank %}
+            <span class="add-to-cart-text__price compare_price" ref="addToCartTextPrice" data-variant-price="{{ selected_variant.price }}">
+              {{- compare_price -}}
+            </span>
+            {%endif %}
+           
             <span class="add-to-cart-text__price" ref="addToCartTextPrice" data-variant-price="{{ selected_variant.price }}">
               {{- variant_price -}}
             </span>
+            {% if can_add_to_cart and show_icon != false %}
+        <span
+          aria-hidden="true"
+          class="svg-wrapper add-to-cart-icon"
+        >
+         
+        <svg width="15" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15.5303 6.05328C15.8232 5.76039 15.8232 5.28551 15.5303 4.99262L10.7574 0.219648C10.4645 -0.073245 9.98959 -0.073245 9.6967 0.219648C9.40381 0.512542 9.40381 0.987415 9.6967 1.28031L13.9393 5.52295L9.6967 9.76559C9.40381 10.0585 9.40381 10.5334 9.6967 10.8263C9.98959 11.1191 10.4645 11.1191 10.7574 10.8263L15.5303 6.05328ZM0 5.52295V6.27295H15V5.52295V4.77295H0V5.52295Z" fill="white"/>
+        </svg>
+
+                </span>
+              {% endif %}
           {% endif %}
+
         </span>
       </span>
+      
     </span>
     {% comment %} checkmark burst markup {% endcomment %}
     <span class="add-to-cart__added">
@@ -257,11 +273,23 @@
   }
 
   .add-to-cart-text__separator {
-    margin: 0 0.5em;
-    opacity: 0.7;
+    margin: 0 1px;
+  }
+  span.add-to-cart-text__price.compare_price{
+    opacity: .5;
+    text-decoration: line-through;
   }
 
   .add-to-cart-text__price {
     font-weight: 600;
   }
+  span.add-to-cart-text__content > span {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+span.svg-wrapper.add-to-cart-icon {
+    margin-left: 8px;
+}
 {% endstylesheet %}

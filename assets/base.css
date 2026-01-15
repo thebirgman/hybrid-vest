@@ -4754,14 +4754,22 @@ h1 {
 
 @font-face {
     font-family: 'Interstate';
-    src: url('https://cdn.shopify.com/s/files/1/0787/7705/7504/files/Interstate-Light.woff2?v=1767088446') format('woff2');
+    src: url('https://cdn.shopify.com/s/files/1/0803/8996/4001/files/Interstate-Light.otf?v=1768449225') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Interstate';
+    src: url('https://cdn.shopify.com/s/files/1/0803/8996/4001/files/Interstate-Regular.otf?v=1768449180') format('opentype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Interstate';
-    src: url('https://cdn.shopify.com/s/files/1/0787/7705/7504/files/Interstate-Bold.woff?v=1767188529') format('woff2');
+    src: url('https://cdn.shopify.com/s/files/1/0803/8996/4001/files/Interstate-Bold.otf?v=1768448993') format('opentype');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -4777,9 +4785,10 @@ h3 {
   font-weight: 400;
 }
 
-h4,h5,p, span {
+h4,h5,p, span, summary, details, li, ul,
+.custom-typography, .custom-typography>* {
   font-family: 'Interstate'!IMPORTANT;
-  letter-spacing: 0px;
+  letter-spacing: -.25px;
 }
 a.size-style.button span{
   letter-spacing: -1px;
@@ -4859,3 +4868,17 @@ summary.details__header {
   letter-spacing: -0.2px !important;
 }
 
+
+
+[ref="priceContainer"] span{
+    font-weight: 400;
+}
+
+.max-150{
+  max-width: 150px!important;
+}
+
+span.add-to-cart-text__content span {
+    letter-spacing: -1px!important;
+    font-size: 16px;
+}

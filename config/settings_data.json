@@ -55,7 +55,7 @@
     "transition_to_main_product": true,
     "card_hover_effect": "none",
     "badge_position": "top-left",
-    "badge_corner_radius": 4,
+    "badge_corner_radius": 0,
     "badge_sale_color_scheme": "scheme-1",
     "badge_sold_out_color_scheme": "scheme-3",
     "badge_text_transform": "none",
@@ -192,7 +192,7 @@
           "foreground": "#000000",
           "primary": "#000000cf",
           "primary_hover": "#000000",
-          "border": "#000000cf",
+          "border": "#ae8b4a",
           "shadow": "#000000",
           "primary_button_background": "#000000",
           "primary_button_text": "#ffffff",
@@ -222,12 +222,12 @@
           "selected_variant_hover_background_color": "#1a1a1a",
           "selected_variant_hover_text_color": "#ffffff",
           "selected_variant_hover_border_color": "#1a1a1a",
-          "primary_badge_background": "#000f9f",
-          "primary_badge_text": "#ffffff",
+          "primary_badge_background": "#ae8b4a1a",
+          "primary_badge_text": "#ae8b4a",
           "secondary_badge_background": "#ffffff",
           "secondary_badge_text": "#000000",
           "sale_price_text": "#000000",
-          "compare_at_price_color": "#666666"
+          "compare_at_price_color": "#00000080"
         }
       },
       "scheme-4": {
@@ -782,8 +782,6 @@
     }
   },
   "platform_customizations": {
-    "custom_css": [
-      ".price-container em{color: #FFFFFF80; font-style: normal; text-decoration: line-through;}"
-    ]
+    "custom_css": []
   }
 }
