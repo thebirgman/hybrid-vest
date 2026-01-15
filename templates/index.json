@@ -8937,7 +8937,7 @@
                         "custom_width_mobile": 100,
                         "max_width_mobile": "fill",
                         "custom_max_width_mobile": 700,
-                        "height": "fit",
+                        "height": "fill",
                         "custom_height": 100,
                         "inherit_color_scheme": true,
                         "color_scheme": "scheme-5",
@@ -8960,7 +8960,38 @@
                         "padding-inline-start": 24,
                         "padding-inline-end": 24
                       },
-                      "blocks": {}
+                      "blocks": {
+                        "text_DNeRNn": {
+                          "type": "text",
+                          "name": "t:names.heading",
+                          "settings": {
+                            "text": "<p>Front Chest Phone Pouch</p>",
+                            "width": "fit-content",
+                            "max_width": "normal",
+                            "alignment": "left",
+                            "mobile_alignment": "left",
+                            "type_preset": "custom",
+                            "font": "var(--font-heading--family)",
+                            "font_size": "1.25rem",
+                            "line_height": "normal",
+                            "letter_spacing": "normal",
+                            "case": "uppercase",
+                            "wrap": "pretty",
+                            "color": "var(--color-foreground)",
+                            "background": false,
+                            "background_color": "#00000026",
+                            "corner_radius": 0,
+                            "padding-block-start": 0,
+                            "padding-block-end": 0,
+                            "padding-inline-start": 0,
+                            "padding-inline-end": 0
+                          },
+                          "blocks": {}
+                        }
+                      },
+                      "block_order": [
+                        "text_DNeRNn"
+                      ]
                     }
                   },
                   "block_order": [
