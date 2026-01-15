@@ -782,8 +782,6 @@
     }
   },
   "platform_customizations": {
-    "custom_css": [
-      ".price-container em {color: #ffffff80; font-style: normal; text-decoration: line-through;}"
-    ]
+    "custom_css": []
   }
 }

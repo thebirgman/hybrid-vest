@@ -1146,7 +1146,7 @@
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
-                    "custom_class": "",
+                    "custom_class": "max-150",
                     "reverse_on_mobile": false,
                     "slider_on_mobile": false,
                     "content_direction": "row",
@@ -1162,7 +1162,7 @@
                     "custom_width": 100,
                     "width_mobile": "fit-content",
                     "custom_width_mobile": 100,
-                    "max_width_mobile": "fill",
+                    "max_width_mobile": "custom",
                     "custom_max_width_mobile": 700,
                     "height": "fill",
                     "custom_height": 100,

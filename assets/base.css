@@ -4873,3 +4873,7 @@ summary.details__header {
 [ref="priceContainer"] span{
     font-weight: 400;
 }
+
+.max-150{
+  max-width: 150px!important;
+}
