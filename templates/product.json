@@ -3362,8 +3362,8 @@
           "type": "column_product",
           "settings": {
             "product_name": "CHEAP SWABS",
-            "data_1_type": "text",
-            "data_1_text": "<p>$20</p>",
+            "data_1_type": "x",
+            "data_1_text": "<p>Bounces during running and dynamic work</p>",
             "data_2_type": "text",
             "data_2_text": "<p>Few minutes</p>",
             "data_3_type": "check",
@@ -3386,8 +3386,8 @@
           "type": "column_product",
           "settings": {
             "product_name": "LAB TESTS",
-            "data_1_type": "text",
-            "data_1_text": "<p>$3,000</p>",
+            "data_1_type": "x",
+            "data_1_text": "<p>Heavy bounce as sand shifts</p>",
             "data_2_type": "text",
             "data_2_text": "<p>2-4 weeks</p>",
             "data_3_type": "check",
