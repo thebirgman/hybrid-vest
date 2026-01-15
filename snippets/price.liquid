@@ -133,7 +133,7 @@
   {% endif %}
   
   {%- if show_discount_badge -%}
-    <span class="price-discount-badge badge badge--primary badge--discount">{{ discount_amount | money_without_trailing_zeros }} OFF</span>
+    <span class="price-discount-badge badge badge--primary badge--discount">{{ discount_amount | floor |  money_without_trailing_zeros }} OFF</span>
   {%- endif -%}
 
   {% if selected_variant.unit_price and show_unit_price %}
