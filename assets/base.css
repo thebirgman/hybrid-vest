@@ -4893,3 +4893,9 @@ p strong{
   font-weight: 400;
   color: #d7b26e;
 }
+
+.price-container em{
+  text-decoration: line-through;
+  color: #FFFFFF80;
+  font-style: normal;
+}
