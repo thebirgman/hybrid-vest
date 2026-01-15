@@ -73,6 +73,29 @@ body:not(.product) .details-content {
 }
 
 }
+
+.accordion summary.details__header {
+    justify-content: space-between;
+    border-bottom: 1px solid #0E0E0E1A!important;
+    padding: 20px 24px!important;
+}
+
+.accordion--dividers accordion-custom:first-child .details {
+    /* border: 0; */
+}
+
+details.details {
+    border: 0!important;
+}
+
+summary.details__header {
+    font-size: 18px!important;
+}
+
+.accordion--dividers .details-content {
+    accordion-custom details[open]: :details-content, accordion-custom details[open] .details-content;
+    padding: 20px;
+}
 {% endstylesheet %}
 
 {% schema %}
