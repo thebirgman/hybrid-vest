@@ -8361,8 +8361,8 @@
                       "name": "Image Card",
                       "settings": {
                         "background_image": "shopify://shop_images/bbee064c45ad739152f2c8d6bd2a8f389d15ae2c.png",
-                        "heading": "<h4>Bounce-Free Stability</h4>",
-                        "subheading": "<p>Built through extensive prototyping so it moves with you — not against you.</p>",
+                        "heading": "<h4>Zero‑Bounce Stability</h4>",
+                        "subheading": "<p>Locks tight to your torso — no shifting, no distraction, even at speed.</p>",
                         "badge": "#1",
                         "text_alignment": "bottom",
                         "heading_subheading_gap": 12,
@@ -8402,9 +8402,9 @@
                       "type": "image-card",
                       "name": "Image Card",
                       "settings": {
-                        "background_image": "shopify://shop_images/76336bcaf4fe7671f0e018882675c315166a0083.png",
-                        "heading": "<h4>Comfortable “Gold Brick” Plates</h4>",
-                        "subheading": "<p>17 padded plates included. Designed to be comfortable during burpees, push-ups, and floor contact.</p>",
+                        "background_image": "shopify://shop_images/78ec5d7c3e2c6b8210bcd17dcf2b7d59392490e8_bad073c8-1a97-44cb-99ea-fd1e84aed5b5.png",
+                        "heading": "<h4>Secure, Glove‑Like Fit</h4>",
+                        "subheading": "<p>Contours naturally to your body for a locked‑in feel without pressure points.</p>",
                         "badge": "#2",
                         "text_alignment": "bottom",
                         "heading_subheading_gap": 12,
