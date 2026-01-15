@@ -7269,8 +7269,8 @@
             "custom_width": 100,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
-            "max_width_mobile": "fill",
-            "custom_max_width_mobile": 700,
+            "max_width_mobile": "custom",
+            "custom_max_width_mobile": 1280,
             "height": "fit",
             "custom_height": 100,
             "inherit_color_scheme": true,
@@ -7291,7 +7291,7 @@
             "placeholder": "",
             "padding-block-start": 0,
             "padding-block-end": 0,
-            "padding-inline-start": 0,
+            "padding-inline-start": 20,
             "padding-inline-end": 0
           },
           "blocks": {
