@@ -4754,7 +4754,15 @@ h1 {
 
 @font-face {
     font-family: 'Interstate';
-    src: url('https://cdn.shopify.com/s/files/1/0803/8996/4001/files/Interstate-Regular.otf?v=1768448993') format('otf');
+    src: url('https://cdn.shopify.com/s/files/1/0803/8996/4001/files/Interstate-Extra-Light.otf?v=1768449225') format('otf');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Interstate';
+    src: url('https://cdn.shopify.com/s/files/1/0803/8996/4001/files/Interstate-Light.otf?v=1768449180') format('otf');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
