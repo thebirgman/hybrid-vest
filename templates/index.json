@@ -8773,8 +8773,8 @@
             "placeholder": "",
             "padding-block-start": 0,
             "padding-block-end": 0,
-            "padding-inline-start": 20,
-            "padding-inline-end": 20
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
           },
           "blocks": {
             "text_F4yfQg": {
@@ -8911,7 +8911,7 @@
                         "custom_max_width_mobile": 150,
                         "enable_mobile_width_px": false,
                         "mobile_width_px": 116,
-                        "height": "fit"
+                        "height": "fill"
                       },
                       "blocks": {}
                     },
