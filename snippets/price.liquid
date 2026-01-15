@@ -72,10 +72,10 @@
     assign price_min = price_min_raw | money_with_currency
     assign price_max = price_max_raw | money_with_currency
   else
-    assign price = price_raw | money
+    assign price = price_raw | money_without_trailing_zeros
     assign compare_at_price = compare_at_price_raw | money
-    assign price_min = price_min_raw | money
-    assign price_max = price_max_raw | money
+    assign price_min = price_min_raw | money_without_trailing_zeros
+    assign price_max = price_max_raw | money_without_trailing_zeros
   endif
 -%}
 
@@ -88,7 +88,7 @@
           {%- if use_currency -%}
             {{- product_resource.compare_at_price | money_with_currency -}}
           {%- else -%}
-            {{- product_resource.compare_at_price | money -}}
+            {{- product_resource.compare_at_price | money_without_trailing_zeros -}}
           {%- endif -%}
         </span>
       </span>
@@ -106,7 +106,7 @@
           {%- if use_currency -%}
             {{ product_resource.compare_at_price | money_with_currency }}
           {%- else -%}
-            {{ product_resource.compare_at_price | money }}
+            {{ product_resource.compare_at_price | money_without_trailing_zeros }}
           {%- endif -%}
         </span>
       </span>
@@ -143,7 +143,7 @@ OFF</span>
       if use_currency
         assign unit_price = selected_variant.unit_price | money_with_currency
       else
-        assign unit_price = selected_variant.unit_price | money
+        assign unit_price = selected_variant.unit_price | money_without_trailing_zeros
       endif
     %}
     {% render 'unit-price', price: unit_price, measurement: selected_variant.unit_price_measurement %}
