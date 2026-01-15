@@ -26,6 +26,7 @@
     spacing-style
     size-style
     {% if settings.inherit_color_scheme == false %} color-{{ settings.color_scheme }}{% endif %}
+    {% if settings.enable_mobile_padding %}group-block--mobile-padding{% endif %}
 
     {%- if settings.custom_class != blank -%}
       {{ settings.custom_class }}
@@ -163,6 +164,12 @@
   /* Case 2: vertical on mobile → reverse column */
   .group-block-content.reverse-on-mobile.mobile-column {
     flex-direction: column-reverse !important;
+  }
+
+  /* Mobile padding override when enabled */
+  .group-block--mobile-padding {
+    padding-block: calc(var(--padding-block-start-mobile, var(--padding-block-start)) + var(--section-top-offset, 0px)) var(--padding-block-end-mobile, var(--padding-block-end));
+    padding-inline: var(--padding-inline-start-mobile, var(--padding-inline-start)) var(--padding-inline-end-mobile, var(--padding-inline-end));
   }
 }
 
