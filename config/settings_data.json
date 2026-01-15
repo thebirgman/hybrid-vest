@@ -42,7 +42,7 @@
     "type_size_h4": "24",
     "type_size_h4_mobile": "24",
     "type_line_height_h4": "display-normal",
-    "type_case_h4": "uppercase",
+    "type_case_h4": "none",
     "type_font_h5": "accent",
     "type_size_h5": "20",
     "type_size_h5_mobile": "16",
