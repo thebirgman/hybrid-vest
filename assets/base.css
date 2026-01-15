@@ -4777,7 +4777,8 @@ h3 {
   font-weight: 400;
 }
 
-h4,h5,p, span, :not(h1):not(h2):not(h3)::not(h4) {
+h4,h5,p, span, :not(h1):not(h2):not(h3)::not(h4),
+.custom-typography, .custom-typography>* {
   font-family: 'Interstate'!IMPORTANT;
   letter-spacing: 0px;
 }
