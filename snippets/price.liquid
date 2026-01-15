@@ -22,7 +22,7 @@
   endif
 
   # Calculate discount badge (only on PDP when enabled)
-  
+  assign show_discount_badge = false
   assign discount_amount = 0
   if is_product_card == false and show_compare_price and show_discount_badge_setting
     assign show_discount_badge = true
