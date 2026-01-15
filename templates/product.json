@@ -2703,7 +2703,6 @@
       "block_order": [
         "group_aW64g3"
       ],
-      "disabled": true,
       "custom_css": [
         "h3,h4 {line-height: 1.8em; color: #fffffe; font-weight: 700;}",
         ".drop-shadow > div > div {box-shadow: -4px 4px 10px 0px #000000;}"
