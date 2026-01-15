@@ -100,7 +100,7 @@
           "background": "#000000",
           "foreground_heading": "#ffffff",
           "foreground": "#ffffff",
-          "primary": "#ffffff",
+          "primary": "#ffffffcc",
           "primary_hover": "#d7b26f",
           "border": "#ffffff",
           "shadow": "#000000",
