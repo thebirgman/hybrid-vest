@@ -4859,3 +4859,12 @@ summary.details__header {
   letter-spacing: -0.2px !important;
 }
 
+
+
+[ref="priceContainer"] span{
+    font-weight: 400;
+}
+
+span.compare-at-price {
+    color: #00000080;
+}
