@@ -3322,7 +3322,7 @@
         "column_header_EdyYkb": {
           "type": "column_header",
           "settings": {
-            "row_1": "Cost",
+            "row_1": "Bounce During Movement",
             "row_2": "Time to get results",
             "row_3": "Paint",
             "row_4": "Glass/Ceramics",
