@@ -110,16 +110,16 @@
                         {{ percent_off }}
                       </div>
                     {% endif %}
-                    {% if featured_media != blank %}
+                    {% if product_option_value.image != blank %}
                       <div class="variant-kit-option__image">
                         {{
-                          featured_media.preview_image
+                          product_option_value.image
                           | image_url: width: 400
                           | image_tag:
                             loading: 'lazy',
-                            width: featured_media.preview_image.width,
-                            height: featured_media.preview_image.height,
-                            alt: featured_media.preview_image.alt | default: product_option_value.name
+                            width: product_option_value.image.width,
+                            height: product_option_value.image.height,
+                            alt: product_option_value.image.alt | default: product_option_value.name
                         }}
                       </div>
                     {% endif %}
