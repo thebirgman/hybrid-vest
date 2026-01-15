@@ -3322,7 +3322,7 @@
         "column_header_EdyYkb": {
           "type": "column_header",
           "settings": {
-            "row_1": "Cost",
+            "row_1": "Bounce During Movement",
             "row_2": "Time to get results",
             "row_3": "Paint",
             "row_4": "Glass/Ceramics",
@@ -3338,10 +3338,10 @@
           "settings": {
             "product_image": "shopify://shop_images/Logo_1.png",
             "product_name": "",
-            "data_1_type": "text",
-            "data_1_text": "$74.99",
+            "data_1_type": "check",
+            "data_1_text": "<p><strong>Zero bounce</strong> — stays locked to the body</p>",
             "data_2_type": "text",
-            "data_2_text": "Instant results",
+            "data_2_text": "<p>Instant results</p>",
             "data_3_type": "check",
             "data_3_text": "",
             "data_4_type": "check",
@@ -3362,10 +3362,10 @@
           "type": "column_product",
           "settings": {
             "product_name": "CHEAP SWABS",
-            "data_1_type": "text",
-            "data_1_text": "$20",
+            "data_1_type": "x",
+            "data_1_text": "<p>Bounces during running and dynamic work</p>",
             "data_2_type": "text",
-            "data_2_text": "Few minutes",
+            "data_2_text": "<p>Few minutes</p>",
             "data_3_type": "check",
             "data_3_text": "",
             "data_4_type": "x",
@@ -3386,10 +3386,10 @@
           "type": "column_product",
           "settings": {
             "product_name": "LAB TESTS",
-            "data_1_type": "text",
-            "data_1_text": "$3,000",
+            "data_1_type": "x",
+            "data_1_text": "<p>Heavy bounce as sand shifts</p>",
             "data_2_type": "text",
-            "data_2_text": "2-4 weeks",
+            "data_2_text": "<p>2-4 weeks</p>",
             "data_3_type": "check",
             "data_3_text": "",
             "data_4_type": "check",
@@ -3420,7 +3420,11 @@
       "name": "Comparison Table",
       "settings": {
         "heading": "COMPARISON",
-        "section_width": "page-width",
+        "subheading": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+        "background_image": "shopify://shop_images/eb12aa5f1e2ca8a2d48cc3c3732ee97ff0d8c110_1.png",
+        "button_text": "SEE MORE",
+        "button_link": "",
+        "section_width": "full-width",
         "color_scheme": "scheme-3",
         "padding-block-start": 80,
         "padding-block-end": 80

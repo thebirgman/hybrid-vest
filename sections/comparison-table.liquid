@@ -143,7 +143,6 @@
     .comparison-table__wrapper {
       display: flex;
       overflow-x: auto;
-      scroll-snap-type: x mandatory;
       scroll-padding: 0;
     }
 
@@ -187,22 +186,7 @@
     min-width: 200px;
 }
 
-svg.icon-checkk path {
-    fill: #000;
-}
 
-.comparison-table__column.comparison-table__column--featured {
-    margin-top: -35px;
-}
-
-.comparison-table__column.comparison-table__column--featured svg.icon-checkk path{
-    fill: #fff;
-}
-
- .comparison-table__column.comparison-table__column--featured svg.icon-cross path {
-    
-    stroke: #fff;
-}
 
 .comparison-table__row {
     border-bottom: 1px dashed #0000003d!important;
@@ -266,22 +250,9 @@ svg.icon-checkk path {
     background: #fff;
 }
 
-.comparison-table__column.comparison-table__column--featured {
-    position: sticky;
-    left: 200px;
-}
 
-@media screen and (max-width: 768px) {
-.comparison-table__column.comparison-table__column--featured {
-    position: sticky;
-    left: 120px;
-}
-}
 
-.comparison-table__column.comparison-table__column--featured .comparison-table__row:last-child {
-    padding-bottom: 40px;
-    min-height: 90px;
-}
+
 @media screen and (max-width: 768px) {
 .comparison-table__row-product-name {
     font-size: 16px;
@@ -309,7 +280,160 @@ svg.icon-checkk path {
     box-shadow: none;
 }
 }
+.comparison-table__column.comparison-table__column--featured {
+    background: linear-gradient(180deg, rgba(215, 178, 11, 0) 61.06%, rgba(215, 178, 111, 0.5) 100%);
+    background-color: #000;
+    border: 2px solid #D7B26F;
+    /* box-shadow: -6px 6px 12.7px 0px #D7B26F80; */
+}
 
+.comparison-table__row-product-name {
+    font-family: 'Glacial Indifference';
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.comparison-table__wrapper {
+    /* background: #fff; */
+}
+
+.comparison-table__column:not(.comparison-table__column--featured) .comparison-table__row {
+    background: #fff;
+}
+
+.comparison-table__background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.comparison-table__section-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.comparison-table__subheading {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.comparison-table__row-data {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.comparison-table__row-data-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.comparison-table__see-more {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.comparison-table__see-more-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: opacity 0.3s;
+}
+
+.comparison-table__see-more-button:hover {
+    opacity: 0.8;
+}
+
+.comparison-table__row {
+    max-width: 320px;
+    min-height: 78px;
+}
+
+.comparison-table__column.comparison-table__column--header {}
+
+.comparison-table__column.comparison-table__column--header.comparison-table__row.comparison-table__row-header {}
+@media screen and (min-width: 768px) {
+.comparison-table__column.comparison-table__column--header .comparison-table__row {
+    width: 290px;
+}
+}
+
+
+img.comparison-table__row-image {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    max-width: 225px;
+}
+
+.comparison-table__column.comparison-table__column--featured {
+    margin: 0;
+}
+
+.comparison-table__row.comparison-table__row--header {}
+
+.comparison-table__row.comparison-table__row--header {
+    min-height: 100px;
+}
+
+.comparison-table__row.comparison-table__row-header {
+    min-height: 100px;
+}
+
+.comparison-table__row-product-name {
+    margin-bottom: 0;
+}
+p {}
+
+.comparison-table__subheading {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comparison-table__wrapper {
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+.comparison-table {
+    /* padding: 0 16px; */
+    padding-left: 16px;
+}
+
+.comparison-table__row {
+    padding: 10px;
+    min-width: 140px;
+    max-width: 140px;
+    width: 100%;
+}
+
+.comparison-table__column.comparison-table__column--header .comparison-table__row {
+    padding-left: 10px;
+}
+
+.comparison-table__row-data svg {
+    width: 18px;
+}
+
+.comparison-table__column.comparison-table__column--header {
+    min-width: 140px;
+}
+
+.comparison-table__column {
+    min-width: 150px;
+    width: 150px;
+}
+}
 </style>
 
 <div class="section-background color-{{ section.settings.color_scheme }}"></div>
@@ -319,15 +443,33 @@ svg.icon-checkk path {
     section--{{ section.settings.section_width }}
     color-{{ section.settings.color_scheme }}
     spacing-style
+    comparison-table__section-wrapper
   "
   style="
     {% render 'spacing-style', settings: section.settings %}
   "
 >
+  {% if section.settings.background_image != blank %}
+    <img
+      src="{{ section.settings.background_image | image_url: width: 1920 }}"
+      alt=""
+      class="comparison-table__background-image"
+      loading="lazy"
+      width="{{ section.settings.background_image.width }}"
+      height="{{ section.settings.background_image.height }}"
+    >
+  {% endif %}
+
   {% if section.settings.heading != blank %}
     <h2 class="comparison-table__heading" style="margin-bottom: 2rem; text-align: center;">
       {{ section.settings.heading }}
     </h2>
+  {% endif %}
+
+  {% if section.settings.subheading != blank %}
+    <div class="comparison-table__subheading">
+      {{ section.settings.subheading }}
+    </div>
   {% endif %}
 
   <div class="comparison-table">
@@ -390,139 +532,285 @@ svg.icon-checkk path {
               <div class="comparison-table__row">
                 <div class="comparison-table__row-data">
                   {% if block.settings.data_1_type == 'check' %}
-                    
                     <svg class="icon-checkk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="white"/>
-                    </svg>
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="url(#paint0_linear_124_399)"/>
+<defs>
+<linearGradient id="paint0_linear_124_399" x1="12" y1="0" x2="12" y2="24" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E9DBA5"/>
+<stop offset="1" stop-color="#B89963"/>
+</linearGradient>
+</defs>
+</svg>
 
+
+
+                    {% if block.settings.data_1_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_1_text }}</div>
+                    {% endif %}
                   {% elsif block.settings.data_1_type == 'x' %}
-                    
-                      <svg class="icon-cross" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0.353516 0.353516L16.3535 16.3535M0.353516 16.3535L16.3535 0.353516" stroke="black" stroke-linejoin="round"/>
-                      </svg>
-
+                    <svg class="icon-cross" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M11.7998 0C18.3166 0.000105528 23.5995 5.283 23.5996 11.7998C23.5995 18.3166 18.3166 23.5995 11.7998 23.5996C5.283 23.5995 0.000105531 18.3166 0 11.7998C0.000105659 5.283 5.283 0.000105656 11.7998 0ZM16.708 7.29297C16.3175 6.9024 15.6844 6.90241 15.2939 7.29297L11.999 10.5879L8.70703 7.29492C8.31657 6.90433 7.68343 6.90433 7.29297 7.29492C6.90258 7.68552 6.90253 8.31842 7.29297 8.70898L10.585 12.002L7.29785 15.29L7.22949 15.3652C6.90913 15.758 6.93198 16.3379 7.29785 16.7041C7.66401 17.0704 8.24399 17.0931 8.63672 16.7725L8.71191 16.7041L11.998 13.416L15.2881 16.707L15.3633 16.7754C15.756 17.0957 16.3361 17.0732 16.7021 16.707C17.0682 16.3408 17.091 15.76 16.7705 15.3672L16.7021 15.292L13.4131 12.002L16.708 8.70703C17.0981 8.31659 17.098 7.68351 16.708 7.29297Z" fill="#0E0E0E" fill-opacity="0.7"/>
+</svg>
+                    {% if block.settings.data_1_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_1_text }}</div>
+                    {% endif %}
                   {% else %}
-                    {{ block.settings.data_1_text }}
+                    {% if block.settings.data_1_text != blank %}
+                      {{ block.settings.data_1_text }}
+                    {% endif %}
                   {% endif %}
                 </div>
               </div>
               <div class="comparison-table__row">
                 <div class="comparison-table__row-data">
                   {% if block.settings.data_2_type == 'check' %}
-                     <svg class="icon-checkk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="white"/>
-                    </svg>
+                    <svg class="icon-checkk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="url(#paint0_linear_124_399)"/>
+<defs>
+<linearGradient id="paint0_linear_124_399" x1="12" y1="0" x2="12" y2="24" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E9DBA5"/>
+<stop offset="1" stop-color="#B89963"/>
+</linearGradient>
+</defs>
+</svg>
+                    {% if block.settings.data_2_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_2_text }}</div>
+                    {% endif %}
                   {% elsif block.settings.data_2_type == 'x' %}
-                    <svg class="icon-cross" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0.353516 0.353516L16.3535 16.3535M0.353516 16.3535L16.3535 0.353516" stroke="black" stroke-linejoin="round"/>
-                      </svg>
+                    <svg class="icon-cross" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M11.7998 0C18.3166 0.000105528 23.5995 5.283 23.5996 11.7998C23.5995 18.3166 18.3166 23.5995 11.7998 23.5996C5.283 23.5995 0.000105531 18.3166 0 11.7998C0.000105659 5.283 5.283 0.000105656 11.7998 0ZM16.708 7.29297C16.3175 6.9024 15.6844 6.90241 15.2939 7.29297L11.999 10.5879L8.70703 7.29492C8.31657 6.90433 7.68343 6.90433 7.29297 7.29492C6.90258 7.68552 6.90253 8.31842 7.29297 8.70898L10.585 12.002L7.29785 15.29L7.22949 15.3652C6.90913 15.758 6.93198 16.3379 7.29785 16.7041C7.66401 17.0704 8.24399 17.0931 8.63672 16.7725L8.71191 16.7041L11.998 13.416L15.2881 16.707L15.3633 16.7754C15.756 17.0957 16.3361 17.0732 16.7021 16.707C17.0682 16.3408 17.091 15.76 16.7705 15.3672L16.7021 15.292L13.4131 12.002L16.708 8.70703C17.0981 8.31659 17.098 7.68351 16.708 7.29297Z" fill="#0E0E0E" fill-opacity="0.7"/>
+</svg>
+
+
+
+                    {% if block.settings.data_2_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_2_text }}</div>
+                    {% endif %}
                   {% else %}
-                    {{ block.settings.data_2_text }}
+                    {% if block.settings.data_2_text != blank %}
+                      {{ block.settings.data_2_text }}
+                    {% endif %}
                   {% endif %}
                 </div>
               </div>
               <div class="comparison-table__row">
                 <div class="comparison-table__row-data">
                   {% if block.settings.data_3_type == 'check' %}
-                     <svg class="icon-checkk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="white"/>
-                    </svg>
+                    <svg class="icon-checkk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="url(#paint0_linear_124_399)"/>
+<defs>
+<linearGradient id="paint0_linear_124_399" x1="12" y1="0" x2="12" y2="24" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E9DBA5"/>
+<stop offset="1" stop-color="#B89963"/>
+</linearGradient>
+</defs>
+</svg>
+                    {% if block.settings.data_3_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_3_text }}</div>
+                    {% endif %}
                   {% elsif block.settings.data_3_type == 'x' %}
-                    <svg class="icon-cross" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0.353516 0.353516L16.3535 16.3535M0.353516 16.3535L16.3535 0.353516" stroke="black" stroke-linejoin="round"/>
-                      </svg>
+                    <svg class="icon-cross" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M11.7998 0C18.3166 0.000105528 23.5995 5.283 23.5996 11.7998C23.5995 18.3166 18.3166 23.5995 11.7998 23.5996C5.283 23.5995 0.000105531 18.3166 0 11.7998C0.000105659 5.283 5.283 0.000105656 11.7998 0ZM16.708 7.29297C16.3175 6.9024 15.6844 6.90241 15.2939 7.29297L11.999 10.5879L8.70703 7.29492C8.31657 6.90433 7.68343 6.90433 7.29297 7.29492C6.90258 7.68552 6.90253 8.31842 7.29297 8.70898L10.585 12.002L7.29785 15.29L7.22949 15.3652C6.90913 15.758 6.93198 16.3379 7.29785 16.7041C7.66401 17.0704 8.24399 17.0931 8.63672 16.7725L8.71191 16.7041L11.998 13.416L15.2881 16.707L15.3633 16.7754C15.756 17.0957 16.3361 17.0732 16.7021 16.707C17.0682 16.3408 17.091 15.76 16.7705 15.3672L16.7021 15.292L13.4131 12.002L16.708 8.70703C17.0981 8.31659 17.098 7.68351 16.708 7.29297Z" fill="#0E0E0E" fill-opacity="0.7"/>
+</svg>
+                    {% if block.settings.data_3_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_3_text }}</div>
+                    {% endif %}
                   {% else %}
-                    {{ block.settings.data_3_text }}
+                    {% if block.settings.data_3_text != blank %}
+                      {{ block.settings.data_3_text }}
+                    {% endif %}
                   {% endif %}
                 </div>
               </div>
               <div class="comparison-table__row">
                 <div class="comparison-table__row-data">
                   {% if block.settings.data_4_type == 'check' %}
-                     <svg class="icon-checkk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="white"/>
-                    </svg>
+                    <svg class="icon-checkk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="url(#paint0_linear_124_399)"/>
+<defs>
+<linearGradient id="paint0_linear_124_399" x1="12" y1="0" x2="12" y2="24" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E9DBA5"/>
+<stop offset="1" stop-color="#B89963"/>
+</linearGradient>
+</defs>
+</svg>
+                    {% if block.settings.data_4_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_4_text }}</div>
+                    {% endif %}
                   {% elsif block.settings.data_4_type == 'x' %}
-                    <svg class="icon-cross" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0.353516 0.353516L16.3535 16.3535M0.353516 16.3535L16.3535 0.353516" stroke="black" stroke-linejoin="round"/>
-                      </svg>
+                    <svg class="icon-cross" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M11.7998 0C18.3166 0.000105528 23.5995 5.283 23.5996 11.7998C23.5995 18.3166 18.3166 23.5995 11.7998 23.5996C5.283 23.5995 0.000105531 18.3166 0 11.7998C0.000105659 5.283 5.283 0.000105656 11.7998 0ZM16.708 7.29297C16.3175 6.9024 15.6844 6.90241 15.2939 7.29297L11.999 10.5879L8.70703 7.29492C8.31657 6.90433 7.68343 6.90433 7.29297 7.29492C6.90258 7.68552 6.90253 8.31842 7.29297 8.70898L10.585 12.002L7.29785 15.29L7.22949 15.3652C6.90913 15.758 6.93198 16.3379 7.29785 16.7041C7.66401 17.0704 8.24399 17.0931 8.63672 16.7725L8.71191 16.7041L11.998 13.416L15.2881 16.707L15.3633 16.7754C15.756 17.0957 16.3361 17.0732 16.7021 16.707C17.0682 16.3408 17.091 15.76 16.7705 15.3672L16.7021 15.292L13.4131 12.002L16.708 8.70703C17.0981 8.31659 17.098 7.68351 16.708 7.29297Z" fill="#0E0E0E" fill-opacity="0.7"/>
+</svg>
+                    {% if block.settings.data_4_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_4_text }}</div>
+                    {% endif %}
                   {% else %}
-                    {{ block.settings.data_4_text }}
+                    {% if block.settings.data_4_text != blank %}
+                      {{ block.settings.data_4_text }}
+                    {% endif %}
                   {% endif %}
                 </div>
               </div>
               <div class="comparison-table__row">
                 <div class="comparison-table__row-data">
                   {% if block.settings.data_5_type == 'check' %}
-                     <svg class="icon-checkk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="white"/>
-                    </svg>
+                    <svg class="icon-checkk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="url(#paint0_linear_124_399)"/>
+<defs>
+<linearGradient id="paint0_linear_124_399" x1="12" y1="0" x2="12" y2="24" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E9DBA5"/>
+<stop offset="1" stop-color="#B89963"/>
+</linearGradient>
+</defs>
+</svg>
+                    {% if block.settings.data_5_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_5_text }}</div>
+                    {% endif %}
                   {% elsif block.settings.data_5_type == 'x' %}
-                    <svg class="icon-cross" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0.353516 0.353516L16.3535 16.3535M0.353516 16.3535L16.3535 0.353516" stroke="black" stroke-linejoin="round"/>
-                      </svg>
+                    <svg class="icon-cross" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M11.7998 0C18.3166 0.000105528 23.5995 5.283 23.5996 11.7998C23.5995 18.3166 18.3166 23.5995 11.7998 23.5996C5.283 23.5995 0.000105531 18.3166 0 11.7998C0.000105659 5.283 5.283 0.000105656 11.7998 0ZM16.708 7.29297C16.3175 6.9024 15.6844 6.90241 15.2939 7.29297L11.999 10.5879L8.70703 7.29492C8.31657 6.90433 7.68343 6.90433 7.29297 7.29492C6.90258 7.68552 6.90253 8.31842 7.29297 8.70898L10.585 12.002L7.29785 15.29L7.22949 15.3652C6.90913 15.758 6.93198 16.3379 7.29785 16.7041C7.66401 17.0704 8.24399 17.0931 8.63672 16.7725L8.71191 16.7041L11.998 13.416L15.2881 16.707L15.3633 16.7754C15.756 17.0957 16.3361 17.0732 16.7021 16.707C17.0682 16.3408 17.091 15.76 16.7705 15.3672L16.7021 15.292L13.4131 12.002L16.708 8.70703C17.0981 8.31659 17.098 7.68351 16.708 7.29297Z" fill="#0E0E0E" fill-opacity="0.7"/>
+</svg>
+                    {% if block.settings.data_5_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_5_text }}</div>
+                    {% endif %}
                   {% else %}
-                    {{ block.settings.data_5_text }}
+                    {% if block.settings.data_5_text != blank %}
+                      {{ block.settings.data_5_text }}
+                    {% endif %}
                   {% endif %}
                 </div>
               </div>
               <div class="comparison-table__row">
                 <div class="comparison-table__row-data">
                   {% if block.settings.data_6_type == 'check' %}
-                     <svg class="icon-checkk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="white"/>
-                    </svg>
+                    <svg class="icon-checkk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="url(#paint0_linear_124_399)"/>
+<defs>
+<linearGradient id="paint0_linear_124_399" x1="12" y1="0" x2="12" y2="24" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E9DBA5"/>
+<stop offset="1" stop-color="#B89963"/>
+</linearGradient>
+</defs>
+</svg>
+                    {% if block.settings.data_6_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_6_text }}</div>
+                    {% endif %}
                   {% elsif block.settings.data_6_type == 'x' %}
-                    <svg class="icon-cross" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0.353516 0.353516L16.3535 16.3535M0.353516 16.3535L16.3535 0.353516" stroke="black" stroke-linejoin="round"/>
-                      </svg>
+                    <svg class="icon-cross" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M11.7998 0C18.3166 0.000105528 23.5995 5.283 23.5996 11.7998C23.5995 18.3166 18.3166 23.5995 11.7998 23.5996C5.283 23.5995 0.000105531 18.3166 0 11.7998C0.000105659 5.283 5.283 0.000105656 11.7998 0ZM16.708 7.29297C16.3175 6.9024 15.6844 6.90241 15.2939 7.29297L11.999 10.5879L8.70703 7.29492C8.31657 6.90433 7.68343 6.90433 7.29297 7.29492C6.90258 7.68552 6.90253 8.31842 7.29297 8.70898L10.585 12.002L7.29785 15.29L7.22949 15.3652C6.90913 15.758 6.93198 16.3379 7.29785 16.7041C7.66401 17.0704 8.24399 17.0931 8.63672 16.7725L8.71191 16.7041L11.998 13.416L15.2881 16.707L15.3633 16.7754C15.756 17.0957 16.3361 17.0732 16.7021 16.707C17.0682 16.3408 17.091 15.76 16.7705 15.3672L16.7021 15.292L13.4131 12.002L16.708 8.70703C17.0981 8.31659 17.098 7.68351 16.708 7.29297Z" fill="#0E0E0E" fill-opacity="0.7"/>
+</svg>
+                    {% if block.settings.data_6_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_6_text }}</div>
+                    {% endif %}
                   {% else %}
-                    {{ block.settings.data_6_text }}
+                    {% if block.settings.data_6_text != blank %}
+                      {{ block.settings.data_6_text }}
+                    {% endif %}
                   {% endif %}
                 </div>
               </div>
               <div class="comparison-table__row">
                 <div class="comparison-table__row-data">
                   {% if block.settings.data_7_type == 'check' %}
-                     <svg class="icon-checkk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="white"/>
-                    </svg>
+                    <svg class="icon-checkk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="url(#paint0_linear_124_399)"/>
+<defs>
+<linearGradient id="paint0_linear_124_399" x1="12" y1="0" x2="12" y2="24" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E9DBA5"/>
+<stop offset="1" stop-color="#B89963"/>
+</linearGradient>
+</defs>
+</svg>
+                    {% if block.settings.data_7_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_7_text }}</div>
+                    {% endif %}
                   {% elsif block.settings.data_7_type == 'x' %}
-                    <svg class="icon-cross" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0.353516 0.353516L16.3535 16.3535M0.353516 16.3535L16.3535 0.353516" stroke="black" stroke-linejoin="round"/>
-                      </svg>
+                    <svg class="icon-cross" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M11.7998 0C18.3166 0.000105528 23.5995 5.283 23.5996 11.7998C23.5995 18.3166 18.3166 23.5995 11.7998 23.5996C5.283 23.5995 0.000105531 18.3166 0 11.7998C0.000105659 5.283 5.283 0.000105656 11.7998 0ZM16.708 7.29297C16.3175 6.9024 15.6844 6.90241 15.2939 7.29297L11.999 10.5879L8.70703 7.29492C8.31657 6.90433 7.68343 6.90433 7.29297 7.29492C6.90258 7.68552 6.90253 8.31842 7.29297 8.70898L10.585 12.002L7.29785 15.29L7.22949 15.3652C6.90913 15.758 6.93198 16.3379 7.29785 16.7041C7.66401 17.0704 8.24399 17.0931 8.63672 16.7725L8.71191 16.7041L11.998 13.416L15.2881 16.707L15.3633 16.7754C15.756 17.0957 16.3361 17.0732 16.7021 16.707C17.0682 16.3408 17.091 15.76 16.7705 15.3672L16.7021 15.292L13.4131 12.002L16.708 8.70703C17.0981 8.31659 17.098 7.68351 16.708 7.29297Z" fill="#0E0E0E" fill-opacity="0.7"/>
+</svg>
+                    {% if block.settings.data_7_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_7_text }}</div>
+                    {% endif %}
                   {% else %}
-                    {{ block.settings.data_7_text }}
+                    {% if block.settings.data_7_text != blank %}
+                      {{ block.settings.data_7_text }}
+                    {% endif %}
                   {% endif %}
                 </div>
               </div>
               <div class="comparison-table__row">
                 <div class="comparison-table__row-data">
                   {% if block.settings.data_8_type == 'check' %}
-                     <svg class="icon-checkk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="white"/>
-                    </svg>
+                    <svg class="icon-checkk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="url(#paint0_linear_124_399)"/>
+<defs>
+<linearGradient id="paint0_linear_124_399" x1="12" y1="0" x2="12" y2="24" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E9DBA5"/>
+<stop offset="1" stop-color="#B89963"/>
+</linearGradient>
+</defs>
+</svg>
+                    {% if block.settings.data_8_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_8_text }}</div>
+                    {% endif %}
                   {% elsif block.settings.data_8_type == 'x' %}
-                    <svg class="icon-cross" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0.353516 0.353516L16.3535 16.3535M0.353516 16.3535L16.3535 0.353516" stroke="black" stroke-linejoin="round"/>
-                      </svg>
+                    <svg class="icon-cross" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M11.7998 0C18.3166 0.000105528 23.5995 5.283 23.5996 11.7998C23.5995 18.3166 18.3166 23.5995 11.7998 23.5996C5.283 23.5995 0.000105531 18.3166 0 11.7998C0.000105659 5.283 5.283 0.000105656 11.7998 0ZM16.708 7.29297C16.3175 6.9024 15.6844 6.90241 15.2939 7.29297L11.999 10.5879L8.70703 7.29492C8.31657 6.90433 7.68343 6.90433 7.29297 7.29492C6.90258 7.68552 6.90253 8.31842 7.29297 8.70898L10.585 12.002L7.29785 15.29L7.22949 15.3652C6.90913 15.758 6.93198 16.3379 7.29785 16.7041C7.66401 17.0704 8.24399 17.0931 8.63672 16.7725L8.71191 16.7041L11.998 13.416L15.2881 16.707L15.3633 16.7754C15.756 17.0957 16.3361 17.0732 16.7021 16.707C17.0682 16.3408 17.091 15.76 16.7705 15.3672L16.7021 15.292L13.4131 12.002L16.708 8.70703C17.0981 8.31659 17.098 7.68351 16.708 7.29297Z" fill="#0E0E0E" fill-opacity="0.7"/>
+</svg>
+                    {% if block.settings.data_8_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_8_text }}</div>
+                    {% endif %}
                   {% else %}
-                    {{ block.settings.data_8_text }}
+                    {% if block.settings.data_8_text != blank %}
+                      {{ block.settings.data_8_text }}
+                    {% endif %}
                   {% endif %}
                 </div>
               </div>
               <div class="comparison-table__row">
                 <div class="comparison-table__row-data">
                   {% if block.settings.data_9_type == 'check' %}
-                     <svg class="icon-checkk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="white"/>
-                    </svg>
+                    <svg class="icon-checkk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="url(#paint0_linear_124_399)"/>
+<defs>
+<linearGradient id="paint0_linear_124_399" x1="12" y1="0" x2="12" y2="24" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E9DBA5"/>
+<stop offset="1" stop-color="#B89963"/>
+</linearGradient>
+</defs>
+</svg>
+                    {% if block.settings.data_9_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_9_text }}</div>
+                    {% endif %}
                   {% elsif block.settings.data_9_type == 'x' %}
-                    <svg class="icon-cross" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0.353516 0.353516L16.3535 16.3535M0.353516 16.3535L16.3535 0.353516" stroke="black" stroke-linejoin="round"/>
-                      </svg>
+                    <svg class="icon-cross" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M11.7998 0C18.3166 0.000105528 23.5995 5.283 23.5996 11.7998C23.5995 18.3166 18.3166 23.5995 11.7998 23.5996C5.283 23.5995 0.000105531 18.3166 0 11.7998C0.000105659 5.283 5.283 0.000105656 11.7998 0ZM16.708 7.29297C16.3175 6.9024 15.6844 6.90241 15.2939 7.29297L11.999 10.5879L8.70703 7.29492C8.31657 6.90433 7.68343 6.90433 7.29297 7.29492C6.90258 7.68552 6.90253 8.31842 7.29297 8.70898L10.585 12.002L7.29785 15.29L7.22949 15.3652C6.90913 15.758 6.93198 16.3379 7.29785 16.7041C7.66401 17.0704 8.24399 17.0931 8.63672 16.7725L8.71191 16.7041L11.998 13.416L15.2881 16.707L15.3633 16.7754C15.756 17.0957 16.3361 17.0732 16.7021 16.707C17.0682 16.3408 17.091 15.76 16.7705 15.3672L16.7021 15.292L13.4131 12.002L16.708 8.70703C17.0981 8.31659 17.098 7.68351 16.708 7.29297Z" fill="#0E0E0E" fill-opacity="0.7"/>
+</svg>
+                    {% if block.settings.data_9_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_9_text }}</div>
+                    {% endif %}
                   {% else %}
-                    {{ block.settings.data_9_text }}
+                    {% if block.settings.data_9_text != blank %}
+                      {{ block.settings.data_9_text }}
+                    {% endif %}
                   {% endif %}
                 </div>
               </div>
@@ -540,135 +828,279 @@ svg.icon-checkk path {
               <div class="comparison-table__row">
                 <div class="comparison-table__row-data">
                   {% if block.settings.data_1_type == 'check' %}
-                     <svg class="icon-checkk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="white"/>
-                    </svg>
+                    <svg class="icon-checkk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="url(#paint0_linear_124_399)"/>
+<defs>
+<linearGradient id="paint0_linear_124_399" x1="12" y1="0" x2="12" y2="24" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E9DBA5"/>
+<stop offset="1" stop-color="#B89963"/>
+</linearGradient>
+</defs>
+</svg>
+                    {% if block.settings.data_1_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_1_text }}</div>
+                    {% endif %}
                   {% elsif block.settings.data_1_type == 'x' %}
-                    <svg class="icon-cross" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0.353516 0.353516L16.3535 16.3535M0.353516 16.3535L16.3535 0.353516" stroke="black" stroke-linejoin="round"/>
-                      </svg>
+                    <svg class="icon-cross" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M11.7998 0C18.3166 0.000105528 23.5995 5.283 23.5996 11.7998C23.5995 18.3166 18.3166 23.5995 11.7998 23.5996C5.283 23.5995 0.000105531 18.3166 0 11.7998C0.000105659 5.283 5.283 0.000105656 11.7998 0ZM16.708 7.29297C16.3175 6.9024 15.6844 6.90241 15.2939 7.29297L11.999 10.5879L8.70703 7.29492C8.31657 6.90433 7.68343 6.90433 7.29297 7.29492C6.90258 7.68552 6.90253 8.31842 7.29297 8.70898L10.585 12.002L7.29785 15.29L7.22949 15.3652C6.90913 15.758 6.93198 16.3379 7.29785 16.7041C7.66401 17.0704 8.24399 17.0931 8.63672 16.7725L8.71191 16.7041L11.998 13.416L15.2881 16.707L15.3633 16.7754C15.756 17.0957 16.3361 17.0732 16.7021 16.707C17.0682 16.3408 17.091 15.76 16.7705 15.3672L16.7021 15.292L13.4131 12.002L16.708 8.70703C17.0981 8.31659 17.098 7.68351 16.708 7.29297Z" fill="#0E0E0E" fill-opacity="0.7"/>
+</svg>
+                    {% if block.settings.data_1_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_1_text }}</div>
+                    {% endif %}
                   {% else %}
-                    {{ block.settings.data_1_text }}
+                    {% if block.settings.data_1_text != blank %}
+                      {{ block.settings.data_1_text }}
+                    {% endif %}
                   {% endif %}
                 </div>
               </div>
               <div class="comparison-table__row">
                 <div class="comparison-table__row-data">
                   {% if block.settings.data_2_type == 'check' %}
-                     <svg class="icon-checkk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="white"/>
-                    </svg>
+                    <svg class="icon-checkk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="url(#paint0_linear_124_399)"/>
+<defs>
+<linearGradient id="paint0_linear_124_399" x1="12" y1="0" x2="12" y2="24" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E9DBA5"/>
+<stop offset="1" stop-color="#B89963"/>
+</linearGradient>
+</defs>
+</svg>
+                    {% if block.settings.data_2_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_2_text }}</div>
+                    {% endif %}
                   {% elsif block.settings.data_2_type == 'x' %}
-                    <svg class="icon-cross" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0.353516 0.353516L16.3535 16.3535M0.353516 16.3535L16.3535 0.353516" stroke="black" stroke-linejoin="round"/>
-                      </svg>
+                    <svg class="icon-cross" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M11.7998 0C18.3166 0.000105528 23.5995 5.283 23.5996 11.7998C23.5995 18.3166 18.3166 23.5995 11.7998 23.5996C5.283 23.5995 0.000105531 18.3166 0 11.7998C0.000105659 5.283 5.283 0.000105656 11.7998 0ZM16.708 7.29297C16.3175 6.9024 15.6844 6.90241 15.2939 7.29297L11.999 10.5879L8.70703 7.29492C8.31657 6.90433 7.68343 6.90433 7.29297 7.29492C6.90258 7.68552 6.90253 8.31842 7.29297 8.70898L10.585 12.002L7.29785 15.29L7.22949 15.3652C6.90913 15.758 6.93198 16.3379 7.29785 16.7041C7.66401 17.0704 8.24399 17.0931 8.63672 16.7725L8.71191 16.7041L11.998 13.416L15.2881 16.707L15.3633 16.7754C15.756 17.0957 16.3361 17.0732 16.7021 16.707C17.0682 16.3408 17.091 15.76 16.7705 15.3672L16.7021 15.292L13.4131 12.002L16.708 8.70703C17.0981 8.31659 17.098 7.68351 16.708 7.29297Z" fill="#0E0E0E" fill-opacity="0.7"/>
+</svg>
+                    {% if block.settings.data_2_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_2_text }}</div>
+                    {% endif %}
                   {% else %}
-                    {{ block.settings.data_2_text }}
+                    {% if block.settings.data_2_text != blank %}
+                      {{ block.settings.data_2_text }}
+                    {% endif %}
                   {% endif %}
                 </div>
               </div>
               <div class="comparison-table__row">
                 <div class="comparison-table__row-data">
                   {% if block.settings.data_3_type == 'check' %}
-                     <svg class="icon-checkk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="white"/>
-                    </svg>
+                    <svg class="icon-checkk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="url(#paint0_linear_124_399)"/>
+<defs>
+<linearGradient id="paint0_linear_124_399" x1="12" y1="0" x2="12" y2="24" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E9DBA5"/>
+<stop offset="1" stop-color="#B89963"/>
+</linearGradient>
+</defs>
+</svg>
+                    {% if block.settings.data_3_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_3_text }}</div>
+                    {% endif %}
                   {% elsif block.settings.data_3_type == 'x' %}
-                    <svg class="icon-cross" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0.353516 0.353516L16.3535 16.3535M0.353516 16.3535L16.3535 0.353516" stroke="black" stroke-linejoin="round"/>
-                      </svg>
+                    <svg class="icon-cross" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M11.7998 0C18.3166 0.000105528 23.5995 5.283 23.5996 11.7998C23.5995 18.3166 18.3166 23.5995 11.7998 23.5996C5.283 23.5995 0.000105531 18.3166 0 11.7998C0.000105659 5.283 5.283 0.000105656 11.7998 0ZM16.708 7.29297C16.3175 6.9024 15.6844 6.90241 15.2939 7.29297L11.999 10.5879L8.70703 7.29492C8.31657 6.90433 7.68343 6.90433 7.29297 7.29492C6.90258 7.68552 6.90253 8.31842 7.29297 8.70898L10.585 12.002L7.29785 15.29L7.22949 15.3652C6.90913 15.758 6.93198 16.3379 7.29785 16.7041C7.66401 17.0704 8.24399 17.0931 8.63672 16.7725L8.71191 16.7041L11.998 13.416L15.2881 16.707L15.3633 16.7754C15.756 17.0957 16.3361 17.0732 16.7021 16.707C17.0682 16.3408 17.091 15.76 16.7705 15.3672L16.7021 15.292L13.4131 12.002L16.708 8.70703C17.0981 8.31659 17.098 7.68351 16.708 7.29297Z" fill="#0E0E0E" fill-opacity="0.7"/>
+</svg>
+                    {% if block.settings.data_3_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_3_text }}</div>
+                    {% endif %}
                   {% else %}
-                    {{ block.settings.data_3_text }}
+                    {% if block.settings.data_3_text != blank %}
+                      {{ block.settings.data_3_text }}
+                    {% endif %}
                   {% endif %}
                 </div>
               </div>
               <div class="comparison-table__row">
                 <div class="comparison-table__row-data">
                   {% if block.settings.data_4_type == 'check' %}
-                     <svg class="icon-checkk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="white"/>
-                    </svg>
+                    <svg class="icon-checkk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="url(#paint0_linear_124_399)"/>
+<defs>
+<linearGradient id="paint0_linear_124_399" x1="12" y1="0" x2="12" y2="24" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E9DBA5"/>
+<stop offset="1" stop-color="#B89963"/>
+</linearGradient>
+</defs>
+</svg>
+                    {% if block.settings.data_4_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_4_text }}</div>
+                    {% endif %}
                   {% elsif block.settings.data_4_type == 'x' %}
-                    <svg class="icon-cross" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0.353516 0.353516L16.3535 16.3535M0.353516 16.3535L16.3535 0.353516" stroke="black" stroke-linejoin="round"/>
-                      </svg>
+                    <svg class="icon-cross" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M11.7998 0C18.3166 0.000105528 23.5995 5.283 23.5996 11.7998C23.5995 18.3166 18.3166 23.5995 11.7998 23.5996C5.283 23.5995 0.000105531 18.3166 0 11.7998C0.000105659 5.283 5.283 0.000105656 11.7998 0ZM16.708 7.29297C16.3175 6.9024 15.6844 6.90241 15.2939 7.29297L11.999 10.5879L8.70703 7.29492C8.31657 6.90433 7.68343 6.90433 7.29297 7.29492C6.90258 7.68552 6.90253 8.31842 7.29297 8.70898L10.585 12.002L7.29785 15.29L7.22949 15.3652C6.90913 15.758 6.93198 16.3379 7.29785 16.7041C7.66401 17.0704 8.24399 17.0931 8.63672 16.7725L8.71191 16.7041L11.998 13.416L15.2881 16.707L15.3633 16.7754C15.756 17.0957 16.3361 17.0732 16.7021 16.707C17.0682 16.3408 17.091 15.76 16.7705 15.3672L16.7021 15.292L13.4131 12.002L16.708 8.70703C17.0981 8.31659 17.098 7.68351 16.708 7.29297Z" fill="#0E0E0E" fill-opacity="0.7"/>
+</svg>
+                    {% if block.settings.data_4_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_4_text }}</div>
+                    {% endif %}
                   {% else %}
-                    {{ block.settings.data_4_text }}
+                    {% if block.settings.data_4_text != blank %}
+                      {{ block.settings.data_4_text }}
+                    {% endif %}
                   {% endif %}
                 </div>
               </div>
               <div class="comparison-table__row">
                 <div class="comparison-table__row-data">
                   {% if block.settings.data_5_type == 'check' %}
-                     <svg class="icon-checkk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="white"/>
-                    </svg>
+                    <svg class="icon-checkk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="url(#paint0_linear_124_399)"/>
+<defs>
+<linearGradient id="paint0_linear_124_399" x1="12" y1="0" x2="12" y2="24" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E9DBA5"/>
+<stop offset="1" stop-color="#B89963"/>
+</linearGradient>
+</defs>
+</svg>
+                    {% if block.settings.data_5_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_5_text }}</div>
+                    {% endif %}
                   {% elsif block.settings.data_5_type == 'x' %}
-                    <svg class="icon-cross" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0.353516 0.353516L16.3535 16.3535M0.353516 16.3535L16.3535 0.353516" stroke="black" stroke-linejoin="round"/>
-                      </svg>
+                    <svg class="icon-cross" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M11.7998 0C18.3166 0.000105528 23.5995 5.283 23.5996 11.7998C23.5995 18.3166 18.3166 23.5995 11.7998 23.5996C5.283 23.5995 0.000105531 18.3166 0 11.7998C0.000105659 5.283 5.283 0.000105656 11.7998 0ZM16.708 7.29297C16.3175 6.9024 15.6844 6.90241 15.2939 7.29297L11.999 10.5879L8.70703 7.29492C8.31657 6.90433 7.68343 6.90433 7.29297 7.29492C6.90258 7.68552 6.90253 8.31842 7.29297 8.70898L10.585 12.002L7.29785 15.29L7.22949 15.3652C6.90913 15.758 6.93198 16.3379 7.29785 16.7041C7.66401 17.0704 8.24399 17.0931 8.63672 16.7725L8.71191 16.7041L11.998 13.416L15.2881 16.707L15.3633 16.7754C15.756 17.0957 16.3361 17.0732 16.7021 16.707C17.0682 16.3408 17.091 15.76 16.7705 15.3672L16.7021 15.292L13.4131 12.002L16.708 8.70703C17.0981 8.31659 17.098 7.68351 16.708 7.29297Z" fill="#0E0E0E" fill-opacity="0.7"/>
+</svg>
+                    {% if block.settings.data_5_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_5_text }}</div>
+                    {% endif %}
                   {% else %}
-                    {{ block.settings.data_5_text }}
+                    {% if block.settings.data_5_text != blank %}
+                      {{ block.settings.data_5_text }}
+                    {% endif %}
                   {% endif %}
                 </div>
               </div>
               <div class="comparison-table__row">
                 <div class="comparison-table__row-data">
                   {% if block.settings.data_6_type == 'check' %}
-                     <svg class="icon-checkk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="white"/>
-                    </svg>
+                    <svg class="icon-checkk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="url(#paint0_linear_124_399)"/>
+<defs>
+<linearGradient id="paint0_linear_124_399" x1="12" y1="0" x2="12" y2="24" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E9DBA5"/>
+<stop offset="1" stop-color="#B89963"/>
+</linearGradient>
+</defs>
+</svg>
+                    {% if block.settings.data_6_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_6_text }}</div>
+                    {% endif %}
                   {% elsif block.settings.data_6_type == 'x' %}
-                    <svg class="icon-cross" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0.353516 0.353516L16.3535 16.3535M0.353516 16.3535L16.3535 0.353516" stroke="black" stroke-linejoin="round"/>
-                      </svg>
+                    <svg class="icon-cross" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M11.7998 0C18.3166 0.000105528 23.5995 5.283 23.5996 11.7998C23.5995 18.3166 18.3166 23.5995 11.7998 23.5996C5.283 23.5995 0.000105531 18.3166 0 11.7998C0.000105659 5.283 5.283 0.000105656 11.7998 0ZM16.708 7.29297C16.3175 6.9024 15.6844 6.90241 15.2939 7.29297L11.999 10.5879L8.70703 7.29492C8.31657 6.90433 7.68343 6.90433 7.29297 7.29492C6.90258 7.68552 6.90253 8.31842 7.29297 8.70898L10.585 12.002L7.29785 15.29L7.22949 15.3652C6.90913 15.758 6.93198 16.3379 7.29785 16.7041C7.66401 17.0704 8.24399 17.0931 8.63672 16.7725L8.71191 16.7041L11.998 13.416L15.2881 16.707L15.3633 16.7754C15.756 17.0957 16.3361 17.0732 16.7021 16.707C17.0682 16.3408 17.091 15.76 16.7705 15.3672L16.7021 15.292L13.4131 12.002L16.708 8.70703C17.0981 8.31659 17.098 7.68351 16.708 7.29297Z" fill="#0E0E0E" fill-opacity="0.7"/>
+</svg>
+                    {% if block.settings.data_6_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_6_text }}</div>
+                    {% endif %}
                   {% else %}
-                    {{ block.settings.data_6_text }}
+                    {% if block.settings.data_6_text != blank %}
+                      {{ block.settings.data_6_text }}
+                    {% endif %}
                   {% endif %}
                 </div>
               </div>
               <div class="comparison-table__row">
                 <div class="comparison-table__row-data">
                   {% if block.settings.data_7_type == 'check' %}
-                     <svg class="icon-checkk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="white"/>
-                    </svg>
+                    <svg class="icon-checkk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="url(#paint0_linear_124_399)"/>
+<defs>
+<linearGradient id="paint0_linear_124_399" x1="12" y1="0" x2="12" y2="24" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E9DBA5"/>
+<stop offset="1" stop-color="#B89963"/>
+</linearGradient>
+</defs>
+</svg>
+                    {% if block.settings.data_7_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_7_text }}</div>
+                    {% endif %}
                   {% elsif block.settings.data_7_type == 'x' %}
-                    <svg class="icon-cross" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0.353516 0.353516L16.3535 16.3535M0.353516 16.3535L16.3535 0.353516" stroke="black" stroke-linejoin="round"/>
-                      </svg>
+                    <svg class="icon-cross" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M11.7998 0C18.3166 0.000105528 23.5995 5.283 23.5996 11.7998C23.5995 18.3166 18.3166 23.5995 11.7998 23.5996C5.283 23.5995 0.000105531 18.3166 0 11.7998C0.000105659 5.283 5.283 0.000105656 11.7998 0ZM16.708 7.29297C16.3175 6.9024 15.6844 6.90241 15.2939 7.29297L11.999 10.5879L8.70703 7.29492C8.31657 6.90433 7.68343 6.90433 7.29297 7.29492C6.90258 7.68552 6.90253 8.31842 7.29297 8.70898L10.585 12.002L7.29785 15.29L7.22949 15.3652C6.90913 15.758 6.93198 16.3379 7.29785 16.7041C7.66401 17.0704 8.24399 17.0931 8.63672 16.7725L8.71191 16.7041L11.998 13.416L15.2881 16.707L15.3633 16.7754C15.756 17.0957 16.3361 17.0732 16.7021 16.707C17.0682 16.3408 17.091 15.76 16.7705 15.3672L16.7021 15.292L13.4131 12.002L16.708 8.70703C17.0981 8.31659 17.098 7.68351 16.708 7.29297Z" fill="#0E0E0E" fill-opacity="0.7"/>
+</svg>
+                    {% if block.settings.data_7_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_7_text }}</div>
+                    {% endif %}
                   {% else %}
-                    {{ block.settings.data_7_text }}
+                    {% if block.settings.data_7_text != blank %}
+                      {{ block.settings.data_7_text }}
+                    {% endif %}
                   {% endif %}
                 </div>
               </div>
               <div class="comparison-table__row">
                 <div class="comparison-table__row-data">
                   {% if block.settings.data_8_type == 'check' %}
-                     <svg class="icon-checkk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="white"/>
-                    </svg>
+                    <svg class="icon-checkk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="url(#paint0_linear_124_399)"/>
+<defs>
+<linearGradient id="paint0_linear_124_399" x1="12" y1="0" x2="12" y2="24" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E9DBA5"/>
+<stop offset="1" stop-color="#B89963"/>
+</linearGradient>
+</defs>
+</svg>
+                    {% if block.settings.data_8_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_8_text }}</div>
+                    {% endif %}
                   {% elsif block.settings.data_8_type == 'x' %}
-                    <svg class="icon-cross" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0.353516 0.353516L16.3535 16.3535M0.353516 16.3535L16.3535 0.353516" stroke="black" stroke-linejoin="round"/>
-                      </svg>
+                    <svg class="icon-cross" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M11.7998 0C18.3166 0.000105528 23.5995 5.283 23.5996 11.7998C23.5995 18.3166 18.3166 23.5995 11.7998 23.5996C5.283 23.5995 0.000105531 18.3166 0 11.7998C0.000105659 5.283 5.283 0.000105656 11.7998 0ZM16.708 7.29297C16.3175 6.9024 15.6844 6.90241 15.2939 7.29297L11.999 10.5879L8.70703 7.29492C8.31657 6.90433 7.68343 6.90433 7.29297 7.29492C6.90258 7.68552 6.90253 8.31842 7.29297 8.70898L10.585 12.002L7.29785 15.29L7.22949 15.3652C6.90913 15.758 6.93198 16.3379 7.29785 16.7041C7.66401 17.0704 8.24399 17.0931 8.63672 16.7725L8.71191 16.7041L11.998 13.416L15.2881 16.707L15.3633 16.7754C15.756 17.0957 16.3361 17.0732 16.7021 16.707C17.0682 16.3408 17.091 15.76 16.7705 15.3672L16.7021 15.292L13.4131 12.002L16.708 8.70703C17.0981 8.31659 17.098 7.68351 16.708 7.29297Z" fill="#0E0E0E" fill-opacity="0.7"/>
+</svg>
+                    {% if block.settings.data_8_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_8_text }}</div>
+                    {% endif %}
                   {% else %}
-                    {{ block.settings.data_8_text }}
+                    {% if block.settings.data_8_text != blank %}
+                      {{ block.settings.data_8_text }}
+                    {% endif %}
                   {% endif %}
                 </div>
               </div>
               <div class="comparison-table__row">
                 <div class="comparison-table__row-data">
                   {% if block.settings.data_9_type == 'check' %}
-                     <svg class="icon-checkk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="white"/>
-                    </svg>
+                    <svg class="icon-checkk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.0455 7.4545C17.6061 7.01517 16.8938 7.01517 16.4545 7.4545C16.4439 7.46511 16.4339 7.47635 16.4247 7.48816L11.2161 14.1251L8.07581 10.9848C7.63647 10.5455 6.92416 10.5455 6.48482 10.9848C6.04548 11.4242 6.04548 12.1365 6.48482 12.5758L10.4545 16.5455C10.8938 16.9848 11.6061 16.9848 12.0455 16.5455C12.0553 16.5357 12.0645 16.5254 12.0731 16.5146L18.0615 9.02921C18.4848 8.58872 18.4794 7.88846 18.0455 7.4545Z" fill="url(#paint0_linear_124_399)"/>
+<defs>
+<linearGradient id="paint0_linear_124_399" x1="12" y1="0" x2="12" y2="24" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E9DBA5"/>
+<stop offset="1" stop-color="#B89963"/>
+</linearGradient>
+</defs>
+</svg>
+                    {% if block.settings.data_9_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_9_text }}</div>
+                    {% endif %}
                   {% elsif block.settings.data_9_type == 'x' %}
-                    <svg class="icon-cross" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0.353516 0.353516L16.3535 16.3535M0.353516 16.3535L16.3535 0.353516" stroke="black" stroke-linejoin="round"/>
-                      </svg>
+                    <svg class="icon-cross" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="12" fill="white"/>
+<path d="M11.7998 0C18.3166 0.000105528 23.5995 5.283 23.5996 11.7998C23.5995 18.3166 18.3166 23.5995 11.7998 23.5996C5.283 23.5995 0.000105531 18.3166 0 11.7998C0.000105659 5.283 5.283 0.000105656 11.7998 0ZM16.708 7.29297C16.3175 6.9024 15.6844 6.90241 15.2939 7.29297L11.999 10.5879L8.70703 7.29492C8.31657 6.90433 7.68343 6.90433 7.29297 7.29492C6.90258 7.68552 6.90253 8.31842 7.29297 8.70898L10.585 12.002L7.29785 15.29L7.22949 15.3652C6.90913 15.758 6.93198 16.3379 7.29785 16.7041C7.66401 17.0704 8.24399 17.0931 8.63672 16.7725L8.71191 16.7041L11.998 13.416L15.2881 16.707L15.3633 16.7754C15.756 17.0957 16.3361 17.0732 16.7021 16.707C17.0682 16.3408 17.091 15.76 16.7705 15.3672L16.7021 15.292L13.4131 12.002L16.708 8.70703C17.0981 8.31659 17.098 7.68351 16.708 7.29297Z" fill="#0E0E0E" fill-opacity="0.7"/>
+</svg>
+                    {% if block.settings.data_9_text != blank %}
+                      <div class="comparison-table__row-data-text">{{ block.settings.data_9_text }}</div>
+                    {% endif %}
                   {% else %}
-                    {{ block.settings.data_9_text }}
+                    {% if block.settings.data_9_text != blank %}
+                      {{ block.settings.data_9_text }}
+                    {% endif %}
                   {% endif %}
                 </div>
               </div>
@@ -677,6 +1109,14 @@ svg.icon-checkk path {
       {% endfor %}
     </div>
   </div>
+
+  {% if section.settings.button_text != blank and section.settings.button_link != blank %}
+    <div class="comparison-table__see-more">
+      <a href="{{ section.settings.button_link }}" class="comparison-table__see-more-button">
+        {{ section.settings.button_text }}
+      </a>
+    </div>
+  {% endif %}
 </div>
 
 {% schema %}
@@ -690,6 +1130,27 @@ svg.icon-checkk path {
       "id": "heading",
       "label": "Heading",
       "default": "COMPARISON"
+    },
+    {
+      "type": "richtext",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "SEE MORE"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
     },
     {
       "type": "select",
@@ -839,10 +1300,9 @@ svg.icon-checkk path {
           "default": "text"
         },
         {
-          "type": "text",
+          "type": "richtext",
           "id": "data_1_text",
-          "label": "Text",
-          "default": "$74.99"
+          "label": "Text"
         },
         {
           "type": "header",
@@ -869,10 +1329,9 @@ svg.icon-checkk path {
           "default": "text"
         },
         {
-          "type": "text",
+          "type": "richtext",
           "id": "data_2_text",
-          "label": "Text",
-          "default": "Instant results"
+          "label": "Text"
         },
         {
           "type": "header",
@@ -899,7 +1358,7 @@ svg.icon-checkk path {
           "default": "check"
         },
         {
-          "type": "text",
+          "type": "richtext",
           "id": "data_3_text",
           "label": "Text"
         },
@@ -928,7 +1387,7 @@ svg.icon-checkk path {
           "default": "check"
         },
         {
-          "type": "text",
+          "type": "richtext",
           "id": "data_4_text",
           "label": "Text"
         },
@@ -957,7 +1416,7 @@ svg.icon-checkk path {
           "default": "x"
         },
         {
-          "type": "text",
+          "type": "richtext",
           "id": "data_5_text",
           "label": "Text"
         },
@@ -986,7 +1445,7 @@ svg.icon-checkk path {
           "default": "check"
         },
         {
-          "type": "text",
+          "type": "richtext",
           "id": "data_6_text",
           "label": "Text"
         },
@@ -1015,7 +1474,7 @@ svg.icon-checkk path {
           "default": "check"
         },
         {
-          "type": "text",
+          "type": "richtext",
           "id": "data_7_text",
           "label": "Text"
         },
@@ -1044,7 +1503,7 @@ svg.icon-checkk path {
           "default": "check"
         },
         {
-          "type": "text",
+          "type": "richtext",
           "id": "data_8_text",
           "label": "Text"
         },
@@ -1073,7 +1532,7 @@ svg.icon-checkk path {
           "default": "check"
         },
         {
-          "type": "text",
+          "type": "richtext",
           "id": "data_9_text",
           "label": "Text"
         }
@@ -1114,10 +1573,9 @@ svg.icon-checkk path {
           "default": "text"
         },
         {
-          "type": "text",
+          "type": "richtext",
           "id": "data_1_text",
-          "label": "Text",
-          "default": "$20"
+          "label": "Text"
         },
         {
           "type": "header",
@@ -1144,10 +1602,9 @@ svg.icon-checkk path {
           "default": "text"
         },
         {
-          "type": "text",
+          "type": "richtext",
           "id": "data_2_text",
-          "label": "Text",
-          "default": "Few minutes"
+          "label": "Text"
         },
         {
           "type": "header",
@@ -1174,7 +1631,7 @@ svg.icon-checkk path {
           "default": "check"
         },
         {
-          "type": "text",
+          "type": "richtext",
           "id": "data_3_text",
           "label": "Text"
         },
@@ -1203,7 +1660,7 @@ svg.icon-checkk path {
           "default": "x"
         },
         {
-          "type": "text",
+          "type": "richtext",
           "id": "data_4_text",
           "label": "Text"
         },
@@ -1232,7 +1689,7 @@ svg.icon-checkk path {
           "default": "x"
         },
         {
-          "type": "text",
+          "type": "richtext",
           "id": "data_5_text",
           "label": "Text"
         },
@@ -1261,7 +1718,7 @@ svg.icon-checkk path {
           "default": "x"
         },
         {
-          "type": "text",
+          "type": "richtext",
           "id": "data_6_text",
           "label": "Text"
         },
@@ -1290,7 +1747,7 @@ svg.icon-checkk path {
           "default": "x"
         },
         {
-          "type": "text",
+          "type": "richtext",
           "id": "data_7_text",
           "label": "Text"
         },
@@ -1319,7 +1776,7 @@ svg.icon-checkk path {
           "default": "x"
         },
         {
-          "type": "text",
+          "type": "richtext",
           "id": "data_8_text",
           "label": "Text"
         },
@@ -1348,7 +1805,7 @@ svg.icon-checkk path {
           "default": "x"
         },
         {
-          "type": "text",
+          "type": "richtext",
           "id": "data_9_text",
           "label": "Text"
         }
