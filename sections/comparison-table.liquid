@@ -143,7 +143,6 @@
     .comparison-table__wrapper {
       display: flex;
       overflow-x: auto;
-      scroll-snap-type: x mandatory;
       scroll-padding: 0;
     }
 
@@ -404,6 +403,36 @@ p {}
 .comparison-table__wrapper {
     padding-top: 20px;
     padding-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+.comparison-table {
+    /* padding: 0 16px; */
+    padding-left: 16px;
+}
+
+.comparison-table__row {
+    padding: 10px;
+    min-width: 140px;
+    max-width: 140px;
+    width: 100%;
+}
+
+.comparison-table__column.comparison-table__column--header .comparison-table__row {
+    padding-left: 10px;
+}
+
+.comparison-table__row-data svg {
+    width: 18px;
+}
+
+.comparison-table__column.comparison-table__column--header {
+    min-width: 140px;
+}
+
+.comparison-table__column {
+    min-width: 150px;
+    width: 150px;
+}
 }
 </style>
 
