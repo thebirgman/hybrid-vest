@@ -4754,14 +4754,14 @@ h1 {
 
 @font-face {
     font-family: 'Interstate';
-    src: url('https://cdn.shopify.com/s/files/1/0787/7705/7504/files/Interstate-Light.woff2?v=1767088446') format('woff2');
+    src: url('https://cdn.shopify.com/s/files/1/0803/8996/4001/files/Interstate-Regular.otf?v=1768448993') format('otf');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Interstate';
-    src: url('https://cdn.shopify.com/s/files/1/0787/7705/7504/files/Interstate-Bold.woff?v=1767188529') format('woff2');
+    src: url('https://cdn.shopify.com/s/files/1/0803/8996/4001/files/Interstate-Bold.otf?v=1768448993') format('otf');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
