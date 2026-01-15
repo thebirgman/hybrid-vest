@@ -188,18 +188,6 @@
 }
 
 
-.comparison-table__column.comparison-table__column--featured {
-    margin-top: -35px;
-}
-
-
- .comparison-table__column.comparison-table__column--featured svg.icon-cross path {
-    stroke: #fff;
-}
-
-.comparison-table__column:not(.comparison-table__column--featured) svg.icon-cross path {
-    stroke: #000 !important;
-}
 
 .comparison-table__row {
     border-bottom: 1px dashed #0000003d!important;
@@ -377,6 +365,45 @@
 
 .comparison-table__see-more-button:hover {
     opacity: 0.8;
+}
+
+.comparison-table__row {
+    max-width: 320px;
+}
+
+.comparison-table__column.comparison-table__column--header {}
+
+.comparison-table__column.comparison-table__column--header.comparison-table__row.comparison-table__row-header {}
+@media screen and (min-width: 768px) {
+.comparison-table__column.comparison-table__column--header .comparison-table__row {
+    width: 290px;
+}
+}
+
+
+img.comparison-table__row-image {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    max-width: 225px;
+}
+
+.comparison-table__column.comparison-table__column--featured {
+    margin: 0;
+}
+
+.comparison-table__row.comparison-table__row--header {}
+
+.comparison-table__row.comparison-table__row--header {
+    min-height: 100px;
+}
+
+.comparison-table__row.comparison-table__row-header {
+    min-height: 100px;
+}
+
+.comparison-table__row-product-name {
+    margin-bottom: 0;
 }
 </style>
 
