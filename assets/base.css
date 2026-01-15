@@ -4877,3 +4877,8 @@ summary.details__header {
 .max-150{
   max-width: 150px!important;
 }
+
+span.add-to-cart-text__content span {
+    letter-spacing: -1px!important;
+    font-size: 16px;
+}
