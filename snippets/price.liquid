@@ -26,7 +26,7 @@
   assign discount_amount = 0
   if  show_discount_badge_setting
     assign show_discount_badge = true
-    assign discount_amount = compare_at_price_raw | minus: price_raw
+    assign discount_amount = compare_at_price_raw | minus: price_raw | floor
   endif
 
   if product_resource == blank
