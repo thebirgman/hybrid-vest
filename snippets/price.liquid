@@ -67,7 +67,7 @@
   endif
 
   if use_currency
-    assign price = price_raw | money_with_currency
+    assign price = price_raw | money_without_trailing_zeros
     assign compare_at_price = compare_at_price_raw | money_with_currency
     assign price_min = price_min_raw | money_with_currency
     assign price_max = price_max_raw | money_with_currency
