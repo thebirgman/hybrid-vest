@@ -3420,7 +3420,8 @@
       "name": "Comparison Table",
       "settings": {
         "heading": "COMPARISON",
-        "subheading": "",
+        "subheading": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+        "background_image": "shopify://shop_images/eb12aa5f1e2ca8a2d48cc3c3732ee97ff0d8c110_1.png",
         "button_text": "SEE MORE",
         "button_link": "",
         "section_width": "page-width",
