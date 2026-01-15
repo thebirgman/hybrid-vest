@@ -227,7 +227,7 @@
           "secondary_badge_background": "#ffffff",
           "secondary_badge_text": "#000000",
           "sale_price_text": "#000000",
-          "compare_at_price_color": "#666666"
+          "compare_at_price_color": "#00000080"
         }
       },
       "scheme-4": {
@@ -783,7 +783,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".price-container em{color: #FFFFFF80; font-style: normal; text-decoration: line-through;}"
+      ".price-container em {color: #ffffff80; font-style: normal; text-decoration: line-through;}"
     ]
   }
 }
