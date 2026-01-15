@@ -20,9 +20,9 @@
   endif
   
   assign selected_variant = product.selected_or_first_available_variant
-  assign variant_price = selected_variant.price | money
+  assign variant_price = selected_variant.price | money_without_trailing_zeros
   if selected_variant.price  < selected_variant.compare_at_price
-    assign compare_price = selected_variant.compare_at_price | money
+    assign compare_price = selected_variant.compare_at_price | money_without_trailing_zeros
   endif
 -%}
 
