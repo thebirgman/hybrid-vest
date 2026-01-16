@@ -34,6 +34,7 @@
   >
     <form class="variant-picker__form">
       {%- for product_option in product_resource.options_with_values -%}
+
         {%- liquid
           assign swatch_count = product_option.values | map: 'swatch' | compact | size
           assign variant_style = block_settings.variant_style
@@ -57,7 +58,7 @@
         {%- if option_name_lower contains 'color' -%}
           {%- assign fieldset_index = forloop.index0 -%}
           <fieldset
-            class="variant-option variant-option--kits"
+            class="variant-option variant-option--kits {% if product_option.values.size < 2 %} hidden {% endif %}"
             data-fieldset-index="{{ fieldset_index }}"
             ref="fieldsets[]"
           >
