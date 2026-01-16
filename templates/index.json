@@ -3182,7 +3182,7 @@
                       "settings": {
                         "background_image": "shopify://shop_images/76336bcaf4fe7671f0e018882675c315166a0083.png",
                         "heading": "<h4>Comfortable “Gold Brick” Plates</h4>",
-                        "subheading": "<p>17 padded plates included. Designed to be comfortable during burpees, push-ups, and floor contact.</p>",
+                        "subheading": "<p>13 padded plates included. Designed to be comfortable during burpees, push-ups, and floor contact.</p>",
                         "badge": "#2",
                         "text_alignment": "bottom",
                         "heading_subheading_gap": 12,
@@ -4341,7 +4341,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/Image_4_1.jpg",
+                    "image": "shopify://shop_images/Built_For_Murph.jpg",
                     "link": "",
                     "image_ratio": "adapt",
                     "width": "fill",
@@ -5154,7 +5154,7 @@
                           "type": "image",
                           "name": "t:names.image",
                           "settings": {
-                            "image": "shopify://shop_images/Img_Placeholder_1.png",
+                            "image": "shopify://shop_images/Training_Program_V2_1.png",
                             "link": "",
                             "image_ratio": "adapt",
                             "width": "fit-content",
@@ -5251,7 +5251,7 @@
                               "type": "text",
                               "name": "t:names.text",
                               "settings": {
-                                "text": "<p>Every purchase comes with a 12-week Murph training program.</p>",
+                                "text": "<p>Every purchase comes with a Murph training program.</p>",
                                 "width": "fit-content",
                                 "max_width": "normal",
                                 "alignment": "left",
@@ -5743,7 +5743,7 @@
                               "type": "image",
                               "name": "t:names.image",
                               "settings": {
-                                "image": "shopify://shop_images/image_1_2.png",
+                                "image": "shopify://shop_images/push_up.png",
                                 "link": "",
                                 "image_ratio": "adapt",
                                 "width": "fit-content",
@@ -6131,7 +6131,7 @@
                                   "type": "text",
                                   "name": "t:names.text",
                                   "settings": {
-                                    "text": "<p>Free 17x 1 lb weight plates</p>",
+                                    "text": "<p>Free 13x 1 lb weight plates</p>",
                                     "width": "fit-content",
                                     "max_width": "normal",
                                     "alignment": "left",
@@ -6873,7 +6873,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/Limited_Time_Offer_1_1.png",
+                    "image": "shopify://shop_images/Hybrid_Vest.jpg",
                     "link": "",
                     "image_ratio": "square",
                     "width": "fill",
