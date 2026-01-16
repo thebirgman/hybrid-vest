@@ -4414,7 +4414,7 @@
                   "type": "accordion",
                   "name": "t:names.accordion",
                   "settings": {
-                    "icon": "caret",
+                    "icon": "plus",
                     "dividers": true,
                     "type_preset": "h5",
                     "inherit_color_scheme": true,
@@ -4435,7 +4435,6 @@
                         "heading": "What makes Hybrid Vest different from a normal weighted vest?",
                         "open_by_default": false,
                         "icon": "none",
-                        "image_upload": "shopify://shop_images/Icon_Frame.png",
                         "width": 24
                       },
                       "blocks": {
@@ -4476,7 +4475,6 @@
                         "heading": "Will it bounce when I run?",
                         "open_by_default": false,
                         "icon": "none",
-                        "image_upload": "shopify://shop_images/Icon_Frame.png",
                         "width": 24
                       },
                       "blocks": {
@@ -4517,7 +4515,6 @@
                         "heading": "Is it comfortable for push-ups, burpees, and floor work? ",
                         "open_by_default": false,
                         "icon": "none",
-                        "image_upload": "shopify://shop_images/Icon_Frame.png",
                         "width": 24
                       },
                       "blocks": {
@@ -4558,7 +4555,6 @@
                         "heading": "Can I do pull-ups and overhead work in it? ",
                         "open_by_default": false,
                         "icon": "none",
-                        "image_upload": "shopify://shop_images/Icon_Frame.png",
                         "width": 24
                       },
                       "blocks": {
@@ -4599,7 +4595,6 @@
                         "heading": "Does it chafe? ",
                         "open_by_default": false,
                         "icon": "none",
-                        "image_upload": "shopify://shop_images/Icon_Frame.png",
                         "width": 24
                       },
                       "blocks": {
@@ -4640,7 +4635,6 @@
                         "heading": "Will it fit my body type?",
                         "open_by_default": false,
                         "icon": "none",
-                        "image_upload": "shopify://shop_images/Icon_Frame.png",
                         "width": 24
                       },
                       "blocks": {
@@ -4689,7 +4683,7 @@
                   "type": "accordion",
                   "name": "t:names.accordion",
                   "settings": {
-                    "icon": "caret",
+                    "icon": "plus",
                     "dividers": true,
                     "type_preset": "h5",
                     "inherit_color_scheme": true,
@@ -4710,7 +4704,6 @@
                         "heading": "Are plates included?",
                         "open_by_default": false,
                         "icon": "none",
-                        "image_upload": "shopify://shop_images/Icon_Frame.png",
                         "width": 24
                       },
                       "blocks": {
@@ -4751,7 +4744,6 @@
                         "heading": "How much weight can it hold?",
                         "open_by_default": false,
                         "icon": "none",
-                        "image_upload": "shopify://shop_images/Icon_Frame.png",
                         "width": 24
                       },
                       "blocks": {
@@ -4792,7 +4784,6 @@
                         "heading": "When does it ship?",
                         "open_by_default": false,
                         "icon": "none",
-                        "image_upload": "shopify://shop_images/Icon_Frame.png",
                         "width": 24
                       },
                       "blocks": {
@@ -4833,7 +4824,6 @@
                         "heading": "What’s the guarantee?",
                         "open_by_default": false,
                         "icon": "none",
-                        "image_upload": "shopify://shop_images/Icon_Frame.png",
                         "width": 24
                       },
                       "blocks": {
@@ -4874,7 +4864,6 @@
                         "heading": "Is it good for Murph?",
                         "open_by_default": false,
                         "icon": "none",
-                        "image_upload": "shopify://shop_images/Icon_Frame.png",
                         "width": 24
                       },
                       "blocks": {
@@ -4915,7 +4904,6 @@
                         "heading": "What are the launch bonuses?",
                         "open_by_default": false,
                         "icon": "none",
-                        "image_upload": "shopify://shop_images/Icon_Frame.png",
                         "width": 24
                       },
                       "blocks": {
