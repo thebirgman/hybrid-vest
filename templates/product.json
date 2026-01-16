@@ -4180,8 +4180,8 @@
                 "custom_max_width_mobile": 700,
                 "height": "fit",
                 "custom_height": 100,
-                "inherit_color_scheme": true,
-                "color_scheme": "",
+                "inherit_color_scheme": false,
+                "color_scheme": "scheme-5",
                 "background_media": "none",
                 "video_position": "cover",
                 "background_image_position": "cover",
@@ -4398,8 +4398,8 @@
                 "custom_max_width_mobile": 700,
                 "height": "fit",
                 "custom_height": 100,
-                "inherit_color_scheme": true,
-                "color_scheme": "",
+                "inherit_color_scheme": false,
+                "color_scheme": "scheme-5",
                 "background_media": "none",
                 "video_position": "cover",
                 "background_image_position": "cover",
@@ -4608,7 +4608,7 @@
       "custom_css": [
         ".review-group {border: solid 1px #ffffff33;}",
         "h5 {color: #d7b26f !important;}",
-        ".h5 h3{font-weight: 700; text-transform: uppercase;}"
+        ".h5 h3 {font-weight: 700; text-transform: uppercase;}"
       ],
       "name": "t:names.custom_section",
       "settings": {
