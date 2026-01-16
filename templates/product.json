@@ -4609,7 +4609,8 @@
         ".review-group {border: solid 1px #ffffff33;}",
         "h5 {color: #d7b26f !important;}",
         ".h5 h3 {font-weight: 700; text-transform: uppercase;}",
-        "p {opacity: 0.5;}"
+        "p {opacity: 0.5;}",
+        "@media screen and (max-width: 768px) {.review-group > .group-block-content.layout-panel-flex{flex-wrap: nowrap;}}"
       ],
       "name": "t:names.custom_section",
       "settings": {
