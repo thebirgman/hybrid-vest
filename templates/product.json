@@ -1578,7 +1578,7 @@
                     "text_8fctMD": {
                       "type": "text",
                       "settings": {
-                        "text": "<p>We will work quickly to ship your order as soon as possible. Once your order has shipped, you will receive an email with further information. Delivery times vary depending on your location.</p>",
+                        "text": "<p>Half Vest Mode:</p><ul><li>Running</li><li>HIIT</li><li>Daily Training</li></ul><p>Full Vest Mode: </p><ul><li>Rucking</li><li>Lifting</li><li>Intense Sessions</li></ul>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
