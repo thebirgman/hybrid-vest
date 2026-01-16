@@ -111,7 +111,7 @@
                         {{ percent_off }}
                       </div>
                     {% endif %}
-                    {{ product_option_value | json }}
+                    {{ product_option_value.metaobject | json }}
                     {% if product_option_value.swatch.image != blank %}
                       
                       <div class="variant-kit-option__image">
