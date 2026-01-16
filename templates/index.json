@@ -9719,7 +9719,7 @@
                           "type": "text",
                           "name": "t:names.heading",
                           "settings": {
-                            "text": "<p>Front Chest Phone Pouch</p>",
+                            "text": "<p>Integrated Hang Loop</p>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
@@ -9746,7 +9746,7 @@
                           "type": "text",
                           "name": "t:names.text",
                           "settings": {
-                            "text": "<p>Secure storage for runs and conditioning.</p>",
+                            "text": "<p>Easy storage between sessions.</p>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
