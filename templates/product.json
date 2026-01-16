@@ -4965,7 +4965,7 @@
         "group_8GacPx"
       ],
       "custom_css": [
-        ".accordion summary.details__header {background-color: #f5f5f5;}"
+        ".accordion summary.details__header {background-color: #f5f5f5; box-shadow: -4px 4px 10px 0 rgba(0, 0, 0, 0.15); margin-bottom: 16px;}"
       ],
       "name": "t:names.faq_section",
       "settings": {
