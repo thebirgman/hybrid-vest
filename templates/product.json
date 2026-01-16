@@ -4964,6 +4964,9 @@
         "text_m783Yg",
         "group_8GacPx"
       ],
+      "custom_css": [
+        ".accordion summary.details__header {background-color: #f5f5f5;}"
+      ],
       "name": "t:names.faq_section",
       "settings": {
         "content_direction": "column",
