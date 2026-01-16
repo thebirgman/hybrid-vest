@@ -3518,7 +3518,7 @@
           "type": "group",
           "name": "t:names.group",
           "settings": {
-            "custom_class": "",
+            "custom_class": "review-group",
             "reverse_on_mobile": false,
             "slider_on_mobile": false,
             "content_direction": "row",
@@ -3781,7 +3781,7 @@
               "type": "group",
               "name": "t:names.group",
               "settings": {
-                "custom_class": "",
+                "custom_class": "review-group",
                 "reverse_on_mobile": false,
                 "slider_on_mobile": false,
                 "content_direction": "row",
