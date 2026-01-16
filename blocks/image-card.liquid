@@ -62,15 +62,56 @@
   {{ block.shopify_attributes }}
   data-image-card-hover data-block-id="{{ block.id }}"
 >
-  {%- if has_background_image -%}
-    <div class="image-card-block__background">
+  <div class="image-card-block__background">
+    {%- if block_settings.inactive_image_desktop_large != blank -%}
+      {{
+        block_settings.inactive_image_desktop_large
+        | image_url: width: 1920
+        | image_tag: loading: 'lazy', class: 'image-card-block__background-image image-card-block__image--inactive-desktop-large'
+      }}
+    {%- endif -%}
+    
+    {%- if block_settings.inactive_image_desktop_short != blank -%}
+      {{
+        block_settings.inactive_image_desktop_short
+        | image_url: width: 1920
+        | image_tag: loading: 'lazy', class: 'image-card-block__background-image image-card-block__image--inactive-desktop-short'
+      }}
+    {%- endif -%}
+    
+    {%- if block_settings.inactive_image_mobile != blank -%}
+      {{
+        block_settings.inactive_image_mobile
+        | image_url: width: 1920
+        | image_tag: loading: 'lazy', class: 'image-card-block__background-image image-card-block__image--inactive-mobile'
+      }}
+    {%- endif -%}
+    
+    {%- if block_settings.active_image_desktop != blank -%}
+      {{
+        block_settings.active_image_desktop
+        | image_url: width: 1920
+        | image_tag: loading: 'lazy', class: 'image-card-block__background-image image-card-block__image--active-desktop'
+      }}
+    {%- endif -%}
+    
+    {%- if block_settings.active_image_mobile != blank -%}
+      {{
+        block_settings.active_image_mobile
+        | image_url: width: 1920
+        | image_tag: loading: 'lazy', class: 'image-card-block__background-image image-card-block__image--active-mobile'
+      }}
+    {%- endif -%}
+    
+    {%- comment -%} Fallback to original background_image if new images not set {%- endcomment -%}
+    {%- if has_background_image and block_settings.inactive_image_desktop_large == blank and block_settings.inactive_image_mobile == blank -%}
       {{
         block_settings.background_image
         | image_url: width: 1920
         | image_tag: loading: 'lazy', class: 'image-card-block__background-image'
       }}
-    </div>
-  {%- endif -%}
+    {%- endif -%}
+  </div>
 
   {%- if block_settings.badge != blank -%}
     <div class="image-card-block__badge">
@@ -222,6 +263,7 @@
     object-fit: cover;
   }
 
+
   .image-card-block__badge {
     position: absolute;
     top: 6px;
@@ -322,23 +364,12 @@
   }
 
   /* Active state */
-  .image-card-block--hover-enabled.image-card-block--active .image-card-block__content p,
-  .image-card-block--hover-enabled.image-card-block--active .image-card-block__content :is(p, .rte p) {
-    opacity: 0.9;
-  }
 
-  .image-card-block--hover-enabled.image-card-block--active .image-card-block__background-image {
-    opacity: 1;
-  }
 
   /* Inactive state */
   .bento-grid-container .image-card-block--hover-enabled:not(.image-card-block--active) .image-card-block__content p,
   .bento-grid-container .image-card-block--hover-enabled:not(.image-card-block--active) .image-card-block__content :is(p, .rte p) {
     opacity: 0.5;
-  }
-
-  .bento-grid-container  .image-card-block--hover-enabled:not(.image-card-block--active) .image-card-block__background-image {
-    opacity: 0.6;
   }
 
   /* Default active state on page load */
@@ -349,9 +380,6 @@
     opacity: 0.9;
   }
 
-  .image-card-block--hover-enabled.image-card-block--active .image-card-block__background-image {
-    opacity: 1;
-  }
 
   /* Ensure inactive cards in same group get proper styling */
   .group-block-content:has(.image-card-block--active) .image-card-block--hover-enabled:not(.image-card-block--active) {
@@ -363,9 +391,7 @@
     opacity: 0.5;
   }
 
-  .group-block-content:has(.image-card-block--active) .image-card-block--hover-enabled:not(.image-card-block--active) .image-card-block__background-image {
-    opacity: 0.6;
-  }
+
   .group-block-content:has(.image-card-block--active) > .shopify-block:has(.image-card-block--active) {
     width: 65%!important;
 }
@@ -400,6 +426,48 @@
     min-height: 450px!important;
 }
 }
+
+
+  /* Hide all state-specific images by default */
+  .image-card-block__image--inactive-desktop-short,
+  .image-card-block__image--active-desktop,
+  .image-card-block__image--active-mobile {
+    opacity: 0;
+  }
+
+  /* Show inactive desktop large by default (desktop) */
+  .image-card-block__image--inactive-desktop-large {
+    opacity: 1;
+  }
+
+
+  .group-block-content:has(.image-card-block--active) > .shopify-block .image-card-block.image-card-block--active .image-card-block__image--active-desktop{
+    opacity: 1;
+    z-index: 3;
+  }
+
+  .group-block-content:has(.image-card-block--active) > .shopify-block .image-card-block .image-card-block__image--inactive-desktop-short{
+    opacity: 1;
+  }
+  .image-card-block__background-image {
+    position: absolute;
+}
+
+
+  /* Show inactive mobile by default (mobile) */
+  @media screen and (max-width: 749px) {
+    .image-card-block__image--inactive-desktop-large {
+      opacity: 0;
+    }
+    
+    .image-card-block__image--inactive-mobile {
+      opacity: 1;
+    }
+    .group-block-content:has(.image-card-block--active) > .shopify-block .image-card-block .image-card-block__image--inactive-desktop-short {
+    opacity: 0;
+}
+
+  }
 .mobile-cards {
   display: none;
 }
@@ -438,8 +506,9 @@
       groupContainer.dataset.imageCardHoverInitialized = 'true';
       groupContainer.classList.add('has-image-card-hover');
 
-      // Check if this is a mobile slider
-      const isMobileSlider = groupContainer.classList.contains('group-block-content--mobile-slider');
+      // Find the scrolling container (mobile slider)
+      const scrollingContainer = card.closest('.group-block-content--mobile-slider');
+      const isMobileSlider = scrollingContainer !== null;
       const isMobile = window.innerWidth <= 768;
 
       // Find default active card or set first as active
@@ -450,9 +519,9 @@
       lastActiveCard.classList.add('image-card-block--active');
 
       // Mobile slider: Simple scroll-based detection
-      if (isMobileSlider && isMobile) {
+      if (isMobileSlider && isMobile && scrollingContainer) {
         const updateActiveCard = () => {
-          const containerRect = groupContainer.getBoundingClientRect();
+          const containerRect = scrollingContainer.getBoundingClientRect();
           let mostVisibleCard = null;
           let maxVisibility = 0;
 
@@ -476,9 +545,10 @@
           }
         };
 
-        // Update on scroll (debounced)
+        // Update on scroll (debounced) - attach to the actual scrolling container
         let scrollTimeout;
-        groupContainer.addEventListener('scroll', () => {
+        scrollingContainer.addEventListener('scroll', () => {
+          console.log('test scroll')
           clearTimeout(scrollTimeout);
           scrollTimeout = setTimeout(updateActiveCard, 50);
         }, { passive: true });
@@ -543,7 +613,49 @@
     {
       "type": "image_picker",
       "id": "background_image",
-      "label": "Background image"
+      "label": "Background image",
+      "info": "Fallback image if state-specific images are not set"
+    },
+    {
+      "type": "header",
+      "content": "State-specific Images"
+    },
+    {
+      "type": "paragraph",
+      "content": "Inactive State Images"
+    },
+    {
+      "type": "image_picker",
+      "id": "inactive_image_desktop_large",
+      "label": "Inactive image - Desktop (Large)"
+    },
+    {
+      "type": "image_picker",
+      "id": "inactive_image_desktop_short",
+      "label": "Inactive image - Desktop (Short)"
+    },
+    {
+      "type": "image_picker",
+      "id": "inactive_image_mobile",
+      "label": "Inactive image - Mobile"
+    },
+    {
+      "type": "paragraph",
+      "content": "Active State Images"
+    },
+    {
+      "type": "image_picker",
+      "id": "active_image_desktop",
+      "label": "Active image - Desktop"
+    },
+    {
+      "type": "image_picker",
+      "id": "active_image_mobile",
+      "label": "Active image - Mobile"
+    },
+    {
+      "type": "header",
+      "content": "Text Content"
     },
     {
       "type": "richtext",
