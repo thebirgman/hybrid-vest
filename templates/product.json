@@ -3610,6 +3610,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
+                    "image": "shopify://shop_images/Img_Placeholder_1_de8e86ec-2345-4e6c-9d9f-f76e9e847761.png",
                     "link": "",
                     "image_ratio": "adapt",
                     "width": "fill",
@@ -3685,7 +3686,7 @@
                       "type": "text",
                       "name": "t:names.heading",
                       "settings": {
-                        "text": "<h2>New arrivals</h2>",
+                        "text": "<h3>Lorem ipsum dolor sit</h3>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -3712,7 +3713,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>We make things that work better and last longer. Our products solve real problems with clean design and honest materials.</p>",
+                        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -3739,7 +3740,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>We make things that work better and last longer. Our products solve real problems with clean design and honest materials.</p>",
+                        "text": "<p>NAME, CROSSFIT ATHLETE</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -3826,6 +3827,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
+                    "image": "shopify://shop_images/Img_Placeholder_2.png",
                     "link": "",
                     "image_ratio": "adapt",
                     "width": "fill",
@@ -3901,7 +3903,7 @@
                       "type": "text",
                       "name": "t:names.heading",
                       "settings": {
-                        "text": "<h2>New arrivals</h2>",
+                        "text": "<h3>Lorem ipsum dolor sit</h3>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -3928,7 +3930,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>We make things that work better and last longer. Our products solve real problems with clean design and honest materials.</p>",
+                        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -3955,7 +3957,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>We make things that work better and last longer. Our products solve real problems with clean design and honest materials.</p>",
+                        "text": "<p>NAME, FITNESS COACH</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
