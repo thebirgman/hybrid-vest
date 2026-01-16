@@ -111,10 +111,10 @@
                         {{ percent_off }}
                       </div>
                     {% endif %}
-                    {% assign trim_key = product_option_value.value | handle %}
+                    {% assign trim_key = product_option_value | handleize %}
                     {% assign trim = shop.metaobjects.trim_colors[trim_key] %}
 
-                    {{ trim_key.value }}
+                    {{ trim }}
                     {% if product_option_value.swatch.image != blank %}
                       
                       <div class="variant-kit-option__image">
