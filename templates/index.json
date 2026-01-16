@@ -1551,7 +1551,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/gif_ibiza_scrub_1_1.jpg",
+                    "image": "shopify://shop_images/Garrett.jpg",
                     "link": "",
                     "image_ratio": "adapt",
                     "width": "fill",
@@ -1994,8 +1994,8 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/Img_Placeholder_1.jpg",
-                    "image_mobile": "shopify://shop_images/Img_Placeholder_2_1.jpg",
+                    "image": "shopify://shop_images/The_vest_should_match_the_workout.jpg",
+                    "image_mobile": "shopify://shop_images/The_vest_should_match_the_workout_M.jpg",
                     "link": "",
                     "image_ratio": "adapt",
                     "width": "fill",
@@ -2782,7 +2782,7 @@
                           "type": "image-card",
                           "name": "Image Card",
                           "settings": {
-                            "background_image": "shopify://shop_images/Img_Placeholder_5.jpg",
+                            "background_image": "shopify://shop_images/Half_Vest.jpg",
                             "heading": "<h4>Half Vest Mode (5–10 lb)</h4>",
                             "subheading": "<p>Perfect for running, HIIT, and daily training</p>",
                             "badge": "",
@@ -2824,7 +2824,7 @@
                           "type": "image-card",
                           "name": "Image Card",
                           "settings": {
-                            "background_image": "shopify://shop_images/Img_Placeholder.png",
+                            "background_image": "shopify://shop_images/Full_Vest.jpg",
                             "heading": "<h4>Full Vest Mode (5–20 lb)</h4>",
                             "subheading": "<p>Attach the extension for rucking, lifting, and harder sessions</p>",
                             "badge": "",
