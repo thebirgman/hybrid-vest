@@ -3149,8 +3149,8 @@
                         "width_mobile": 100,
                         "max_width_desktop": 2000,
                         "max_width_mobile": 2000,
-                        "aspect_ratio": "adapt",
-                        "minimum_height": 380,
+                        "aspect_ratio": "none",
+                        "minimum_height": 300,
                         "subheading_type_preset": "rte",
                         "subheading_font": "var(--font-body--family)",
                         "subheading_font_size": "1rem",
@@ -3189,10 +3189,10 @@
                         "heading_subheading_gap": 12,
                         "width_desktop": 100,
                         "width_mobile": 100,
-                        "max_width_desktop": 320,
+                        "max_width_desktop": 2000,
                         "max_width_mobile": 2000,
-                        "aspect_ratio": "adapt",
-                        "minimum_height": 380,
+                        "aspect_ratio": "none",
+                        "minimum_height": 300,
                         "subheading_type_preset": "rte",
                         "subheading_font": "var(--font-body--family)",
                         "subheading_font_size": "1rem",
@@ -3225,7 +3225,7 @@
                     "image_card_KHk6PT"
                   ]
                 },
-                "group_akW4t4": {
+                "group_3w9M6D": {
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
@@ -3276,7 +3276,7 @@
                     "padding-inline-end-mobile": 0
                   },
                   "blocks": {
-                    "image_card_wMbUwE": {
+                    "image_card_4t6cVn": {
                       "type": "image-card",
                       "name": "Image Card",
                       "settings": {
@@ -3318,7 +3318,7 @@
                       },
                       "blocks": {}
                     },
-                    "image_card_F4JmMi": {
+                    "image_card_yfATQr": {
                       "type": "image-card",
                       "name": "Image Card",
                       "settings": {
@@ -3362,8 +3362,8 @@
                     }
                   },
                   "block_order": [
-                    "image_card_wMbUwE",
-                    "image_card_F4JmMi"
+                    "image_card_4t6cVn",
+                    "image_card_yfATQr"
                   ]
                 },
                 "group_xqzEUF": {
@@ -3510,7 +3510,7 @@
               },
               "block_order": [
                 "group_HFhEpz",
-                "group_akW4t4",
+                "group_3w9M6D",
                 "group_xqzEUF"
               ]
             },
