@@ -5143,11 +5143,11 @@
                         "padding-block-end": 16,
                         "padding-inline-start": 24,
                         "padding-inline-end": 24,
-                        "enable_mobile_padding": false,
-                        "padding-block-start-mobile": 0,
-                        "padding-block-end-mobile": 0,
-                        "padding-inline-start-mobile": 0,
-                        "padding-inline-end-mobile": 0
+                        "enable_mobile_padding": true,
+                        "padding-block-start-mobile": 16,
+                        "padding-block-end-mobile": 16,
+                        "padding-inline-start-mobile": 16,
+                        "padding-inline-end-mobile": 20
                       },
                       "blocks": {
                         "image_gMVzEi": {
