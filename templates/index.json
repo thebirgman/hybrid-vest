@@ -5143,11 +5143,11 @@
                         "padding-block-end": 16,
                         "padding-inline-start": 24,
                         "padding-inline-end": 24,
-                        "enable_mobile_padding": true,
-                        "padding-block-start-mobile": 16,
-                        "padding-block-end-mobile": 16,
-                        "padding-inline-start-mobile": 16,
-                        "padding-inline-end-mobile": 16
+                        "enable_mobile_padding": false,
+                        "padding-block-start-mobile": 0,
+                        "padding-block-end-mobile": 0,
+                        "padding-inline-start-mobile": 0,
+                        "padding-inline-end-mobile": 0
                       },
                       "blocks": {
                         "image_gMVzEi": {
@@ -6591,7 +6591,7 @@
                               "type": "text",
                               "name": "t:names.text",
                               "settings": {
-                                "text": "<p>Ships: Feb 15</p>",
+                                "text": "<p>Ships: Mar 15</p>",
                                 "width": "fit-content",
                                 "max_width": "normal",
                                 "alignment": "left",

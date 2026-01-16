@@ -172,8 +172,8 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/hybrid-vest-hero-desktop.jpg",
-                    "image_mobile": "shopify://shop_images/hybrid-vest-hero-mobile.jpg",
+                    "image": "shopify://shop_images/Hero_Image.jpg",
+                    "image_mobile": "shopify://shop_images/Hero_Image_Mobile.jpg",
                     "link": "",
                     "image_ratio": "adapt",
                     "width": "fill",
@@ -1240,7 +1240,8 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/12-week-murph_b77499f6-d95f-4947-961a-aa113181fcc3.jpg",
+                    "image": "shopify://shop_images/Why_most_weight_vests.jpg",
+                    "image_mobile": "shopify://shop_images/Why_most_weight_vests_Mobile.jpg",
                     "link": "",
                     "image_ratio": "adapt",
                     "width": "fill",
@@ -1551,7 +1552,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/gif_ibiza_scrub_1_1.jpg",
+                    "image": "shopify://shop_images/Garrett.jpg",
                     "link": "",
                     "image_ratio": "adapt",
                     "width": "fill",
@@ -1994,8 +1995,8 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/Img_Placeholder_1.jpg",
-                    "image_mobile": "shopify://shop_images/Img_Placeholder_2_1.jpg",
+                    "image": "shopify://shop_images/The_vest_should_match_the_workout.jpg",
+                    "image_mobile": "shopify://shop_images/The_vest_should_match_the_workout_M.jpg",
                     "link": "",
                     "image_ratio": "adapt",
                     "width": "fill",
@@ -2782,7 +2783,7 @@
                           "type": "image-card",
                           "name": "Image Card",
                           "settings": {
-                            "background_image": "shopify://shop_images/Img_Placeholder_5.jpg",
+                            "background_image": "shopify://shop_images/Half_Vest.jpg",
                             "heading": "<h4>Half Vest Mode (5–10 lb)</h4>",
                             "subheading": "<p>Perfect for running, HIIT, and daily training</p>",
                             "badge": "",
@@ -2824,7 +2825,7 @@
                           "type": "image-card",
                           "name": "Image Card",
                           "settings": {
-                            "background_image": "shopify://shop_images/Img_Placeholder.png",
+                            "background_image": "shopify://shop_images/Full_Vest.jpg",
                             "heading": "<h4>Full Vest Mode (5–20 lb)</h4>",
                             "subheading": "<p>Attach the extension for rucking, lifting, and harder sessions</p>",
                             "badge": "",
@@ -3182,7 +3183,7 @@
                       "settings": {
                         "background_image": "shopify://shop_images/76336bcaf4fe7671f0e018882675c315166a0083.png",
                         "heading": "<h4>Comfortable “Gold Brick” Plates</h4>",
-                        "subheading": "<p>17 padded plates included. Designed to be comfortable during burpees, push-ups, and floor contact.</p>",
+                        "subheading": "<p>13 padded plates included. Designed to be comfortable during burpees, push-ups, and floor contact.</p>",
                         "badge": "#2",
                         "text_alignment": "bottom",
                         "heading_subheading_gap": 12,
@@ -4142,8 +4143,8 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/Img_Placeholder_3_1.jpg",
-                    "image_mobile": "shopify://shop_images/Img_Placeholder_4_1.jpg",
+                    "image": "shopify://shop_images/1__Better.jpg",
+                    "image_mobile": "shopify://shop_images/1__Better_Mobile.jpg",
                     "link": "",
                     "image_ratio": "adapt",
                     "width": "fill",
@@ -4659,7 +4660,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/Image_4_1.jpg",
+                    "image": "shopify://shop_images/Built_For_Murph.jpg",
                     "link": "",
                     "image_ratio": "adapt",
                     "width": "fill",
@@ -5472,7 +5473,7 @@
                           "type": "image",
                           "name": "t:names.image",
                           "settings": {
-                            "image": "shopify://shop_images/Img_Placeholder_1.png",
+                            "image": "shopify://shop_images/Training_Program_V2_1.png",
                             "link": "",
                             "image_ratio": "adapt",
                             "width": "fit-content",
@@ -6256,7 +6257,7 @@
                               "type": "image",
                               "name": "t:names.image",
                               "settings": {
-                                "image": "shopify://shop_images/image_1_2.png",
+                                "image": "shopify://shop_images/push_up.png",
                                 "link": "",
                                 "image_ratio": "adapt",
                                 "width": "fit-content",
@@ -6485,7 +6486,7 @@
                                   "type": "text",
                                   "name": "t:names.text",
                                   "settings": {
-                                    "text": "<p>12-week Murph program included with every purchase</p>",
+                                    "text": "<p>Murph program included with every purchase</p>",
                                     "width": "fit-content",
                                     "max_width": "normal",
                                     "alignment": "left",
@@ -6644,7 +6645,7 @@
                                   "type": "text",
                                   "name": "t:names.text",
                                   "settings": {
-                                    "text": "<p>Free 17x 1 lb weight plates</p>",
+                                    "text": "<p>Free 13x 1 lb weight plates</p>",
                                     "width": "fit-content",
                                     "max_width": "normal",
                                     "alignment": "left",
@@ -7104,7 +7105,7 @@
                               "type": "text",
                               "name": "t:names.text",
                               "settings": {
-                                "text": "<p>Ships: Feb 15</p>",
+                                "text": "<p>Ships: Mar 15</p>",
                                 "width": "fit-content",
                                 "max_width": "normal",
                                 "alignment": "left",
@@ -7387,7 +7388,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/Limited_Time_Offer_1_1.png",
+                    "image": "shopify://shop_images/Hybrid_Vest.jpg",
                     "link": "",
                     "image_ratio": "square",
                     "width": "fill",
