@@ -4264,7 +4264,12 @@
                     "padding-block-start": 0,
                     "padding-block-end": 0,
                     "padding-inline-start": 24,
-                    "padding-inline-end": 24
+                    "padding-inline-end": 24,
+                    "enable_mobile_padding": true,
+                    "padding-block-start-mobile": 24,
+                    "padding-block-end-mobile": 24,
+                    "padding-inline-start-mobile": 16,
+                    "padding-inline-end-mobile": 16
                   },
                   "blocks": {
                     "icon_LKtfkY": {
@@ -4429,12 +4434,12 @@
                     "image_ratio": "adapt",
                     "width": "fill",
                     "custom_width": 100,
-                    "width_mobile": "fill",
+                    "width_mobile": "custom",
                     "custom_width_mobile": 100,
                     "max_width_mobile": "fill",
                     "custom_max_width_mobile": 10,
-                    "enable_mobile_width_px": false,
-                    "mobile_width_px": 116,
+                    "enable_mobile_width_px": true,
+                    "mobile_width_px": 112,
                     "height": "fit"
                   },
                   "blocks": {}
@@ -4482,7 +4487,12 @@
                     "padding-block-start": 0,
                     "padding-block-end": 0,
                     "padding-inline-start": 24,
-                    "padding-inline-end": 24
+                    "padding-inline-end": 24,
+                    "enable_mobile_padding": true,
+                    "padding-block-start-mobile": 24,
+                    "padding-block-end-mobile": 24,
+                    "padding-inline-start-mobile": 16,
+                    "padding-inline-end-mobile": 16
                   },
                   "blocks": {
                     "icon_dJ4hJ4": {
@@ -4610,7 +4620,7 @@
         "h5 {color: #d7b26f !important;}",
         ".h5 h3 {font-weight: 700; text-transform: uppercase;}",
         "p {opacity: 0.5;}",
-        "@media screen and (max-width: 768px) {.review-group > .group-block-content.layout-panel-flex{flex-wrap: nowrap;}}"
+        "@media screen and (max-width: 768px) {.review-group > .group-block-content.layout-panel-flex {flex-wrap: nowrap; } .layout-panel-flex--row:not(.mobile-column) > .image-block, .image-block__image {height: 100%; }}"
       ],
       "name": "t:names.custom_section",
       "settings": {
