@@ -7653,7 +7653,7 @@
                       "settings": {
                         "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn't the case, let us know and we'll do our best to work with you to make it right.</p>",
                         "width": "100%",
-                        "max_width": "normal",
+                        "max_width": "none",
                         "alignment": "left",
                         "mobile_alignment": "left",
                         "type_preset": "rte",
@@ -7694,7 +7694,7 @@
                       "settings": {
                         "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn't the case, let us know and we'll do our best to work with you to make it right.</p>",
                         "width": "100%",
-                        "max_width": "normal",
+                        "max_width": "none",
                         "alignment": "left",
                         "mobile_alignment": "left",
                         "type_preset": "rte",
