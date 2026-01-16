@@ -7657,8 +7657,8 @@
                         "alignment": "left",
                         "mobile_alignment": "left",
                         "type_preset": "rte",
-                        "font": "var(--font-body--family)",
-                        "font_size": "1rem",
+                        "font": "var(--font-accent--family)",
+                        "font_size": "1.125rem",
                         "line_height": "normal",
                         "letter_spacing": "normal",
                         "case": "none",
@@ -8155,6 +8155,9 @@
       "block_order": [
         "text_NCALAM",
         "group_RBdXDY"
+      ],
+      "custom_css": [
+        "p{font-weight: 300;}"
       ],
       "name": "t:names.faq_section",
       "settings": {
