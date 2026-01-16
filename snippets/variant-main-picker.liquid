@@ -114,7 +114,7 @@
                     {% assign trim_key = product_option_value | handleize %}
                     {% assign trim = shop.metaobjects.trim_colors[trim_key] %}
 
-                    {{ trim }}
+                    {{ trim | json }}
                     {% if product_option_value.swatch.image != blank %}
                       
                       <div class="variant-kit-option__image">
