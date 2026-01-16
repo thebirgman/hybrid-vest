@@ -3824,8 +3824,8 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/Img_Placeholder_3_1.jpg",
-                    "image_mobile": "shopify://shop_images/Img_Placeholder_4_1.jpg",
+                    "image": "shopify://shop_images/1__Better.jpg",
+                    "image_mobile": "shopify://shop_images/1__Better_Mobile.jpg",
                     "link": "",
                     "image_ratio": "adapt",
                     "width": "fill",
