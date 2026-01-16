@@ -3437,12 +3437,12 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>LOREM IPSUM DOLOR SIT</p>",
+            "text": "<h5>LOREM IPSUM DOLOR SIT</h5>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
             "mobile_alignment": "center",
-            "type_preset": "rte",
+            "type_preset": "h5",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
             "line_height": "normal",
@@ -3496,19 +3496,19 @@
             "max_width": "normal",
             "alignment": "center",
             "mobile_alignment": "center",
-            "type_preset": "rte",
+            "type_preset": "custom",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
             "line_height": "normal",
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
-            "color": "var(--color-foreground)",
+            "color": "var(--color-primary)",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
             "padding-block-start": 0,
-            "padding-block-end": 0,
+            "padding-block-end": 40,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
@@ -4010,7 +4010,8 @@
         "group_ire9HG"
       ],
       "custom_css": [
-        ".review-group {border: solid 1px #ffffff33;}"
+        ".review-group {border: solid 1px #ffffff33;}",
+        "h5 {color: #d7b26f !important;}"
       ],
       "name": "t:names.custom_section",
       "settings": {
