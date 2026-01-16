@@ -4674,8 +4674,37 @@
                       "block_order": [
                         "text_Q8nGrY"
                       ]
-                    },
-                    "accordion_row_fzXneT": {
+                    }
+                  },
+                  "block_order": [
+                    "accordion_row_3KKKyX",
+                    "accordion_row_3Mrcfk",
+                    "accordion_row_kwTAgz",
+                    "accordion_row_acPzYn",
+                    "accordion_row_LnGbCX",
+                    "accordion_row_wi77YL"
+                  ]
+                },
+                "accordion_TnjzrB": {
+                  "type": "accordion",
+                  "name": "t:names.accordion",
+                  "settings": {
+                    "icon": "caret",
+                    "dividers": true,
+                    "type_preset": "h5",
+                    "inherit_color_scheme": true,
+                    "color_scheme": "",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {
+                    "accordion_row_LajWBJ": {
                       "type": "_accordion-row",
                       "settings": {
                         "heading": "Are plates included?",
@@ -4688,7 +4717,7 @@
                         "text_HbPDE8": {
                           "type": "text",
                           "settings": {
-                            "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn't the case, let us know and we'll do our best to work with you to make it right.</p>",
+                            "text": "<p>Yes. Every Hybrid Vest includes 17 plates.</p>",
                             "width": "100%",
                             "max_width": "normal",
                             "alignment": "left",
@@ -4716,7 +4745,7 @@
                         "text_HbPDE8"
                       ]
                     },
-                    "accordion_row_dmiPRV": {
+                    "accordion_row_a37TXD": {
                       "type": "_accordion-row",
                       "settings": {
                         "heading": "How much weight can it hold?",
@@ -4729,7 +4758,7 @@
                         "text_JkEdmr": {
                           "type": "text",
                           "settings": {
-                            "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn't the case, let us know and we'll do our best to work with you to make it right.</p>",
+                            "text": "<p>Half mode is designed for 5–10 lb. Full mode is designed for 5–20 lb.</p>",
                             "width": "100%",
                             "max_width": "normal",
                             "alignment": "left",
@@ -4757,7 +4786,7 @@
                         "text_JkEdmr"
                       ]
                     },
-                    "accordion_row_qMPFjB": {
+                    "accordion_row_zeB9wd": {
                       "type": "_accordion-row",
                       "settings": {
                         "heading": "When does it ship?",
@@ -4770,7 +4799,7 @@
                         "text_WcPnUx": {
                           "type": "text",
                           "settings": {
-                            "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn't the case, let us know and we'll do our best to work with you to make it right.</p>",
+                            "text": "<p>Estimated ship date is February 15.</p>",
                             "width": "100%",
                             "max_width": "normal",
                             "alignment": "left",
@@ -4798,7 +4827,7 @@
                         "text_WcPnUx"
                       ]
                     },
-                    "accordion_row_gXXiDF": {
+                    "accordion_row_gbYkP7": {
                       "type": "_accordion-row",
                       "settings": {
                         "heading": "What’s the guarantee?",
@@ -4811,7 +4840,7 @@
                         "text_PgebfM": {
                           "type": "text",
                           "settings": {
-                            "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn't the case, let us know and we'll do our best to work with you to make it right.</p>",
+                            "text": "<p>We offer a 30-day money-back guarantee.</p>",
                             "width": "100%",
                             "max_width": "normal",
                             "alignment": "left",
@@ -4839,7 +4868,7 @@
                         "text_PgebfM"
                       ]
                     },
-                    "accordion_row_LiWtCn": {
+                    "accordion_row_nc8cXh": {
                       "type": "_accordion-row",
                       "settings": {
                         "heading": "Is it good for Murph?",
@@ -4852,7 +4881,7 @@
                         "text_J8MwV8": {
                           "type": "text",
                           "settings": {
-                            "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn't the case, let us know and we'll do our best to work with you to make it right.</p>",
+                            "text": "<p>Yes — it’s designed for Run, Ruck, Train. Every purchase includes a 12-week Murph training program.</p>",
                             "width": "100%",
                             "max_width": "normal",
                             "alignment": "left",
@@ -4880,7 +4909,7 @@
                         "text_J8MwV8"
                       ]
                     },
-                    "accordion_row_TeNiR6": {
+                    "accordion_row_H8RwVD": {
                       "type": "_accordion-row",
                       "settings": {
                         "heading": "What are the launch bonuses?",
@@ -4893,7 +4922,7 @@
                         "text_dyj97D": {
                           "type": "text",
                           "settings": {
-                            "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn't the case, let us know and we'll do our best to work with you to make it right.</p>",
+                            "text": "<p>First 1,000 customers get a free Golden Jump Rope, plus free Push-Up Bars while supplies last.</p>",
                             "width": "100%",
                             "max_width": "normal",
                             "alignment": "left",
@@ -4923,545 +4952,12 @@
                     }
                   },
                   "block_order": [
-                    "accordion_row_3KKKyX",
-                    "accordion_row_3Mrcfk",
-                    "accordion_row_kwTAgz",
-                    "accordion_row_acPzYn",
-                    "accordion_row_LnGbCX",
-                    "accordion_row_wi77YL",
-                    "accordion_row_fzXneT",
-                    "accordion_row_dmiPRV",
-                    "accordion_row_qMPFjB",
-                    "accordion_row_gXXiDF",
-                    "accordion_row_LiWtCn",
-                    "accordion_row_TeNiR6"
-                  ]
-                },
-                "accordion_TnjzrB": {
-                  "type": "accordion",
-                  "name": "t:names.accordion",
-                  "settings": {
-                    "icon": "caret",
-                    "dividers": true,
-                    "type_preset": "h5",
-                    "inherit_color_scheme": true,
-                    "color_scheme": "",
-                    "border": "none",
-                    "border_width": 1,
-                    "border_opacity": 100,
-                    "border_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {
-                    "accordion_row_caeJJN": {
-                      "type": "_accordion-row",
-                      "settings": {
-                        "heading": "What makes Hybrid Vest different from a normal weighted vest?",
-                        "open_by_default": false,
-                        "icon": "none",
-                        "image_upload": "shopify://shop_images/Icon_Frame.png",
-                        "width": 24
-                      },
-                      "blocks": {
-                        "text_RnhAxR": {
-                          "type": "text",
-                          "settings": {
-                            "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn't the case, let us know and we'll do our best to work with you to make it right.</p>",
-                            "width": "100%",
-                            "max_width": "normal",
-                            "alignment": "left",
-                            "mobile_alignment": "left",
-                            "type_preset": "rte",
-                            "font": "var(--font-body--family)",
-                            "font_size": "1rem",
-                            "line_height": "normal",
-                            "letter_spacing": "normal",
-                            "case": "none",
-                            "wrap": "pretty",
-                            "color": "var(--color-foreground)",
-                            "background": false,
-                            "background_color": "#00000026",
-                            "corner_radius": 0,
-                            "padding-block-start": 0,
-                            "padding-block-end": 0,
-                            "padding-inline-start": 0,
-                            "padding-inline-end": 0
-                          },
-                          "blocks": {}
-                        }
-                      },
-                      "block_order": [
-                        "text_RnhAxR"
-                      ]
-                    },
-                    "accordion_row_gRUFcW": {
-                      "type": "_accordion-row",
-                      "settings": {
-                        "heading": "Will it bounce when I run?",
-                        "open_by_default": false,
-                        "icon": "none",
-                        "image_upload": "shopify://shop_images/Icon_Frame.png",
-                        "width": 24
-                      },
-                      "blocks": {
-                        "text_FJr397": {
-                          "type": "text",
-                          "settings": {
-                            "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn't the case, let us know and we'll do our best to work with you to make it right.</p>",
-                            "width": "100%",
-                            "max_width": "normal",
-                            "alignment": "left",
-                            "mobile_alignment": "left",
-                            "type_preset": "rte",
-                            "font": "var(--font-body--family)",
-                            "font_size": "1rem",
-                            "line_height": "normal",
-                            "letter_spacing": "normal",
-                            "case": "none",
-                            "wrap": "pretty",
-                            "color": "var(--color-foreground)",
-                            "background": false,
-                            "background_color": "#00000026",
-                            "corner_radius": 0,
-                            "padding-block-start": 0,
-                            "padding-block-end": 0,
-                            "padding-inline-start": 0,
-                            "padding-inline-end": 0
-                          },
-                          "blocks": {}
-                        }
-                      },
-                      "block_order": [
-                        "text_FJr397"
-                      ]
-                    },
-                    "accordion_row_BG8Czg": {
-                      "type": "_accordion-row",
-                      "settings": {
-                        "heading": "Is it comfortable for push-ups, burpees, and floor work? ",
-                        "open_by_default": false,
-                        "icon": "none",
-                        "image_upload": "shopify://shop_images/Icon_Frame.png",
-                        "width": 24
-                      },
-                      "blocks": {
-                        "text_LiA9KB": {
-                          "type": "text",
-                          "settings": {
-                            "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn't the case, let us know and we'll do our best to work with you to make it right.</p>",
-                            "width": "100%",
-                            "max_width": "normal",
-                            "alignment": "left",
-                            "mobile_alignment": "left",
-                            "type_preset": "rte",
-                            "font": "var(--font-body--family)",
-                            "font_size": "1rem",
-                            "line_height": "normal",
-                            "letter_spacing": "normal",
-                            "case": "none",
-                            "wrap": "pretty",
-                            "color": "var(--color-foreground)",
-                            "background": false,
-                            "background_color": "#00000026",
-                            "corner_radius": 0,
-                            "padding-block-start": 0,
-                            "padding-block-end": 0,
-                            "padding-inline-start": 0,
-                            "padding-inline-end": 0
-                          },
-                          "blocks": {}
-                        }
-                      },
-                      "block_order": [
-                        "text_LiA9KB"
-                      ]
-                    },
-                    "accordion_row_Ybh9gY": {
-                      "type": "_accordion-row",
-                      "settings": {
-                        "heading": "Can I do pull-ups and overhead work in it? ",
-                        "open_by_default": false,
-                        "icon": "none",
-                        "image_upload": "shopify://shop_images/Icon_Frame.png",
-                        "width": 24
-                      },
-                      "blocks": {
-                        "text_6zegmh": {
-                          "type": "text",
-                          "settings": {
-                            "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn't the case, let us know and we'll do our best to work with you to make it right.</p>",
-                            "width": "100%",
-                            "max_width": "normal",
-                            "alignment": "left",
-                            "mobile_alignment": "left",
-                            "type_preset": "rte",
-                            "font": "var(--font-body--family)",
-                            "font_size": "1rem",
-                            "line_height": "normal",
-                            "letter_spacing": "normal",
-                            "case": "none",
-                            "wrap": "pretty",
-                            "color": "var(--color-foreground)",
-                            "background": false,
-                            "background_color": "#00000026",
-                            "corner_radius": 0,
-                            "padding-block-start": 0,
-                            "padding-block-end": 0,
-                            "padding-inline-start": 0,
-                            "padding-inline-end": 0
-                          },
-                          "blocks": {}
-                        }
-                      },
-                      "block_order": [
-                        "text_6zegmh"
-                      ]
-                    },
-                    "accordion_row_KpcLAb": {
-                      "type": "_accordion-row",
-                      "settings": {
-                        "heading": "Does it chafe? ",
-                        "open_by_default": false,
-                        "icon": "none",
-                        "image_upload": "shopify://shop_images/Icon_Frame.png",
-                        "width": 24
-                      },
-                      "blocks": {
-                        "text_K9Pn7i": {
-                          "type": "text",
-                          "settings": {
-                            "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn't the case, let us know and we'll do our best to work with you to make it right.</p>",
-                            "width": "100%",
-                            "max_width": "normal",
-                            "alignment": "left",
-                            "mobile_alignment": "left",
-                            "type_preset": "rte",
-                            "font": "var(--font-body--family)",
-                            "font_size": "1rem",
-                            "line_height": "normal",
-                            "letter_spacing": "normal",
-                            "case": "none",
-                            "wrap": "pretty",
-                            "color": "var(--color-foreground)",
-                            "background": false,
-                            "background_color": "#00000026",
-                            "corner_radius": 0,
-                            "padding-block-start": 0,
-                            "padding-block-end": 0,
-                            "padding-inline-start": 0,
-                            "padding-inline-end": 0
-                          },
-                          "blocks": {}
-                        }
-                      },
-                      "block_order": [
-                        "text_K9Pn7i"
-                      ]
-                    },
-                    "accordion_row_PgLxG7": {
-                      "type": "_accordion-row",
-                      "settings": {
-                        "heading": "Will it fit my body type?",
-                        "open_by_default": false,
-                        "icon": "none",
-                        "image_upload": "shopify://shop_images/Icon_Frame.png",
-                        "width": 24
-                      },
-                      "blocks": {
-                        "text_FmzH6V": {
-                          "type": "text",
-                          "settings": {
-                            "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn't the case, let us know and we'll do our best to work with you to make it right.</p>",
-                            "width": "100%",
-                            "max_width": "normal",
-                            "alignment": "left",
-                            "mobile_alignment": "left",
-                            "type_preset": "rte",
-                            "font": "var(--font-body--family)",
-                            "font_size": "1rem",
-                            "line_height": "normal",
-                            "letter_spacing": "normal",
-                            "case": "none",
-                            "wrap": "pretty",
-                            "color": "var(--color-foreground)",
-                            "background": false,
-                            "background_color": "#00000026",
-                            "corner_radius": 0,
-                            "padding-block-start": 0,
-                            "padding-block-end": 0,
-                            "padding-inline-start": 0,
-                            "padding-inline-end": 0
-                          },
-                          "blocks": {}
-                        }
-                      },
-                      "block_order": [
-                        "text_FmzH6V"
-                      ]
-                    },
-                    "accordion_row_tYqwnb": {
-                      "type": "_accordion-row",
-                      "settings": {
-                        "heading": "Are plates included?",
-                        "open_by_default": false,
-                        "icon": "none",
-                        "image_upload": "shopify://shop_images/Icon_Frame.png",
-                        "width": 24
-                      },
-                      "blocks": {
-                        "text_4gYtBV": {
-                          "type": "text",
-                          "settings": {
-                            "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn't the case, let us know and we'll do our best to work with you to make it right.</p>",
-                            "width": "100%",
-                            "max_width": "normal",
-                            "alignment": "left",
-                            "mobile_alignment": "left",
-                            "type_preset": "rte",
-                            "font": "var(--font-body--family)",
-                            "font_size": "1rem",
-                            "line_height": "normal",
-                            "letter_spacing": "normal",
-                            "case": "none",
-                            "wrap": "pretty",
-                            "color": "var(--color-foreground)",
-                            "background": false,
-                            "background_color": "#00000026",
-                            "corner_radius": 0,
-                            "padding-block-start": 0,
-                            "padding-block-end": 0,
-                            "padding-inline-start": 0,
-                            "padding-inline-end": 0
-                          },
-                          "blocks": {}
-                        }
-                      },
-                      "block_order": [
-                        "text_4gYtBV"
-                      ]
-                    },
-                    "accordion_row_qknDYX": {
-                      "type": "_accordion-row",
-                      "settings": {
-                        "heading": "How much weight can it hold?",
-                        "open_by_default": false,
-                        "icon": "none",
-                        "image_upload": "shopify://shop_images/Icon_Frame.png",
-                        "width": 24
-                      },
-                      "blocks": {
-                        "text_jkzazA": {
-                          "type": "text",
-                          "settings": {
-                            "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn't the case, let us know and we'll do our best to work with you to make it right.</p>",
-                            "width": "100%",
-                            "max_width": "normal",
-                            "alignment": "left",
-                            "mobile_alignment": "left",
-                            "type_preset": "rte",
-                            "font": "var(--font-body--family)",
-                            "font_size": "1rem",
-                            "line_height": "normal",
-                            "letter_spacing": "normal",
-                            "case": "none",
-                            "wrap": "pretty",
-                            "color": "var(--color-foreground)",
-                            "background": false,
-                            "background_color": "#00000026",
-                            "corner_radius": 0,
-                            "padding-block-start": 0,
-                            "padding-block-end": 0,
-                            "padding-inline-start": 0,
-                            "padding-inline-end": 0
-                          },
-                          "blocks": {}
-                        }
-                      },
-                      "block_order": [
-                        "text_jkzazA"
-                      ]
-                    },
-                    "accordion_row_M9xzbX": {
-                      "type": "_accordion-row",
-                      "settings": {
-                        "heading": "When does it ship?",
-                        "open_by_default": false,
-                        "icon": "none",
-                        "image_upload": "shopify://shop_images/Icon_Frame.png",
-                        "width": 24
-                      },
-                      "blocks": {
-                        "text_6ALXz4": {
-                          "type": "text",
-                          "settings": {
-                            "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn't the case, let us know and we'll do our best to work with you to make it right.</p>",
-                            "width": "100%",
-                            "max_width": "normal",
-                            "alignment": "left",
-                            "mobile_alignment": "left",
-                            "type_preset": "rte",
-                            "font": "var(--font-body--family)",
-                            "font_size": "1rem",
-                            "line_height": "normal",
-                            "letter_spacing": "normal",
-                            "case": "none",
-                            "wrap": "pretty",
-                            "color": "var(--color-foreground)",
-                            "background": false,
-                            "background_color": "#00000026",
-                            "corner_radius": 0,
-                            "padding-block-start": 0,
-                            "padding-block-end": 0,
-                            "padding-inline-start": 0,
-                            "padding-inline-end": 0
-                          },
-                          "blocks": {}
-                        }
-                      },
-                      "block_order": [
-                        "text_6ALXz4"
-                      ]
-                    },
-                    "accordion_row_9zVzeH": {
-                      "type": "_accordion-row",
-                      "settings": {
-                        "heading": "What’s the guarantee?",
-                        "open_by_default": false,
-                        "icon": "none",
-                        "image_upload": "shopify://shop_images/Icon_Frame.png",
-                        "width": 24
-                      },
-                      "blocks": {
-                        "text_rXcyCx": {
-                          "type": "text",
-                          "settings": {
-                            "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn't the case, let us know and we'll do our best to work with you to make it right.</p>",
-                            "width": "100%",
-                            "max_width": "normal",
-                            "alignment": "left",
-                            "mobile_alignment": "left",
-                            "type_preset": "rte",
-                            "font": "var(--font-body--family)",
-                            "font_size": "1rem",
-                            "line_height": "normal",
-                            "letter_spacing": "normal",
-                            "case": "none",
-                            "wrap": "pretty",
-                            "color": "var(--color-foreground)",
-                            "background": false,
-                            "background_color": "#00000026",
-                            "corner_radius": 0,
-                            "padding-block-start": 0,
-                            "padding-block-end": 0,
-                            "padding-inline-start": 0,
-                            "padding-inline-end": 0
-                          },
-                          "blocks": {}
-                        }
-                      },
-                      "block_order": [
-                        "text_rXcyCx"
-                      ]
-                    },
-                    "accordion_row_LxjkMJ": {
-                      "type": "_accordion-row",
-                      "settings": {
-                        "heading": "Is it good for Murph?",
-                        "open_by_default": false,
-                        "icon": "none",
-                        "image_upload": "shopify://shop_images/Icon_Frame.png",
-                        "width": 24
-                      },
-                      "blocks": {
-                        "text_jwJXAK": {
-                          "type": "text",
-                          "settings": {
-                            "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn't the case, let us know and we'll do our best to work with you to make it right.</p>",
-                            "width": "100%",
-                            "max_width": "normal",
-                            "alignment": "left",
-                            "mobile_alignment": "left",
-                            "type_preset": "rte",
-                            "font": "var(--font-body--family)",
-                            "font_size": "1rem",
-                            "line_height": "normal",
-                            "letter_spacing": "normal",
-                            "case": "none",
-                            "wrap": "pretty",
-                            "color": "var(--color-foreground)",
-                            "background": false,
-                            "background_color": "#00000026",
-                            "corner_radius": 0,
-                            "padding-block-start": 0,
-                            "padding-block-end": 0,
-                            "padding-inline-start": 0,
-                            "padding-inline-end": 0
-                          },
-                          "blocks": {}
-                        }
-                      },
-                      "block_order": [
-                        "text_jwJXAK"
-                      ]
-                    },
-                    "accordion_row_hhNYt7": {
-                      "type": "_accordion-row",
-                      "settings": {
-                        "heading": "What are the launch bonuses?",
-                        "open_by_default": false,
-                        "icon": "none",
-                        "image_upload": "shopify://shop_images/Icon_Frame.png",
-                        "width": 24
-                      },
-                      "blocks": {
-                        "text_CAtMcf": {
-                          "type": "text",
-                          "settings": {
-                            "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn't the case, let us know and we'll do our best to work with you to make it right.</p>",
-                            "width": "100%",
-                            "max_width": "normal",
-                            "alignment": "left",
-                            "mobile_alignment": "left",
-                            "type_preset": "rte",
-                            "font": "var(--font-body--family)",
-                            "font_size": "1rem",
-                            "line_height": "normal",
-                            "letter_spacing": "normal",
-                            "case": "none",
-                            "wrap": "pretty",
-                            "color": "var(--color-foreground)",
-                            "background": false,
-                            "background_color": "#00000026",
-                            "corner_radius": 0,
-                            "padding-block-start": 0,
-                            "padding-block-end": 0,
-                            "padding-inline-start": 0,
-                            "padding-inline-end": 0
-                          },
-                          "blocks": {}
-                        }
-                      },
-                      "block_order": [
-                        "text_CAtMcf"
-                      ]
-                    }
-                  },
-                  "block_order": [
-                    "accordion_row_caeJJN",
-                    "accordion_row_gRUFcW",
-                    "accordion_row_BG8Czg",
-                    "accordion_row_Ybh9gY",
-                    "accordion_row_KpcLAb",
-                    "accordion_row_PgLxG7",
-                    "accordion_row_tYqwnb",
-                    "accordion_row_qknDYX",
-                    "accordion_row_M9xzbX",
-                    "accordion_row_9zVzeH",
-                    "accordion_row_LxjkMJ",
-                    "accordion_row_hhNYt7"
+                    "accordion_row_LajWBJ",
+                    "accordion_row_a37TXD",
+                    "accordion_row_zeB9wd",
+                    "accordion_row_gbYkP7",
+                    "accordion_row_nc8cXh",
+                    "accordion_row_H8RwVD"
                   ]
                 }
               },
