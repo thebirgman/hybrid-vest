@@ -3150,7 +3150,7 @@
                         "width_mobile": 100,
                         "max_width_desktop": 2000,
                         "max_width_mobile": 2000,
-                        "minimum_height": 380,
+                        "minimum_height": 300,
                         "subheading_type_preset": "rte",
                         "subheading_font": "var(--font-body--family)",
                         "subheading_font_size": "1rem",
