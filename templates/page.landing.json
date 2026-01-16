@@ -5934,7 +5934,7 @@
                       "settings": {
                         "text": "<p><em>$300</em></p>",
                         "width": "fit-content",
-                        "max_width": "normal",
+                        "max_width": "none",
                         "alignment": "left",
                         "mobile_alignment": "left",
                         "type_preset": "h4",
