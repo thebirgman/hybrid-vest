@@ -111,7 +111,9 @@
                         {{ percent_off }}
                       </div>
                     {% endif %}
+                    {{ product_option_value }}
                     {% if product_option_value.swatch.image != blank %}
+                      
                       <div class="variant-kit-option__image">
                         {{
                           product_option_value.swatch.image
@@ -299,6 +301,9 @@
   .variant-picker {
     width: 100%;
   }
+span.add-to-cart-text__main {
+    line-height: 1em;
+}
 
   .variant-picker__form {
     width: 100%;
