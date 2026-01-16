@@ -1929,7 +1929,7 @@
                           "type": "text",
                           "name": "t:names.text",
                           "settings": {
-                            "text": "<p>The breakthrough was simple:</p>",
+                            "text": "<p>THE BREAKTHROUGH WAS SIMPLE:</p>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
