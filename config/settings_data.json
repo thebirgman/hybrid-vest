@@ -280,7 +280,7 @@
           "background": "#0e0e0e",
           "foreground_heading": "#ffffff",
           "foreground": "#ffffffe6",
-          "primary": "#ffffff",
+          "primary": "#ffffffcc",
           "primary_hover": "#ffffffb0",
           "border": "#ffffff33",
           "shadow": "#000000",
