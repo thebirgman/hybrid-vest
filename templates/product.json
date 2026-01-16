@@ -2937,10 +2937,10 @@
         "padding-block-end": 80
       }
     },
-    "section_MUde4r": {
+    "section_Ajgbbn": {
       "type": "section",
       "blocks": {
-        "group_A7dtFf": {
+        "group_NkUxWX": {
           "type": "group",
           "name": "t:names.group",
           "settings": {
@@ -2991,7 +2991,7 @@
             "padding-inline-end-mobile": 0
           },
           "blocks": {
-            "text_aCnAcD": {
+            "text_HatYhF": {
               "type": "text",
               "name": "t:names.heading",
               "settings": {
@@ -3018,13 +3018,13 @@
               },
               "blocks": {}
             },
-            "group_QKNyDW": {
+            "group_9WgL8U": {
               "type": "group",
               "name": "t:names.group",
               "settings": {
-                "custom_class": "",
+                "custom_class": "bento-grid-container desktop-cards",
                 "reverse_on_mobile": false,
-                "slider_on_mobile": false,
+                "slider_on_mobile": true,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "flex-start",
@@ -3069,7 +3069,7 @@
                 "padding-inline-end-mobile": 0
               },
               "blocks": {
-                "group_mMeEd6": {
+                "group_PijPqg": {
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
@@ -3077,7 +3077,7 @@
                     "reverse_on_mobile": false,
                     "slider_on_mobile": false,
                     "content_direction": "row",
-                    "vertical_on_mobile": true,
+                    "vertical_on_mobile": false,
                     "horizontal_alignment": "flex-start",
                     "vertical_alignment": "center",
                     "align_baseline": false,
@@ -3120,22 +3120,27 @@
                     "padding-inline-end-mobile": 0
                   },
                   "blocks": {
-                    "image_card_RE9qV7": {
+                    "image_card_QaAMhj": {
                       "type": "image-card",
                       "name": "Image Card",
                       "settings": {
                         "background_image": "shopify://shop_images/bbee064c45ad739152f2c8d6bd2a8f389d15ae2c.png",
+                        "inactive_image_desktop_large": "shopify://shop_images/Bounce-Free_Stability_Ghost_large_76ef6c23-3598-4c3e-893e-60180e83c1a2.jpg",
+                        "inactive_image_desktop_short": "shopify://shop_images/Bounce-Free_Stability_Ghost_short.jpg",
+                        "inactive_image_mobile": "shopify://shop_images/Bounce-Free_Stability_Ghost_Mobile.jpg",
+                        "active_image_desktop": "shopify://shop_images/Bounce-Free_Stability_Active.jpg",
+                        "active_image_mobile": "shopify://shop_images/Bounce-Free_Stability_Active_Mobile.jpg",
                         "heading": "<h4>Bounce-Free Stability</h4>",
                         "subheading": "<p>Built through extensive prototyping so it moves with you — not against you.</p>",
                         "badge": "#1",
-                        "default_active_state": false,
+                        "default_active_state": true,
                         "text_alignment": "bottom",
                         "heading_subheading_gap": 12,
                         "width_desktop": 100,
                         "width_mobile": 100,
                         "max_width_desktop": 2000,
                         "max_width_mobile": 2000,
-                        "minimum_height": 380,
+                        "minimum_height": 300,
                         "subheading_type_preset": "rte",
                         "subheading_font": "var(--font-body--family)",
                         "subheading_font_size": "1rem",
@@ -3162,22 +3167,27 @@
                       },
                       "blocks": {}
                     },
-                    "image_card_yytMbL": {
+                    "image_card_ADjFUC": {
                       "type": "image-card",
                       "name": "Image Card",
                       "settings": {
                         "background_image": "shopify://shop_images/76336bcaf4fe7671f0e018882675c315166a0083.png",
+                        "inactive_image_desktop_large": "shopify://shop_images/Gold_Brick_Ghost_large_84ed64b1-29ac-4705-8a94-e9e5af396201.jpg",
+                        "inactive_image_desktop_short": "shopify://shop_images/Gold_Brick_Ghost_short.jpg",
+                        "inactive_image_mobile": "shopify://shop_images/Gold_Brick_Ghost_Mobile.jpg",
+                        "active_image_desktop": "shopify://shop_images/Gold_Brick_Active.jpg",
+                        "active_image_mobile": "shopify://shop_images/Gold_Brick_Active_Mobile.jpg",
                         "heading": "<h4>Comfortable “Gold Brick” Plates</h4>",
-                        "subheading": "<p>17 padded plates included. Designed to be comfortable during burpees, push-ups, and floor contact.</p>",
+                        "subheading": "<p>13 padded plates included. Designed to be comfortable during burpees, push-ups, and floor contact.</p>",
                         "badge": "#2",
                         "default_active_state": false,
                         "text_alignment": "bottom",
                         "heading_subheading_gap": 12,
                         "width_desktop": 100,
                         "width_mobile": 100,
-                        "max_width_desktop": 320,
+                        "max_width_desktop": 2000,
                         "max_width_mobile": 2000,
-                        "minimum_height": 380,
+                        "minimum_height": 300,
                         "subheading_type_preset": "rte",
                         "subheading_font": "var(--font-body--family)",
                         "subheading_font_size": "1rem",
@@ -3206,11 +3216,11 @@
                     }
                   },
                   "block_order": [
-                    "image_card_RE9qV7",
-                    "image_card_yytMbL"
+                    "image_card_QaAMhj",
+                    "image_card_ADjFUC"
                   ]
                 },
-                "group_EXwnzm": {
+                "group_wFRzYV": {
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
@@ -3218,7 +3228,7 @@
                     "reverse_on_mobile": false,
                     "slider_on_mobile": false,
                     "content_direction": "row",
-                    "vertical_on_mobile": true,
+                    "vertical_on_mobile": false,
                     "horizontal_alignment": "flex-start",
                     "vertical_alignment": "center",
                     "align_baseline": false,
@@ -3261,11 +3271,16 @@
                     "padding-inline-end-mobile": 0
                   },
                   "blocks": {
-                    "image_card_8hdXhw": {
+                    "image_card_ML8TJw": {
                       "type": "image-card",
                       "name": "Image Card",
                       "settings": {
                         "background_image": "shopify://shop_images/74945b79477a8733ff48ba48d30b8bf549334e06.png",
+                        "inactive_image_desktop_large": "shopify://shop_images/Overhead_Mobility_Ghost_large_2b85045e-8e68-4053-b8e6-96f7fd0bec0d.jpg",
+                        "inactive_image_desktop_short": "shopify://shop_images/Overhead_Mobility_Ghost_short.jpg",
+                        "inactive_image_mobile": "shopify://shop_images/Overhead_Mobility_Ghost_Mobile.jpg",
+                        "active_image_desktop": "shopify://shop_images/Overhead_Mobility_Active.jpg",
+                        "active_image_mobile": "shopify://shop_images/Overhead_Mobility_Active_Mobile.jpg",
                         "heading": "<h4>Overhead Mobility</h4>",
                         "subheading": "<p>Designed to keep your shoulders and torso free so you can press, pull up, and train overhead.</p>",
                         "badge": "#3",
@@ -3303,11 +3318,16 @@
                       },
                       "blocks": {}
                     },
-                    "image_card_HFhkV7": {
+                    "image_card_RaWLE9": {
                       "type": "image-card",
                       "name": "Image Card",
                       "settings": {
                         "background_image": "shopify://shop_images/bbe26cbf2ee6f5b463424dbf52d5f7307c619a33.png",
+                        "inactive_image_desktop_large": "shopify://shop_images/Anti-Chafe_Ghost_large_efa391b2-2ecf-44f1-b436-756afbad0cc8.jpg",
+                        "inactive_image_desktop_short": "shopify://shop_images/Anti-Chafe_Ghost_short.jpg",
+                        "inactive_image_mobile": "shopify://shop_images/Anti-Chafe_Ghost_Mobile.jpg",
+                        "active_image_desktop": "shopify://shop_images/Anti-Chafe_Active.jpg",
+                        "active_image_mobile": "shopify://shop_images/Anti-Chafe_Active_Mobile.jpg",
                         "heading": "<h4>Anti-Chafe + Quick-Dry Interior</h4>",
                         "subheading": "<p>Breathable quick-dry mesh plus airflow channels between plates to reduce heat, friction, and sweat saturation.</p>",
                         "badge": "#4",
@@ -3347,11 +3367,11 @@
                     }
                   },
                   "block_order": [
-                    "image_card_8hdXhw",
-                    "image_card_HFhkV7"
+                    "image_card_ML8TJw",
+                    "image_card_RaWLE9"
                   ]
                 },
-                "group_4KMUHm": {
+                "group_nzJaww": {
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
@@ -3402,11 +3422,16 @@
                     "padding-inline-end-mobile": 0
                   },
                   "blocks": {
-                    "image_card_MR9RpB": {
+                    "image_card_6wMhNB": {
                       "type": "image-card",
                       "name": "Image Card",
                       "settings": {
                         "background_image": "shopify://shop_images/74945b79477a8733ff48ba48d30b8bf549334e06.png",
+                        "inactive_image_desktop_large": "shopify://shop_images/Fast_Transitions_Ghost_large_f29d65f9-fee8-4275-85ba-92c73cb71f6c.jpg",
+                        "inactive_image_desktop_short": "shopify://shop_images/Fast_Transitions_Ghost_short.jpg",
+                        "inactive_image_mobile": "shopify://shop_images/Fast_Transitions_Ghost_Mobile.jpg",
+                        "active_image_desktop": "shopify://shop_images/Fast_Transitions_Active.jpg",
+                        "active_image_mobile": "shopify://shop_images/Fast_Transitions_Active_Mobile.jpg",
                         "heading": "<h4>Fast Transitions</h4>",
                         "subheading": "<p>Tactical quick-release buckles make it simple to go half mode → full mode without a frustrating re-setup.</p>",
                         "badge": "#5",
@@ -3444,11 +3469,16 @@
                       },
                       "blocks": {}
                     },
-                    "image_card_CEQGqW": {
+                    "image_card_pL8Gdm": {
                       "type": "image-card",
                       "name": "Image Card",
                       "settings": {
                         "background_image": "shopify://shop_images/bbe26cbf2ee6f5b463424dbf52d5f7307c619a33.png",
+                        "inactive_image_desktop_large": "shopify://shop_images/Carry_Essentials_Ghost_large_5d09d914-bd6a-42e6-9f17-9b84aa1d6c1c.jpg",
+                        "inactive_image_desktop_short": "shopify://shop_images/Carry_Essentials_Ghost_short.jpg",
+                        "inactive_image_mobile": "shopify://shop_images/Carry_Essentials_Ghost_Mobile.jpg",
+                        "active_image_desktop": "shopify://shop_images/Carry_Essentials_Active.jpg",
+                        "active_image_mobile": "shopify://shop_images/Carry_Essentials_Active_Mobile.jpg",
                         "heading": "<h4>Carry Essentials Built In</h4>",
                         "subheading": "<p>Front phone pocket + rear gear pocket so you don’t need additional accessories.</p>",
                         "badge": "#6",
@@ -3488,28 +3518,372 @@
                     }
                   },
                   "block_order": [
-                    "image_card_MR9RpB",
-                    "image_card_CEQGqW"
+                    "image_card_6wMhNB",
+                    "image_card_pL8Gdm"
                   ]
                 }
               },
               "block_order": [
-                "group_mMeEd6",
-                "group_EXwnzm",
-                "group_4KMUHm"
+                "group_PijPqg",
+                "group_wFRzYV",
+                "group_nzJaww"
+              ]
+            },
+            "group_PkiR3n": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "custom_class": "bento-grid-container mobile-cards",
+                "reverse_on_mobile": false,
+                "slider_on_mobile": true,
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "flex-start",
+                "gap": 12,
+                "gap_mobile": 12,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "max_width_mobile": "fill",
+                "custom_max_width_mobile": 700,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0,
+                "enable_mobile_padding": false,
+                "padding-block-start-mobile": 0,
+                "padding-block-end-mobile": 0,
+                "padding-inline-start-mobile": 0,
+                "padding-inline-end-mobile": 0
+              },
+              "blocks": {
+                "image_card_8tMM6P": {
+                  "type": "image-card",
+                  "name": "Image Card",
+                  "settings": {
+                    "background_image": "shopify://shop_images/bbee064c45ad739152f2c8d6bd2a8f389d15ae2c.png",
+                    "inactive_image_desktop_large": "shopify://shop_images/Bounce-Free_Stability_Ghost_large_76ef6c23-3598-4c3e-893e-60180e83c1a2.jpg",
+                    "inactive_image_desktop_short": "shopify://shop_images/Bounce-Free_Stability_Ghost_short.jpg",
+                    "inactive_image_mobile": "shopify://shop_images/Bounce-Free_Stability_Ghost_Mobile.jpg",
+                    "active_image_desktop": "shopify://shop_images/Bounce-Free_Stability_Active.jpg",
+                    "active_image_mobile": "shopify://shop_images/Bounce-Free_Stability_Active_Mobile.jpg",
+                    "heading": "<h4>Bounce-Free Stability</h4>",
+                    "subheading": "<p>Built through extensive prototyping so it moves with you — not against you.</p>",
+                    "badge": "#1",
+                    "default_active_state": true,
+                    "text_alignment": "bottom",
+                    "heading_subheading_gap": 12,
+                    "width_desktop": 100,
+                    "width_mobile": 100,
+                    "max_width_desktop": 2000,
+                    "max_width_mobile": 2000,
+                    "minimum_height": 300,
+                    "subheading_type_preset": "rte",
+                    "subheading_font": "var(--font-body--family)",
+                    "subheading_font_size": "1rem",
+                    "subheading_line_height": "normal",
+                    "subheading_letter_spacing": "normal",
+                    "subheading_case": "none",
+                    "subheading_wrap": "pretty",
+                    "subheading_color": "var(--color-foreground)",
+                    "inherit_color_scheme": false,
+                    "color_scheme": "",
+                    "enable_gradient_overlay": true,
+                    "border": "solid",
+                    "border_width": 1,
+                    "border_opacity": 20,
+                    "border_radius": 0,
+                    "padding-block-start": 16,
+                    "padding-block-end": 32,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0,
+                    "text_padding_block_start": 80,
+                    "text_padding_block_end": 32,
+                    "text_padding_inline_start": 32,
+                    "text_padding_inline_end": 32
+                  },
+                  "blocks": {}
+                },
+                "image_card_6BtLG8": {
+                  "type": "image-card",
+                  "name": "Image Card",
+                  "settings": {
+                    "background_image": "shopify://shop_images/76336bcaf4fe7671f0e018882675c315166a0083.png",
+                    "inactive_image_desktop_large": "shopify://shop_images/Gold_Brick_Ghost_large_84ed64b1-29ac-4705-8a94-e9e5af396201.jpg",
+                    "inactive_image_desktop_short": "shopify://shop_images/Gold_Brick_Ghost_short.jpg",
+                    "inactive_image_mobile": "shopify://shop_images/Gold_Brick_Ghost_Mobile.jpg",
+                    "active_image_desktop": "shopify://shop_images/Gold_Brick_Active.jpg",
+                    "active_image_mobile": "shopify://shop_images/Gold_Brick_Active_Mobile.jpg",
+                    "heading": "<h4>Comfortable “Gold Brick” Plates</h4>",
+                    "subheading": "<p>13 padded plates included. Designed to be comfortable during burpees, push-ups, and floor contact.</p>",
+                    "badge": "#2",
+                    "default_active_state": false,
+                    "text_alignment": "bottom",
+                    "heading_subheading_gap": 12,
+                    "width_desktop": 100,
+                    "width_mobile": 100,
+                    "max_width_desktop": 2000,
+                    "max_width_mobile": 2000,
+                    "minimum_height": 300,
+                    "subheading_type_preset": "rte",
+                    "subheading_font": "var(--font-body--family)",
+                    "subheading_font_size": "1rem",
+                    "subheading_line_height": "normal",
+                    "subheading_letter_spacing": "normal",
+                    "subheading_case": "none",
+                    "subheading_wrap": "pretty",
+                    "subheading_color": "var(--color-foreground)",
+                    "inherit_color_scheme": true,
+                    "color_scheme": "",
+                    "enable_gradient_overlay": true,
+                    "border": "solid",
+                    "border_width": 1,
+                    "border_opacity": 20,
+                    "border_radius": 0,
+                    "padding-block-start": 16,
+                    "padding-block-end": 32,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0,
+                    "text_padding_block_start": 80,
+                    "text_padding_block_end": 32,
+                    "text_padding_inline_start": 32,
+                    "text_padding_inline_end": 32
+                  },
+                  "blocks": {}
+                },
+                "image_card_g6yqVB": {
+                  "type": "image-card",
+                  "name": "Image Card",
+                  "settings": {
+                    "background_image": "shopify://shop_images/74945b79477a8733ff48ba48d30b8bf549334e06.png",
+                    "inactive_image_desktop_large": "shopify://shop_images/Overhead_Mobility_Ghost_large_2b85045e-8e68-4053-b8e6-96f7fd0bec0d.jpg",
+                    "inactive_image_desktop_short": "shopify://shop_images/Overhead_Mobility_Ghost_short.jpg",
+                    "inactive_image_mobile": "shopify://shop_images/Overhead_Mobility_Ghost_Mobile.jpg",
+                    "active_image_desktop": "shopify://shop_images/Overhead_Mobility_Active.jpg",
+                    "active_image_mobile": "shopify://shop_images/Overhead_Mobility_Active_Mobile.jpg",
+                    "heading": "<h4>Overhead Mobility</h4>",
+                    "subheading": "<p>Designed to keep your shoulders and torso free so you can press, pull up, and train overhead.</p>",
+                    "badge": "#3",
+                    "default_active_state": false,
+                    "text_alignment": "bottom",
+                    "heading_subheading_gap": 12,
+                    "width_desktop": 100,
+                    "width_mobile": 100,
+                    "max_width_desktop": 2000,
+                    "max_width_mobile": 2000,
+                    "minimum_height": 300,
+                    "subheading_type_preset": "rte",
+                    "subheading_font": "var(--font-body--family)",
+                    "subheading_font_size": "1rem",
+                    "subheading_line_height": "normal",
+                    "subheading_letter_spacing": "normal",
+                    "subheading_case": "none",
+                    "subheading_wrap": "pretty",
+                    "subheading_color": "var(--color-foreground)",
+                    "inherit_color_scheme": false,
+                    "color_scheme": "",
+                    "enable_gradient_overlay": true,
+                    "border": "solid",
+                    "border_width": 1,
+                    "border_opacity": 20,
+                    "border_radius": 0,
+                    "padding-block-start": 16,
+                    "padding-block-end": 32,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0,
+                    "text_padding_block_start": 80,
+                    "text_padding_block_end": 32,
+                    "text_padding_inline_start": 32,
+                    "text_padding_inline_end": 32
+                  },
+                  "blocks": {}
+                },
+                "image_card_UNjyXV": {
+                  "type": "image-card",
+                  "name": "Image Card",
+                  "settings": {
+                    "background_image": "shopify://shop_images/bbe26cbf2ee6f5b463424dbf52d5f7307c619a33.png",
+                    "inactive_image_desktop_large": "shopify://shop_images/Anti-Chafe_Ghost_large_efa391b2-2ecf-44f1-b436-756afbad0cc8.jpg",
+                    "inactive_image_desktop_short": "shopify://shop_images/Anti-Chafe_Ghost_short.jpg",
+                    "inactive_image_mobile": "shopify://shop_images/Anti-Chafe_Ghost_Mobile.jpg",
+                    "active_image_desktop": "shopify://shop_images/Anti-Chafe_Active.jpg",
+                    "active_image_mobile": "shopify://shop_images/Anti-Chafe_Active_Mobile.jpg",
+                    "heading": "<h4>Anti-Chafe + Quick-Dry Interior</h4>",
+                    "subheading": "<p>Breathable quick-dry mesh plus airflow channels between plates to reduce heat, friction, and sweat saturation.</p>",
+                    "badge": "#4",
+                    "default_active_state": false,
+                    "text_alignment": "bottom",
+                    "heading_subheading_gap": 12,
+                    "width_desktop": 100,
+                    "width_mobile": 100,
+                    "max_width_desktop": 2000,
+                    "max_width_mobile": 2000,
+                    "minimum_height": 300,
+                    "subheading_type_preset": "rte",
+                    "subheading_font": "var(--font-body--family)",
+                    "subheading_font_size": "1rem",
+                    "subheading_line_height": "normal",
+                    "subheading_letter_spacing": "normal",
+                    "subheading_case": "none",
+                    "subheading_wrap": "pretty",
+                    "subheading_color": "var(--color-foreground)",
+                    "inherit_color_scheme": false,
+                    "color_scheme": "",
+                    "enable_gradient_overlay": true,
+                    "border": "solid",
+                    "border_width": 1,
+                    "border_opacity": 20,
+                    "border_radius": 0,
+                    "padding-block-start": 16,
+                    "padding-block-end": 32,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0,
+                    "text_padding_block_start": 80,
+                    "text_padding_block_end": 32,
+                    "text_padding_inline_start": 32,
+                    "text_padding_inline_end": 32
+                  },
+                  "blocks": {}
+                },
+                "image_card_K7fJWB": {
+                  "type": "image-card",
+                  "name": "Image Card",
+                  "settings": {
+                    "background_image": "shopify://shop_images/74945b79477a8733ff48ba48d30b8bf549334e06.png",
+                    "inactive_image_desktop_large": "shopify://shop_images/Fast_Transitions_Ghost_large_f29d65f9-fee8-4275-85ba-92c73cb71f6c.jpg",
+                    "inactive_image_desktop_short": "shopify://shop_images/Fast_Transitions_Ghost_short.jpg",
+                    "inactive_image_mobile": "shopify://shop_images/Fast_Transitions_Ghost_Mobile.jpg",
+                    "active_image_desktop": "shopify://shop_images/Fast_Transitions_Active.jpg",
+                    "active_image_mobile": "shopify://shop_images/Fast_Transitions_Active_Mobile.jpg",
+                    "heading": "<h4>Fast Transitions</h4>",
+                    "subheading": "<p>Tactical quick-release buckles make it simple to go half mode → full mode without a frustrating re-setup.</p>",
+                    "badge": "#5",
+                    "default_active_state": false,
+                    "text_alignment": "bottom",
+                    "heading_subheading_gap": 12,
+                    "width_desktop": 100,
+                    "width_mobile": 100,
+                    "max_width_desktop": 2000,
+                    "max_width_mobile": 2000,
+                    "minimum_height": 300,
+                    "subheading_type_preset": "rte",
+                    "subheading_font": "var(--font-body--family)",
+                    "subheading_font_size": "1rem",
+                    "subheading_line_height": "normal",
+                    "subheading_letter_spacing": "normal",
+                    "subheading_case": "none",
+                    "subheading_wrap": "pretty",
+                    "subheading_color": "var(--color-foreground)",
+                    "inherit_color_scheme": false,
+                    "color_scheme": "",
+                    "enable_gradient_overlay": true,
+                    "border": "solid",
+                    "border_width": 1,
+                    "border_opacity": 20,
+                    "border_radius": 0,
+                    "padding-block-start": 16,
+                    "padding-block-end": 32,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0,
+                    "text_padding_block_start": 80,
+                    "text_padding_block_end": 32,
+                    "text_padding_inline_start": 32,
+                    "text_padding_inline_end": 32
+                  },
+                  "blocks": {}
+                },
+                "image_card_zGg8Mx": {
+                  "type": "image-card",
+                  "name": "Image Card",
+                  "settings": {
+                    "background_image": "shopify://shop_images/bbe26cbf2ee6f5b463424dbf52d5f7307c619a33.png",
+                    "inactive_image_desktop_large": "shopify://shop_images/Carry_Essentials_Ghost_large_5d09d914-bd6a-42e6-9f17-9b84aa1d6c1c.jpg",
+                    "inactive_image_desktop_short": "shopify://shop_images/Carry_Essentials_Ghost_short.jpg",
+                    "inactive_image_mobile": "shopify://shop_images/Carry_Essentials_Ghost_Mobile.jpg",
+                    "active_image_desktop": "shopify://shop_images/Carry_Essentials_Active.jpg",
+                    "active_image_mobile": "shopify://shop_images/Carry_Essentials_Active_Mobile.jpg",
+                    "heading": "<h4>Carry Essentials Built In</h4>",
+                    "subheading": "<p>Front phone pocket + rear gear pocket so you don’t need additional accessories.</p>",
+                    "badge": "#6",
+                    "default_active_state": false,
+                    "text_alignment": "bottom",
+                    "heading_subheading_gap": 12,
+                    "width_desktop": 100,
+                    "width_mobile": 100,
+                    "max_width_desktop": 2000,
+                    "max_width_mobile": 2000,
+                    "minimum_height": 300,
+                    "subheading_type_preset": "rte",
+                    "subheading_font": "var(--font-body--family)",
+                    "subheading_font_size": "1rem",
+                    "subheading_line_height": "normal",
+                    "subheading_letter_spacing": "normal",
+                    "subheading_case": "none",
+                    "subheading_wrap": "pretty",
+                    "subheading_color": "var(--color-foreground)",
+                    "inherit_color_scheme": false,
+                    "color_scheme": "",
+                    "enable_gradient_overlay": true,
+                    "border": "solid",
+                    "border_width": 1,
+                    "border_opacity": 20,
+                    "border_radius": 0,
+                    "padding-block-start": 16,
+                    "padding-block-end": 32,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0,
+                    "text_padding_block_start": 80,
+                    "text_padding_block_end": 32,
+                    "text_padding_inline_start": 32,
+                    "text_padding_inline_end": 32
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_card_8tMM6P",
+                "image_card_6BtLG8",
+                "image_card_g6yqVB",
+                "image_card_UNjyXV",
+                "image_card_K7fJWB",
+                "image_card_zGg8Mx"
               ]
             }
           },
           "block_order": [
-            "text_aCnAcD",
-            "group_QKNyDW"
+            "text_HatYhF",
+            "group_9WgL8U",
+            "group_PkiR3n"
           ]
         }
       },
       "block_order": [
-        "group_A7dtFf"
+        "group_NkUxWX"
       ],
-      "name": "t:names.custom_section",
+      "name": "Why it's Different",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -5491,7 +5865,7 @@
   "order": [
     "main",
     "section_MFnacD",
-    "section_MUde4r",
+    "section_Ajgbbn",
     "comparison_table_n4kJVr",
     "marquee_4AQU36",
     "section_CLYjgn",
