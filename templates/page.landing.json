@@ -5464,7 +5464,7 @@
                         "enable_mobile_padding": true,
                         "padding-block-start-mobile": 16,
                         "padding-block-end-mobile": 16,
-                        "padding-inline-start-mobile": 6,
+                        "padding-inline-start-mobile": 16,
                         "padding-inline-end-mobile": 16
                       },
                       "blocks": {
@@ -8157,7 +8157,7 @@
         "group_RBdXDY"
       ],
       "custom_css": [
-        "p{font-weight: 300;}"
+        "p {font-weight: 300;}"
       ],
       "name": "t:names.faq_section",
       "settings": {

@@ -5147,7 +5147,7 @@
                         "padding-block-start-mobile": 16,
                         "padding-block-end-mobile": 16,
                         "padding-inline-start-mobile": 16,
-                        "padding-inline-end-mobile": 20
+                        "padding-inline-end-mobile": 16
                       },
                       "blocks": {
                         "image_gMVzEi": {
