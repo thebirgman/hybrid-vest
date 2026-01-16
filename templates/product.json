@@ -3491,7 +3491,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>We make things that work better and last longer.</p>",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
@@ -4033,7 +4033,7 @@
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 100,
-        "padding-block-end": 100
+        "padding-block-end": 0
       }
     },
     "marquee_4AQU36": {
