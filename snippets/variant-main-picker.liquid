@@ -114,9 +114,7 @@
                     {% assign trim_key = product_option_value.value | handle %}
                     {% assign trim = shop.metaobjects.trim_colors[trim_key] %}
 
-                    {% if trim.image %}
-                      <img src="{{ trim.image | image_url: width: 100 }}">
-                    {% endif %}
+                    {{ trim }}
                     {% if product_option_value.swatch.image != blank %}
                       
                       <div class="variant-kit-option__image">
