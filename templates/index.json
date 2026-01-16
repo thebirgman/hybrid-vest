@@ -1718,10 +1718,10 @@
         "padding-block-end": 80
       }
     },
-    "section_V9PUBF": {
+    "section_cmAAjw": {
       "type": "section",
       "blocks": {
-        "group_ipbyt9": {
+        "group_maRETd": {
           "type": "group",
           "name": "t:names.group",
           "settings": {
@@ -1772,7 +1772,7 @@
             "padding-inline-end-mobile": 0
           },
           "blocks": {
-            "group_Nc8Ryc": {
+            "group_38dEF3": {
               "type": "group",
               "name": "t:names.group",
               "settings": {
@@ -1823,7 +1823,7 @@
                 "padding-inline-end-mobile": 0
               },
               "blocks": {
-                "group_trCHQ6": {
+                "group_afbXyM": {
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
@@ -1874,7 +1874,7 @@
                     "padding-inline-end-mobile": 0
                   },
                   "blocks": {
-                    "group_Aw4zxp": {
+                    "group_zNnGab": {
                       "type": "group",
                       "name": "t:names.group",
                       "settings": {
@@ -1925,7 +1925,7 @@
                         "padding-inline-end-mobile": 0
                       },
                       "blocks": {
-                        "text_epRc9p": {
+                        "text_mVkE4y": {
                           "type": "text",
                           "name": "t:names.text",
                           "settings": {
@@ -1954,10 +1954,10 @@
                         }
                       },
                       "block_order": [
-                        "text_epRc9p"
+                        "text_mVkE4y"
                       ]
                     },
-                    "text_Pm8BYG": {
+                    "text_7NRRpR": {
                       "type": "text",
                       "name": "t:names.heading",
                       "settings": {
@@ -1986,11 +1986,11 @@
                     }
                   },
                   "block_order": [
-                    "group_Aw4zxp",
-                    "text_Pm8BYG"
+                    "group_zNnGab",
+                    "text_7NRRpR"
                   ]
                 },
-                "image_43YReG": {
+                "image_MNK8bf": {
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
@@ -2012,11 +2012,11 @@
                 }
               },
               "block_order": [
-                "group_trCHQ6",
-                "image_43YReG"
+                "group_afbXyM",
+                "image_MNK8bf"
               ]
             },
-            "group_8JLHqK": {
+            "group_QtHWVz": {
               "type": "group",
               "name": "t:names.group",
               "settings": {
@@ -2067,7 +2067,7 @@
                 "padding-inline-end-mobile": 0
               },
               "blocks": {
-                "text_MCBDWj": {
+                "text_qRMxbh": {
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
@@ -2094,7 +2094,7 @@
                   },
                   "blocks": {}
                 },
-                "group_nxY9zK": {
+                "group_bVjDxy": {
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
@@ -2145,7 +2145,7 @@
                     "padding-inline-end-mobile": 0
                   },
                   "blocks": {
-                    "group_G49Agi": {
+                    "group_LQwgaJ": {
                       "type": "group",
                       "name": "t:names.group",
                       "settings": {
@@ -2196,7 +2196,7 @@
                         "padding-inline-end-mobile": 0
                       },
                       "blocks": {
-                        "group_rXayTc": {
+                        "group_6m3htX": {
                           "type": "group",
                           "name": "Icon with Text",
                           "settings": {
@@ -2247,7 +2247,7 @@
                             "padding-inline-end-mobile": 0
                           },
                           "blocks": {
-                            "icon_AU8Hww": {
+                            "icon_bdrHKJ": {
                               "type": "icon",
                               "name": "t:names.icon",
                               "settings": {
@@ -2259,7 +2259,7 @@
                               },
                               "blocks": {}
                             },
-                            "text_XPXMrK": {
+                            "text_nNb7ht": {
                               "type": "text",
                               "name": "t:names.text",
                               "settings": {
@@ -2288,11 +2288,11 @@
                             }
                           },
                           "block_order": [
-                            "icon_AU8Hww",
-                            "text_XPXMrK"
+                            "icon_bdrHKJ",
+                            "text_nNb7ht"
                           ]
                         },
-                        "group_PatfQP": {
+                        "group_KFM8E6": {
                           "type": "group",
                           "name": "Icon with Text",
                           "settings": {
@@ -2343,7 +2343,7 @@
                             "padding-inline-end-mobile": 0
                           },
                           "blocks": {
-                            "icon_mDnnT7": {
+                            "icon_GYUQhP": {
                               "type": "icon",
                               "name": "t:names.icon",
                               "settings": {
@@ -2355,7 +2355,7 @@
                               },
                               "blocks": {}
                             },
-                            "text_KmpfKB": {
+                            "text_rpMdpy": {
                               "type": "text",
                               "name": "t:names.text",
                               "settings": {
@@ -2384,17 +2384,17 @@
                             }
                           },
                           "block_order": [
-                            "icon_mDnnT7",
-                            "text_KmpfKB"
+                            "icon_GYUQhP",
+                            "text_rpMdpy"
                           ]
                         }
                       },
                       "block_order": [
-                        "group_rXayTc",
-                        "group_PatfQP"
+                        "group_6m3htX",
+                        "group_KFM8E6"
                       ]
                     },
-                    "group_tJcy4Q": {
+                    "group_48J3je": {
                       "type": "group",
                       "name": "t:names.group",
                       "settings": {
@@ -2445,7 +2445,7 @@
                         "padding-inline-end-mobile": 0
                       },
                       "blocks": {
-                        "group_KRmCd3": {
+                        "group_8BtgB4": {
                           "type": "group",
                           "name": "Icon with Text",
                           "settings": {
@@ -2496,7 +2496,7 @@
                             "padding-inline-end-mobile": 0
                           },
                           "blocks": {
-                            "icon_PNQG9j": {
+                            "icon_bdPXwL": {
                               "type": "icon",
                               "name": "t:names.icon",
                               "settings": {
@@ -2508,7 +2508,7 @@
                               },
                               "blocks": {}
                             },
-                            "text_LKhVU6": {
+                            "text_T8P3rj": {
                               "type": "text",
                               "name": "t:names.text",
                               "settings": {
@@ -2537,11 +2537,11 @@
                             }
                           },
                           "block_order": [
-                            "icon_PNQG9j",
-                            "text_LKhVU6"
+                            "icon_bdPXwL",
+                            "text_T8P3rj"
                           ]
                         },
-                        "group_HmMcc4": {
+                        "group_rhXeim": {
                           "type": "group",
                           "name": "Icon with Text",
                           "settings": {
@@ -2592,7 +2592,7 @@
                             "padding-inline-end-mobile": 0
                           },
                           "blocks": {
-                            "icon_JLXdAx": {
+                            "icon_Eyfwcr": {
                               "type": "icon",
                               "name": "t:names.icon",
                               "settings": {
@@ -2604,7 +2604,7 @@
                               },
                               "blocks": {}
                             },
-                            "text_iNhL8Q": {
+                            "text_YG4dxq": {
                               "type": "text",
                               "name": "t:names.text",
                               "settings": {
@@ -2633,23 +2633,23 @@
                             }
                           },
                           "block_order": [
-                            "icon_JLXdAx",
-                            "text_iNhL8Q"
+                            "icon_Eyfwcr",
+                            "text_YG4dxq"
                           ]
                         }
                       },
                       "block_order": [
-                        "group_KRmCd3",
-                        "group_HmMcc4"
+                        "group_8BtgB4",
+                        "group_rhXeim"
                       ]
                     }
                   },
                   "block_order": [
-                    "group_G49Agi",
-                    "group_tJcy4Q"
+                    "group_LQwgaJ",
+                    "group_48J3je"
                   ]
                 },
-                "group_xEEkzR": {
+                "group_FAyEUR": {
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
@@ -2700,7 +2700,7 @@
                     "padding-inline-end-mobile": 0
                   },
                   "blocks": {
-                    "text_QCGY8p": {
+                    "text_HYF6Vj": {
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
@@ -2727,7 +2727,7 @@
                       },
                       "blocks": {}
                     },
-                    "group_Qhhd9R": {
+                    "group_MGxMCN": {
                       "type": "group",
                       "name": "t:names.group",
                       "settings": {
@@ -2778,7 +2778,7 @@
                         "padding-inline-end-mobile": 0
                       },
                       "blocks": {
-                        "image_card_nCCENj": {
+                        "image_card_PC84Wd": {
                           "type": "image-card",
                           "name": "Image Card",
                           "settings": {
@@ -2793,7 +2793,7 @@
                             "width_mobile": 100,
                             "max_width_desktop": 2000,
                             "max_width_mobile": 2000,
-                            "minimum_height": 0,
+                            "minimum_height": 440,
                             "subheading_type_preset": "rte",
                             "subheading_font": "var(--font-body--family)",
                             "subheading_font_size": "1rem",
@@ -2820,7 +2820,7 @@
                           },
                           "blocks": {}
                         },
-                        "image_card_YfC39Q": {
+                        "image_card_deTyUD": {
                           "type": "image-card",
                           "name": "Image Card",
                           "settings": {
@@ -2835,7 +2835,7 @@
                             "width_mobile": 100,
                             "max_width_desktop": 2000,
                             "max_width_mobile": 2000,
-                            "minimum_height": 0,
+                            "minimum_height": 440,
                             "subheading_type_preset": "rte",
                             "subheading_font": "var(--font-body--family)",
                             "subheading_font_size": "1rem",
@@ -2864,11 +2864,11 @@
                         }
                       },
                       "block_order": [
-                        "image_card_nCCENj",
-                        "image_card_YfC39Q"
+                        "image_card_PC84Wd",
+                        "image_card_deTyUD"
                       ]
                     },
-                    "text_UCNKr7": {
+                    "text_CFh7ig": {
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
@@ -2897,27 +2897,27 @@
                     }
                   },
                   "block_order": [
-                    "text_QCGY8p",
-                    "group_Qhhd9R",
-                    "text_UCNKr7"
+                    "text_HYF6Vj",
+                    "group_MGxMCN",
+                    "text_CFh7ig"
                   ]
                 }
               },
               "block_order": [
-                "text_MCBDWj",
-                "group_nxY9zK",
-                "group_xEEkzR"
+                "text_qRMxbh",
+                "group_bVjDxy",
+                "group_FAyEUR"
               ]
             }
           },
           "block_order": [
-            "group_Nc8Ryc",
-            "group_8JLHqK"
+            "group_38dEF3",
+            "group_QtHWVz"
           ]
         }
       },
       "block_order": [
-        "group_ipbyt9"
+        "group_maRETd"
       ],
       "custom_css": [
         "h3,h4 {line-height: 1.8em; color: #fffffe; font-weight: 700;}"
@@ -7989,37 +7989,10 @@
         "padding-block-end": 80
       }
     },
-    "section_KxGMV4": {
+    "section_VRTYxE": {
       "type": "section",
       "blocks": {
-        "text_iUB9AK": {
-          "type": "text",
-          "name": "t:names.heading",
-          "settings": {
-            "text": "<p>The Science Behind Weighted Training</p>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "mobile_alignment": "left",
-            "type_preset": "custom",
-            "font": "var(--font-heading--family)",
-            "font_size": "2.5rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "uppercase",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "group_RQFUNp": {
+        "group_VC8P4a": {
           "type": "group",
           "name": "t:names.group",
           "settings": {
@@ -8031,16 +8004,16 @@
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
             "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
+            "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "center",
-            "gap": 0,
-            "gap_mobile": 0,
+            "gap": 40,
+            "gap_mobile": 32,
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
             "max_width_mobile": "custom",
-            "custom_max_width_mobile": 1280,
+            "custom_max_width_mobile": 1000,
             "height": "fit",
             "custom_height": 100,
             "inherit_color_scheme": true,
@@ -8070,489 +8043,48 @@
             "padding-inline-end-mobile": 0
           },
           "blocks": {
-            "group_NJzcz6": {
-              "type": "group",
-              "name": "t:names.group",
+            "text_bQCpGD": {
+              "type": "text",
+              "name": "t:names.heading",
               "settings": {
-                "custom_class": "",
-                "reverse_on_mobile": false,
-                "slider_on_mobile": false,
-                "content_direction": "row",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "center",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
-                "vertical_alignment_flex_direction_column": "center",
-                "gap": 0,
-                "gap_mobile": 0,
-                "width": "fill",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "max_width_mobile": "fill",
-                "custom_max_width_mobile": 700,
-                "height": "fit",
-                "custom_height": 100,
-                "inherit_color_scheme": true,
-                "color_scheme": "",
-                "background_media": "none",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "link": "",
-                "open_in_new_tab": false,
-                "placeholder": "",
+                "text": "<p>WHY IT’S DIFFERENT</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "mobile_alignment": "left",
+                "type_preset": "h1",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
-                "padding-inline-end": 0,
-                "enable_mobile_padding": false,
-                "padding-block-start-mobile": 0,
-                "padding-block-end-mobile": 0,
-                "padding-inline-start-mobile": 0,
-                "padding-inline-end-mobile": 0
-              },
-              "blocks": {
-                "group_XXND69": {
-                  "type": "group",
-                  "name": "t:names.group",
-                  "settings": {
-                    "custom_class": "",
-                    "reverse_on_mobile": false,
-                    "slider_on_mobile": false,
-                    "content_direction": "column",
-                    "vertical_on_mobile": true,
-                    "horizontal_alignment": "flex-start",
-                    "vertical_alignment": "center",
-                    "align_baseline": false,
-                    "horizontal_alignment_flex_direction_column": "flex-start",
-                    "vertical_alignment_flex_direction_column": "center",
-                    "gap": 16,
-                    "gap_mobile": 12,
-                    "width": "fill",
-                    "custom_width": 100,
-                    "width_mobile": "fill",
-                    "custom_width_mobile": 100,
-                    "max_width_mobile": "fill",
-                    "custom_max_width_mobile": 700,
-                    "height": "fit",
-                    "custom_height": 100,
-                    "inherit_color_scheme": true,
-                    "color_scheme": "",
-                    "background_media": "none",
-                    "video_position": "cover",
-                    "background_image_position": "cover",
-                    "border": "none",
-                    "border_width": 1,
-                    "border_opacity": 100,
-                    "border_radius": 0,
-                    "toggle_overlay": false,
-                    "overlay_color": "#00000026",
-                    "overlay_style": "solid",
-                    "gradient_direction": "to top",
-                    "link": "",
-                    "open_in_new_tab": false,
-                    "placeholder": "",
-                    "padding-block-start": 24,
-                    "padding-block-end": 32,
-                    "padding-inline-start": 40,
-                    "padding-inline-end": 40,
-                    "enable_mobile_padding": false,
-                    "padding-block-start-mobile": 0,
-                    "padding-block-end-mobile": 0,
-                    "padding-inline-start-mobile": 0,
-                    "padding-inline-end-mobile": 0
-                  },
-                  "blocks": {
-                    "icon_jyq6Dm": {
-                      "type": "icon",
-                      "name": "t:names.icon",
-                      "settings": {
-                        "icon": "price_tag",
-                        "image_upload": "shopify://shop_images/Mask_group.png",
-                        "width": 40,
-                        "link": "",
-                        "open_in_new_tab": false
-                      },
-                      "blocks": {}
-                    },
-                    "text_HGBFkN": {
-                      "type": "text",
-                      "name": "t:names.heading",
-                      "settings": {
-                        "text": "<p>↑ Bone Density:</p>",
-                        "width": "fit-content",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "mobile_alignment": "left",
-                        "type_preset": "custom",
-                        "font": "var(--font-heading--family)",
-                        "font_size": "1.5rem",
-                        "line_height": "normal",
-                        "letter_spacing": "tight",
-                        "case": "uppercase",
-                        "wrap": "pretty",
-                        "color": "var(--color-foreground)",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    },
-                    "text_3EiGTA": {
-                      "type": "text",
-                      "name": "t:names.text",
-                      "settings": {
-                        "text": "<p>Research shows weighted loading can help improve bone mineral density over time.</p>",
-                        "width": "fit-content",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "mobile_alignment": "left",
-                        "type_preset": "custom",
-                        "font": "var(--font-body--family)",
-                        "font_size": "1rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "color": "var(--color-primary)",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "icon_jyq6Dm",
-                    "text_HGBFkN",
-                    "text_3EiGTA"
-                  ]
-                },
-                "divider_3YgcP4": {
-                  "type": "_divider",
-                  "name": "t:names.divider",
-                  "settings": {
-                    "thickness": 1,
-                    "corner_radius": "square",
-                    "width_percent": 100,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0
-                  },
-                  "blocks": {}
-                },
-                "group_QdEWrM": {
-                  "type": "group",
-                  "name": "t:names.group",
-                  "settings": {
-                    "custom_class": "",
-                    "reverse_on_mobile": false,
-                    "slider_on_mobile": false,
-                    "content_direction": "column",
-                    "vertical_on_mobile": true,
-                    "horizontal_alignment": "flex-start",
-                    "vertical_alignment": "center",
-                    "align_baseline": false,
-                    "horizontal_alignment_flex_direction_column": "flex-start",
-                    "vertical_alignment_flex_direction_column": "center",
-                    "gap": 16,
-                    "gap_mobile": 12,
-                    "width": "fill",
-                    "custom_width": 100,
-                    "width_mobile": "fill",
-                    "custom_width_mobile": 100,
-                    "max_width_mobile": "fill",
-                    "custom_max_width_mobile": 700,
-                    "height": "fit",
-                    "custom_height": 100,
-                    "inherit_color_scheme": true,
-                    "color_scheme": "",
-                    "background_media": "none",
-                    "video_position": "cover",
-                    "background_image_position": "cover",
-                    "border": "none",
-                    "border_width": 1,
-                    "border_opacity": 100,
-                    "border_radius": 0,
-                    "toggle_overlay": false,
-                    "overlay_color": "#00000026",
-                    "overlay_style": "solid",
-                    "gradient_direction": "to top",
-                    "link": "",
-                    "open_in_new_tab": false,
-                    "placeholder": "",
-                    "padding-block-start": 24,
-                    "padding-block-end": 32,
-                    "padding-inline-start": 40,
-                    "padding-inline-end": 40,
-                    "enable_mobile_padding": false,
-                    "padding-block-start-mobile": 0,
-                    "padding-block-end-mobile": 0,
-                    "padding-inline-start-mobile": 0,
-                    "padding-inline-end-mobile": 0
-                  },
-                  "blocks": {
-                    "icon_PK96ij": {
-                      "type": "icon",
-                      "name": "t:names.icon",
-                      "settings": {
-                        "icon": "price_tag",
-                        "image_upload": "shopify://shop_images/Mask_group_1_a282a8d8-7347-4a5b-b646-c73028d15c77.png",
-                        "width": 40,
-                        "link": "",
-                        "open_in_new_tab": false
-                      },
-                      "blocks": {}
-                    },
-                    "text_Jjb788": {
-                      "type": "text",
-                      "name": "t:names.heading",
-                      "settings": {
-                        "text": "<p>↑ Cardiovascular Demand:</p>",
-                        "width": "fit-content",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "mobile_alignment": "left",
-                        "type_preset": "custom",
-                        "font": "var(--font-heading--family)",
-                        "font_size": "1.5rem",
-                        "line_height": "normal",
-                        "letter_spacing": "tight",
-                        "case": "uppercase",
-                        "wrap": "pretty",
-                        "color": "var(--color-foreground)",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    },
-                    "text_TEEGAj": {
-                      "type": "text",
-                      "name": "t:names.text",
-                      "settings": {
-                        "text": "<p>Wearing a weight vest increases heart rate and energy expenditure during walking and running.<br/></p>",
-                        "width": "fit-content",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "mobile_alignment": "left",
-                        "type_preset": "custom",
-                        "font": "var(--font-body--family)",
-                        "font_size": "1rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "color": "var(--color-primary)",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "icon_PK96ij",
-                    "text_Jjb788",
-                    "text_TEEGAj"
-                  ]
-                },
-                "divider_zRaa4X": {
-                  "type": "_divider",
-                  "name": "t:names.divider",
-                  "settings": {
-                    "thickness": 1,
-                    "corner_radius": "square",
-                    "width_percent": 100,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0
-                  },
-                  "blocks": {}
-                },
-                "group_yrWx6N": {
-                  "type": "group",
-                  "name": "t:names.group",
-                  "settings": {
-                    "custom_class": "",
-                    "reverse_on_mobile": false,
-                    "slider_on_mobile": false,
-                    "content_direction": "column",
-                    "vertical_on_mobile": true,
-                    "horizontal_alignment": "flex-start",
-                    "vertical_alignment": "center",
-                    "align_baseline": false,
-                    "horizontal_alignment_flex_direction_column": "flex-start",
-                    "vertical_alignment_flex_direction_column": "center",
-                    "gap": 16,
-                    "gap_mobile": 12,
-                    "width": "fill",
-                    "custom_width": 100,
-                    "width_mobile": "fill",
-                    "custom_width_mobile": 100,
-                    "max_width_mobile": "fill",
-                    "custom_max_width_mobile": 700,
-                    "height": "fit",
-                    "custom_height": 100,
-                    "inherit_color_scheme": true,
-                    "color_scheme": "",
-                    "background_media": "none",
-                    "video_position": "cover",
-                    "background_image_position": "cover",
-                    "border": "none",
-                    "border_width": 1,
-                    "border_opacity": 100,
-                    "border_radius": 0,
-                    "toggle_overlay": false,
-                    "overlay_color": "#00000026",
-                    "overlay_style": "solid",
-                    "gradient_direction": "to top",
-                    "link": "",
-                    "open_in_new_tab": false,
-                    "placeholder": "",
-                    "padding-block-start": 24,
-                    "padding-block-end": 32,
-                    "padding-inline-start": 40,
-                    "padding-inline-end": 40,
-                    "enable_mobile_padding": false,
-                    "padding-block-start-mobile": 0,
-                    "padding-block-end-mobile": 0,
-                    "padding-inline-start-mobile": 0,
-                    "padding-inline-end-mobile": 0
-                  },
-                  "blocks": {
-                    "icon_YyXmKC": {
-                      "type": "icon",
-                      "name": "t:names.icon",
-                      "settings": {
-                        "icon": "price_tag",
-                        "image_upload": "shopify://shop_images/Mask_group_2_c07af47e-102a-45bd-990b-f2fa35aade82.png",
-                        "width": 40,
-                        "link": "",
-                        "open_in_new_tab": false
-                      },
-                      "blocks": {}
-                    },
-                    "text_PeY44n": {
-                      "type": "text",
-                      "name": "t:names.heading",
-                      "settings": {
-                        "text": "<p>↑ Strength & Power:</p>",
-                        "width": "fit-content",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "mobile_alignment": "left",
-                        "type_preset": "custom",
-                        "font": "var(--font-heading--family)",
-                        "font_size": "1.5rem",
-                        "line_height": "normal",
-                        "letter_spacing": "tight",
-                        "case": "uppercase",
-                        "wrap": "pretty",
-                        "color": "var(--color-foreground)",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    },
-                    "text_eQkECU": {
-                      "type": "text",
-                      "name": "t:names.text",
-                      "settings": {
-                        "text": "<p>Added load during bodyweight movements increases muscular activation.</p>",
-                        "width": "fit-content",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "mobile_alignment": "left",
-                        "type_preset": "custom",
-                        "font": "var(--font-body--family)",
-                        "font_size": "1rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "color": "var(--color-primary)",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "icon_YyXmKC",
-                    "text_PeY44n",
-                    "text_eQkECU"
-                  ]
-                }
-              },
-              "block_order": [
-                "group_XXND69",
-                "divider_3YgcP4",
-                "group_QdEWrM",
-                "divider_zRaa4X",
-                "group_yrWx6N"
-              ]
-            },
-            "divider_mx3kpb": {
-              "type": "_divider",
-              "name": "t:names.divider",
-              "settings": {
-                "thickness": 1,
-                "corner_radius": "square",
-                "width_percent": 100,
-                "padding-block-start": 0,
-                "padding-block-end": 0
+                "padding-inline-end": 0
               },
               "blocks": {}
             },
-            "group_MUFnNN": {
+            "group_V9UBFn": {
               "type": "group",
               "name": "t:names.group",
               "settings": {
-                "custom_class": "",
+                "custom_class": "bento-grid-container desktop-cards",
                 "reverse_on_mobile": false,
-                "slider_on_mobile": false,
-                "content_direction": "row",
+                "slider_on_mobile": true,
+                "content_direction": "column",
                 "vertical_on_mobile": true,
-                "horizontal_alignment": "center",
+                "horizontal_alignment": "flex-start",
                 "vertical_alignment": "center",
                 "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "flex-start",
                 "vertical_alignment_flex_direction_column": "center",
-                "gap": 0,
+                "gap": 40,
                 "gap_mobile": 12,
                 "width": "fill",
                 "custom_width": 100,
@@ -8589,21 +8121,21 @@
                 "padding-inline-end-mobile": 0
               },
               "blocks": {
-                "group_QDqwHt": {
+                "group_cRCgKn": {
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
                     "custom_class": "",
                     "reverse_on_mobile": false,
                     "slider_on_mobile": false,
-                    "content_direction": "column",
-                    "vertical_on_mobile": true,
+                    "content_direction": "row",
+                    "vertical_on_mobile": false,
                     "horizontal_alignment": "flex-start",
                     "vertical_alignment": "center",
                     "align_baseline": false,
                     "horizontal_alignment_flex_direction_column": "flex-start",
                     "vertical_alignment_flex_direction_column": "center",
-                    "gap": 16,
+                    "gap": 40,
                     "gap_mobile": 12,
                     "width": "fill",
                     "custom_width": 100,
@@ -8613,8 +8145,8 @@
                     "custom_max_width_mobile": 700,
                     "height": "fit",
                     "custom_height": 100,
-                    "inherit_color_scheme": true,
-                    "color_scheme": "",
+                    "inherit_color_scheme": false,
+                    "color_scheme": "scheme-1",
                     "background_media": "none",
                     "video_position": "cover",
                     "background_image_position": "cover",
@@ -8629,10 +8161,10 @@
                     "link": "",
                     "open_in_new_tab": false,
                     "placeholder": "",
-                    "padding-block-start": 24,
-                    "padding-block-end": 32,
-                    "padding-inline-start": 40,
-                    "padding-inline-end": 40,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0,
                     "enable_mobile_padding": false,
                     "padding-block-start-mobile": 0,
                     "padding-block-end-mobile": 0,
@@ -8640,106 +8172,121 @@
                     "padding-inline-end-mobile": 0
                   },
                   "blocks": {
-                    "icon_yAbPjd": {
-                      "type": "icon",
-                      "name": "t:names.icon",
+                    "image_card_cM9wpN": {
+                      "type": "image-card",
+                      "name": "Image Card",
                       "settings": {
-                        "icon": "price_tag",
-                        "image_upload": "shopify://shop_images/Mask_group_3_19af2129-4029-4e29-9b19-a759a46b88f5.png",
-                        "width": 40,
-                        "link": "",
-                        "open_in_new_tab": false
+                        "background_image": "shopify://shop_images/bbee064c45ad739152f2c8d6bd2a8f389d15ae2c.png",
+                        "inactive_image_desktop_large": "shopify://shop_images/Bounce-Free_Stability_Ghost_large_76ef6c23-3598-4c3e-893e-60180e83c1a2.jpg",
+                        "inactive_image_desktop_short": "shopify://shop_images/Bounce-Free_Stability_Ghost_short.jpg",
+                        "inactive_image_mobile": "shopify://shop_images/Bounce-Free_Stability_Ghost_Mobile.jpg",
+                        "active_image_desktop": "shopify://shop_images/Bounce-Free_Stability_Active.jpg",
+                        "active_image_mobile": "shopify://shop_images/Bounce-Free_Stability_Active_Mobile.jpg",
+                        "heading": "<h4>Bounce-Free Stability</h4>",
+                        "subheading": "<p>Built through extensive prototyping so it moves with you — not against you.</p>",
+                        "badge": "#1",
+                        "default_active_state": true,
+                        "text_alignment": "bottom",
+                        "heading_subheading_gap": 12,
+                        "width_desktop": 100,
+                        "width_mobile": 100,
+                        "max_width_desktop": 2000,
+                        "max_width_mobile": 2000,
+                        "minimum_height": 300,
+                        "subheading_type_preset": "rte",
+                        "subheading_font": "var(--font-body--family)",
+                        "subheading_font_size": "1rem",
+                        "subheading_line_height": "normal",
+                        "subheading_letter_spacing": "normal",
+                        "subheading_case": "none",
+                        "subheading_wrap": "pretty",
+                        "subheading_color": "var(--color-foreground)",
+                        "inherit_color_scheme": false,
+                        "color_scheme": "",
+                        "enable_gradient_overlay": true,
+                        "border": "solid",
+                        "border_width": 1,
+                        "border_opacity": 20,
+                        "border_radius": 0,
+                        "padding-block-start": 16,
+                        "padding-block-end": 32,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0,
+                        "text_padding_block_start": 80,
+                        "text_padding_block_end": 32,
+                        "text_padding_inline_start": 32,
+                        "text_padding_inline_end": 32
                       },
                       "blocks": {}
                     },
-                    "text_etjYMT": {
-                      "type": "text",
-                      "name": "t:names.heading",
+                    "image_card_ptYDnj": {
+                      "type": "image-card",
+                      "name": "Image Card",
                       "settings": {
-                        "text": "<p>↑ VO₂ Max & Conditioning:</p>",
-                        "width": "fit-content",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "mobile_alignment": "left",
-                        "type_preset": "custom",
-                        "font": "var(--font-heading--family)",
-                        "font_size": "1.5rem",
-                        "line_height": "normal",
-                        "letter_spacing": "tight",
-                        "case": "uppercase",
-                        "wrap": "pretty",
-                        "color": "var(--color-foreground)",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
+                        "background_image": "shopify://shop_images/76336bcaf4fe7671f0e018882675c315166a0083.png",
+                        "inactive_image_desktop_large": "shopify://shop_images/Gold_Brick_Ghost_large_84ed64b1-29ac-4705-8a94-e9e5af396201.jpg",
+                        "inactive_image_desktop_short": "shopify://shop_images/Gold_Brick_Ghost_short.jpg",
+                        "inactive_image_mobile": "shopify://shop_images/Gold_Brick_Ghost_Mobile.jpg",
+                        "active_image_desktop": "shopify://shop_images/Gold_Brick_Active.jpg",
+                        "active_image_mobile": "shopify://shop_images/Gold_Brick_Active_Mobile.jpg",
+                        "heading": "<h4>Comfortable “Gold Brick” Plates</h4>",
+                        "subheading": "<p>13 padded plates included. Designed to be comfortable during burpees, push-ups, and floor contact.</p>",
+                        "badge": "#2",
+                        "default_active_state": false,
+                        "text_alignment": "bottom",
+                        "heading_subheading_gap": 12,
+                        "width_desktop": 100,
+                        "width_mobile": 100,
+                        "max_width_desktop": 2000,
+                        "max_width_mobile": 2000,
+                        "minimum_height": 300,
+                        "subheading_type_preset": "rte",
+                        "subheading_font": "var(--font-body--family)",
+                        "subheading_font_size": "1rem",
+                        "subheading_line_height": "normal",
+                        "subheading_letter_spacing": "normal",
+                        "subheading_case": "none",
+                        "subheading_wrap": "pretty",
+                        "subheading_color": "var(--color-foreground)",
+                        "inherit_color_scheme": true,
+                        "color_scheme": "",
+                        "enable_gradient_overlay": true,
+                        "border": "solid",
+                        "border_width": 1,
+                        "border_opacity": 20,
+                        "border_radius": 0,
+                        "padding-block-start": 16,
+                        "padding-block-end": 32,
                         "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    },
-                    "text_rFkbNp": {
-                      "type": "text",
-                      "name": "t:names.text",
-                      "settings": {
-                        "text": "<p>Weighted training has been shown to improve aerobic capacity when used properly.</p>",
-                        "width": "fit-content",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "mobile_alignment": "left",
-                        "type_preset": "custom",
-                        "font": "var(--font-body--family)",
-                        "font_size": "1rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "color": "var(--color-primary)",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
+                        "padding-inline-end": 0,
+                        "text_padding_block_start": 80,
+                        "text_padding_block_end": 32,
+                        "text_padding_inline_start": 32,
+                        "text_padding_inline_end": 32
                       },
                       "blocks": {}
                     }
                   },
                   "block_order": [
-                    "icon_yAbPjd",
-                    "text_etjYMT",
-                    "text_rFkbNp"
+                    "image_card_cM9wpN",
+                    "image_card_ptYDnj"
                   ]
                 },
-                "divider_xFXjED": {
-                  "type": "_divider",
-                  "name": "t:names.divider",
-                  "settings": {
-                    "thickness": 1,
-                    "corner_radius": "square",
-                    "width_percent": 100,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0
-                  },
-                  "blocks": {}
-                },
-                "group_MKtLzn": {
+                "group_BLrqgJ": {
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
                     "custom_class": "",
                     "reverse_on_mobile": false,
                     "slider_on_mobile": false,
-                    "content_direction": "column",
-                    "vertical_on_mobile": true,
+                    "content_direction": "row",
+                    "vertical_on_mobile": false,
                     "horizontal_alignment": "flex-start",
                     "vertical_alignment": "center",
                     "align_baseline": false,
                     "horizontal_alignment_flex_direction_column": "flex-start",
                     "vertical_alignment_flex_direction_column": "center",
-                    "gap": 16,
+                    "gap": 40,
                     "gap_mobile": 12,
                     "width": "fill",
                     "custom_width": 100,
@@ -8749,8 +8296,8 @@
                     "custom_max_width_mobile": 700,
                     "height": "fit",
                     "custom_height": 100,
-                    "inherit_color_scheme": true,
-                    "color_scheme": "",
+                    "inherit_color_scheme": false,
+                    "color_scheme": "scheme-1",
                     "background_media": "none",
                     "video_position": "cover",
                     "background_image_position": "cover",
@@ -8765,10 +8312,10 @@
                     "link": "",
                     "open_in_new_tab": false,
                     "placeholder": "",
-                    "padding-block-start": 24,
-                    "padding-block-end": 32,
-                    "padding-inline-start": 40,
-                    "padding-inline-end": 40,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0,
                     "enable_mobile_padding": false,
                     "padding-block-start-mobile": 0,
                     "padding-block-end-mobile": 0,
@@ -8776,106 +8323,121 @@
                     "padding-inline-end-mobile": 0
                   },
                   "blocks": {
-                    "icon_VVJdJg": {
-                      "type": "icon",
-                      "name": "t:names.icon",
+                    "image_card_wbNrdj": {
+                      "type": "image-card",
+                      "name": "Image Card",
                       "settings": {
-                        "icon": "price_tag",
-                        "image_upload": "shopify://shop_images/Mask_group_4_7def8054-8617-4092-8ef9-cc5b87e9c649.png",
-                        "width": 40,
-                        "link": "",
-                        "open_in_new_tab": false
+                        "background_image": "shopify://shop_images/74945b79477a8733ff48ba48d30b8bf549334e06.png",
+                        "inactive_image_desktop_large": "shopify://shop_images/Overhead_Mobility_Ghost_large_2b85045e-8e68-4053-b8e6-96f7fd0bec0d.jpg",
+                        "inactive_image_desktop_short": "shopify://shop_images/Overhead_Mobility_Ghost_short.jpg",
+                        "inactive_image_mobile": "shopify://shop_images/Overhead_Mobility_Ghost_Mobile.jpg",
+                        "active_image_desktop": "shopify://shop_images/Overhead_Mobility_Active.jpg",
+                        "active_image_mobile": "shopify://shop_images/Overhead_Mobility_Active_Mobile.jpg",
+                        "heading": "<h4>Overhead Mobility</h4>",
+                        "subheading": "<p>Designed to keep your shoulders and torso free so you can press, pull up, and train overhead.</p>",
+                        "badge": "#3",
+                        "default_active_state": false,
+                        "text_alignment": "bottom",
+                        "heading_subheading_gap": 12,
+                        "width_desktop": 100,
+                        "width_mobile": 100,
+                        "max_width_desktop": 2000,
+                        "max_width_mobile": 2000,
+                        "minimum_height": 300,
+                        "subheading_type_preset": "rte",
+                        "subheading_font": "var(--font-body--family)",
+                        "subheading_font_size": "1rem",
+                        "subheading_line_height": "normal",
+                        "subheading_letter_spacing": "normal",
+                        "subheading_case": "none",
+                        "subheading_wrap": "pretty",
+                        "subheading_color": "var(--color-foreground)",
+                        "inherit_color_scheme": false,
+                        "color_scheme": "",
+                        "enable_gradient_overlay": true,
+                        "border": "solid",
+                        "border_width": 1,
+                        "border_opacity": 20,
+                        "border_radius": 0,
+                        "padding-block-start": 16,
+                        "padding-block-end": 32,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0,
+                        "text_padding_block_start": 80,
+                        "text_padding_block_end": 32,
+                        "text_padding_inline_start": 32,
+                        "text_padding_inline_end": 32
                       },
                       "blocks": {}
                     },
-                    "text_xCbVDJ": {
-                      "type": "text",
-                      "name": "t:names.heading",
+                    "image_card_fnwzj3": {
+                      "type": "image-card",
+                      "name": "Image Card",
                       "settings": {
-                        "text": "<p>↑ Calorie Burn: </p>",
-                        "width": "fit-content",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "mobile_alignment": "left",
-                        "type_preset": "custom",
-                        "font": "var(--font-heading--family)",
-                        "font_size": "1.5rem",
-                        "line_height": "normal",
-                        "letter_spacing": "tight",
-                        "case": "uppercase",
-                        "wrap": "pretty",
-                        "color": "var(--color-foreground)",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
+                        "background_image": "shopify://shop_images/bbe26cbf2ee6f5b463424dbf52d5f7307c619a33.png",
+                        "inactive_image_desktop_large": "shopify://shop_images/Anti-Chafe_Ghost_large_efa391b2-2ecf-44f1-b436-756afbad0cc8.jpg",
+                        "inactive_image_desktop_short": "shopify://shop_images/Anti-Chafe_Ghost_short.jpg",
+                        "inactive_image_mobile": "shopify://shop_images/Anti-Chafe_Ghost_Mobile.jpg",
+                        "active_image_desktop": "shopify://shop_images/Anti-Chafe_Active.jpg",
+                        "active_image_mobile": "shopify://shop_images/Anti-Chafe_Active_Mobile.jpg",
+                        "heading": "<h4>Anti-Chafe + Quick-Dry Interior</h4>",
+                        "subheading": "<p>Breathable quick-dry mesh plus airflow channels between plates to reduce heat, friction, and sweat saturation.</p>",
+                        "badge": "#4",
+                        "default_active_state": false,
+                        "text_alignment": "bottom",
+                        "heading_subheading_gap": 12,
+                        "width_desktop": 100,
+                        "width_mobile": 100,
+                        "max_width_desktop": 2000,
+                        "max_width_mobile": 2000,
+                        "minimum_height": 300,
+                        "subheading_type_preset": "rte",
+                        "subheading_font": "var(--font-body--family)",
+                        "subheading_font_size": "1rem",
+                        "subheading_line_height": "normal",
+                        "subheading_letter_spacing": "normal",
+                        "subheading_case": "none",
+                        "subheading_wrap": "pretty",
+                        "subheading_color": "var(--color-foreground)",
+                        "inherit_color_scheme": false,
+                        "color_scheme": "",
+                        "enable_gradient_overlay": true,
+                        "border": "solid",
+                        "border_width": 1,
+                        "border_opacity": 20,
+                        "border_radius": 0,
+                        "padding-block-start": 16,
+                        "padding-block-end": 32,
                         "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    },
-                    "text_qbVzQ6": {
-                      "type": "text",
-                      "name": "t:names.text",
-                      "settings": {
-                        "text": "<p>Adding external load can significantly increase total caloric expenditure per session.</p>",
-                        "width": "fit-content",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "mobile_alignment": "left",
-                        "type_preset": "custom",
-                        "font": "var(--font-body--family)",
-                        "font_size": "1rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "color": "var(--color-primary)",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
+                        "padding-inline-end": 0,
+                        "text_padding_block_start": 80,
+                        "text_padding_block_end": 32,
+                        "text_padding_inline_start": 32,
+                        "text_padding_inline_end": 32
                       },
                       "blocks": {}
                     }
                   },
                   "block_order": [
-                    "icon_VVJdJg",
-                    "text_xCbVDJ",
-                    "text_qbVzQ6"
+                    "image_card_wbNrdj",
+                    "image_card_fnwzj3"
                   ]
                 },
-                "divider_eRkidd": {
-                  "type": "_divider",
-                  "name": "t:names.divider",
-                  "settings": {
-                    "thickness": 1,
-                    "corner_radius": "square",
-                    "width_percent": 100,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0
-                  },
-                  "blocks": {}
-                },
-                "group_pRYyA7": {
+                "group_f4wXQ4": {
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
                     "custom_class": "",
                     "reverse_on_mobile": false,
                     "slider_on_mobile": false,
-                    "content_direction": "column",
+                    "content_direction": "row",
                     "vertical_on_mobile": true,
                     "horizontal_alignment": "flex-start",
                     "vertical_alignment": "center",
                     "align_baseline": false,
                     "horizontal_alignment_flex_direction_column": "flex-start",
                     "vertical_alignment_flex_direction_column": "center",
-                    "gap": 16,
+                    "gap": 40,
                     "gap_mobile": 12,
                     "width": "fill",
                     "custom_width": 100,
@@ -8885,8 +8447,8 @@
                     "custom_max_width_mobile": 700,
                     "height": "fit",
                     "custom_height": 100,
-                    "inherit_color_scheme": true,
-                    "color_scheme": "",
+                    "inherit_color_scheme": false,
+                    "color_scheme": "scheme-1",
                     "background_media": "none",
                     "video_position": "cover",
                     "background_image_position": "cover",
@@ -8901,10 +8463,10 @@
                     "link": "",
                     "open_in_new_tab": false,
                     "placeholder": "",
-                    "padding-block-start": 24,
-                    "padding-block-end": 32,
-                    "padding-inline-start": 40,
-                    "padding-inline-end": 40,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0,
                     "enable_mobile_padding": false,
                     "padding-block-start-mobile": 0,
                     "padding-block-end-mobile": 0,
@@ -8912,129 +8474,468 @@
                     "padding-inline-end-mobile": 0
                   },
                   "blocks": {
-                    "icon_pbaX4z": {
-                      "type": "icon",
-                      "name": "t:names.icon",
+                    "image_card_kdPXBM": {
+                      "type": "image-card",
+                      "name": "Image Card",
                       "settings": {
-                        "icon": "price_tag",
-                        "image_upload": "shopify://shop_images/Mask_group_5_a7582dbc-f185-4338-8274-635ea8a35751.png",
-                        "width": 40,
-                        "link": "",
-                        "open_in_new_tab": false
+                        "background_image": "shopify://shop_images/74945b79477a8733ff48ba48d30b8bf549334e06.png",
+                        "inactive_image_desktop_large": "shopify://shop_images/Fast_Transitions_Ghost_large_f29d65f9-fee8-4275-85ba-92c73cb71f6c.jpg",
+                        "inactive_image_desktop_short": "shopify://shop_images/Fast_Transitions_Ghost_short.jpg",
+                        "inactive_image_mobile": "shopify://shop_images/Fast_Transitions_Ghost_Mobile.jpg",
+                        "active_image_desktop": "shopify://shop_images/Fast_Transitions_Active.jpg",
+                        "active_image_mobile": "shopify://shop_images/Fast_Transitions_Active_Mobile.jpg",
+                        "heading": "<h4>Fast Transitions</h4>",
+                        "subheading": "<p>Tactical quick-release buckles make it simple to go half mode → full mode without a frustrating re-setup.</p>",
+                        "badge": "#5",
+                        "default_active_state": false,
+                        "text_alignment": "bottom",
+                        "heading_subheading_gap": 12,
+                        "width_desktop": 100,
+                        "width_mobile": 100,
+                        "max_width_desktop": 2000,
+                        "max_width_mobile": 2000,
+                        "minimum_height": 300,
+                        "subheading_type_preset": "rte",
+                        "subheading_font": "var(--font-body--family)",
+                        "subheading_font_size": "1rem",
+                        "subheading_line_height": "normal",
+                        "subheading_letter_spacing": "normal",
+                        "subheading_case": "none",
+                        "subheading_wrap": "pretty",
+                        "subheading_color": "var(--color-foreground)",
+                        "inherit_color_scheme": false,
+                        "color_scheme": "",
+                        "enable_gradient_overlay": true,
+                        "border": "solid",
+                        "border_width": 1,
+                        "border_opacity": 20,
+                        "border_radius": 0,
+                        "padding-block-start": 16,
+                        "padding-block-end": 32,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0,
+                        "text_padding_block_start": 80,
+                        "text_padding_block_end": 32,
+                        "text_padding_inline_start": 32,
+                        "text_padding_inline_end": 32
                       },
                       "blocks": {}
                     },
-                    "text_HGjAMY": {
-                      "type": "text",
-                      "name": "t:names.heading",
+                    "image_card_TawVyR": {
+                      "type": "image-card",
+                      "name": "Image Card",
                       "settings": {
-                        "text": "<p>↑ Posture & Stability:</p>",
-                        "width": "fit-content",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "mobile_alignment": "left",
-                        "type_preset": "custom",
-                        "font": "var(--font-heading--family)",
-                        "font_size": "1.5rem",
-                        "line_height": "normal",
-                        "letter_spacing": "tight",
-                        "case": "uppercase",
-                        "wrap": "pretty",
-                        "color": "var(--color-foreground)",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
+                        "background_image": "shopify://shop_images/bbe26cbf2ee6f5b463424dbf52d5f7307c619a33.png",
+                        "inactive_image_desktop_large": "shopify://shop_images/Carry_Essentials_Ghost_large_5d09d914-bd6a-42e6-9f17-9b84aa1d6c1c.jpg",
+                        "inactive_image_desktop_short": "shopify://shop_images/Carry_Essentials_Ghost_short.jpg",
+                        "inactive_image_mobile": "shopify://shop_images/Carry_Essentials_Ghost_Mobile.jpg",
+                        "active_image_desktop": "shopify://shop_images/Carry_Essentials_Active.jpg",
+                        "active_image_mobile": "shopify://shop_images/Carry_Essentials_Active_Mobile.jpg",
+                        "heading": "<h4>Carry Essentials Built In</h4>",
+                        "subheading": "<p>Front phone pocket + rear gear pocket so you don’t need additional accessories.</p>",
+                        "badge": "#6",
+                        "default_active_state": false,
+                        "text_alignment": "bottom",
+                        "heading_subheading_gap": 12,
+                        "width_desktop": 100,
+                        "width_mobile": 100,
+                        "max_width_desktop": 2000,
+                        "max_width_mobile": 2000,
+                        "minimum_height": 300,
+                        "subheading_type_preset": "rte",
+                        "subheading_font": "var(--font-body--family)",
+                        "subheading_font_size": "1rem",
+                        "subheading_line_height": "normal",
+                        "subheading_letter_spacing": "normal",
+                        "subheading_case": "none",
+                        "subheading_wrap": "pretty",
+                        "subheading_color": "var(--color-foreground)",
+                        "inherit_color_scheme": false,
+                        "color_scheme": "",
+                        "enable_gradient_overlay": true,
+                        "border": "solid",
+                        "border_width": 1,
+                        "border_opacity": 20,
+                        "border_radius": 0,
+                        "padding-block-start": 16,
+                        "padding-block-end": 32,
                         "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    },
-                    "text_hFhQPq": {
-                      "type": "text",
-                      "name": "t:names.text",
-                      "settings": {
-                        "text": "<p>Balanced load distribution improves core engagement and posture awareness.</p>",
-                        "width": "fit-content",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "mobile_alignment": "left",
-                        "type_preset": "custom",
-                        "font": "var(--font-body--family)",
-                        "font_size": "1rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "color": "var(--color-primary)",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
+                        "padding-inline-end": 0,
+                        "text_padding_block_start": 80,
+                        "text_padding_block_end": 32,
+                        "text_padding_inline_start": 32,
+                        "text_padding_inline_end": 32
                       },
                       "blocks": {}
                     }
                   },
                   "block_order": [
-                    "icon_pbaX4z",
-                    "text_HGjAMY",
-                    "text_hFhQPq"
+                    "image_card_kdPXBM",
+                    "image_card_TawVyR"
                   ]
                 }
               },
               "block_order": [
-                "group_QDqwHt",
-                "divider_xFXjED",
-                "group_MKtLzn",
-                "divider_eRkidd",
-                "group_pRYyA7"
+                "group_cRCgKn",
+                "group_BLrqgJ",
+                "group_f4wXQ4"
+              ]
+            },
+            "group_XrQYRK": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "custom_class": "bento-grid-container mobile-cards",
+                "reverse_on_mobile": false,
+                "slider_on_mobile": true,
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "flex-start",
+                "gap": 12,
+                "gap_mobile": 12,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "max_width_mobile": "fill",
+                "custom_max_width_mobile": 700,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0,
+                "enable_mobile_padding": false,
+                "padding-block-start-mobile": 0,
+                "padding-block-end-mobile": 0,
+                "padding-inline-start-mobile": 0,
+                "padding-inline-end-mobile": 0
+              },
+              "blocks": {
+                "image_card_xKqfWd": {
+                  "type": "image-card",
+                  "name": "Image Card",
+                  "settings": {
+                    "background_image": "shopify://shop_images/bbee064c45ad739152f2c8d6bd2a8f389d15ae2c.png",
+                    "inactive_image_desktop_large": "shopify://shop_images/Bounce-Free_Stability_Ghost_large_76ef6c23-3598-4c3e-893e-60180e83c1a2.jpg",
+                    "inactive_image_desktop_short": "shopify://shop_images/Bounce-Free_Stability_Ghost_short.jpg",
+                    "inactive_image_mobile": "shopify://shop_images/Bounce-Free_Stability_Ghost_Mobile.jpg",
+                    "active_image_desktop": "shopify://shop_images/Bounce-Free_Stability_Active.jpg",
+                    "active_image_mobile": "shopify://shop_images/Bounce-Free_Stability_Active_Mobile.jpg",
+                    "heading": "<h4>Bounce-Free Stability</h4>",
+                    "subheading": "<p>Built through extensive prototyping so it moves with you — not against you.</p>",
+                    "badge": "#1",
+                    "default_active_state": true,
+                    "text_alignment": "bottom",
+                    "heading_subheading_gap": 12,
+                    "width_desktop": 100,
+                    "width_mobile": 100,
+                    "max_width_desktop": 2000,
+                    "max_width_mobile": 2000,
+                    "minimum_height": 300,
+                    "subheading_type_preset": "rte",
+                    "subheading_font": "var(--font-body--family)",
+                    "subheading_font_size": "1rem",
+                    "subheading_line_height": "normal",
+                    "subheading_letter_spacing": "normal",
+                    "subheading_case": "none",
+                    "subheading_wrap": "pretty",
+                    "subheading_color": "var(--color-foreground)",
+                    "inherit_color_scheme": false,
+                    "color_scheme": "",
+                    "enable_gradient_overlay": true,
+                    "border": "solid",
+                    "border_width": 1,
+                    "border_opacity": 20,
+                    "border_radius": 0,
+                    "padding-block-start": 16,
+                    "padding-block-end": 32,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0,
+                    "text_padding_block_start": 80,
+                    "text_padding_block_end": 32,
+                    "text_padding_inline_start": 32,
+                    "text_padding_inline_end": 32
+                  },
+                  "blocks": {}
+                },
+                "image_card_Adp8wB": {
+                  "type": "image-card",
+                  "name": "Image Card",
+                  "settings": {
+                    "background_image": "shopify://shop_images/76336bcaf4fe7671f0e018882675c315166a0083.png",
+                    "inactive_image_desktop_large": "shopify://shop_images/Gold_Brick_Ghost_large_84ed64b1-29ac-4705-8a94-e9e5af396201.jpg",
+                    "inactive_image_desktop_short": "shopify://shop_images/Gold_Brick_Ghost_short.jpg",
+                    "inactive_image_mobile": "shopify://shop_images/Gold_Brick_Ghost_Mobile.jpg",
+                    "active_image_desktop": "shopify://shop_images/Gold_Brick_Active.jpg",
+                    "active_image_mobile": "shopify://shop_images/Gold_Brick_Active_Mobile.jpg",
+                    "heading": "<h4>Comfortable “Gold Brick” Plates</h4>",
+                    "subheading": "<p>13 padded plates included. Designed to be comfortable during burpees, push-ups, and floor contact.</p>",
+                    "badge": "#2",
+                    "default_active_state": false,
+                    "text_alignment": "bottom",
+                    "heading_subheading_gap": 12,
+                    "width_desktop": 100,
+                    "width_mobile": 100,
+                    "max_width_desktop": 2000,
+                    "max_width_mobile": 2000,
+                    "minimum_height": 300,
+                    "subheading_type_preset": "rte",
+                    "subheading_font": "var(--font-body--family)",
+                    "subheading_font_size": "1rem",
+                    "subheading_line_height": "normal",
+                    "subheading_letter_spacing": "normal",
+                    "subheading_case": "none",
+                    "subheading_wrap": "pretty",
+                    "subheading_color": "var(--color-foreground)",
+                    "inherit_color_scheme": true,
+                    "color_scheme": "",
+                    "enable_gradient_overlay": true,
+                    "border": "solid",
+                    "border_width": 1,
+                    "border_opacity": 20,
+                    "border_radius": 0,
+                    "padding-block-start": 16,
+                    "padding-block-end": 32,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0,
+                    "text_padding_block_start": 80,
+                    "text_padding_block_end": 32,
+                    "text_padding_inline_start": 32,
+                    "text_padding_inline_end": 32
+                  },
+                  "blocks": {}
+                },
+                "image_card_34Te86": {
+                  "type": "image-card",
+                  "name": "Image Card",
+                  "settings": {
+                    "background_image": "shopify://shop_images/74945b79477a8733ff48ba48d30b8bf549334e06.png",
+                    "inactive_image_desktop_large": "shopify://shop_images/Overhead_Mobility_Ghost_large_2b85045e-8e68-4053-b8e6-96f7fd0bec0d.jpg",
+                    "inactive_image_desktop_short": "shopify://shop_images/Overhead_Mobility_Ghost_short.jpg",
+                    "inactive_image_mobile": "shopify://shop_images/Overhead_Mobility_Ghost_Mobile.jpg",
+                    "active_image_desktop": "shopify://shop_images/Overhead_Mobility_Active.jpg",
+                    "active_image_mobile": "shopify://shop_images/Overhead_Mobility_Active_Mobile.jpg",
+                    "heading": "<h4>Overhead Mobility</h4>",
+                    "subheading": "<p>Designed to keep your shoulders and torso free so you can press, pull up, and train overhead.</p>",
+                    "badge": "#3",
+                    "default_active_state": false,
+                    "text_alignment": "bottom",
+                    "heading_subheading_gap": 12,
+                    "width_desktop": 100,
+                    "width_mobile": 100,
+                    "max_width_desktop": 2000,
+                    "max_width_mobile": 2000,
+                    "minimum_height": 300,
+                    "subheading_type_preset": "rte",
+                    "subheading_font": "var(--font-body--family)",
+                    "subheading_font_size": "1rem",
+                    "subheading_line_height": "normal",
+                    "subheading_letter_spacing": "normal",
+                    "subheading_case": "none",
+                    "subheading_wrap": "pretty",
+                    "subheading_color": "var(--color-foreground)",
+                    "inherit_color_scheme": false,
+                    "color_scheme": "",
+                    "enable_gradient_overlay": true,
+                    "border": "solid",
+                    "border_width": 1,
+                    "border_opacity": 20,
+                    "border_radius": 0,
+                    "padding-block-start": 16,
+                    "padding-block-end": 32,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0,
+                    "text_padding_block_start": 80,
+                    "text_padding_block_end": 32,
+                    "text_padding_inline_start": 32,
+                    "text_padding_inline_end": 32
+                  },
+                  "blocks": {}
+                },
+                "image_card_L7fHMB": {
+                  "type": "image-card",
+                  "name": "Image Card",
+                  "settings": {
+                    "background_image": "shopify://shop_images/bbe26cbf2ee6f5b463424dbf52d5f7307c619a33.png",
+                    "inactive_image_desktop_large": "shopify://shop_images/Anti-Chafe_Ghost_large_efa391b2-2ecf-44f1-b436-756afbad0cc8.jpg",
+                    "inactive_image_desktop_short": "shopify://shop_images/Anti-Chafe_Ghost_short.jpg",
+                    "inactive_image_mobile": "shopify://shop_images/Anti-Chafe_Ghost_Mobile.jpg",
+                    "active_image_desktop": "shopify://shop_images/Anti-Chafe_Active.jpg",
+                    "active_image_mobile": "shopify://shop_images/Anti-Chafe_Active_Mobile.jpg",
+                    "heading": "<h4>Anti-Chafe + Quick-Dry Interior</h4>",
+                    "subheading": "<p>Breathable quick-dry mesh plus airflow channels between plates to reduce heat, friction, and sweat saturation.</p>",
+                    "badge": "#4",
+                    "default_active_state": false,
+                    "text_alignment": "bottom",
+                    "heading_subheading_gap": 12,
+                    "width_desktop": 100,
+                    "width_mobile": 100,
+                    "max_width_desktop": 2000,
+                    "max_width_mobile": 2000,
+                    "minimum_height": 300,
+                    "subheading_type_preset": "rte",
+                    "subheading_font": "var(--font-body--family)",
+                    "subheading_font_size": "1rem",
+                    "subheading_line_height": "normal",
+                    "subheading_letter_spacing": "normal",
+                    "subheading_case": "none",
+                    "subheading_wrap": "pretty",
+                    "subheading_color": "var(--color-foreground)",
+                    "inherit_color_scheme": false,
+                    "color_scheme": "",
+                    "enable_gradient_overlay": true,
+                    "border": "solid",
+                    "border_width": 1,
+                    "border_opacity": 20,
+                    "border_radius": 0,
+                    "padding-block-start": 16,
+                    "padding-block-end": 32,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0,
+                    "text_padding_block_start": 80,
+                    "text_padding_block_end": 32,
+                    "text_padding_inline_start": 32,
+                    "text_padding_inline_end": 32
+                  },
+                  "blocks": {}
+                },
+                "image_card_CKYYmz": {
+                  "type": "image-card",
+                  "name": "Image Card",
+                  "settings": {
+                    "background_image": "shopify://shop_images/74945b79477a8733ff48ba48d30b8bf549334e06.png",
+                    "inactive_image_desktop_large": "shopify://shop_images/Fast_Transitions_Ghost_large_f29d65f9-fee8-4275-85ba-92c73cb71f6c.jpg",
+                    "inactive_image_desktop_short": "shopify://shop_images/Fast_Transitions_Ghost_short.jpg",
+                    "inactive_image_mobile": "shopify://shop_images/Fast_Transitions_Ghost_Mobile.jpg",
+                    "active_image_desktop": "shopify://shop_images/Fast_Transitions_Active.jpg",
+                    "active_image_mobile": "shopify://shop_images/Fast_Transitions_Active_Mobile.jpg",
+                    "heading": "<h4>Fast Transitions</h4>",
+                    "subheading": "<p>Tactical quick-release buckles make it simple to go half mode → full mode without a frustrating re-setup.</p>",
+                    "badge": "#5",
+                    "default_active_state": false,
+                    "text_alignment": "bottom",
+                    "heading_subheading_gap": 12,
+                    "width_desktop": 100,
+                    "width_mobile": 100,
+                    "max_width_desktop": 2000,
+                    "max_width_mobile": 2000,
+                    "minimum_height": 300,
+                    "subheading_type_preset": "rte",
+                    "subheading_font": "var(--font-body--family)",
+                    "subheading_font_size": "1rem",
+                    "subheading_line_height": "normal",
+                    "subheading_letter_spacing": "normal",
+                    "subheading_case": "none",
+                    "subheading_wrap": "pretty",
+                    "subheading_color": "var(--color-foreground)",
+                    "inherit_color_scheme": false,
+                    "color_scheme": "",
+                    "enable_gradient_overlay": true,
+                    "border": "solid",
+                    "border_width": 1,
+                    "border_opacity": 20,
+                    "border_radius": 0,
+                    "padding-block-start": 16,
+                    "padding-block-end": 32,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0,
+                    "text_padding_block_start": 80,
+                    "text_padding_block_end": 32,
+                    "text_padding_inline_start": 32,
+                    "text_padding_inline_end": 32
+                  },
+                  "blocks": {}
+                },
+                "image_card_Cqj7Pb": {
+                  "type": "image-card",
+                  "name": "Image Card",
+                  "settings": {
+                    "background_image": "shopify://shop_images/bbe26cbf2ee6f5b463424dbf52d5f7307c619a33.png",
+                    "inactive_image_desktop_large": "shopify://shop_images/Carry_Essentials_Ghost_large_5d09d914-bd6a-42e6-9f17-9b84aa1d6c1c.jpg",
+                    "inactive_image_desktop_short": "shopify://shop_images/Carry_Essentials_Ghost_short.jpg",
+                    "inactive_image_mobile": "shopify://shop_images/Carry_Essentials_Ghost_Mobile.jpg",
+                    "active_image_desktop": "shopify://shop_images/Carry_Essentials_Active.jpg",
+                    "active_image_mobile": "shopify://shop_images/Carry_Essentials_Active_Mobile.jpg",
+                    "heading": "<h4>Carry Essentials Built In</h4>",
+                    "subheading": "<p>Front phone pocket + rear gear pocket so you don’t need additional accessories.</p>",
+                    "badge": "#6",
+                    "default_active_state": false,
+                    "text_alignment": "bottom",
+                    "heading_subheading_gap": 12,
+                    "width_desktop": 100,
+                    "width_mobile": 100,
+                    "max_width_desktop": 2000,
+                    "max_width_mobile": 2000,
+                    "minimum_height": 300,
+                    "subheading_type_preset": "rte",
+                    "subheading_font": "var(--font-body--family)",
+                    "subheading_font_size": "1rem",
+                    "subheading_line_height": "normal",
+                    "subheading_letter_spacing": "normal",
+                    "subheading_case": "none",
+                    "subheading_wrap": "pretty",
+                    "subheading_color": "var(--color-foreground)",
+                    "inherit_color_scheme": false,
+                    "color_scheme": "",
+                    "enable_gradient_overlay": true,
+                    "border": "solid",
+                    "border_width": 1,
+                    "border_opacity": 20,
+                    "border_radius": 0,
+                    "padding-block-start": 16,
+                    "padding-block-end": 32,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0,
+                    "text_padding_block_start": 80,
+                    "text_padding_block_end": 32,
+                    "text_padding_inline_start": 32,
+                    "text_padding_inline_end": 32
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_card_xKqfWd",
+                "image_card_Adp8wB",
+                "image_card_34Te86",
+                "image_card_L7fHMB",
+                "image_card_CKYYmz",
+                "image_card_Cqj7Pb"
               ]
             }
           },
           "block_order": [
-            "group_NJzcz6",
-            "divider_mx3kpb",
-            "group_MUFnNN"
+            "text_bQCpGD",
+            "group_V9UBFn",
+            "group_XrQYRK"
           ]
-        },
-        "text_RVqiFP": {
-          "type": "text",
-          "name": "t:names.text",
-          "settings": {
-            "text": "<p>Used responsibly, weighted vests are a proven tool for improving strength, endurance, and overall fitness.</p>",
-            "width": "100%",
-            "max_width": "none",
-            "alignment": "center",
-            "mobile_alignment": "left",
-            "type_preset": "custom",
-            "font": "var(--font-body--family)",
-            "font_size": "1.125rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-primary)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
         }
       },
       "block_order": [
-        "text_iUB9AK",
-        "group_RQFUNp",
-        "text_RVqiFP"
+        "group_VC8P4a"
       ],
-      "name": "t:names.custom_section",
+      "name": "Why it's Different",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -9043,11 +8944,11 @@
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 40,
-        "section_width": "full-width",
-        "section_height": "small",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "scheme-5",
+        "color_scheme": "",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -10374,13 +10275,13 @@
     "section_GeeAyf",
     "section_D8X8Uw",
     "section_pryA7D",
-    "section_V9PUBF",
+    "section_cmAAjw",
     "section_ptYHxH",
     "section_CJU83N",
     "section_HqAtqt",
     "section_ffYfc8",
     "section_MxDPF4",
-    "section_KxGMV4",
+    "section_VRTYxE",
     "section_kUfByM"
   ]
 }
