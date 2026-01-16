@@ -4967,7 +4967,8 @@
       "custom_css": [
         "details.details {background-color: #f5f5f5; margin-bottom: 16px; box-shadow: -4px 4px 10px 0 rgba(0, 0, 0, 0.15);}",
         "span.svg-wrapper.icon-plus {width: 24px; height: 24px; color: #ae8b4a !important;}",
-        ".accordion summary.details__header {letter-spacing: -0.25px !important; font-weight: 400 !important; border-bottom: none !important;}"
+        ".accordion summary.details__header {letter-spacing: -0.25px !important; font-weight: 400 !important; border-bottom: none !important;}",
+        ".details-content p {font-weight: 300;}"
       ],
       "name": "t:names.faq_section",
       "settings": {
