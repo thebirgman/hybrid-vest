@@ -4134,8 +4134,8 @@
             "custom_max_width_mobile": 700,
             "height": "fit",
             "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
+            "inherit_color_scheme": false,
+            "color_scheme": "scheme-1",
             "background_media": "none",
             "video_position": "cover",
             "background_image_position": "cover",
@@ -4283,7 +4283,7 @@
                       "type": "text",
                       "name": "t:names.heading",
                       "settings": {
-                        "text": "<h5>Lorem ipsum dolor sit</h5>",
+                        "text": "<h3>Lorem ipsum dolor sit</h3>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -4506,7 +4506,7 @@
                         "max_width": "normal",
                         "alignment": "left",
                         "mobile_alignment": "left",
-                        "type_preset": "h4",
+                        "type_preset": "h5",
                         "font": "var(--font-body--family)",
                         "font_size": "1rem",
                         "line_height": "normal",
@@ -4607,7 +4607,8 @@
       ],
       "custom_css": [
         ".review-group {border: solid 1px #ffffff33;}",
-        "h5 {color: #d7b26f !important;}"
+        "h5 {color: #d7b26f !important;}",
+        ".h5 h3{font-weight: 700; text-transform: uppercase;}"
       ],
       "name": "t:names.custom_section",
       "settings": {
