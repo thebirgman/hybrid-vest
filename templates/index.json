@@ -9542,7 +9542,7 @@
                           "type": "text",
                           "name": "t:names.heading",
                           "settings": {
-                            "text": "<p>Front Chest Phone Pouch</p>",
+                            "text": "<p>Rear Storage Pocket</p>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
@@ -9569,7 +9569,7 @@
                           "type": "text",
                           "name": "t:names.text",
                           "settings": {
-                            "text": "<p>Secure storage for runs and conditioning.</p>",
+                            "text": "<p>Keys, gels, or essentials.</p>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
