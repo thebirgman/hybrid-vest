@@ -35,7 +35,7 @@
 -%}
 
 <div
-  class="image-card-block{% if block_settings.inherit_color_scheme == false %} color-{{ block_settings.color_scheme }}{% endif %}"
+  class="image-card-block{% if block_settings.inherit_color_scheme == false %} color-{{ block_settings.color_scheme }}{% endif %} image-card-block--hover-enabled{% if block_settings.default_active_state %} image-card-block--default-active{% endif %}"
   style="
     {% if block_settings.width_desktop > 0 %}
       --image-card-width-desktop: {{ block_settings.width_desktop }}%;
@@ -60,6 +60,7 @@
     {% render 'border-override', settings: block_settings %}
   "
   {{ block.shopify_attributes }}
+  data-image-card-hover data-block-id="{{ block.id }}"
 >
   {%- if has_background_image -%}
     <div class="image-card-block__background">
@@ -180,10 +181,6 @@
   }
 
 
-  .image-card-block[style*="--image-card-ratio"] {
-    aspect-ratio: var(--image-card-ratio, 1);
-  }
-
   .image-card-block[style*="--image-card-min-height"] {
     min-height: var(--image-card-min-height);
   }
@@ -207,7 +204,9 @@
       max-width: var(--image-card-max-width-mobile, none);
     }
   }
+</style>
 
+{% stylesheet %}
   .image-card-block__background {
     position: absolute;
     top: 0;
@@ -297,7 +296,241 @@
   .image-card-block__subheading.custom-color > :is(h1, h2, h3, h4, h5, h6, p, *) {
     color: var(--color);
   }
-</style>
+
+  /* Hover interaction styles */
+
+
+  .image-card-block--hover-enabled {
+    transition: flex 0.3s ease;
+    min-width: 0;
+    width: auto !important; /* Override width settings when hover interaction is enabled */
+  }
+
+  .image-card-block--hover-enabled .image-card-block__content p,
+  .image-card-block--hover-enabled .image-card-block__content :is(p, .rte p),
+  .image-card-block--hover-enabled .image-card-block__background-image {
+    transition: opacity 0.3s ease;
+  }
+
+  .image-card-block--hover-enabled.image-card-block--active {
+    flex: 0 0 65%;
+  }
+
+  .image-card-block--hover-enabled:not(.image-card-block--active) {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  /* Active state */
+  .image-card-block--hover-enabled.image-card-block--active .image-card-block__content p,
+  .image-card-block--hover-enabled.image-card-block--active .image-card-block__content :is(p, .rte p) {
+    opacity: 0.9;
+  }
+
+  .image-card-block--hover-enabled.image-card-block--active .image-card-block__background-image {
+    opacity: 1;
+  }
+
+  /* Inactive state */
+  .bento-grid-container .image-card-block--hover-enabled:not(.image-card-block--active) .image-card-block__content p,
+  .bento-grid-container .image-card-block--hover-enabled:not(.image-card-block--active) .image-card-block__content :is(p, .rte p) {
+    opacity: 0.5;
+  }
+
+  .bento-grid-container  .image-card-block--hover-enabled:not(.image-card-block--active) .image-card-block__background-image {
+    opacity: 0.6;
+  }
+
+  /* Default active state on page load */
+
+
+  .bento-grid-container .image-card-block--hover-enabled.image-card-block--active .image-card-block__content p,
+  .bento-grid-container .image-card-block--hover-enabled.image-card-block--active .image-card-block__content :is(p, .rte p) {
+    opacity: 0.9;
+  }
+
+  .image-card-block--hover-enabled.image-card-block--active .image-card-block__background-image {
+    opacity: 1;
+  }
+
+  /* Ensure inactive cards in same group get proper styling */
+  .group-block-content:has(.image-card-block--active) .image-card-block--hover-enabled:not(.image-card-block--active) {
+    flex: 1 1 0;
+  }
+
+  .group-block-content:has(.image-card-block--active) .image-card-block--hover-enabled:not(.image-card-block--active) .image-card-block__content p,
+  .group-block-content:has(.image-card-block--active) .image-card-block--hover-enabled:not(.image-card-block--active) .image-card-block__content :is(p, .rte p) {
+    opacity: 0.5;
+  }
+
+  .group-block-content:has(.image-card-block--active) .image-card-block--hover-enabled:not(.image-card-block--active) .image-card-block__background-image {
+    opacity: 0.6;
+  }
+  .group-block-content:has(.image-card-block--active) > .shopify-block:has(.image-card-block--active) {
+    width: 65%!important;
+}
+
+.group-block-content:has(.image-card-block--active) > .shopify-block {
+    width: 35%!important;
+    
+}
+
+.group-block-content:has(.image-card-block--active) > .shopify-block .image-card-block {
+    min-height: 380px;
+}
+
+.bento-grid-container .shopify-block {
+    transition: .4s  cubic-bezier(.47,1.64,.41,.8);
+}
+
+.bento-grid-container .shopify-block .image-card-block {
+    box-shadow: -4px 4px 10px 0px #FFFFFF26;
+}
+
+@media screen and (max-width: 767px) {
+  .group-block-content:has(.image-card-block--active) > .shopify-block {
+    width: 100%!important;
+}
+
+.group-block-content:has(.image-card-block--active) > .shopify-block:has(.image-card-block--active),.group-block-content:has(.image-card-block--active) > .shopify-block {
+    width: 90%!Important;
+}
+
+.bento-grid-container .shopify-block .image-card-block {
+    min-height: 450px!important;
+}
+}
+.mobile-cards {
+  display: none;
+}
+@media screen and (max-width: 750px) {
+  .mobile-cards {
+    display: block;
+  }
+  .desktop-cards {
+    display: none;
+  }
+}
+{% endstylesheet %}
+
+
+<script>
+  (function() {
+    const cardId = '{{ block.id }}';
+    const cardSelector = `[data-image-card-hover][data-block-id="${cardId}"]`;
+    
+    function initImageCardHover() {
+      const card = document.querySelector(cardSelector);
+      if (!card) return;
+
+      // Find the parent group container (check both possible containers)
+      const groupContainer = card.closest('.bento-grid-container');
+      if (!groupContainer) return;
+
+      // Check if this group is already initialized
+      if (groupContainer.dataset.imageCardHoverInitialized === 'true') return;
+
+      // Find all image cards in this group
+      const allCards = Array.from(groupContainer.querySelectorAll('.image-card-block--hover-enabled'));
+      if (allCards.length < 2) return; // Need at least 2 cards for interaction
+
+      // Mark group as initialized and add class for CSS targeting
+      groupContainer.dataset.imageCardHoverInitialized = 'true';
+      groupContainer.classList.add('has-image-card-hover');
+
+      // Check if this is a mobile slider
+      const isMobileSlider = groupContainer.classList.contains('group-block-content--mobile-slider');
+      const isMobile = window.innerWidth <= 768;
+
+      // Find default active card or set first as active
+      let lastActiveCard = allCards.find(c => c.classList.contains('image-card-block--default-active')) || allCards[0];
+      
+      // Initialize active state
+      allCards.forEach(c => c.classList.remove('image-card-block--active'));
+      lastActiveCard.classList.add('image-card-block--active');
+
+      // Mobile slider: Simple scroll-based detection
+      if (isMobileSlider && isMobile) {
+        const updateActiveCard = () => {
+          const containerRect = groupContainer.getBoundingClientRect();
+          let mostVisibleCard = null;
+          let maxVisibility = 0;
+
+          allCards.forEach(card => {
+            const rect = card.getBoundingClientRect();
+            const left = Math.max(rect.left, containerRect.left);
+            const right = Math.min(rect.right, containerRect.right);
+            const visibleWidth = Math.max(0, right - left);
+            const visibility = visibleWidth / rect.width;
+
+            if (visibility > maxVisibility) {
+              maxVisibility = visibility;
+              mostVisibleCard = card;
+            }
+          });
+
+          if (mostVisibleCard && maxVisibility > 0.3) {
+            allCards.forEach(c => c.classList.remove('image-card-block--active'));
+            mostVisibleCard.classList.add('image-card-block--active');
+            lastActiveCard = mostVisibleCard;
+          }
+        };
+
+        // Update on scroll (debounced)
+        let scrollTimeout;
+        groupContainer.addEventListener('scroll', () => {
+          clearTimeout(scrollTimeout);
+          scrollTimeout = setTimeout(updateActiveCard, 50);
+        }, { passive: true });
+
+        // Initial check
+        updateActiveCard();
+      } else {
+        // Desktop: Add hover listeners to all cards
+        allCards.forEach(currentCard => {
+          currentCard.addEventListener('mouseenter', function() {
+            // Remove active from all cards
+            allCards.forEach(c => c.classList.remove('image-card-block--active'));
+            
+            // Add active to hovered card
+            currentCard.classList.add('image-card-block--active');
+            lastActiveCard = currentCard;
+          });
+
+          currentCard.addEventListener('mouseleave', function() {
+            // Keep the last active card active when leaving
+            if (lastActiveCard) {
+              allCards.forEach(c => c.classList.remove('image-card-block--active'));
+              lastActiveCard.classList.add('image-card-block--active');
+            }
+          });
+        });
+      }
+    }
+
+    // Initialize on DOM ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initImageCardHover);
+    } else {
+      initImageCardHover();
+    }
+
+    // Re-initialize if content is dynamically loaded
+    if (typeof Shopify !== 'undefined' && Shopify.designMode) {
+      document.addEventListener('shopify:section:load', function() {
+        // Reset initialization flag for the group
+        const card = document.querySelector(cardSelector);
+        if (card) {
+          const groupContainer = card.closest('.bento-grid-container');
+          if (groupContainer) {
+            groupContainer.dataset.imageCardHoverInitialized = 'false';
+          }
+        }
+        setTimeout(initImageCardHover, 100);
+      });
+    }
+  })();
+</script>
 
 {% schema %}
 {
@@ -330,6 +563,13 @@
     {
       "type": "header",
       "content": "Layout"
+    },
+    {
+      "type": "checkbox",
+      "id": "default_active_state",
+      "label": "Default active state",
+      "default": false,
+      "info": "This card will be active by default (only one card per group should be set)"
     },
     {
       "type": "select",
@@ -401,34 +641,7 @@
       "unit": "px",
       "default": 0
     },
-    {
-      "type": "select",
-      "id": "aspect_ratio",
-      "label": "Aspect ratio",
-      "options": [
-        {
-          "value": "adapt",
-          "label": "Auto"
-        },
-        {
-          "value": "portrait",
-          "label": "Portrait"
-        },
-        {
-          "value": "square",
-          "label": "Square"
-        },
-        {
-          "value": "landscape",
-          "label": "Landscape"
-        },
-        {
-          "value": "none",
-          "label": "None"
-        }
-      ],
-      "default": "adapt"
-    },
+    
     {
       "type": "range",
       "id": "minimum_height",
