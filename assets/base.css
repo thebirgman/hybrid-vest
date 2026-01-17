@@ -4921,6 +4921,10 @@ p strong{
     gap: 1px!important;
 }
 
+.mobile-center .mobile-column {
+    justify-content: center!important;
+    align-items: center;
+}
 .black-text-bold > div  *{
  font-size: 16px!important
 }
