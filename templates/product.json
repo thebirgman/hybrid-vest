@@ -1099,7 +1099,7 @@
                                     "max_width": "normal",
                                     "alignment": "left",
                                     "mobile_alignment": "left",
-                                    "type_preset": "h5",
+                                    "type_preset": "custom",
                                     "font": "var(--font-body--family)",
                                     "font_size": "1rem",
                                     "line_height": "normal",
