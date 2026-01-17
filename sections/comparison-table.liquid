@@ -434,6 +434,30 @@ p {}
     width: 150px;
 }
 }
+
+
+
+.comparison-table__row-data-text p {
+    text-align: left;
+    line-height: 1.3em;
+    
+}
+@media screen and (max-width: 768px) {
+.comparison-table__row {min-height: 85px;}
+}
+
+@media screen and (max-width: 390px) {
+.comparison-table__row {min-height: 96px;}
+}
+.comparison-table__row-data {
+    gap: 8px;
+}
+
+.comparison-table__row:nth-child(9),  .comparison-table__row:nth-child(10) {
+    display: none;
+}
+
+.comparison-table__row {}
 </style>
 
 <div class="section-background color-{{ section.settings.color_scheme }}"></div>
