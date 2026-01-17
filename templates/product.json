@@ -3416,7 +3416,8 @@
       "custom_css": [
         "h2.comparison-table__heading {font-size: 44px; font-weight: 700;}",
         "@media screen and (max-width: 768px) {h2.comparison-table__heading {font-size: 32px; font-weight: 700; }}",
-        ".comparison-table__see-more-button {border-radius: 200px;}"
+        ".comparison-table__see-more-button {border-radius: 200px;}",
+        ".comparison-table__column.comparison-table__column--featured {box-shadow: -6px 6px 12.7px rgba(215, 178, 111, 0.5) !important;}"
       ],
       "name": "Comparison Table",
       "settings": {
