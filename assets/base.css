@@ -4918,7 +4918,7 @@ p strong{
 
 @media screen and (max-width: 768px) {
 .yellow-bg .group-block-content.layout-panel-flex.mobile-column {
-    gap: 8px!important;
+    gap: 4px!important;
 }
 
 .black-text-bold > div  *{
