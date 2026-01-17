@@ -1805,7 +1805,8 @@
       },
       "custom_css": [
         "@media screen and (max-width: 768px) {.group-block__media-wrapper + .group-block-content.layout-panel-flex {gap: 24px; }}",
-        ".featured-review {border: dashed 1px #0e0e0e33;}"
+        ".featured-review {border: dashed 1px #0e0e0e33;}",
+        ".featured-review p {font-weight: 300;}"
       ],
       "settings": {
         "content_width": "content-center-aligned",
