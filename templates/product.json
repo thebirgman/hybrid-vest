@@ -340,7 +340,7 @@
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
-                    "custom_class": "",
+                    "custom_class": "black-text-bold",
                     "reverse_on_mobile": false,
                     "slider_on_mobile": false,
                     "content_direction": "column",
