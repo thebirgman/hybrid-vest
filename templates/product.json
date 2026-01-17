@@ -1709,7 +1709,7 @@
         }
       },
       "custom_css": [
-        "@media screen and (max-width: 768px) {.group-block__media-wrapper + .group-block-content.layout-panel-flex {gap: 24px; }}"
+        "@media screen and (max-width: 768px) {.product-details > div > .group-block__media-wrapper + .group-block-content.layout-panel-flex {gap: 24px; }}"
       ],
       "settings": {
         "content_width": "content-center-aligned",
