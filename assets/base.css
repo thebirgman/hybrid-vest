@@ -4912,7 +4912,7 @@ p strong{
   font-weight: 600;
 }
 
-.black-text-bold *{
+.black-text-bold > div > rte-formatter *{
   color: #000!important;
 }
 
