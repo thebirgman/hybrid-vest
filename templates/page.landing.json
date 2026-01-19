@@ -5626,7 +5626,7 @@
                               "type": "text",
                               "name": "t:names.text",
                               "settings": {
-                                "text": "<p>Every purchase comes with a 12-week Murph training program.</p>",
+                                "text": "<p>Every purchase comes with a complete Murph training program.</p>",
                                 "width": "fit-content",
                                 "max_width": "normal",
                                 "alignment": "left",
