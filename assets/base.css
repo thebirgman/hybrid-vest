@@ -3962,7 +3962,7 @@ slideshow-component[autoplay] slideshow-controls {
     &:is([aria-selected='true']) {
       outline: var(--focus-outline-width) solid #D7B26F;
       outline-offset: calc(var(--focus-outline-offset) / 2);
-      border: var(--style-border-width) solid rgb(var(--color-border-rgb) / var(--media-border-opacity));
+      border: var(--style-border-width) solid #D7B26F / var(--media-border-opacity));
     }
   }
 }
