@@ -5680,7 +5680,7 @@
                         "text_pPngHt": {
                           "type": "text",
                           "settings": {
-                            "text": "<p>Estimated ship date is February 15.</p>",
+                            "text": "<p>Estimated ship date is Mar 15.</p>",
                             "width": "100%",
                             "max_width": "normal",
                             "alignment": "left",
@@ -5760,7 +5760,7 @@
                         "text_QpGA7w": {
                           "type": "text",
                           "settings": {
-                            "text": "<p>Yes — it’s designed for Run, Ruck, Train. Every purchase includes a 12-week Murph training program.</p>",
+                            "text": "<p>Yes. It's designed for Run, Ruck, Train. Every purchase includes a complete Murph training program.</p>",
                             "width": "100%",
                             "max_width": "normal",
                             "alignment": "left",
