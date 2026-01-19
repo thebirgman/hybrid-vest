@@ -114,7 +114,7 @@
         "enable_transparent_header_collection": false,
         "collection_color_scheme": "default",
         "shop_now_button_text": "SHOP NOW",
-        "shop_now_button_link": "shopify://collections/all"
+        "shop_now_button_link": "shopify://products/hybrid-vest"
       }
     }
   },
