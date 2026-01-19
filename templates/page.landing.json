@@ -9730,7 +9730,7 @@
                       "type": "text",
                       "name": "t:names.heading",
                       "settings": {
-                        "text": "<h4>Half Mode Dimensions</h4>",
+                        "text": "<h4>Full Mode Dimensions</h4>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -9757,7 +9757,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>- Front panel: __ in (H) × __ in (W) <br/>- Back panel: __ in (H) × __ in (W) <br/>- Strap adjustment range: __ in to __ in <br/>- Weight range: 5-10 lbs</p>",
+                        "text": "<p>- Front panel: __ in (H) × __ in (W) <br/>- Back panel: __ in (H) × __ in (W) <br/>- Total torso coverage length: __ in<br/> - Weight range: 5-20 lbs</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -9897,7 +9897,7 @@
                       "type": "text",
                       "name": "t:names.heading",
                       "settings": {
-                        "text": "<h4>Half Mode Dimensions</h4>",
+                        "text": "<h4>Plate Dimensions</h4>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -9924,7 +9924,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>- Front panel: __ in (H) × __ in (W) <br/>- Back panel: __ in (H) × __ in (W) <br/>- Strap adjustment range: __ in to __ in <br/>- Weight range: 5-10 lbs</p>",
+                        "text": "<p>- Plate size: __ in × __ in × __ in <br/>- Plate weight each: ~1 lb <br/>- Plate count: 17</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -10968,7 +10968,7 @@
         "gradient_direction": "to top",
         "padding-block-start": 0,
         "padding-block-end": 0,
-        "anchor_id": "product-specs-modal"
+        "anchor_id": ""
       }
     }
   },
