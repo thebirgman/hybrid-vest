@@ -398,6 +398,8 @@ p {}
     max-width: 750px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .comparison-table__wrapper {
@@ -458,6 +460,19 @@ p {}
 }
 
 .comparison-table__row {}
+
+.comparison-table__row.comparison-table__row-header {visibility: hidden;opacity: 0;background: transparent;}
+
+.comparison-table__column.comparison-table__column--header {
+    background: transparent;
+}
+
+@media screen and (min-width: 768px) {
+.comparison-table__column.comparison-table__column--featured {
+    margin-left: 4px;
+}
+}
+
 </style>
 
 <div class="section-background color-{{ section.settings.color_scheme }}"></div>
@@ -1854,4 +1869,5 @@ p {}
   ]
 }
 {% endschema %}
+
 

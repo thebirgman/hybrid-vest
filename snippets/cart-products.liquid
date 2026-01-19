@@ -325,16 +325,22 @@
                   headers="productTotal"
                 >
                   {%- liquid
-                    if settings.currency_code_enabled_cart_items
-                      assign price = item.final_line_price | money_with_currency
-                      assign unit_price = item.unit_price | money_with_currency
+                    if item.final_line_price == 0
+                      assign price = 'FREE'
+                      assign price_value = 'FREE'
                     else
-                      assign price = item.final_line_price | money
-                      assign unit_price = item.unit_price | money
+                      if settings.currency_code_enabled_cart_items
+                        assign price = item.final_line_price | money_with_currency
+                        assign unit_price = item.unit_price | money_with_currency
+                      else
+                        assign price = item.final_line_price | money
+                        assign unit_price = item.unit_price | money
+                      endif
+                      assign price_value = price | strip_html
                     endif
                   -%}
-                  <text-component value="{{ price | strip_html }}">{{ price }}</text-component>
-                  {%- if item.unit_price_measurement -%}
+                  <text-component value="{{ price_value }}">{{ price }}</text-component>
+                  {%- if item.unit_price_measurement and item.final_line_price != 0 -%}
                     <div class="cart-items__price-unit cart-secondary-typography">
                       {% render 'unit-price', price: unit_price, measurement: item.unit_price_measurement %}
                     </div>
