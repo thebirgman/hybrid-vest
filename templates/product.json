@@ -858,7 +858,7 @@
                               "type": "text",
                               "name": "t:names.text",
                               "settings": {
-                                "text": "<p>13x 1 lb weight plates</p>",
+                                "text": "<p>13x weight plates</p>",
                                 "width": "fit-content",
                                 "max_width": "normal",
                                 "alignment": "left",
