@@ -94,6 +94,13 @@
     "variant_button_radius": 14,
     "variant_button_width": "equal-width-buttons",
     "content_for_index": [],
+    "blocks": {
+      "18071877742361319197": {
+        "type": "shopify://apps/dr-free-gift/blocks/instant-load/5942fed7-47f4-451f-a42f-9077b6214264",
+        "disabled": false,
+        "settings": {}
+      }
+    },
     "color_schemes": {
       "scheme-1": {
         "settings": {
