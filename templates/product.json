@@ -417,6 +417,7 @@
                     "group_JRKcGW": {
                       "type": "group",
                       "name": "t:names.group",
+                      "disabled": true,
                       "settings": {
                         "custom_class": "",
                         "reverse_on_mobile": false,
@@ -469,7 +470,7 @@
                           "type": "image",
                           "name": "t:names.image",
                           "settings": {
-                            "image": "shopify://shop_images/image_1_2.png",
+                            "image": "shopify://shop_images/push_up.png",
                             "link": "",
                             "image_ratio": "adapt",
                             "width": "fit-content",
@@ -698,7 +699,7 @@
                               "type": "text",
                               "name": "t:names.text",
                               "settings": {
-                                "text": "<p>12-week Murph program included with every purchase</p>",
+                                "text": "<p>Complete Murph Program</p>",
                                 "width": "fit-content",
                                 "max_width": "normal",
                                 "alignment": "left",
@@ -787,7 +788,7 @@
                           "type": "image",
                           "name": "t:names.image",
                           "settings": {
-                            "image": "shopify://shop_images/image_1_1.png",
+                            "image": "shopify://shop_images/Weight_Plates_1.webp",
                             "link": "",
                             "image_ratio": "adapt",
                             "width": "fit-content",
@@ -857,7 +858,7 @@
                               "type": "text",
                               "name": "t:names.text",
                               "settings": {
-                                "text": "<p>Free 17x 1 lb weight plates</p>",
+                                "text": "<p>13x 1 lb weight plates</p>",
                                 "width": "fit-content",
                                 "max_width": "normal",
                                 "alignment": "left",
