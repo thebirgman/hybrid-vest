@@ -4949,3 +4949,10 @@ body .slideshow-controls__thumbnails {
     padding-left: 4px;
 }
 }
+.kits-container-label {
+    font-weight: 700;
+}
+
+fieldset.variant-option.variant-option--kits {
+    margin-top: 0;
+}
