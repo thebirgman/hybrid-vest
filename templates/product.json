@@ -1280,7 +1280,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>Ships: Feb 15</p>",
+                        "text": "<p>Ships: Mar 15</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
