@@ -4873,6 +4873,7 @@
         "text_jUndPb",
         "group_CjkEHh"
       ],
+      "disabled": true,
       "custom_css": [
         ".review-group {border: solid 1px #ffffff33;}",
         "h5 {color: #d7b26f !important;}",
@@ -5152,6 +5153,7 @@
       "block_order": [
         "group_7mpbRj"
       ],
+      "disabled": true,
       "custom_css": [
         ".marquee__repeated-items {max-width: 350px; min-width: 350px;}",
         "p {line-height: 1em; font-size: 16px; font-weight: 300;}",
