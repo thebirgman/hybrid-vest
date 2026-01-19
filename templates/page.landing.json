@@ -10941,7 +10941,7 @@
         "group_43nmHr",
         "group_txnRTT"
       ],
-      "name": "Specs Modal",
+      "name": "t:names.custom_section",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -10968,7 +10968,7 @@
         "gradient_direction": "to top",
         "padding-block-start": 40,
         "padding-block-end": 40,
-        "anchor_id": "product-specs-modal"
+        "anchor_id": ""
       }
     }
   },
