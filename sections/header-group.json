@@ -31,6 +31,7 @@
       "block_order": [
         "announcement_BxgCk9"
       ],
+      "disabled": true,
       "custom_css": [
         "p {opacity: 0.7;}"
       ],
@@ -61,7 +62,6 @@
         },
         "header-menu": {
           "type": "_header-menu",
-          "disabled": true,
           "static": true,
           "settings": {
             "menu": "main-menu",
@@ -87,7 +87,7 @@
         "logo_position": "left",
         "menu_position": "left",
         "menu_row": "top",
-        "show_search": false,
+        "show_search": true,
         "search_position": "right",
         "search_row": "top",
         "show_country": true,
@@ -113,7 +113,7 @@
         "enable_transparent_header_collection": false,
         "collection_color_scheme": "default",
         "shop_now_button_text": "SHOP NOW",
-        "shop_now_button_link": "shopify://products/hybrid-vest"
+        "shop_now_button_link": "shopify://collections/all"
       }
     }
   },
