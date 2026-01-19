@@ -1561,7 +1561,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+                    "text": "<p>\"Perfect for casual runs and light training days, this vest adds challenge without ruining comfort or freedom of movement.”</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1702,7 +1702,7 @@
                           "type": "text",
                           "name": "t:names.text",
                           "settings": {
-                            "text": "<p>LOREM IPSUM</p>",
+                            "text": "<p>Mike, Marathoner</p>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
