@@ -5800,7 +5800,7 @@
                         "text_izwGTw": {
                           "type": "text",
                           "settings": {
-                            "text": "<p>First 1,000 customers get a free Golden Jump Rope, plus free Push-Up Bars while supplies last.</p>",
+                            "text": "<p>First 1,000 customers get a free Golden Jump Rope.</p>",
                             "width": "100%",
                             "max_width": "normal",
                             "alignment": "left",
