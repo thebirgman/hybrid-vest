@@ -245,6 +245,10 @@
                       "settings": {
                         "label": "GET THE HYBRID VEST",
                         "link": "shopify://products/hybrid-vest",
+                        "enable_popup": false,
+                        "popup_section_type": "anchor",
+                        "popup_section_anchor": "",
+                        "popup_section_id": "",
                         "open_in_new_tab": false,
                         "style_class": "button",
                         "visibility": "all",
@@ -316,7 +320,8 @@
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 40,
-        "padding-block-end": 32
+        "padding-block-end": 32,
+        "anchor_id": ""
       }
     },
     "section_GeeAyf": {
@@ -1101,7 +1106,8 @@
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 0,
-        "padding-block-end": 80
+        "padding-block-end": 80,
+        "anchor_id": ""
       }
     },
     "section_D8X8Uw": {
@@ -1329,7 +1335,8 @@
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 80,
-        "padding-block-end": 80
+        "padding-block-end": 80,
+        "anchor_id": ""
       }
     },
     "section_pryA7D": {
@@ -1716,7 +1723,8 @@
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 80,
-        "padding-block-end": 80
+        "padding-block-end": 80,
+        "anchor_id": ""
       }
     },
     "section_zjRjHC": {
@@ -2817,7 +2825,12 @@
                             "text_padding_block_start": 80,
                             "text_padding_block_end": 32,
                             "text_padding_inline_start": 32,
-                            "text_padding_inline_end": 32
+                            "text_padding_inline_end": 32,
+                            "enable_mobile_text_padding": false,
+                            "text_padding_block_start_mobile": 0,
+                            "text_padding_block_end_mobile": 0,
+                            "text_padding_inline_start_mobile": 0,
+                            "text_padding_inline_end_mobile": 0
                           },
                           "blocks": {}
                         },
@@ -2859,7 +2872,12 @@
                             "text_padding_block_start": 80,
                             "text_padding_block_end": 32,
                             "text_padding_inline_start": 32,
-                            "text_padding_inline_end": 32
+                            "text_padding_inline_end": 32,
+                            "enable_mobile_text_padding": false,
+                            "text_padding_block_start_mobile": 0,
+                            "text_padding_block_end_mobile": 0,
+                            "text_padding_inline_start_mobile": 0,
+                            "text_padding_inline_end_mobile": 0
                           },
                           "blocks": {}
                         }
@@ -2949,7 +2967,8 @@
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 80,
-        "padding-block-end": 80
+        "padding-block-end": 80,
+        "anchor_id": ""
       }
     },
     "section_ijdgX4": {
@@ -3178,7 +3197,12 @@
                         "text_padding_block_start": 80,
                         "text_padding_block_end": 32,
                         "text_padding_inline_start": 32,
-                        "text_padding_inline_end": 32
+                        "text_padding_inline_end": 32,
+                        "enable_mobile_text_padding": false,
+                        "text_padding_block_start_mobile": 0,
+                        "text_padding_block_end_mobile": 0,
+                        "text_padding_inline_start_mobile": 0,
+                        "text_padding_inline_end_mobile": 0
                       },
                       "blocks": {}
                     },
@@ -3225,7 +3249,12 @@
                         "text_padding_block_start": 80,
                         "text_padding_block_end": 32,
                         "text_padding_inline_start": 32,
-                        "text_padding_inline_end": 32
+                        "text_padding_inline_end": 32,
+                        "enable_mobile_text_padding": false,
+                        "text_padding_block_start_mobile": 0,
+                        "text_padding_block_end_mobile": 0,
+                        "text_padding_inline_start_mobile": 0,
+                        "text_padding_inline_end_mobile": 0
                       },
                       "blocks": {}
                     }
@@ -3329,7 +3358,12 @@
                         "text_padding_block_start": 80,
                         "text_padding_block_end": 32,
                         "text_padding_inline_start": 32,
-                        "text_padding_inline_end": 32
+                        "text_padding_inline_end": 32,
+                        "enable_mobile_text_padding": false,
+                        "text_padding_block_start_mobile": 0,
+                        "text_padding_block_end_mobile": 0,
+                        "text_padding_inline_start_mobile": 0,
+                        "text_padding_inline_end_mobile": 0
                       },
                       "blocks": {}
                     },
@@ -3376,7 +3410,12 @@
                         "text_padding_block_start": 80,
                         "text_padding_block_end": 32,
                         "text_padding_inline_start": 32,
-                        "text_padding_inline_end": 32
+                        "text_padding_inline_end": 32,
+                        "enable_mobile_text_padding": false,
+                        "text_padding_block_start_mobile": 0,
+                        "text_padding_block_end_mobile": 0,
+                        "text_padding_inline_start_mobile": 0,
+                        "text_padding_inline_end_mobile": 0
                       },
                       "blocks": {}
                     }
@@ -3480,7 +3519,12 @@
                         "text_padding_block_start": 80,
                         "text_padding_block_end": 32,
                         "text_padding_inline_start": 32,
-                        "text_padding_inline_end": 32
+                        "text_padding_inline_end": 32,
+                        "enable_mobile_text_padding": false,
+                        "text_padding_block_start_mobile": 0,
+                        "text_padding_block_end_mobile": 0,
+                        "text_padding_inline_start_mobile": 0,
+                        "text_padding_inline_end_mobile": 0
                       },
                       "blocks": {}
                     },
@@ -3527,7 +3571,12 @@
                         "text_padding_block_start": 80,
                         "text_padding_block_end": 32,
                         "text_padding_inline_start": 32,
-                        "text_padding_inline_end": 32
+                        "text_padding_inline_end": 32,
+                        "enable_mobile_text_padding": false,
+                        "text_padding_block_start_mobile": 0,
+                        "text_padding_block_end_mobile": 0,
+                        "text_padding_inline_start_mobile": 0,
+                        "text_padding_inline_end_mobile": 0
                       },
                       "blocks": {}
                     }
@@ -3638,7 +3687,12 @@
                     "text_padding_block_start": 80,
                     "text_padding_block_end": 32,
                     "text_padding_inline_start": 32,
-                    "text_padding_inline_end": 32
+                    "text_padding_inline_end": 32,
+                    "enable_mobile_text_padding": false,
+                    "text_padding_block_start_mobile": 0,
+                    "text_padding_block_end_mobile": 0,
+                    "text_padding_inline_start_mobile": 0,
+                    "text_padding_inline_end_mobile": 0
                   },
                   "blocks": {}
                 },
@@ -3685,7 +3739,12 @@
                     "text_padding_block_start": 80,
                     "text_padding_block_end": 32,
                     "text_padding_inline_start": 32,
-                    "text_padding_inline_end": 32
+                    "text_padding_inline_end": 32,
+                    "enable_mobile_text_padding": false,
+                    "text_padding_block_start_mobile": 0,
+                    "text_padding_block_end_mobile": 0,
+                    "text_padding_inline_start_mobile": 0,
+                    "text_padding_inline_end_mobile": 0
                   },
                   "blocks": {}
                 },
@@ -3732,7 +3791,12 @@
                     "text_padding_block_start": 80,
                     "text_padding_block_end": 32,
                     "text_padding_inline_start": 32,
-                    "text_padding_inline_end": 32
+                    "text_padding_inline_end": 32,
+                    "enable_mobile_text_padding": false,
+                    "text_padding_block_start_mobile": 0,
+                    "text_padding_block_end_mobile": 0,
+                    "text_padding_inline_start_mobile": 0,
+                    "text_padding_inline_end_mobile": 0
                   },
                   "blocks": {}
                 },
@@ -3779,7 +3843,12 @@
                     "text_padding_block_start": 80,
                     "text_padding_block_end": 32,
                     "text_padding_inline_start": 32,
-                    "text_padding_inline_end": 32
+                    "text_padding_inline_end": 32,
+                    "enable_mobile_text_padding": false,
+                    "text_padding_block_start_mobile": 0,
+                    "text_padding_block_end_mobile": 0,
+                    "text_padding_inline_start_mobile": 0,
+                    "text_padding_inline_end_mobile": 0
                   },
                   "blocks": {}
                 },
@@ -3826,7 +3895,12 @@
                     "text_padding_block_start": 80,
                     "text_padding_block_end": 32,
                     "text_padding_inline_start": 32,
-                    "text_padding_inline_end": 32
+                    "text_padding_inline_end": 32,
+                    "enable_mobile_text_padding": false,
+                    "text_padding_block_start_mobile": 0,
+                    "text_padding_block_end_mobile": 0,
+                    "text_padding_inline_start_mobile": 0,
+                    "text_padding_inline_end_mobile": 0
                   },
                   "blocks": {}
                 },
@@ -3873,7 +3947,12 @@
                     "text_padding_block_start": 80,
                     "text_padding_block_end": 32,
                     "text_padding_inline_start": 32,
-                    "text_padding_inline_end": 32
+                    "text_padding_inline_end": 32,
+                    "enable_mobile_text_padding": false,
+                    "text_padding_block_start_mobile": 0,
+                    "text_padding_block_end_mobile": 0,
+                    "text_padding_inline_start_mobile": 0,
+                    "text_padding_inline_end_mobile": 0
                   },
                   "blocks": {}
                 }
@@ -3924,7 +4003,8 @@
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 80,
-        "padding-block-end": 80
+        "padding-block-end": 80,
+        "anchor_id": ""
       }
     },
     "section_CJU83N": {
@@ -4605,7 +4685,8 @@
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 80,
-        "padding-block-end": 80
+        "padding-block-end": 80,
+        "anchor_id": ""
       }
     },
     "section_HqAtqt": {
@@ -5717,7 +5798,8 @@
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 80,
-        "padding-block-end": 80
+        "padding-block-end": 80,
+        "anchor_id": ""
       }
     },
     "section_ffYfc8": {
@@ -6703,7 +6785,7 @@
                                   "type": "text",
                                   "name": "t:names.text",
                                   "settings": {
-                                    "text": "<p>Free 13x 1 lb weight plates</p>",
+                                    "text": "<p>13x weight plates</p>",
                                     "width": "fit-content",
                                     "max_width": "normal",
                                     "alignment": "left",
@@ -7198,6 +7280,10 @@
                           "settings": {
                             "label": "Claim Your Hybrid Vest",
                             "link": "shopify://products/hybrid-vest",
+                            "enable_popup": false,
+                            "popup_section_type": "anchor",
+                            "popup_section_anchor": "",
+                            "popup_section_id": "",
                             "open_in_new_tab": false,
                             "style_class": "button",
                             "visibility": "all",
@@ -7518,6 +7604,10 @@
                       "settings": {
                         "label": "See Product Specs",
                         "link": "shopify://products/hybrid-vest",
+                        "enable_popup": false,
+                        "popup_section_type": "anchor",
+                        "popup_section_anchor": "",
+                        "popup_section_id": "",
                         "open_in_new_tab": false,
                         "style_class": "button-secondary",
                         "visibility": "all",
@@ -7594,7 +7684,8 @@
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 80,
-        "padding-block-end": 80
+        "padding-block-end": 80,
+        "anchor_id": ""
       }
     },
     "section_MxDPF4": {
@@ -8244,7 +8335,8 @@
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 80,
-        "padding-block-end": 80
+        "padding-block-end": 80,
+        "anchor_id": ""
       }
     }
   },

@@ -61,6 +61,7 @@
         },
         "header-menu": {
           "type": "_header-menu",
+          "disabled": true,
           "static": true,
           "settings": {
             "menu": "main-menu",
@@ -86,7 +87,7 @@
         "logo_position": "left",
         "menu_position": "left",
         "menu_row": "top",
-        "show_search": true,
+        "show_search": false,
         "search_position": "right",
         "search_row": "top",
         "show_country": true,
@@ -110,7 +111,9 @@
         "enable_transparent_header_product": false,
         "product_color_scheme": "default",
         "enable_transparent_header_collection": false,
-        "collection_color_scheme": "default"
+        "collection_color_scheme": "default",
+        "shop_now_button_text": "SHOP NOW",
+        "shop_now_button_link": "shopify://products/hybrid-vest"
       }
     }
   },
