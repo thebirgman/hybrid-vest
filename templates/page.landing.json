@@ -6261,6 +6261,7 @@
                         "group_iTRKJt": {
                           "type": "group",
                           "name": "t:names.group",
+                          "disabled": true,
                           "settings": {
                             "custom_class": "",
                             "reverse_on_mobile": false,
@@ -6542,7 +6543,7 @@
                                   "type": "text",
                                   "name": "t:names.text",
                                   "settings": {
-                                    "text": "<p>Murph program included with every purchase</p>",
+                                    "text": "<p>Complete Murph program</p>",
                                     "width": "fit-content",
                                     "max_width": "normal",
                                     "alignment": "left",
