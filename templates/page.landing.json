@@ -2827,7 +2827,7 @@
                           "settings": {
                             "background_image": "shopify://shop_images/Full_Vest.jpg",
                             "heading": "<h4>Full Vest Mode (5–20 lb)</h4>",
-                            "subheading": "<p>Attach the extension for rucking, lifting, and harder sessions</p>",
+                            "subheading": "<p>For rucking, lifting, and harder sessions</p>",
                             "badge": "",
                             "default_active_state": false,
                             "text_alignment": "bottom",
