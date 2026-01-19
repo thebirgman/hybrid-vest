@@ -60,7 +60,7 @@
   endcapture
 
   capture actions
-    render 'header-actions'
+    render 'header-actions', shop_now_button_text: section.settings.shop_now_button_text, shop_now_button_link: section.settings.shop_now_button_link
   endcapture
 
   if shop.customer_accounts_enabled
@@ -743,6 +743,26 @@
   .header-menu .menu-list__submenu[data-active] {
     content-visibility: visible;
   }
+
+  a.header-actions__shop-now.button {
+    min-width: 144px;
+    letter-spacing: 0!important;
+    height: 43px;
+    font-size: 16px;
+}
+
+a.header-actions__shop-now.button span {
+    letter-spacing: -1px!important;
+    font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+.header__columns {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 16px 16px;
+}
+}
+
 {% endstylesheet %}
 
 {% unless request.design_mode %}
@@ -1184,6 +1204,22 @@
       ],
       "default": "default",
       "visible_if": "{{ section.settings.enable_transparent_header_collection }}"
+    },
+    {
+      "type": "header",
+      "content": "Shop Now Button"
+    },
+    {
+      "type": "text",
+      "id": "shop_now_button_text",
+      "label": "Button text",
+      "default": "SHOP NOW"
+    },
+    {
+      "type": "url",
+      "id": "shop_now_button_link",
+      "label": "Button link",
+      "default": "/collections/all"
     }
   ],
   "presets": []

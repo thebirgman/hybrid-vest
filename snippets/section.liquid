@@ -9,6 +9,7 @@
 <div
   class="section section--{{ section.settings.section_width }} color-{{ section.settings.color_scheme }}"
   data-testid="ui-test-section"
+  {% if section.settings.anchor_id != blank %}id="{{ section.settings.anchor_id }}" data-popup-section="true"{% endif %}
 
   {% if request.visual_preview_mode %}
     data-shopify-visual-preview
@@ -93,5 +94,15 @@
 
   .custom-section-content {
     z-index: var(--layer-flat);
+  }
+
+  /* Hide sections that are meant for popups */
+  .shopify-section:has(.section[data-popup-section="true"]) {
+    display: none !important;
+  }
+
+  /* Show popup sections in theme editor/preview mode so they can be edited */
+  .shopify-section:has(.section[data-popup-section="true"][data-shopify-visual-preview]) {
+    display: block !important;
   }
 {% endstylesheet %}

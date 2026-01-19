@@ -1,0 +1,249 @@
+{%- doc -%}
+  Button with popup modal functionality.
+  Displays a section content in a modal when clicked.
+
+  @param {object} block - The block settings
+{%- enddoc -%}
+
+{% assign block_settings = block.settings %}
+
+{% liquid
+  assign has_icon = false
+  if block_settings.icon != blank and block_settings.icon != 'none'
+    assign has_icon = true
+  elsif block_settings.image_upload != blank
+    assign has_icon = true
+  endif
+
+  assign icon_width = block_settings.icon_width | default: 24
+  assign icon_gap = block_settings.icon_gap | default: 8
+%}
+
+<script
+  src="{{ 'dialog.js' | asset_url }}"
+  type="module"
+></script>
+
+<script
+  src="{{ 'button-popup.js' | asset_url }}"
+  type="module"
+></script>
+
+<button-popup-component
+  class="button-popup-wrapper"
+  data-section-anchor="{{ block_settings.popup_section_anchor }}"
+  data-section-id="{{ block_settings.popup_section_id }}"
+  data-section-type="{{ block_settings.popup_section_type | default: 'anchor' }}"
+  {{ block.shopify_attributes }}
+>
+  <button
+    on:click="/showDialog"
+    class="
+      size-style
+      {{ block_settings.style_class }}
+      {{ block_settings.style_class }}--{{ block.id }}
+      {% if block_settings.type_preset %}{{ block_settings.type_preset }}{% endif %}
+      {% if has_icon %}button--with-icon{% endif %}
+      button-popup__trigger
+    "
+    style="
+      {% render 'size-style', settings: block_settings %}
+      {% if block_settings.type_preset %}{% render 'typography-style', settings: block_settings %}{% endif %}
+      {% if has_icon %}--icon-gap: {{ icon_gap }}px;{% endif %}
+    "
+    type="button"
+  >
+    <span class="button__label">{{ block_settings.label }}</span>
+    {% if has_icon %}
+      <span class="button__icon">
+        {% render 'icon-or-image',
+          icon: block_settings.icon,
+          image_upload: block_settings.image_upload,
+          width: icon_width,
+          class_name: 'button__icon-svg'
+        %}
+      </span>
+    {% endif %}
+  </button>
+
+  <dialog
+    ref="dialog"
+    class="button-popup__modal dialog-modal button-popup__modal--specs"
+    scroll-lock
+    aria-labelledby="button-popup-heading-{{ block.id }}"
+  >
+    <h2
+      id="button-popup-heading-{{ block.id }}"
+      class="visually-hidden"
+    >
+      {{ block_settings.label }}
+    </h2>
+    <div class="button-popup__content" ref="content">
+      <div class="button-popup__loading">
+        <span>Loading...</span>
+      </div>
+    </div>
+    <button
+      ref="closeButton"
+      on:click="/closeDialog"
+      class="button button-unstyled close-button button-popup__close"
+      aria-label="{{ 'accessibility.close_dialog' | t }}"
+    >
+      {{- 'icon-close.svg' | inline_asset_content -}}
+    </button>
+  </dialog>
+</button-popup-component>
+
+{% stylesheet %}
+  .button-popup__modal--specs {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    padding: var(--padding-4xl) var(--padding-xl) var(--padding-xl);
+    max-width: 90vw;
+    max-height: 90vh;
+    overflow-y: auto;
+    border: none;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
+
+    @media screen and (min-width: 750px) {
+      padding: var(--padding-5xl);
+      max-width: 800px;
+      border-radius: var(--style-border-radius-popover, 8px);
+    }
+
+    @media screen and (max-width: 749px) {
+      max-width: 100%;
+      max-height: 100%;
+      height: 100dvh;
+      width: 100dvw;
+      padding: var(--padding-xl);
+      border-radius: 0;
+    }
+  }
+
+  .button-popup__modal--specs::backdrop {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(2px);
+  }
+
+  .button-popup__content {
+    color: #ffffff;
+    width: 100%;
+  }
+
+  .button-popup__content :global(*) {
+    color: inherit;
+  }
+
+  .button-popup__content :global(h1),
+  .button-popup__content :global(h2),
+  .button-popup__content :global(h3),
+  .button-popup__content :global(h4),
+  .button-popup__content :global(h5),
+  .button-popup__content :global(h6) {
+    color: #ffffff;
+  }
+
+  .button-popup__content :global(p),
+  .button-popup__content :global(li),
+  .button-popup__content :global(span),
+  .button-popup__content :global(div) {
+    color: #ffffff;
+  }
+
+  .button-popup__content :global(a) {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+
+  .button-popup__content :global(a:hover) {
+    opacity: 0.8;
+  }
+
+  .button-popup__loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-4xl);
+    color: #ffffff;
+    min-height: 200px;
+  }
+
+  .button-popup__error {
+    padding: var(--padding-4xl);
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .button-popup__close {
+    position: absolute;
+    top: var(--margin-md);
+    right: var(--margin-md);
+    opacity: 0.9;
+    transition: opacity var(--animation-speed) var(--animation-easing),
+                transform var(--animation-speed) var(--animation-easing);
+    z-index: var(--layer-raised, 10);
+    color: #ffffff;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: var(--padding-xs);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button-popup__close:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  .button-popup__close:active {
+    transform: scale(0.95);
+  }
+
+  .button-popup__close svg {
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    display: block;
+  }
+
+  .button-popup__modal--specs[open] {
+    animation: modalSlideInTop var(--animation-speed) var(--animation-easing) forwards;
+  }
+
+  .button-popup__modal--specs.dialog-closing {
+    animation: modalSlideOutTop var(--animation-speed) var(--animation-easing) forwards;
+  }
+
+  /* Ensure content is scrollable if needed */
+  .button-popup__content {
+    max-height: calc(90vh - 120px);
+    overflow-y: auto;
+    padding-right: var(--padding-xs);
+
+    @media screen and (max-width: 749px) {
+      max-height: calc(100dvh - 100px);
+    }
+  }
+
+  /* Custom scrollbar styling for dark modal */
+  .button-popup__content::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .button-popup__content::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+  }
+
+  .button-popup__content::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+  }
+
+  .button-popup__content::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+{% endstylesheet %}

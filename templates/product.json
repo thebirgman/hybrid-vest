@@ -417,7 +417,6 @@
                     "group_JRKcGW": {
                       "type": "group",
                       "name": "t:names.group",
-                      "disabled": true,
                       "settings": {
                         "custom_class": "",
                         "reverse_on_mobile": false,
@@ -470,7 +469,7 @@
                           "type": "image",
                           "name": "t:names.image",
                           "settings": {
-                            "image": "shopify://shop_images/push_up.png",
+                            "image": "shopify://shop_images/image_1_2.png",
                             "link": "",
                             "image_ratio": "adapt",
                             "width": "fit-content",
@@ -699,7 +698,7 @@
                               "type": "text",
                               "name": "t:names.text",
                               "settings": {
-                                "text": "<p>Complete Murph Program</p>",
+                                "text": "<p>12-week Murph program included with every purchase</p>",
                                 "width": "fit-content",
                                 "max_width": "normal",
                                 "alignment": "left",
@@ -788,7 +787,7 @@
                           "type": "image",
                           "name": "t:names.image",
                           "settings": {
-                            "image": "shopify://shop_images/Weight_Plates_1.webp",
+                            "image": "shopify://shop_images/image_1_1.png",
                             "link": "",
                             "image_ratio": "adapt",
                             "width": "fit-content",
@@ -858,7 +857,7 @@
                               "type": "text",
                               "name": "t:names.text",
                               "settings": {
-                                "text": "<p>13x weight plates</p>",
+                                "text": "<p>Free 17x 1 lb weight plates</p>",
                                 "width": "fit-content",
                                 "max_width": "normal",
                                 "alignment": "left",
@@ -1280,7 +1279,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>Ships: Mar 15</p>",
+                        "text": "<p>Ships: Feb 15</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -3050,7 +3049,7 @@
                           "settings": {
                             "background_image": "shopify://shop_images/8c167856a0ccde09633fa762470d4548ec5ece36_1.png",
                             "heading": "<h4>Full Vest Mode (5–20 lb)</h4>",
-                            "subheading": "<p>For rucking, lifting, and harder sessions</p>",
+                            "subheading": "<p>Attach the extension for rucking, lifting, and harder sessions</p>",
                             "badge": "",
                             "default_active_state": false,
                             "text_alignment": "bottom",
@@ -4187,7 +4186,7 @@
             "data_6_type": "check",
             "data_6_text": "<p>Elite CrossFit, HYROX & military athletes</p>",
             "data_7_type": "text",
-            "data_7_text": "<p>$199.99</p>",
+            "data_7_text": "<p>$250</p>",
             "data_8_type": "text",
             "data_8_text": "",
             "data_9_type": "text",
@@ -4873,7 +4872,6 @@
         "text_jUndPb",
         "group_CjkEHh"
       ],
-      "disabled": true,
       "custom_css": [
         ".review-group {border: solid 1px #ffffff33;}",
         "h5 {color: #d7b26f !important;}",
@@ -5153,7 +5151,6 @@
       "block_order": [
         "group_7mpbRj"
       ],
-      "disabled": true,
       "custom_css": [
         ".marquee__repeated-items {max-width: 350px; min-width: 350px;}",
         "p {line-height: 1em; font-size: 16px; font-weight: 300;}",
@@ -5602,7 +5599,7 @@
                         "text_wX4Wta": {
                           "type": "text",
                           "settings": {
-                            "text": "<p>Yes. Every Hybrid Vest includes 13 plates.</p>",
+                            "text": "<p>Yes. Every Hybrid Vest includes 17 plates.</p>",
                             "width": "100%",
                             "max_width": "normal",
                             "alignment": "left",
@@ -5682,7 +5679,7 @@
                         "text_pPngHt": {
                           "type": "text",
                           "settings": {
-                            "text": "<p>Estimated ship date is Mar 15.</p>",
+                            "text": "<p>Estimated ship date is February 15.</p>",
                             "width": "100%",
                             "max_width": "normal",
                             "alignment": "left",
@@ -5762,7 +5759,7 @@
                         "text_QpGA7w": {
                           "type": "text",
                           "settings": {
-                            "text": "<p>Yes. It's designed for Run, Ruck, Train. Every purchase includes a complete Murph training program.</p>",
+                            "text": "<p>Yes — it’s designed for Run, Ruck, Train. Every purchase includes a 12-week Murph training program.</p>",
                             "width": "100%",
                             "max_width": "normal",
                             "alignment": "left",
@@ -5802,7 +5799,7 @@
                         "text_izwGTw": {
                           "type": "text",
                           "settings": {
-                            "text": "<p>First 1,000 customers get a free Golden Jump Rope.</p>",
+                            "text": "<p>First 1,000 customers get a free Golden Jump Rope, plus free Push-Up Bars while supplies last.</p>",
                             "width": "100%",
                             "max_width": "normal",
                             "alignment": "left",

@@ -26,58 +26,22 @@
 <header-actions
   {{- block.shopify_attributes -}}
 >
-  {% if shop.customer_accounts_enabled %}
-    <script
-      src="{{ 'dialog.js' | asset_url }}"
-      type="module"
-    ></script>
-
-    <anchored-popover-component
-      data-close-on-resize="true"
-      class="account-popover mobile:hidden"
-    >
-      {% render 'account-button' with 'account-popover' as popover_id %}
-      <div
-        class="account-popover__panel details-content color-{{ settings.popover_color_scheme }}"
-        id="account-popover"
-        popover="auto"
-        ref="popover"
+  {% if template.name != 'product' %}
+    {% assign shop_now_text = shop_now_button_text | default: 'SHOP NOW' %}
+    {% assign shop_now_link = shop_now_button_link | default: routes.collections_url %}
+    {% if shop_now_link != blank %}
+      <a
+        href="{{ shop_now_link }}"
+        class="header-actions__shop-now button"
+        aria-label="{{ shop_now_text }}"
       >
-        {% render 'account-actions' %}
-      </div>
-    </anchored-popover-component>
-
-    <dialog-component
-      class="account-drawer"
-      {{ block.shopify_attributes }}
-    >
-      {% render 'account-button', attributes: 'on:click="/showDialog"' %}
-      <dialog
-        ref="dialog"
-        class="color-{{ settings.popover_color_scheme }} dialog-modal dialog-drawer dialog-bottom-sheet account-drawer__dialog"
-        scroll-lock
-        aria-labelledby="account-drawer-heading"
-      >
-        <button
-          ref="closeButton"
-          on:click="/closeDialog"
-          class="button button-unstyled close-button account-drawer__close-button"
-          aria-label="{{ 'actions.close_dialog' | t }}"
-          autofocus
-        >
-          <span
-            class="svg-wrapper"
-            aria-hidden="true"
-          >
-            {{- 'icon-close.svg' | inline_asset_content -}}
-          </span>
-        </button>
-        {% render 'account-actions' %}
-      </dialog>
-    </dialog-component>
+        <span class="button__label">{{ shop_now_text }}</span>
+      </a>
+    {% endif %}
   {% endif %}
 
-  {% if settings.cart_type == 'drawer' and template.name != 'cart' %}
+  {% if template.name == 'product' %}
+    {% if settings.cart_type == 'drawer' %}
     <script
       src="{{ 'cart-drawer.js' | asset_url }}"
       type="module"
@@ -190,15 +154,16 @@
         </div>
       </dialog>
     </cart-drawer-component>
-  {% else %}
-    <a
-      href="{{ routes.cart_url }}"
-      class="header-actions__action action__cart"
-      aria-label="{{ 'accessibility.cart' | t }}"
-      aria-describedby="cart-bubble-text"
-    >
-      {{ cart_icon }}
-    </a>
+    {% else %}
+      <a
+        href="{{ routes.cart_url }}"
+        class="header-actions__action action__cart"
+        aria-label="{{ 'accessibility.cart' | t }}"
+        aria-describedby="cart-bubble-text"
+      >
+        {{ cart_icon }}
+      </a>
+    {% endif %}
   {% endif %}
 </header-actions>
 
@@ -563,6 +528,8 @@
 
   header-actions {
     display: flex;
+    align-items: center;
+    gap: var(--gap-md);
 
     @media screen and (max-width: 749px) {
       justify-self: flex-end;
@@ -579,6 +546,27 @@
     cursor: pointer;
     display: flex;
     justify-content: center;
+  }
+
+  .header-actions__shop-now {
+    background-color: white;
+    color: black;
+    border-radius: var(--style-border-radius-buttons-primary, 0.5rem);
+    padding: var(--padding-sm) var(--padding-lg);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: opacity var(--animation-speed) var(--animation-easing);
+
+    &:hover {
+      opacity: var(--opacity-subdued-text);
+    }
+
+    .button__label {
+      font-size: var(--font-size--sm, 0.875rem);
+      letter-spacing: 0.05em;
+    }
   }
 
   .header-actions__action .svg-wrapper {

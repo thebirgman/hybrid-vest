@@ -4956,3 +4956,17 @@ body .slideshow-controls__thumbnails {
 fieldset.variant-option.variant-option--kits {
     margin-top: 0;
 }
+
+s.compare-at-price {
+  color: #b6b6b6;
+  order: -1;
+}
+
+td.cart-items__details span {
+  color: #ae8b4a;
+}
+
+td.cart-items__details div {
+  display: flex;
+  gap: 8px;
+}

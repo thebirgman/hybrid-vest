@@ -120,12 +120,18 @@
   {%- endif -%}
 
   <div
-    class="image-card-block__content image-card-block__content--{{ block_settings.text_alignment }}{% if block_settings.enable_gradient_overlay %} image-card-block__content--gradient-overlay{% endif %}"
+    class="image-card-block__content image-card-block__content--{{ block_settings.text_alignment }}{% if block_settings.enable_gradient_overlay %} image-card-block__content--gradient-overlay{% endif %}{% if block_settings.enable_mobile_text_padding %} image-card-block__content--mobile-padding{% endif %}"
     style="
       --text-padding-block-start: {{ block_settings.text_padding_block_start | default: 0 }}px;
       --text-padding-block-end: {{ block_settings.text_padding_block_end | default: 0 }}px;
       --text-padding-inline-start: {{ block_settings.text_padding_inline_start | default: 0 }}px;
       --text-padding-inline-end: {{ block_settings.text_padding_inline_end | default: 0 }}px;
+      {% if block_settings.enable_mobile_text_padding %}
+        --text-padding-block-start-mobile: {{ block_settings.text_padding_block_start_mobile | default: 0 }}px;
+        --text-padding-block-end-mobile: {{ block_settings.text_padding_block_end_mobile | default: 0 }}px;
+        --text-padding-inline-start-mobile: {{ block_settings.text_padding_inline_start_mobile | default: 0 }}px;
+        --text-padding-inline-end-mobile: {{ block_settings.text_padding_inline_end_mobile | default: 0 }}px;
+      {% endif %}
       {% if block_settings.heading_subheading_gap > 0 %}
         --heading-subheading-gap: {{ block_settings.heading_subheading_gap }}px;
       {% endif %}
@@ -293,6 +299,15 @@
     padding-block-end: var(--text-padding-block-end, 0);
     padding-inline-start: var(--text-padding-inline-start, 0);
     padding-inline-end: var(--text-padding-inline-end, 0);
+  }
+
+  @media screen and (max-width: 749px) {
+    .image-card-block__content--mobile-padding {
+      padding-block-start: var(--text-padding-block-start-mobile, var(--text-padding-block-start, 0));
+      padding-block-end: var(--text-padding-block-end-mobile, var(--text-padding-block-end, 0));
+      padding-inline-start: var(--text-padding-inline-start-mobile, var(--text-padding-inline-start, 0));
+      padding-inline-end: var(--text-padding-inline-end-mobile, var(--text-padding-inline-end, 0));
+    }
   }
 
   .image-card-block__content--gradient-overlay {
@@ -1178,6 +1193,56 @@
       "step": 1,
       "unit": "px",
       "default": 0
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_mobile_text_padding",
+      "label": "Enable mobile text padding",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "text_padding_block_start_mobile",
+      "label": "Top (Mobile)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0,
+      "visible_if": "{{ block.settings.enable_mobile_text_padding }}"
+    },
+    {
+      "type": "range",
+      "id": "text_padding_block_end_mobile",
+      "label": "Bottom (Mobile)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0,
+      "visible_if": "{{ block.settings.enable_mobile_text_padding }}"
+    },
+    {
+      "type": "range",
+      "id": "text_padding_inline_start_mobile",
+      "label": "Left (Mobile)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0,
+      "visible_if": "{{ block.settings.enable_mobile_text_padding }}"
+    },
+    {
+      "type": "range",
+      "id": "text_padding_inline_end_mobile",
+      "label": "Right (Mobile)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0,
+      "visible_if": "{{ block.settings.enable_mobile_text_padding }}"
     }
   ],
   "presets": [

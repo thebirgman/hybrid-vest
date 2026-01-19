@@ -8,7 +8,26 @@
   endif
 %}
 <div class="{{ visibility_class }}" {{ block.shopify_attributes }}>
-  {% render 'button', link: block.settings.link, block: block %}
+  {% if block.settings.enable_popup %}
+    {% liquid
+      assign has_section_reference = false
+      if block.settings.popup_section_type == 'section_id' and block.settings.popup_section_id != blank
+        assign has_section_reference = true
+      elsif block.settings.popup_section_type == 'anchor' and block.settings.popup_section_anchor != blank
+        assign has_section_reference = true
+      elsif block.settings.popup_section_anchor != blank
+        assign has_section_reference = true
+      endif
+    %}
+    {% if has_section_reference %}
+      {% render 'button-popup', block: block %}
+    {% else %}
+      {% comment %} Fallback to regular button if popup enabled but no section specified {% endcomment %}
+      {% render 'button', link: block.settings.link, block: block %}
+    {% endif %}
+  {% else %}
+    {% render 'button', link: block.settings.link, block: block %}
+  {% endif %}
 </div>
 
 {% schema %}
@@ -26,6 +45,49 @@
       "type": "url",
       "id": "link",
       "label": "t:settings.link"
+    },
+    {
+      "type": "header",
+      "content": "Popup Modal"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_popup",
+      "label": "Enable popup modal",
+      "default": false,
+      "info": "When enabled, clicking the button will open a modal instead of navigating to a link"
+    },
+    {
+      "type": "select",
+      "id": "popup_section_type",
+      "label": "Section reference type",
+      "options": [
+        {
+          "value": "anchor",
+          "label": "Anchor ID (custom)"
+        },
+        {
+          "value": "section_id",
+          "label": "Shopify Section ID"
+        }
+      ],
+      "default": "anchor",
+      "info": "Choose how to reference the section to display",
+      "visible_if": "{{ block.settings.enable_popup }}"
+    },
+    {
+      "type": "text",
+      "id": "popup_section_anchor",
+      "label": "Section anchor ID",
+      "info": "Enter the ID attribute of the section element (e.g., 'specs-section'). Add id=\"specs-section\" to your section's main element.",
+      "visible_if": "{{ block.settings.enable_popup and block.settings.popup_section_type == 'anchor' }}"
+    },
+    {
+      "type": "text",
+      "id": "popup_section_id",
+      "label": "Shopify Section ID",
+      "info": "Enter the Shopify section ID (e.g., 'template--1234567890__main-1234567890'). You can find this in the section's HTML element ID.",
+      "visible_if": "{{ block.settings.enable_popup and block.settings.popup_section_type == 'section_id' }}"
     },
     {
       "type": "checkbox",
