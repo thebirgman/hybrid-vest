@@ -3960,7 +3960,7 @@ slideshow-component[autoplay] slideshow-controls {
     }
 
     &:is([aria-selected='true']) {
-      outline: var(--focus-outline-width) solid currentcolor;
+      outline: var(--focus-outline-width) solid #D7B26F;
       outline-offset: calc(var(--focus-outline-offset) / 2);
       border: var(--style-border-width) solid rgb(var(--color-border-rgb) / var(--media-border-opacity));
     }
@@ -4928,4 +4928,22 @@ p strong{
 .black-text-bold > div  *{
  font-size: 16px!important
 }
+}
+
+@media screen and (max-width: 768px) {
+.product-information__media slideshow-slides {
+    gap: 10px;
+    padding-left: 16px;
+}
+
+.product-information__media :not(.dialog-zoomed-gallery)>.product-media-container{
+     width: 85%;
+}
+
+.product-information__media {
+    width: 100%;
+    /* grid-column: 2 / 3; */
+    padding-left: 20px;
+}
+
 }
