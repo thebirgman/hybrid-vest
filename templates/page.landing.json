@@ -5990,7 +5990,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p><em>$300</em></p>",
+                        "text": "<p><em>$250</em></p>",
                         "width": "fit-content",
                         "max_width": "none",
                         "alignment": "left",
@@ -6017,7 +6017,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>$250</p>",
+                        "text": "<p>$199.99</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
