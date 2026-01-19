@@ -6633,7 +6633,7 @@
                               "type": "image",
                               "name": "t:names.image",
                               "settings": {
-                                "image": "shopify://shop_images/image_1_1.png",
+                                "image": "shopify://shop_images/Weight_Plates_1.webp",
                                 "link": "",
                                 "image_ratio": "adapt",
                                 "width": "fit-content",
