@@ -8641,9 +8641,9 @@
                       "settings": {
                         "label": "See Product Specs",
                         "link": "shopify://products/hybrid-vest",
-                        "enable_popup": false,
+                        "enable_popup": true,
                         "popup_section_type": "anchor",
-                        "popup_section_anchor": "",
+                        "popup_section_anchor": "product-specs-modal",
                         "popup_section_id": "",
                         "open_in_new_tab": false,
                         "style_class": "button-secondary",
@@ -10941,7 +10941,7 @@
         "group_43nmHr",
         "group_txnRTT"
       ],
-      "name": "t:names.custom_section",
+      "name": "Specs Modal",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -10968,7 +10968,7 @@
         "gradient_direction": "to top",
         "padding-block-start": 40,
         "padding-block-end": 40,
-        "anchor_id": ""
+        "anchor_id": "product-specs-modal"
       }
     }
   },
