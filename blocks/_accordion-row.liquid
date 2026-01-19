@@ -85,7 +85,11 @@ body:not(.product) .details-content {
     border-bottom: 1px solid #0E0E0E1A!important;
     padding: 20px 24px!important;
 }
-
+@media screen and (max-width: 768px) {
+.product .accordion summary.details__header {
+ padding: 20px 16px!important;
+}
+}
 .accordion--dividers accordion-custom:first-child .details {
     /* border: 0; */
 }
