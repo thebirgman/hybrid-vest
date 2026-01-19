@@ -4945,7 +4945,7 @@ p strong{
     /* grid-column: 2 / 3; */
     padding-left: 20px;
 }
-.slideshow-controls__thumbnails {
+body .slideshow-controls__thumbnails {
     padding-left: 4px;
 }
 }
