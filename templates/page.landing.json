@@ -2003,8 +2003,8 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/The_vest_should_match_the_workout.jpg",
-                    "image_mobile": "shopify://shop_images/The_vest_should_match_the_workout_M.jpg",
+                    "image": "shopify://shop_images/The_Breakthrough_Desktop.jpg",
+                    "image_mobile": "shopify://shop_images/The_Breakthrough_Mobile.jpg",
                     "link": "",
                     "image_ratio": "adapt",
                     "width": "fill",
