@@ -894,119 +894,63 @@
     "hero_GWrDGT": {
       "type": "hero",
       "blocks": {
-        "group_xbXzcd": {
-          "type": "group",
-          "name": "t:names.group",
+        "text_jMihAL": {
+          "type": "text",
           "settings": {
-            "custom_class": "",
-            "reverse_on_mobile": false,
-            "slider_on_mobile": false,
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 5,
-            "gap_mobile": 5,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "max_width_mobile": "fill",
-            "custom_max_width_mobile": 700,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "link": "",
-            "open_in_new_tab": false,
-            "placeholder": "",
+            "text": "<h3>Designed with Intent.</h3>",
+            "width": "fit-content",
+            "max_width": "narrow",
+            "alignment": "left",
+            "mobile_alignment": "left",
+            "type_preset": "h1",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
-            "padding-inline-end": 0,
-            "enable_mobile_padding": false,
-            "padding-block-start-mobile": 0,
-            "padding-block-end-mobile": 0,
-            "padding-inline-start-mobile": 0,
-            "padding-inline-end-mobile": 0
+            "padding-inline-end": 0
           },
-          "blocks": {
-            "text_xcrqfW": {
-              "type": "text",
-              "settings": {
-                "text": "<h3>Designed with Intent.</h3>",
-                "width": "fit-content",
-                "max_width": "narrow",
-                "alignment": "left",
-                "mobile_alignment": "left",
-                "type_preset": "h1",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_yGBWf9": {
-              "type": "text",
-              "name": "t:names.text",
-              "settings": {
-                "text": "<h3><strong>Built Without Compromise.</strong></h3>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "mobile_alignment": "left",
-                "type_preset": "h1",
-                "font": "var(--font-heading--family)",
-                "font_size": "2rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "uppercase",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 12,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
+          "blocks": {}
+        },
+        "text_UJYBdm": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<h3><strong>Built Without Compromise.</strong></h3>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "mobile_alignment": "left",
+            "type_preset": "h1",
+            "font": "var(--font-heading--family)",
+            "font_size": "2rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "uppercase",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 12,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
           },
-          "block_order": [
-            "text_xcrqfW",
-            "text_yGBWf9"
-          ]
+          "blocks": {}
         }
       },
       "block_order": [
-        "group_xbXzcd"
+        "text_jMihAL",
+        "text_UJYBdm"
       ],
       "custom_css": [
         "span.button__label {font-size: 16px;}",
@@ -1015,7 +959,7 @@
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/Rectangle_3_1_1.jpg",
+        "image_1": "shopify://shop_images/Rectangle_3_3_1.png",
         "media_type_2": "image",
         "stack_media_on_mobile": false,
         "custom_mobile_media": true,
@@ -1031,7 +975,7 @@
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "flex-end",
         "vertical_alignment_flex_direction_column": "flex-end",
-        "gap": 32,
+        "gap": 16,
         "section_width": "page-width",
         "section_height": "small",
         "section_height_custom": 50,
@@ -1042,8 +986,8 @@
         "gradient_direction": "to top",
         "blurred_reflection": false,
         "reflection_opacity": 75,
-        "padding-block-start": 100,
-        "padding-block-end": 100
+        "padding-block-start": 80,
+        "padding-block-end": 80
       }
     },
     "section_ptYHxH": {
