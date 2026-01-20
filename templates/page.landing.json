@@ -11007,9 +11007,37 @@
                       },
                       "blocks": {}
                     },
+                    "text_g88zt9": {
+                      "type": "text",
+                      "name": "t:names.text",
+                      "settings": {
+                        "text": "<p>- Outer: Cordura 1000D<br/>- Inner: breathable quick-dry mesh (anti-chafe)<br/>- Buckles: tactical quick-release buckles</p>",
+                        "width": "fit-content",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "mobile_alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    },
                     "group_DdrH7Y": {
                       "type": "group",
                       "name": "t:names.group",
+                      "disabled": true,
                       "settings": {
                         "custom_class": "",
                         "reverse_on_mobile": false,
@@ -11061,6 +11089,7 @@
                         "icon_bbdDtX": {
                           "type": "icon",
                           "name": "t:names.icon",
+                          "disabled": true,
                           "settings": {
                             "icon": "price_tag",
                             "image_upload": "shopify://shop_images/Vector_5.svg",
@@ -11070,11 +11099,11 @@
                           },
                           "blocks": {}
                         },
-                        "text_yLJqfH": {
+                        "text_itdJfn": {
                           "type": "text",
                           "name": "t:names.text",
                           "settings": {
-                            "text": "<p>Outer: Cordura 1000D</p>",
+                            "text": "<p>- Outer: Cordura 1000D<br/>- Inner: breathable quick-dry mesh (anti-chafe)</p>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
@@ -11100,12 +11129,13 @@
                       },
                       "block_order": [
                         "icon_bbdDtX",
-                        "text_yLJqfH"
+                        "text_itdJfn"
                       ]
                     },
                     "group_HJt9aa": {
                       "type": "group",
                       "name": "t:names.group",
+                      "disabled": true,
                       "settings": {
                         "custom_class": "",
                         "reverse_on_mobile": false,
@@ -11157,6 +11187,7 @@
                         "icon_zMGFrt": {
                           "type": "icon",
                           "name": "t:names.icon",
+                          "disabled": true,
                           "settings": {
                             "icon": "price_tag",
                             "image_upload": "shopify://shop_images/Vector_5.svg",
@@ -11202,6 +11233,7 @@
                     "group_XEarpD": {
                       "type": "group",
                       "name": "t:names.group",
+                      "disabled": true,
                       "settings": {
                         "custom_class": "",
                         "reverse_on_mobile": false,
@@ -11253,6 +11285,7 @@
                         "icon_WdeFjN": {
                           "type": "icon",
                           "name": "t:names.icon",
+                          "disabled": true,
                           "settings": {
                             "icon": "price_tag",
                             "image_upload": "shopify://shop_images/Vector_5.svg",
@@ -11298,6 +11331,7 @@
                   },
                   "block_order": [
                     "text_kdxTmN",
+                    "text_g88zt9",
                     "group_DdrH7Y",
                     "group_HJt9aa",
                     "group_XEarpD"
