@@ -617,6 +617,9 @@
         "group_7CiCTT",
         "group_Kb6TgF"
       ],
+      "custom_css": [
+        "span.button__label{font-size: 16px;}"
+      ],
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
