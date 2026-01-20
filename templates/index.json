@@ -709,6 +709,53 @@
             "padding-inline-end-mobile": 0
           },
           "blocks": {
+            "image_card_EkLpqX": {
+              "type": "image-card",
+              "name": "Image Card",
+              "settings": {
+                "background_image": "shopify://shop_images/47256edb6792df1318945dc840b50e35c72b33fe_1.png",
+                "heading": "<h4>Two-in-One Design</h4>",
+                "subheading": "<p>Train in streamlined running mode or reinforced lifting mode — without changing vests.</p>",
+                "badge": "",
+                "default_active_state": false,
+                "text_alignment": "bottom",
+                "heading_subheading_gap": 16,
+                "width_desktop": 100,
+                "width_mobile": 100,
+                "max_width_desktop": 2000,
+                "max_width_mobile": 2000,
+                "minimum_height": 440,
+                "subheading_type_preset": "rte",
+                "subheading_font": "var(--font-body--family)",
+                "subheading_font_size": "1rem",
+                "subheading_line_height": "normal",
+                "subheading_letter_spacing": "normal",
+                "subheading_case": "none",
+                "subheading_wrap": "pretty",
+                "subheading_color": "var(--color-foreground)",
+                "inherit_color_scheme": false,
+                "color_scheme": "",
+                "enable_gradient_overlay": true,
+                "border": "solid",
+                "border_width": 1,
+                "border_opacity": 20,
+                "border_radius": 0,
+                "padding-block-start": 16,
+                "padding-block-end": 32,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0,
+                "text_padding_block_start": 80,
+                "text_padding_block_end": 24,
+                "text_padding_inline_start": 24,
+                "text_padding_inline_end": 24,
+                "enable_mobile_text_padding": true,
+                "text_padding_block_start_mobile": 20,
+                "text_padding_block_end_mobile": 20,
+                "text_padding_inline_start_mobile": 20,
+                "text_padding_inline_end_mobile": 20
+              },
+              "blocks": {}
+            },
             "image_card_cmnHWK": {
               "type": "image-card",
               "name": "Image Card",
@@ -805,6 +852,7 @@
             }
           },
           "block_order": [
+            "image_card_EkLpqX",
             "image_card_cmnHWK",
             "image_card_qPFd6T"
           ]
