@@ -9590,7 +9590,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>- Front panel: __ in (H) × __ in (W) <br/>- Back panel: __ in (H) × __ in (W) <br/>- Strap adjustment range: __ in to __ in <br/>- Weight range: 5-10 lbs</p>",
+                        "text": "<p>- Length: 12\"<br/>- Width: 13\" <br/>- Weight: 5-10 lbs.</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -9757,7 +9757,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>- Front panel: __ in (H) × __ in (W) <br/>- Back panel: __ in (H) × __ in (W) <br/>- Total torso coverage length: __ in<br/> - Weight range: 5-20 lbs</p>",
+                        "text": "<p>- Length: 18\"<br/>- Width: 14\" <br/>- Weight: 5-20 lbs.</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -9897,7 +9897,7 @@
                       "type": "text",
                       "name": "t:names.heading",
                       "settings": {
-                        "text": "<h4>Plate Dimensions</h4>",
+                        "text": "<h4>Other Measurements</h4>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -9924,7 +9924,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>- Plate size: __ in × __ in × __ in <br/>- Plate weight each: ~1 lb <br/>- Plate count: 17</p>",
+                        "text": "<p>- Plate size: 4\" L x 2\" W x 1/2\" D<br/>- Plate weight: ~1 lbs.<br/>- Plate count: 13<br/>- Strap width: 2.5\" <br/>- Head hole: 11\" L x 11\" W <br/>- Maximum waist length: 44\"</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
