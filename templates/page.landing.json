@@ -9968,6 +9968,7 @@
         "group_txnRTT": {
           "type": "group",
           "name": "t:names.group",
+          "disabled": true,
           "settings": {
             "custom_class": "",
             "reverse_on_mobile": false,
