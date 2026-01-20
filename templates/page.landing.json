@@ -9968,7 +9968,6 @@
         "group_txnRTT": {
           "type": "group",
           "name": "t:names.group",
-          "disabled": true,
           "settings": {
             "custom_class": "",
             "reverse_on_mobile": false,
@@ -10020,6 +10019,7 @@
             "group_qzHjxg": {
               "type": "group",
               "name": "t:names.group",
+              "disabled": true,
               "settings": {
                 "custom_class": "",
                 "reverse_on_mobile": false,
@@ -10450,6 +10450,7 @@
             "group_cXtqjV": {
               "type": "group",
               "name": "t:names.group",
+              "disabled": true,
               "settings": {
                 "custom_class": "",
                 "reverse_on_mobile": false,
@@ -10983,7 +10984,7 @@
                       "type": "text",
                       "name": "t:names.heading",
                       "settings": {
-                        "text": "<h4>MATERIALS</h4>",
+                        "text": "<h4>Materials</h4>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
