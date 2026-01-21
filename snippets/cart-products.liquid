@@ -111,7 +111,7 @@
             {% for item in cart.items %}
               <tr
                 role="row"
-                class="cart-items__table-row{% if item.parent_relationship.parent != null %} cart-items__nested-line{% endif %}"
+                class="cart-items__table-row{% if item.parent_relationship.parent != null %} cart-items__nested-line{% endif %}{% if item.final_line_price == 0 %} cart-items__free-item{% endif %}"
                 ref="cartItemRows[]"
                 data-parent-key="{{ item.parent_relationship.parent.key }}"
                 data-key="{{ item.key }}"
@@ -371,6 +371,10 @@
     container-name: cart-items;
     container-type: inline-size;
     width: 100%;
+  }
+
+  .cart-items__free-item .cart-items__quantity {
+    display: none;
   }
 
   .cart-items-disabled {
