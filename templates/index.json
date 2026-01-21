@@ -1013,8 +1013,8 @@
             "custom_width": 100,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
-            "max_width_mobile": "fill",
-            "custom_max_width_mobile": 700,
+            "max_width_mobile": "custom",
+            "custom_max_width_mobile": 600,
             "height": "fit",
             "custom_height": 100,
             "inherit_color_scheme": true,
@@ -1044,42 +1044,16 @@
             "padding-inline-end-mobile": 0
           },
           "blocks": {
-            "text_8x4ywC": {
-              "type": "text",
-              "settings": {
-                "text": "<h1>The Hybrid Vest</h1>",
-                "width": "fit-content",
-                "max_width": "narrow",
-                "alignment": "left",
-                "mobile_alignment": "left",
-                "type_preset": "h1",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
             "text_PMkU7T": {
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h2><strong>The Gold Standard in Weight Vests</strong></h2>",
+                "text": "<h4><strong>Limited Edition</strong></h4>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
                 "mobile_alignment": "left",
-                "type_preset": "custom",
+                "type_preset": "h4",
                 "font": "var(--font-heading--family)",
                 "font_size": "2rem",
                 "line_height": "normal",
@@ -1097,10 +1071,36 @@
               },
               "blocks": {}
             },
+            "text_8x4ywC": {
+              "type": "text",
+              "settings": {
+                "text": "<h2>Midnight Black with Gold Trim</h2>",
+                "width": "fit-content",
+                "max_width": "narrow",
+                "alignment": "left",
+                "mobile_alignment": "left",
+                "type_preset": "h1",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 24,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
             "text_rBnrDt": {
               "type": "text",
               "settings": {
-                "text": "<p>One vest. Two training modes.<br/>Built for running, lifting, and everything in between.</p>",
+                "text": "<p>Our signature colorway. Midnight black construction finished with gold detailing — available in limited quantities.</p>",
                 "width": "fit-content",
                 "max_width": "narrow",
                 "alignment": "left",
@@ -1125,8 +1125,8 @@
             }
           },
           "block_order": [
-            "text_8x4ywC",
             "text_PMkU7T",
+            "text_8x4ywC",
             "text_rBnrDt"
           ]
         },
