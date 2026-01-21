@@ -4499,6 +4499,9 @@
       "block_order": [
         "group_MMjDBt"
       ],
+      "custom_css": [
+        ".image-card-block{min-height: 600px;}"
+      ],
       "name": "Why it's Different",
       "settings": {
         "content_direction": "column",
