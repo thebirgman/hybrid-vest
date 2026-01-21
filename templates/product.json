@@ -2487,7 +2487,7 @@
                               "type": "text",
                               "name": "t:names.text",
                               "settings": {
-                                "text": "<p>a fast run</p>",
+                                "text": "<p>A fast run</p>",
                                 "width": "fit-content",
                                 "max_width": "normal",
                                 "alignment": "left",
@@ -2583,7 +2583,7 @@
                               "type": "text",
                               "name": "t:names.text",
                               "settings": {
-                                "text": "<p>a conditioning session</p>",
+                                "text": "<p>A conditioning session</p>",
                                 "width": "fit-content",
                                 "max_width": "normal",
                                 "alignment": "left",
@@ -2736,7 +2736,7 @@
                               "type": "text",
                               "name": "t:names.text",
                               "settings": {
-                                "text": "<p>a ruck</p>",
+                                "text": "<p>A ruck</p>",
                                 "width": "fit-content",
                                 "max_width": "normal",
                                 "alignment": "left",
@@ -2832,7 +2832,7 @@
                               "type": "text",
                               "name": "t:names.text",
                               "settings": {
-                                "text": "<p>heavy training</p>",
+                                "text": "<p>Heavy training</p>",
                                 "width": "fit-content",
                                 "max_width": "normal",
                                 "alignment": "left",
@@ -4236,7 +4236,7 @@
             "row_4": "Training Use",
             "row_5": "Design Intent",
             "row_6": "Tested By",
-            "row_7": "Price",
+            "row_7": "",
             "row_8": "",
             "row_9": ""
           }
@@ -4259,7 +4259,7 @@
             "data_6_type": "check",
             "data_6_text": "<p>Elite CrossFit, HYROX & military athletes</p>",
             "data_7_type": "text",
-            "data_7_text": "<p>$250</p>",
+            "data_7_text": "",
             "data_8_type": "text",
             "data_8_text": "",
             "data_9_type": "text",
@@ -4283,7 +4283,7 @@
             "data_6_type": "x",
             "data_6_text": "<p>Military use, not fitness</p>",
             "data_7_type": "text",
-            "data_7_text": "<p><strong>$150 + plates</strong></p>",
+            "data_7_text": "",
             "data_8_type": "text",
             "data_8_text": "",
             "data_9_type": "text",
@@ -4307,7 +4307,7 @@
             "data_6_type": "x",
             "data_6_text": "<p>Not athlete-tested</p>",
             "data_7_type": "text",
-            "data_7_text": "<p><strong>$60</strong></p>",
+            "data_7_text": "",
             "data_8_type": "text",
             "data_8_text": "",
             "data_9_type": "text",
@@ -4330,7 +4330,7 @@
       ],
       "name": "Comparison Table",
       "settings": {
-        "heading": "US VS THEm",
+        "heading": "US VS THEM",
         "subheading": "<p>We hyper-focused on creating a vest that does multiple things well and avoids what you hate. It's designed by our physical therapist founder and has been iterated to perfection.</p>",
         "background_image": "shopify://shop_images/eb12aa5f1e2ca8a2d48cc3c3732ee97ff0d8c110_1.png",
         "button_text": "",
