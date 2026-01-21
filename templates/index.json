@@ -2392,7 +2392,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<p>Engineered to Move With You</p>",
+                "text": "<h2>Engineered to Move With You</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
