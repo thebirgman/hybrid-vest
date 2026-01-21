@@ -516,6 +516,7 @@
       opacity: 0;
     }
     
+    .group-block-content:has(.image-card-block--active) > .shopify-block .image-card-block.image-card-block--active .image-card-block__image--active-mobile,
     .group-block-content:has(.image-card-block--active) > .shopify-block .image-card-block.image-card-block--active .image-card-block__video--active-mobile {
       opacity: 1;
       z-index: 3;
@@ -591,9 +592,25 @@
       // Find default active card or set first as active
       let lastActiveCard = allCards.find(c => c.classList.contains('image-card-block--default-active')) || allCards[0];
       
+      // Helper function to play/pause videos
+      function handleVideoPlayback(card, shouldPlay) {
+        const videos = card.querySelectorAll('.image-card-block__background-video');
+        videos.forEach(video => {
+          if (shouldPlay) {
+            video.play().catch(err => console.log('Video play prevented:', err));
+          } else {
+            video.pause();
+          }
+        });
+      }
+
       // Initialize active state
-      allCards.forEach(c => c.classList.remove('image-card-block--active'));
+      allCards.forEach(c => {
+        c.classList.remove('image-card-block--active');
+        handleVideoPlayback(c, false);
+      });
       lastActiveCard.classList.add('image-card-block--active');
+      handleVideoPlayback(lastActiveCard, true);
 
       // Mobile slider: Simple scroll-based detection
       if (isMobileSlider && isMobile && scrollingContainer) {
@@ -616,8 +633,12 @@
           });
 
           if (mostVisibleCard && maxVisibility > 0.3) {
-            allCards.forEach(c => c.classList.remove('image-card-block--active'));
+            allCards.forEach(c => {
+              c.classList.remove('image-card-block--active');
+              handleVideoPlayback(c, false);
+            });
             mostVisibleCard.classList.add('image-card-block--active');
+            handleVideoPlayback(mostVisibleCard, true);
             lastActiveCard = mostVisibleCard;
           }
         };
@@ -637,18 +658,26 @@
         allCards.forEach(currentCard => {
           currentCard.addEventListener('mouseenter', function() {
             // Remove active from all cards
-            allCards.forEach(c => c.classList.remove('image-card-block--active'));
+            allCards.forEach(c => {
+              c.classList.remove('image-card-block--active');
+              handleVideoPlayback(c, false);
+            });
             
             // Add active to hovered card
             currentCard.classList.add('image-card-block--active');
+            handleVideoPlayback(currentCard, true);
             lastActiveCard = currentCard;
           });
 
           currentCard.addEventListener('mouseleave', function() {
             // Keep the last active card active when leaving
             if (lastActiveCard) {
-              allCards.forEach(c => c.classList.remove('image-card-block--active'));
+              allCards.forEach(c => {
+                c.classList.remove('image-card-block--active');
+                handleVideoPlayback(c, false);
+              });
               lastActiveCard.classList.add('image-card-block--active');
+              handleVideoPlayback(lastActiveCard, true);
             }
           });
         });
