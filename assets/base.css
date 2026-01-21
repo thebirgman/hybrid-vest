@@ -4981,3 +4981,9 @@ td.cart-items__details div {
 .mh-500{
   min-height: 500px
 }
+
+@media screen and (max-width: 768px) {
+.mh-500{
+  min-height: 400px
+}
+}
