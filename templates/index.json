@@ -4328,8 +4328,8 @@
                         "inactive_image_mobile": "shopify://shop_images/Gold_Brick_Ghost_Mobile.jpg",
                         "active_image_desktop": "shopify://shop_images/Gold_Brick_Active.jpg",
                         "active_image_mobile": "shopify://shop_images/Gold_Brick_Active_Mobile.jpg",
-                        "heading": "<h4>Comfortable “Gold Brick” Plates</h4>",
-                        "subheading": "<p>13 padded plates included. Designed to be comfortable during burpees, push-ups, and floor contact.</p>",
+                        "heading": "<h2>Full Vest Mode</h2>",
+                        "subheading": "<p><em><strong>Maximum load. Total versatility.</strong></em></p><p>Built for strength-focused sessions where added resistance drives results.</p><p><strong>Use Cases:</strong></p>",
                         "badge": "",
                         "default_active_state": false,
                         "text_alignment": "bottom",
@@ -4500,7 +4500,7 @@
         "group_MMjDBt"
       ],
       "custom_css": [
-        ".image-card-block{min-height: 600px;}"
+        ".image-card-block {min-height: 600px;}"
       ],
       "name": "Why it's Different",
       "settings": {
