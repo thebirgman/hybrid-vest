@@ -4667,7 +4667,7 @@
                           "type": "text",
                           "name": "t:names.heading",
                           "settings": {
-                            "text": "<p>Front Chest Phone Pouch</p>",
+                            "text": "<h4>Front Chest Phone Pouch</h4>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
@@ -4676,7 +4676,7 @@
                             "font": "var(--font-heading--family)",
                             "font_size": "1.25rem",
                             "line_height": "normal",
-                            "letter_spacing": "normal",
+                            "letter_spacing": "tight",
                             "case": "uppercase",
                             "wrap": "pretty",
                             "color": "var(--color-foreground)",
