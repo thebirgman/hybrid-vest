@@ -4972,10 +4972,6 @@ td.cart-items__details div {
 }
 
 
-[docapp-data-protected] {
-  display: none!important;
-}
-
 @media screen and (max-width: 768px) {
   .variant-kit-option__checkbox {
     display: none;
