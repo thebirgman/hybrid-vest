@@ -658,6 +658,33 @@
     "section_jW8yr8": {
       "type": "section",
       "blocks": {
+        "text_KGyHYa": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2>Why The Hybrid Vest Is Different</h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "mobile_alignment": "left",
+            "type_preset": "h2",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 32,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
         "group_Qx9bqq": {
           "type": "group",
           "name": "t:names.group",
@@ -859,6 +886,7 @@
         }
       },
       "block_order": [
+        "text_KGyHYa",
         "group_Qx9bqq"
       ],
       "name": "Why The Hybrid Vest Is Different",
@@ -868,7 +896,7 @@
         "horizontal_alignment": "flex-start",
         "vertical_alignment": "center",
         "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
+        "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
         "gap": 12,
         "section_width": "page-width",
