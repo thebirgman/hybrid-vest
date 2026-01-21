@@ -4972,7 +4972,7 @@ td.cart-items__details div {
 }
 
 
-cart-quantity-selector-component[docapp-data-protected] {
+.cart-items__quantity[docapp-data-protected] {
   display: none!important;
 }
 
