@@ -4091,7 +4091,7 @@
             },
             "group_MgnhDH": {
               "type": "group",
-              "name": "t:names.group",
+              "name": "DESKTOP",
               "settings": {
                 "custom_class": "bento-grid-container desktop-cards",
                 "reverse_on_mobile": false,
@@ -4634,7 +4634,7 @@
             },
             "group_Vccjqd": {
               "type": "group",
-              "name": "t:names.group",
+              "name": "MOBILE",
               "settings": {
                 "custom_class": "bento-grid-container mobile-cards",
                 "reverse_on_mobile": false,
@@ -4901,6 +4901,7 @@
                     "inactive_image_mobile": "shopify://shop_images/Fast_Transitions_Ghost_Mobile.jpg",
                     "active_image_desktop": "shopify://shop_images/Fast_Transitions_Active.jpg",
                     "active_image_mobile": "shopify://shop_images/Fast_Transitions_Active_Mobile.jpg",
+                    "active_video_mobile": "shopify://files/videos/HALF TO FULL TRANSITION.webm",
                     "heading": "<h4>Fast Transitions</h4>",
                     "subheading": "<p>Tactical quick-release buckles make it simple to go half mode → full mode without a frustrating re-setup.</p>",
                     "badge": "#5",
