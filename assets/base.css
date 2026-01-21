@@ -4977,3 +4977,7 @@ td.cart-items__details div {
     display: none;
 }
 }
+
+.mh-500{
+  min-height: 500px
+}
