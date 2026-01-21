@@ -4915,7 +4915,7 @@
                 "background_color": "#00000026",
                 "corner_radius": 0,
                 "padding-block-start": 0,
-                "padding-block-end": 24,
+                "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
@@ -4942,32 +4942,6 @@
                 "background_color": "#00000026",
                 "corner_radius": 0,
                 "padding-block-start": 0,
-                "padding-block-end": 12,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_bbJUhh": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Our signature colorway. Midnight black construction finished with gold detailing — available in limited quantities.</p>",
-                "width": "fit-content",
-                "max_width": "none",
-                "alignment": "left",
-                "mobile_alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
@@ -4977,11 +4951,10 @@
           },
           "block_order": [
             "text_qVT3UN",
-            "text_RbdFjY",
-            "text_bbJUhh"
+            "text_RbdFjY"
           ]
         },
-        "group_jcqtnb": {
+        "group_R9ndPx": {
           "type": "group",
           "name": "t:names.group",
           "settings": {
@@ -5032,11 +5005,11 @@
             "padding-inline-end-mobile": 0
           },
           "blocks": {
-            "button_k4mdan": {
+            "button_4PeUNx": {
               "type": "button",
               "name": "t:names.button",
               "settings": {
-                "label": "View Limited Edition",
+                "label": "Shop The Hybrid Vest",
                 "link": "shopify://products/hybrid-vest",
                 "enable_popup": false,
                 "popup_section_type": "anchor",
@@ -5061,16 +5034,46 @@
                 "custom_width_mobile": 100
               },
               "blocks": {}
+            },
+            "button_68AyQ8": {
+              "type": "button",
+              "name": "t:names.button",
+              "settings": {
+                "label": "Learn More",
+                "link": "shopify://products/hybrid-vest",
+                "enable_popup": false,
+                "popup_section_type": "anchor",
+                "popup_section_anchor": "",
+                "popup_section_id": "",
+                "open_in_new_tab": false,
+                "style_class": "button-secondary",
+                "visibility": "all",
+                "icon": "none",
+                "icon_width": 24,
+                "icon_gap": 8,
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
             }
           },
           "block_order": [
-            "button_k4mdan"
+            "button_4PeUNx",
+            "button_68AyQ8"
           ]
         }
       },
       "block_order": [
         "group_H3htig",
-        "group_jcqtnb"
+        "group_R9ndPx"
       ],
       "custom_css": [
         "span.button__label {font-size: 16px;}",
@@ -5094,7 +5097,7 @@
         "vertical_alignment": "center",
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "flex-end",
         "gap": 32,
         "section_width": "page-width",
         "section_height": "auto",
