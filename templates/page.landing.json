@@ -2272,7 +2272,7 @@
                               "type": "text",
                               "name": "t:names.text",
                               "settings": {
-                                "text": "<p>a fast run</p>",
+                                "text": "<p>A fast run</p>",
                                 "width": "fit-content",
                                 "max_width": "normal",
                                 "alignment": "left",
@@ -2368,7 +2368,7 @@
                               "type": "text",
                               "name": "t:names.text",
                               "settings": {
-                                "text": "<p>a conditioning session</p>",
+                                "text": "<p>A conditioning session</p>",
                                 "width": "fit-content",
                                 "max_width": "normal",
                                 "alignment": "left",
@@ -2521,7 +2521,7 @@
                               "type": "text",
                               "name": "t:names.text",
                               "settings": {
-                                "text": "<p>a ruck</p>",
+                                "text": "<p>A ruck</p>",
                                 "width": "fit-content",
                                 "max_width": "normal",
                                 "alignment": "left",
@@ -2617,7 +2617,7 @@
                               "type": "text",
                               "name": "t:names.text",
                               "settings": {
-                                "text": "<p>heavy training</p>",
+                                "text": "<p>Heavy training</p>",
                                 "width": "fit-content",
                                 "max_width": "normal",
                                 "alignment": "left",
