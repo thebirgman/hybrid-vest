@@ -1014,7 +1014,7 @@
             "width_mobile": "fill",
             "custom_width_mobile": 100,
             "max_width_mobile": "custom",
-            "custom_max_width_mobile": 600,
+            "custom_max_width_mobile": 560,
             "height": "fit",
             "custom_height": 100,
             "inherit_color_scheme": true,
@@ -1102,7 +1102,7 @@
               "settings": {
                 "text": "<p>Our signature colorway. Midnight black construction finished with gold detailing — available in limited quantities.</p>",
                 "width": "fit-content",
-                "max_width": "narrow",
+                "max_width": "none",
                 "alignment": "left",
                 "mobile_alignment": "left",
                 "type_preset": "rte",
