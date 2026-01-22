@@ -4990,4 +4990,5 @@ td.cart-items__details div {
 
 .hero__container a.size-style.button-secondary {
     backdrop-filter: blur(13px);
+    font-weight: 700;
 }
