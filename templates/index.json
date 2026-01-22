@@ -3280,7 +3280,8 @@
         "text_RVqiFP"
       ],
       "custom_css": [
-        "span.divider__line {border-style: dashed;}"
+        ".group-block-content.layout-panel-flex {align-items: initial; justify-content: initial;}",
+        ".group-block.group-block--height-fit.group-block--width-fill {border: 1px dashed #FFFFFF33; border-top: 0;}"
       ],
       "name": "Science Behind Weighted Training",
       "settings": {
