@@ -235,7 +235,7 @@
               "name": "t:names.button",
               "settings": {
                 "label": "See What Makes It Different",
-                "link": "shopify://collections/all",
+                "link": "#shopify-section-template--21349168316641__section_ptYHxH",
                 "enable_popup": false,
                 "popup_section_type": "anchor",
                 "popup_section_anchor": "",
