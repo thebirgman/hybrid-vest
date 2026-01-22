@@ -2814,7 +2814,7 @@
               "type": "group",
               "name": "t:names.group",
               "settings": {
-                "custom_class": "",
+                "custom_class": "snd-row",
                 "reverse_on_mobile": false,
                 "slider_on_mobile": false,
                 "content_direction": "row",
@@ -3281,7 +3281,8 @@
       ],
       "custom_css": [
         ".group-block-content.layout-panel-flex {align-items: initial; justify-content: initial;}",
-        ".group-block.group-block--height-fit.group-block--width-fill {border: 1px dashed #FFFFFF33; border-top: 0;}"
+        ".group-block {border: 1px dashed #ffffff33; border-top: 0;}",
+        ".snd-row .group-block{border-bottom: 0;}"
       ],
       "name": "Science Behind Weighted Training",
       "settings": {
