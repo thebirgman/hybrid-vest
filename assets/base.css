@@ -5048,3 +5048,8 @@ em strong{
 .image-card-block__subheading p {
     margin-bottom: 16px!important;
 }
+
+.image-card-block__content--bottom h2 {
+    line-height: 1.1em!Important;
+    margin-bottom: 5px!important;
+}
