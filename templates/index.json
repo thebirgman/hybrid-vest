@@ -235,7 +235,7 @@
               "name": "t:names.button",
               "settings": {
                 "label": "See What Makes It Different",
-                "link": "shopify://collections/all",
+                "link": "#why-its-different",
                 "enable_popup": false,
                 "popup_section_type": "anchor",
                 "popup_section_anchor": "",
@@ -4368,7 +4368,7 @@
         "gradient_direction": "to top",
         "padding-block-start": 80,
         "padding-block-end": 0,
-        "anchor_id": ""
+        "anchor_id": "why-its-different"
       }
     },
     "section_kUfByM": {
@@ -6359,6 +6359,7 @@
             "button_68AyQ8": {
               "type": "button",
               "name": "t:names.button",
+              "disabled": true,
               "settings": {
                 "label": "Learn More",
                 "link": "shopify://products/hybrid-vest",
