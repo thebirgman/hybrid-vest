@@ -1130,7 +1130,7 @@
               "type": "group",
               "name": "t:names.group",
               "settings": {
-                "custom_class": "mh-500",
+                "custom_class": "mh-500 drop-shadow",
                 "reverse_on_mobile": false,
                 "slider_on_mobile": false,
                 "content_direction": "column",
@@ -1561,7 +1561,7 @@
               "type": "group",
               "name": "t:names.group",
               "settings": {
-                "custom_class": "mh-500",
+                "custom_class": "mh-500 drop-shadow",
                 "reverse_on_mobile": false,
                 "slider_on_mobile": false,
                 "content_direction": "column",
@@ -5545,7 +5545,7 @@
       ],
       "custom_css": [
         ".image-card-block {min-height: 600px;}",
-        "p > strong{color: #fff;}"
+        "p > strong {color: #fff;}"
       ],
       "name": "Why it's Different",
       "settings": {
