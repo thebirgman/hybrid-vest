@@ -4993,3 +4993,7 @@ td.cart-items__details div {
     font-weight: 700;
     letter-spacing: -1px!important;
 }
+
+.hero__container a.size-style.button-secondary span{
+  letter-spacing: -1px!important;
+}
