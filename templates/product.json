@@ -1334,7 +1334,7 @@
                       "static": true,
                       "settings": {
                         "style_class": "button",
-                        "show_price": true,
+                        "show_price": false,
                         "show_icon": true
                       },
                       "blocks": {}
