@@ -4997,6 +4997,10 @@ td.cart-items__details div {
 .hero__container a.size-style.button-secondary span{
   letter-spacing: -1px!important;
 }
+.drop-shadow{
+  box-shadow: -4px 4px 10px 0px #000000;
+
+}
 
 h2 strong,
 .hero__container h3 strong,
