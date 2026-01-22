@@ -624,7 +624,7 @@
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/728fd03bb2ca6370b6e2e851a3866ff0935363d7.png",
+        "image_1": "shopify://shop_images/Hero_V1.jpg",
         "media_type_2": "image",
         "stack_media_on_mobile": true,
         "custom_mobile_media": true,
@@ -634,7 +634,7 @@
         "padding_block_start_mobile": 0,
         "padding_block_end_mobile": 60,
         "media_type_1_mobile": "image",
-        "image_1_mobile": "shopify://shop_images/Gemini_Generated_Image_wdxnx9wdxnx9wdxn_1_1.jpg",
+        "image_1_mobile": "shopify://shop_images/Hero_V1_Mobile.jpg",
         "media_type_2_mobile": "image",
         "link": "",
         "open_in_new_tab": false,
