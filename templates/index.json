@@ -5587,7 +5587,7 @@
                 "padding-block-start-mobile": 40,
                 "padding-block-end-mobile": 40,
                 "padding-inline-start-mobile": 20,
-                "padding-inline-end-mobile": 0
+                "padding-inline-end-mobile": 20
               },
               "blocks": {
                 "text_f3efaK": {
@@ -6330,7 +6330,7 @@
                 "case": "none",
                 "width": "fit-content",
                 "custom_width": 100,
-                "width_mobile": "fit-content",
+                "width_mobile": "custom",
                 "custom_width_mobile": 100
               },
               "blocks": {}
@@ -6359,7 +6359,7 @@
                 "case": "none",
                 "width": "fit-content",
                 "custom_width": 100,
-                "width_mobile": "fit-content",
+                "width_mobile": "custom",
                 "custom_width_mobile": 100
               },
               "blocks": {}
