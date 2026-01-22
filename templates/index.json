@@ -2435,7 +2435,7 @@
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
-                    "custom_class": "box",
+                    "custom_class": "box first",
                     "reverse_on_mobile": false,
                     "slider_on_mobile": false,
                     "content_direction": "column",
@@ -2683,7 +2683,7 @@
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
-                    "custom_class": "box",
+                    "custom_class": "box last",
                     "reverse_on_mobile": false,
                     "slider_on_mobile": false,
                     "content_direction": "column",
@@ -2865,7 +2865,7 @@
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
-                    "custom_class": "box",
+                    "custom_class": "box first",
                     "reverse_on_mobile": false,
                     "slider_on_mobile": false,
                     "content_direction": "column",
@@ -3113,7 +3113,7 @@
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
-                    "custom_class": "box",
+                    "custom_class": "box last",
                     "reverse_on_mobile": false,
                     "slider_on_mobile": false,
                     "content_direction": "column",
@@ -3282,7 +3282,9 @@
       "custom_css": [
         ".group-block-content.layout-panel-flex {align-items: initial; justify-content: initial;}",
         ".box {border: 1px dashed #ffffff33; border-top: 0;}",
-        ".snd-row .box {border-bottom: 0;}"
+        ".snd-row .box {border-bottom: 0;}",
+        ".box.first{border-left: 0;}",
+        ".box.last{border-right: 0;}"
       ],
       "name": "Science Behind Weighted Training",
       "settings": {
