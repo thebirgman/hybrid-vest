@@ -4997,3 +4997,14 @@ td.cart-items__details div {
 .hero__container a.size-style.button-secondary span{
   letter-spacing: -1px!important;
 }
+
+h2 strong,
+.hero__container h3 strong,
+.hero__container h4 strong,
+em strong{
+    background: linear-gradient(180deg, #E9DBA5 0%, #B89963 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
