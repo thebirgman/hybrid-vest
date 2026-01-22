@@ -5378,7 +5378,7 @@
       "custom_css": [
         ".image-card-block {min-height: 600px;}",
         "p > strong {color: #fff;}",
-        "@media screen and (max-width: 768px) {.image-card-block {min-height: 500px; } .image-card-block__content--bottom{gap: 5px; } .image-card-block__content--bottom p{margin-bottom: 16px!Important; } .w-100 .shopify-block {width: 100% !important; }}"
+        "@media screen and (max-width: 768px) {.image-card-block {min-height: 500px; } .image-card-block__content--bottom {gap: 5px; } .image-card-block__content--bottom p {margin-bottom: 16px !important; } .w-100 .shopify-block {width: 100% !important; }}"
       ],
       "name": "Why it's Different",
       "settings": {
@@ -5583,10 +5583,10 @@
                 "padding-block-end": 80,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0,
-                "enable_mobile_padding": false,
-                "padding-block-start-mobile": 0,
-                "padding-block-end-mobile": 0,
-                "padding-inline-start-mobile": 0,
+                "enable_mobile_padding": true,
+                "padding-block-start-mobile": 40,
+                "padding-block-end-mobile": 40,
+                "padding-inline-start-mobile": 20,
                 "padding-inline-end-mobile": 0
               },
               "blocks": {
