@@ -5062,7 +5062,7 @@
         "group_RiCKqg"
       ],
       "custom_css": [
-        "h4 {letter-spacing: -1px;}",
+        "h4, em {letter-spacing: -1px;}",
         "h4,p {line-height: 1.1em;}"
       ],
       "name": "t:names.custom_section",
