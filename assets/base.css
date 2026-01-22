@@ -5012,3 +5012,39 @@ em strong{
     -webkit-text-fill-color: transparent;
     color: transparent;
 }
+
+
+.image-card-block__subheading ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.image-card-block__subheading ul li {
+    border: 1px solid #FFFFFF33;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #FFFFFFCC;
+    padding: 4px 12px;
+    gap: 5px;
+    align-items: center;
+}
+
+.image-card-block__subheading ul li:before {
+    content: "";
+    background: url(https://hybridvest.com/cdn/shop/files/Vector_5.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 14px;
+    height: 10px;
+    display: block;
+}
+
+.image-card-block__subheading p {
+    margin-bottom: 16px;
+}
