@@ -5153,7 +5153,7 @@
               "type": "group",
               "name": "DESKTOP",
               "settings": {
-                "custom_class": "bento-grid-containe",
+                "custom_class": "bento-grid-container",
                 "reverse_on_mobile": false,
                 "slider_on_mobile": true,
                 "content_direction": "column",
