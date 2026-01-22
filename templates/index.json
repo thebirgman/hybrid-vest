@@ -1651,7 +1651,7 @@
                     "horizontal_alignment_flex_direction_column": "flex-start",
                     "vertical_alignment_flex_direction_column": "center",
                     "gap": 8,
-                    "gap_mobile": 8,
+                    "gap_mobile": 4,
                     "width": "fill",
                     "custom_width": 100,
                     "width_mobile": "fill",
@@ -5153,7 +5153,7 @@
               "type": "group",
               "name": "DESKTOP",
               "settings": {
-                "custom_class": "bento-grid-container desktop-cards",
+                "custom_class": "bento-grid-containe",
                 "reverse_on_mobile": false,
                 "slider_on_mobile": true,
                 "content_direction": "column",
@@ -5295,11 +5295,11 @@
                         "text_padding_block_end": 40,
                         "text_padding_inline_start": 80,
                         "text_padding_inline_end": 80,
-                        "enable_mobile_text_padding": false,
-                        "text_padding_block_start_mobile": 0,
-                        "text_padding_block_end_mobile": 0,
-                        "text_padding_inline_start_mobile": 0,
-                        "text_padding_inline_end_mobile": 0
+                        "enable_mobile_text_padding": true,
+                        "text_padding_block_start_mobile": 40,
+                        "text_padding_block_end_mobile": 40,
+                        "text_padding_inline_start_mobile": 20,
+                        "text_padding_inline_end_mobile": 20
                       },
                       "blocks": {}
                     },
@@ -5347,11 +5347,11 @@
                         "text_padding_block_end": 40,
                         "text_padding_inline_start": 80,
                         "text_padding_inline_end": 80,
-                        "enable_mobile_text_padding": false,
-                        "text_padding_block_start_mobile": 0,
-                        "text_padding_block_end_mobile": 0,
-                        "text_padding_inline_start_mobile": 0,
-                        "text_padding_inline_end_mobile": 0
+                        "enable_mobile_text_padding": true,
+                        "text_padding_block_start_mobile": 40,
+                        "text_padding_block_end_mobile": 40,
+                        "text_padding_inline_start_mobile": 20,
+                        "text_padding_inline_end_mobile": 20
                       },
                       "blocks": {}
                     }
@@ -5365,119 +5365,10 @@
               "block_order": [
                 "group_MCkC8d"
               ]
-            },
-            "group_Fmjzhd": {
-              "type": "group",
-              "name": "MOBILE",
-              "settings": {
-                "custom_class": "bento-grid-container mobile-cards",
-                "reverse_on_mobile": false,
-                "slider_on_mobile": true,
-                "content_direction": "column",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
-                "vertical_alignment_flex_direction_column": "flex-start",
-                "gap": 12,
-                "gap_mobile": 12,
-                "width": "fill",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "max_width_mobile": "fill",
-                "custom_max_width_mobile": 700,
-                "height": "fit",
-                "custom_height": 100,
-                "inherit_color_scheme": true,
-                "color_scheme": "",
-                "background_media": "none",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "link": "",
-                "open_in_new_tab": false,
-                "placeholder": "",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0,
-                "enable_mobile_padding": false,
-                "padding-block-start-mobile": 0,
-                "padding-block-end-mobile": 0,
-                "padding-inline-start-mobile": 0,
-                "padding-inline-end-mobile": 0
-              },
-              "blocks": {
-                "image_card_nw3HW7": {
-                  "type": "image-card",
-                  "name": "Image Card",
-                  "settings": {
-                    "background_image": "shopify://shop_images/bbe26cbf2ee6f5b463424dbf52d5f7307c619a33.png",
-                    "inactive_image_desktop_large": "shopify://shop_images/Carry_Essentials_Ghost_large_5d09d914-bd6a-42e6-9f17-9b84aa1d6c1c.jpg",
-                    "inactive_image_desktop_short": "shopify://shop_images/Carry_Essentials_Ghost_short.jpg",
-                    "inactive_image_mobile": "shopify://shop_images/Carry_Essentials_Ghost_Mobile.jpg",
-                    "active_image_desktop": "shopify://shop_images/Carry_Essentials_Active.jpg",
-                    "active_image_mobile": "shopify://shop_images/Carry_Essentials_Active_Mobile.jpg",
-                    "heading": "<h4>Carry Essentials Built In</h4>",
-                    "subheading": "<p>Front phone pocket + rear gear pocket so you don’t need additional accessories.</p>",
-                    "badge": "#6",
-                    "default_active_state": false,
-                    "text_alignment": "bottom",
-                    "heading_subheading_gap": 12,
-                    "width_desktop": 100,
-                    "width_mobile": 100,
-                    "max_width_desktop": 2000,
-                    "max_width_mobile": 2000,
-                    "minimum_height": 300,
-                    "subheading_type_preset": "rte",
-                    "subheading_font": "var(--font-body--family)",
-                    "subheading_font_size": "1rem",
-                    "subheading_line_height": "normal",
-                    "subheading_letter_spacing": "normal",
-                    "subheading_case": "none",
-                    "subheading_wrap": "pretty",
-                    "subheading_color": "var(--color-foreground)",
-                    "inherit_color_scheme": false,
-                    "color_scheme": "",
-                    "enable_gradient_overlay": true,
-                    "border": "solid",
-                    "border_width": 1,
-                    "border_opacity": 20,
-                    "border_radius": 0,
-                    "padding-block-start": 16,
-                    "padding-block-end": 32,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0,
-                    "text_padding_block_start": 80,
-                    "text_padding_block_end": 32,
-                    "text_padding_inline_start": 32,
-                    "text_padding_inline_end": 32,
-                    "enable_mobile_text_padding": false,
-                    "text_padding_block_start_mobile": 0,
-                    "text_padding_block_end_mobile": 0,
-                    "text_padding_inline_start_mobile": 0,
-                    "text_padding_inline_end_mobile": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "image_card_nw3HW7"
-              ]
             }
           },
           "block_order": [
-            "group_GLNQxi",
-            "group_Fmjzhd"
+            "group_GLNQxi"
           ]
         }
       },
