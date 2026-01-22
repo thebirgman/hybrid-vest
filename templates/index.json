@@ -2498,7 +2498,7 @@
                       "type": "text",
                       "name": "t:names.heading",
                       "settings": {
-                        "text": "<p>↑ Bone Density:</p>",
+                        "text": "<h4>↑ Bone Density:</h4>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -2622,7 +2622,7 @@
                       "type": "text",
                       "name": "t:names.heading",
                       "settings": {
-                        "text": "<p>↑ Cardiovascular Demand:</p>",
+                        "text": "<h4>↑ Cardiovascular Demand:</h4>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -2746,7 +2746,7 @@
                       "type": "text",
                       "name": "t:names.heading",
                       "settings": {
-                        "text": "<p>↑ Strength & Power:</p>",
+                        "text": "<h4>↑ Strength & Power:</h4>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -2928,7 +2928,7 @@
                       "type": "text",
                       "name": "t:names.heading",
                       "settings": {
-                        "text": "<p>↑ VO₂ Max & Conditioning:</p>",
+                        "text": "<h4>↑ VO₂ Max & Conditioning:</h4>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -3052,7 +3052,7 @@
                       "type": "text",
                       "name": "t:names.heading",
                       "settings": {
-                        "text": "<p>↑ Calorie Burn: </p>",
+                        "text": "<h4>↑ Calorie Burn: </h4>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -3176,7 +3176,7 @@
                       "type": "text",
                       "name": "t:names.heading",
                       "settings": {
-                        "text": "<p>↑ Posture & Stability:</p>",
+                        "text": "<h4>↑ Posture & Stability:</h4>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -3281,8 +3281,9 @@
       ],
       "custom_css": [
         ".group-block-content.layout-panel-flex {align-items: initial; justify-content: initial;}",
-        ".box {border: 1px dashed #ffffff33; }",
-        "@media screen and (min-width: 768px) {.box {border-top: 0;} .snd-row .box {border-bottom: 0; } .box.first {border-left: 0; } .box.last {border-right: 0; }}"
+        ".box {border: 1px dashed #ffffff33;}",
+        "@media screen and (min-width: 768px) {.box {border-top: 0; } .snd-row .box {border-bottom: 0; } .box.first {border-left: 0; } .box.last {border-right: 0; }}",
+        "h4{letter-spacing: -1px;}"
       ],
       "name": "Science Behind Weighted Training",
       "settings": {
