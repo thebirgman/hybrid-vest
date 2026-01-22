@@ -235,7 +235,7 @@
               "name": "t:names.button",
               "settings": {
                 "label": "See What Makes It Different",
-                "link": "#why-its-different",
+                "link": "shopify://collections/all",
                 "enable_popup": false,
                 "popup_section_type": "anchor",
                 "popup_section_anchor": "",
@@ -4368,7 +4368,7 @@
         "gradient_direction": "to top",
         "padding-block-start": 80,
         "padding-block-end": 0,
-        "anchor_id": "#why-its-different"
+        "anchor_id": ""
       }
     },
     "section_kUfByM": {
