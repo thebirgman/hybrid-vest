@@ -5046,5 +5046,5 @@ em strong{
 }
 
 .image-card-block__subheading p {
-    margin-bottom: 16px;
+    margin-bottom: 16px!important;
 }
