@@ -1161,7 +1161,7 @@
                 "border_opacity": 20,
                 "border_radius": 0,
                 "toggle_overlay": true,
-                "overlay_color": "#000000d5",
+                "overlay_color": "#000000d6",
                 "overlay_style": "gradient",
                 "gradient_direction": "to top",
                 "link": "",
@@ -1592,7 +1592,7 @@
                 "border_opacity": 20,
                 "border_radius": 0,
                 "toggle_overlay": true,
-                "overlay_color": "#000000d5",
+                "overlay_color": "#000000d6",
                 "overlay_style": "gradient",
                 "gradient_direction": "to top",
                 "link": "",
@@ -5544,7 +5544,8 @@
         "group_MMjDBt"
       ],
       "custom_css": [
-        ".image-card-block {min-height: 600px;}"
+        ".image-card-block {min-height: 600px;}",
+        "p > strong{color: #fff;}"
       ],
       "name": "Why it's Different",
       "settings": {
