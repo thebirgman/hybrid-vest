@@ -172,8 +172,8 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/Hero_Image.jpg",
-                    "image_mobile": "shopify://shop_images/Hero_Image_Mobile.jpg",
+                    "image": "shopify://shop_images/hero_desktop.jpg",
+                    "image_mobile": "shopify://shop_images/hero_mobile.jpg",
                     "link": "",
                     "image_ratio": "adapt",
                     "width": "fill",
@@ -1246,8 +1246,8 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/Why_most_weight_vests.jpg",
-                    "image_mobile": "shopify://shop_images/Why_most_weight_vests_Mobile.jpg",
+                    "image": "shopify://shop_images/old_vest_desktop.jpg",
+                    "image_mobile": "shopify://shop_images/old_vest_mobile.jpg",
                     "link": "",
                     "image_ratio": "adapt",
                     "width": "fill",
@@ -5838,7 +5838,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/Built_For_Murph.jpg",
+                    "image": "shopify://shop_images/murph_desktop.jpg",
                     "link": "",
                     "image_ratio": "adapt",
                     "width": "fill",
