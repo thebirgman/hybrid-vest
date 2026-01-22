@@ -5415,7 +5415,7 @@
       "custom_css": [
         ".image-card-block {min-height: 600px;}",
         "p > strong {color: #fff;}",
-        "@media screen and (max-width: 768px) {.image-card-block {min-height: 500px; } .image-card-block__content--bottom {gap: 2px; } .image-card-block__content--bottom p {margin-bottom: 10px !important; } .w-100 .shopify-block {width: 100% !important; } .image-card-block__image--active-desktop, p, strong, h2, h3 {opacity: 1; z-index: 3; }}"
+        "@media screen and (max-width: 768px) {.image-card-block {min-height: 500px; } .image-card-block__content--bottom {gap: 2px; } .image-card-block__content--bottom p {margin-bottom: 10px !important; } .w-100 .shopify-block {width: 100% !important; } / .image-card-block__image--active-desktop, p, strong, h2, h3 {opacity: 1; z-index: 3; }}"
       ],
       "name": "Why it's Different",
       "settings": {
