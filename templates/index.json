@@ -4558,7 +4558,7 @@
                       "type": "image",
                       "name": "t:names.image",
                       "settings": {
-                        "image": "shopify://shop_images/Img_Placeholder_1_1.jpg",
+                        "image": "shopify://shop_images/front_chest_pouch.jpg",
                         "link": "",
                         "image_ratio": "square",
                         "width": "fill",
@@ -4745,7 +4745,7 @@
                       "type": "image",
                       "name": "t:names.image",
                       "settings": {
-                        "image": "shopify://shop_images/Img_Placeholder_1_a0f4d4c0-a269-4ec0-b77c-8c96db1d6b98.jpg",
+                        "image": "shopify://shop_images/rear_pocket_storage.jpg",
                         "link": "",
                         "image_ratio": "square",
                         "width": "custom",
@@ -4932,7 +4932,7 @@
                       "type": "image",
                       "name": "t:names.image",
                       "settings": {
-                        "image": "shopify://shop_images/Img_Placeholder_1_2.jpg",
+                        "image": "shopify://shop_images/integrated_loop.jpg",
                         "link": "",
                         "image_ratio": "square",
                         "width": "fill",
