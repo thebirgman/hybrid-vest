@@ -5378,7 +5378,7 @@
       "custom_css": [
         ".image-card-block {min-height: 600px;}",
         "p > strong {color: #fff;}",
-        "@media screen and (max-width: 768px) {.image-card-block {min-height: 500px;}.w-100 .shopify-block{width: 100%!important;}}"
+        "@media screen and (max-width: 768px) {.image-card-block {min-height: 500px; } .image-card-block__content--bottom{gap: 5px; } .image-card-block__content--bottom p{margin-bottom: 16px!Important; } .w-100 .shopify-block {width: 100% !important; }}"
       ],
       "name": "Why it's Different",
       "settings": {
