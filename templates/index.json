@@ -5266,7 +5266,7 @@
                         "badge": "",
                         "default_active_state": false,
                         "text_alignment": "bottom",
-                        "heading_subheading_gap": 0,
+                        "heading_subheading_gap": 8,
                         "width_desktop": 100,
                         "width_mobile": 100,
                         "max_width_desktop": 2000,
