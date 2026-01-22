@@ -5053,3 +5053,9 @@ em strong{
     line-height: 1.1em!Important;
     margin-bottom: 5px!important;
 }
+
+@media screen and (max-width: 768px) {
+.hero__content-wrapper .group-block-content > div:has(a) {
+    width: 100%;
+}
+}
