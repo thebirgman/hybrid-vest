@@ -745,7 +745,7 @@
               "type": "image-card",
               "name": "Image Card",
               "settings": {
-                "background_image": "shopify://shop_images/47256edb6792df1318945dc840b50e35c72b33fe_1.png",
+                "background_image": "shopify://shop_images/Two-in-one.jpg",
                 "heading": "<h5>Two-in-One Design</h5>",
                 "subheading": "<p>Train in streamlined running mode or reinforced lifting mode — without changing vests.</p>",
                 "badge": "",
@@ -792,7 +792,7 @@
               "type": "image-card",
               "name": "Image Card",
               "settings": {
-                "background_image": "shopify://shop_images/cece173e10d6057a1fcfd0e358167cc9a843158b_1.png",
+                "background_image": "shopify://shop_images/Built_For.jpg",
                 "heading": "<h5>Built for Hybrid Athletes</h5>",
                 "subheading": "<p>Not just runners. Not just lifters. This vest was designed for people who do both.</p>",
                 "badge": "",
@@ -839,7 +839,7 @@
               "type": "image-card",
               "name": "Image Card",
               "settings": {
-                "background_image": "shopify://shop_images/cf3ee754ec7c30e4a1e3c9c93cac06d822377758.png",
+                "background_image": "shopify://shop_images/Balanced.jpg",
                 "heading": "<h5>Balanced, Low-Profile Weighting</h5>",
                 "subheading": "<p>Engineered to sit tight and stable whether you’re sprinting, squatting, or grinding through circuits.</p>",
                 "badge": "",
