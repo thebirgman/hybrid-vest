@@ -4972,10 +4972,9 @@ td.cart-items__details div {
 }
 
 
-@media screen and (max-width: 768px) {
-  .variant-kit-option__checkbox {
-    display: none;
-}
+
+.variant-kit-option__checkbox {
+  display: none;
 }
 
 .mh-500{
