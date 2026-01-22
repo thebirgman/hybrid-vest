@@ -2373,11 +2373,11 @@
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0,
-            "enable_mobile_padding": false,
+            "enable_mobile_padding": true,
             "padding-block-start-mobile": 0,
             "padding-block-end-mobile": 0,
-            "padding-inline-start-mobile": 0,
-            "padding-inline-end-mobile": 0
+            "padding-inline-start-mobile": 20,
+            "padding-inline-end-mobile": 20
           },
           "blocks": {
             "group_NJzcz6": {
@@ -3281,10 +3281,8 @@
       ],
       "custom_css": [
         ".group-block-content.layout-panel-flex {align-items: initial; justify-content: initial;}",
-        ".box {border: 1px dashed #ffffff33; border-top: 0;}",
-        ".snd-row .box {border-bottom: 0;}",
-        ".box.first{border-left: 0;}",
-        ".box.last{border-right: 0;}"
+        ".box {border: 1px dashed #ffffff33; }",
+        "@media screen and (min-width: 768px) {.box {border-top: 0;} .snd-row .box {border-bottom: 0; } .box.first {border-left: 0; } .box.last {border-right: 0; }}"
       ],
       "name": "Science Behind Weighted Training",
       "settings": {
