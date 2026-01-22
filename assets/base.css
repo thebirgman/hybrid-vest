@@ -4987,3 +4987,7 @@ td.cart-items__details div {
   min-height: 400px
 }
 }
+
+.hero__container a.size-style.button-secondary {
+    backdrop-filter: blur(13px);
+}
