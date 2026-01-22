@@ -34,8 +34,9 @@
   endif
 -%}
 
-<div
+  <div
   class="image-card-block{% if block_settings.inherit_color_scheme == false %} color-{{ block_settings.color_scheme }}{% endif %} image-card-block--hover-enabled{% if block_settings.default_active_state %} image-card-block--default-active{% endif %}"
+  data-hover-only-activate="{% if block_settings.activate_only_on_hover %}true{% else %}false{% endif %}"
   style="
     {% if block_settings.width_desktop > 0 %}
       --image-card-width-desktop: {{ block_settings.width_desktop }}%;
@@ -588,12 +589,14 @@
       const isMobileSlider = scrollingContainer !== null;
       const isMobile = window.innerWidth <= 768;
 
-      // Find default active card or set first as active
-      let lastActiveCard = allCards.find(c => c.classList.contains('image-card-block--default-active')) || allCards[0];
+      // Find default active card (only if explicitly set)
+      let lastActiveCard = allCards.find(c => c.classList.contains('image-card-block--default-active')) || null;
       
-      // Initialize active state
+      // Initialize active state - only set if a default active card was found
       allCards.forEach(c => c.classList.remove('image-card-block--active'));
-      lastActiveCard.classList.add('image-card-block--active');
+      if (lastActiveCard) {
+        lastActiveCard.classList.add('image-card-block--active');
+      }
 
       // Mobile slider: Simple scroll-based detection
       if (isMobileSlider && isMobile && scrollingContainer) {
@@ -635,6 +638,8 @@
       } else {
         // Desktop: Add hover listeners to all cards
         allCards.forEach(currentCard => {
+          const hoverOnlyActivate = currentCard.dataset.hoverOnlyActivate === 'true';
+          
           currentCard.addEventListener('mouseenter', function() {
             // Remove active from all cards
             allCards.forEach(c => c.classList.remove('image-card-block--active'));
@@ -645,10 +650,17 @@
           });
 
           currentCard.addEventListener('mouseleave', function() {
-            // Keep the last active card active when leaving
-            if (lastActiveCard) {
+            // If hover-only-activate is enabled for this card, remove active class
+            if (hoverOnlyActivate) {
+              currentCard.classList.remove('image-card-block--active');
+              // Also remove from all other cards to ensure clean state
               allCards.forEach(c => c.classList.remove('image-card-block--active'));
-              lastActiveCard.classList.add('image-card-block--active');
+            } else {
+              // Keep the last active card active when leaving
+              if (lastActiveCard) {
+                allCards.forEach(c => c.classList.remove('image-card-block--active'));
+                lastActiveCard.classList.add('image-card-block--active');
+              }
             }
           });
         });
@@ -773,6 +785,13 @@
       "label": "Default active state",
       "default": false,
       "info": "This card will be active by default (only one card per group should be set)"
+    },
+    {
+      "type": "checkbox",
+      "id": "activate_only_on_hover",
+      "label": "Activate only on hover",
+      "default": false,
+      "info": "When enabled, the active state will only be active when the card is hovered. When not hovered, the active class will be removed."
     },
     {
       "type": "select",
