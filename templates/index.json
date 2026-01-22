@@ -6247,7 +6247,7 @@
               "name": "t:names.text",
               "settings": {
                 "text": "<h2><strong>Endless Training.</strong></h2>",
-                "width": "fit-content",
+                "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
                 "mobile_alignment": "left",
