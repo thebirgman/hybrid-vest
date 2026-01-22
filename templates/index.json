@@ -2555,18 +2555,6 @@
                     "text_3EiGTA"
                   ]
                 },
-                "divider_3YgcP4": {
-                  "type": "_divider",
-                  "name": "t:names.divider",
-                  "settings": {
-                    "thickness": 1,
-                    "corner_radius": "square",
-                    "width_percent": 100,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0
-                  },
-                  "blocks": {}
-                },
                 "group_QdEWrM": {
                   "type": "group",
                   "name": "t:names.group",
@@ -2690,18 +2678,6 @@
                     "text_Jjb788",
                     "text_TEEGAj"
                   ]
-                },
-                "divider_zRaa4X": {
-                  "type": "_divider",
-                  "name": "t:names.divider",
-                  "settings": {
-                    "thickness": 0.5,
-                    "corner_radius": "square",
-                    "width_percent": 100,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0
-                  },
-                  "blocks": {}
                 },
                 "group_yrWx6N": {
                   "type": "group",
@@ -2830,23 +2806,9 @@
               },
               "block_order": [
                 "group_XXND69",
-                "divider_3YgcP4",
                 "group_QdEWrM",
-                "divider_zRaa4X",
                 "group_yrWx6N"
               ]
-            },
-            "divider_mx3kpb": {
-              "type": "_divider",
-              "name": "t:names.divider",
-              "settings": {
-                "thickness": 1,
-                "corner_radius": "square",
-                "width_percent": 100,
-                "padding-block-start": 0,
-                "padding-block-end": 0
-              },
-              "blocks": {}
             },
             "group_MUFnNN": {
               "type": "group",
@@ -3023,18 +2985,6 @@
                     "text_rFkbNp"
                   ]
                 },
-                "divider_xFXjED": {
-                  "type": "_divider",
-                  "name": "t:names.divider",
-                  "settings": {
-                    "thickness": 1,
-                    "corner_radius": "square",
-                    "width_percent": 100,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0
-                  },
-                  "blocks": {}
-                },
                 "group_MKtLzn": {
                   "type": "group",
                   "name": "t:names.group",
@@ -3158,18 +3108,6 @@
                     "text_xCbVDJ",
                     "text_qbVzQ6"
                   ]
-                },
-                "divider_eRkidd": {
-                  "type": "_divider",
-                  "name": "t:names.divider",
-                  "settings": {
-                    "thickness": 1,
-                    "corner_radius": "square",
-                    "width_percent": 100,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0
-                  },
-                  "blocks": {}
                 },
                 "group_pRYyA7": {
                   "type": "group",
@@ -3298,16 +3236,13 @@
               },
               "block_order": [
                 "group_QDqwHt",
-                "divider_xFXjED",
                 "group_MKtLzn",
-                "divider_eRkidd",
                 "group_pRYyA7"
               ]
             }
           },
           "block_order": [
             "group_NJzcz6",
-            "divider_mx3kpb",
             "group_MUFnNN"
           ]
         },
