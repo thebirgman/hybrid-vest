@@ -793,7 +793,7 @@
               "type": "image-card",
               "name": "Image Card",
               "settings": {
-                "background_image": "shopify://shop_images/Built_For.jpg",
+                "background_image": "shopify://shop_images/built_for_athletes_desktop_1.jpg",
                 "heading": "<h5>Built for Hybrid Athletes</h5>",
                 "subheading": "<p>Not just runners. Not just lifters. This vest was designed for people who do both.</p>",
                 "badge": "",
@@ -5556,8 +5556,8 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/Built_For_98c4fec1-91da-4ac7-8aa3-1111197a9b88.jpg",
-                    "image_mobile": "shopify://shop_images/Built_For_Mobile.jpg",
+                    "image": "shopify://shop_images/built_for_training_desktop_1.jpg",
+                    "image_mobile": "shopify://shop_images/built_for_training_mobile_1.jpg",
                     "link": "",
                     "image_ratio": "adapt",
                     "width": "fill",
