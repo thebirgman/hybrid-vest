@@ -42,14 +42,12 @@
       "block_order": [
         "announcement_BxgCk9"
       ],
-      "custom_css": [
-        "p {opacity: 0.7;}"
-      ],
+      "custom_css": [],
       "name": "t:names.announcement_bar",
       "settings": {
         "speed": 5,
         "section_width": "page-width",
-        "color_scheme": "scheme-5",
+        "color_scheme": "scheme-c260f2d3-75cb-4173-bd6a-b62b955e5f59",
         "divider_width": 1,
         "padding-block-start": 10,
         "padding-block-end": 10
