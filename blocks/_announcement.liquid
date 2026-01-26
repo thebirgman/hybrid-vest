@@ -1,8 +1,7 @@
-
-
 {%- assign block_settings = block.settings -%}
 {%- assign plain_text = block_settings.text | strip_newlines | strip_html | strip -%}
 {%- assign block_index = section.blocks | find_index: 'id', block.id -%}
+{%- assign countdown_id = block.id | replace: '_', '' | downcase -%}
 
 {%- unless plain_text == '' -%}
   <slideshow-slide
@@ -28,6 +27,32 @@
   >
     <p class="announcement-bar__text">
       {{ block.settings.text }}
+      
+      {% if block_settings.enable_countdown %}
+        <countdown-inline-{{ countdown_id }}
+          class="countdown-inline"
+          data-starting-count="{{ block_settings.starting_count }}"
+          data-decrement-interval="{{ block_settings.decrement_interval }}"
+          style="display: inline-flex; align-items: center; gap: 6px; margin-left: 8px;"
+        >
+          <span style="color: {{ block_settings.countdown_text_color }}; font-weight: {{ block_settings.countdown_font_weight }};">
+            {% if block_settings.countdown_text_before != blank %}
+              {{ block_settings.countdown_text_before }}
+            {% endif %}
+          </span>
+          <span 
+            data-countdown-number 
+            style="color: {{ block_settings.countdown_number_color }}; font-weight: {{ block_settings.countdown_number_weight }};"
+          >
+            {{ block_settings.starting_count }}
+          </span>
+          <span style="color: {{ block_settings.countdown_text_color }}; font-weight: {{ block_settings.countdown_font_weight }};">
+            {% if block_settings.countdown_text_after != blank %}
+              {{ block_settings.countdown_text_after }}
+            {% endif %}
+          </span>
+        </countdown-inline-{{ countdown_id }}>
+      {% endif %}
     </p>
 
     {% if block_settings.link != blank %}
@@ -42,6 +67,138 @@
     {% endif %}
   </slideshow-slide>
 {%- endunless -%}
+
+{% if block_settings.enable_countdown %}
+<script>
+  (function() {
+    class CountdownInline{{ countdown_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.storageKey = 'countdown_{{ countdown_id }}_data';
+        this.startingCount = parseInt(this.dataset.startingCount) || 100;
+        this.decrementInterval = parseInt(this.dataset.decrementInterval) * 60000 || 300000;
+        this.numberElement = this.querySelector('[data-countdown-number]');
+        this.currentCount = this.startingCount;
+        this.intervalId = null;
+      }
+
+      connectedCallback() {
+        this.initializeCount();
+        this.startCountdown();
+        this.scheduleMidnightReset();
+      }
+
+      disconnectedCallback() {
+        if (this.intervalId) {
+          clearInterval(this.intervalId);
+        }
+      }
+
+      initializeCount() {
+        const stored = this.getStoredData();
+        const now = new Date();
+        const estNow = this.convertToEST(now);
+        const lastResetDate = stored ? new Date(stored.lastReset) : null;
+
+        if (lastResetDate) {
+          const lastResetEST = this.convertToEST(lastResetDate);
+          const isSameDay = 
+            estNow.getFullYear() === lastResetEST.getFullYear() &&
+            estNow.getMonth() === lastResetEST.getMonth() &&
+            estNow.getDate() === lastResetEST.getDate();
+
+          if (isSameDay && stored.count !== undefined) {
+            this.currentCount = Math.max(0, stored.count);
+          } else {
+            this.resetCount();
+          }
+        } else {
+          this.resetCount();
+        }
+
+        this.updateDisplay();
+      }
+
+      convertToEST(date) {
+        const estDate = new Date(date.toLocaleString('en-US', { timeZone: 'America/New_York' }));
+        return estDate;
+      }
+
+      getStoredData() {
+        try {
+          const data = localStorage.getItem(this.storageKey);
+          return data ? JSON.parse(data) : null;
+        } catch (e) {
+          return null;
+        }
+      }
+
+      saveData() {
+        try {
+          const data = {
+            count: this.currentCount,
+            lastReset: new Date().toISOString(),
+            lastDecrement: new Date().toISOString()
+          };
+          localStorage.setItem(this.storageKey, JSON.stringify(data));
+        } catch (e) {
+          console.error('Failed to save countdown data:', e);
+        }
+      }
+
+      resetCount() {
+        this.currentCount = this.startingCount;
+        this.saveData();
+        this.updateDisplay();
+      }
+
+      decrementCount() {
+        if (this.currentCount > 0) {
+          this.currentCount--;
+          this.saveData();
+          this.updateDisplay();
+        }
+      }
+
+      updateDisplay() {
+        if (this.numberElement) {
+          this.numberElement.textContent = this.currentCount;
+        }
+      }
+
+      startCountdown() {
+        this.intervalId = setInterval(() => {
+          this.decrementCount();
+        }, this.decrementInterval);
+      }
+
+      scheduleMidnightReset() {
+        const checkMidnight = () => {
+          const now = new Date();
+          const estNow = this.convertToEST(now);
+          const stored = this.getStoredData();
+
+          if (stored && stored.lastReset) {
+            const lastResetEST = this.convertToEST(new Date(stored.lastReset));
+            const isSameDay = 
+              estNow.getFullYear() === lastResetEST.getFullYear() &&
+              estNow.getMonth() === lastResetEST.getMonth() &&
+              estNow.getDate() === lastResetEST.getDate();
+
+            if (!isSameDay) {
+              this.resetCount();
+            }
+          }
+        };
+
+        setInterval(checkMidnight, 60000);
+      }
+    }
+
+    customElements.define('countdown-inline-{{ countdown_id }}', CountdownInline{{ countdown_id }});
+  })();
+</script>
+{% endif %}
 
 {% stylesheet %}
   .text-block:not(.text-block--full-width).rte,
@@ -129,6 +286,109 @@
       "type": "url",
       "id": "link",
       "label": "t:settings.link"
+    },
+    {
+      "type": "header",
+      "content": "Countdown settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_countdown",
+      "label": "Enable countdown",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "starting_count",
+      "label": "Starting count",
+      "min": 10,
+      "max": 500,
+      "step": 10,
+      "default": 100,
+      "info": "Resets to this number every midnight EST"
+    },
+    {
+      "type": "range",
+      "id": "decrement_interval",
+      "label": "Decrement interval",
+      "min": 1,
+      "max": 60,
+      "step": 1,
+      "unit": "min",
+      "default": 5,
+      "info": "How often the count decreases"
+    },
+    {
+      "type": "text",
+      "id": "countdown_text_before",
+      "label": "Countdown text before number",
+      "default": "Only"
+    },
+    {
+      "type": "text",
+      "id": "countdown_text_after",
+      "label": "Countdown text after number",
+      "default": "units left"
+    },
+    {
+      "type": "select",
+      "id": "countdown_font_weight",
+      "label": "Countdown text weight",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "500",
+          "label": "Medium"
+        },
+        {
+          "value": "600",
+          "label": "Semi-bold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        }
+      ],
+      "default": "400"
+    },
+    {
+      "type": "select",
+      "id": "countdown_number_weight",
+      "label": "Countdown number weight",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "500",
+          "label": "Medium"
+        },
+        {
+          "value": "600",
+          "label": "Semi-bold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        }
+      ],
+      "default": "700"
+    },
+    {
+      "type": "color",
+      "id": "countdown_text_color",
+      "label": "Countdown text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "countdown_number_color",
+      "label": "Countdown number color",
+      "default": "#d7b26f"
     },
     {
       "type": "header",
