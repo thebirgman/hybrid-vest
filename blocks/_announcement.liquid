@@ -154,6 +154,16 @@
         this.currentCount = this.startingCount;
         this.saveData();
         this.updateDisplay();
+        
+        // Re-show if it was hidden
+        if (this.style.display === 'none') {
+          this.style.display = 'inline-flex';
+        }
+        
+        // Restart countdown if it was stopped
+        if (!this.intervalId) {
+          this.startCountdown();
+        }
       }
 
       decrementCount() {
