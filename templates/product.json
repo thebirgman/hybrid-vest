@@ -1509,6 +1509,197 @@
                 "group_nGMJVL"
               ]
             },
+            "accordion_bCga7n": {
+              "type": "accordion",
+              "name": "t:names.accordion",
+              "settings": {
+                "icon": "plus",
+                "dividers": true,
+                "type_preset": "h6",
+                "inherit_color_scheme": false,
+                "color_scheme": "scheme-3",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "accordion_row_KKcTcf": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Specs",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "image_upload": "shopify://shop_images/Icon_Frame.png",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_pGphxp": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Full Vest: 18\" L x 14\" W<br/>Half Vest: 12\" L x 13\" W<br/>Plates Dimensions: 4\" L x 2\" W x 1/2\" D<br/>Plate Count: 13 pcs<br/>Strap Width: 2.5\" W<br/>Head Opening: 11\" L x 11\" W<br/>Weight: 21 lbs.</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "mobile_alignment": "left",
+                        "type_preset": "custom",
+                        "font": "var(--font-body--family)",
+                        "font_size": "0.875rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_pGphxp"
+                  ]
+                },
+                "accordion_row_xgYrKm": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Use it for",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "image_upload": "shopify://shop_images/Icon_Frame.png",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_8fctMD": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Half Vest Mode:</p><ul><li>Running</li><li>HIIT</li><li>Daily Training</li></ul><p>Full Vest Mode: </p><ul><li>Rucking</li><li>Lifting</li><li>Intense Sessions</li></ul>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "mobile_alignment": "left",
+                        "type_preset": "custom",
+                        "font": "var(--font-body--family)",
+                        "font_size": "0.875rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_8fctMD"
+                  ]
+                },
+                "accordion_row_qAHynz": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Materials",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "image_upload": "shopify://shop_images/Icon_Frame.png",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_Yphnqh": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Outer: Cordura 1000D<br/>Inner: Breathable quick-dry, anti-chafe <br/>Buckles: Tactical quick-release buckles</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "mobile_alignment": "left",
+                        "type_preset": "custom",
+                        "font": "var(--font-body--family)",
+                        "font_size": "0.875rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_Yphnqh"
+                  ]
+                },
+                "accordion_row_WRcKCz": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Key Features",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "image_upload": "shopify://shop_images/Icon_Frame.png",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_CMWyAm": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<ul><li>Patented 2-in-1 conversion: half vest to full vest in seconds</li><li>13 padded gold brick plates included</li><li>Bounce-free fit: stable on runs; secure under load</li><li>Anti-chafe interior: breathable, quick-dry mesh for comfort</li><li>Overhead mobility cut: pull-ups, presses, and HSPU-friendly</li><li>Front phone pocket + rear gear pocket: carry essentials without extra accessories</li><li>Adjustable straps: fits a wide range of heights/torso lengths</li></ul>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "mobile_alignment": "left",
+                        "type_preset": "custom",
+                        "font": "var(--font-body--family)",
+                        "font_size": "0.875rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_CMWyAm"
+                  ]
+                }
+              },
+              "block_order": [
+                "accordion_row_KKcTcf",
+                "accordion_row_xgYrKm",
+                "accordion_row_qAHynz",
+                "accordion_row_WRcKCz"
+              ]
+            },
             "group_Aaybk9": {
               "type": "group",
               "name": "t:names.group",
@@ -1744,197 +1935,6 @@
                 "text_nH6BcF",
                 "group_c8KxAW"
               ]
-            },
-            "accordion_bCga7n": {
-              "type": "accordion",
-              "name": "t:names.accordion",
-              "settings": {
-                "icon": "plus",
-                "dividers": true,
-                "type_preset": "h6",
-                "inherit_color_scheme": false,
-                "color_scheme": "scheme-3",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "accordion_row_KKcTcf": {
-                  "type": "_accordion-row",
-                  "settings": {
-                    "heading": "Specs",
-                    "open_by_default": false,
-                    "icon": "none",
-                    "image_upload": "shopify://shop_images/Icon_Frame.png",
-                    "width": 20
-                  },
-                  "blocks": {
-                    "text_pGphxp": {
-                      "type": "text",
-                      "settings": {
-                        "text": "<p>Full Vest: 18\" L x 14\" W<br/>Half Vest: 12\" L x 13\" W<br/>Plates Dimensions: 4\" L x 2\" W x 1/2\" D<br/>Plate Count: 13 pcs<br/>Strap Width: 2.5\" W<br/>Head Opening: 11\" L x 11\" W<br/>Weight: 21 lbs.</p>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "mobile_alignment": "left",
-                        "type_preset": "custom",
-                        "font": "var(--font-body--family)",
-                        "font_size": "0.875rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "color": "var(--color-foreground)",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "text_pGphxp"
-                  ]
-                },
-                "accordion_row_xgYrKm": {
-                  "type": "_accordion-row",
-                  "settings": {
-                    "heading": "Use it for",
-                    "open_by_default": false,
-                    "icon": "none",
-                    "image_upload": "shopify://shop_images/Icon_Frame.png",
-                    "width": 20
-                  },
-                  "blocks": {
-                    "text_8fctMD": {
-                      "type": "text",
-                      "settings": {
-                        "text": "<p>Half Vest Mode:</p><ul><li>Running</li><li>HIIT</li><li>Daily Training</li></ul><p>Full Vest Mode: </p><ul><li>Rucking</li><li>Lifting</li><li>Intense Sessions</li></ul>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "mobile_alignment": "left",
-                        "type_preset": "custom",
-                        "font": "var(--font-body--family)",
-                        "font_size": "0.875rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "color": "var(--color-foreground)",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "text_8fctMD"
-                  ]
-                },
-                "accordion_row_qAHynz": {
-                  "type": "_accordion-row",
-                  "settings": {
-                    "heading": "Materials",
-                    "open_by_default": false,
-                    "icon": "none",
-                    "image_upload": "shopify://shop_images/Icon_Frame.png",
-                    "width": 20
-                  },
-                  "blocks": {
-                    "text_Yphnqh": {
-                      "type": "text",
-                      "settings": {
-                        "text": "<p>Outer: Cordura 1000D<br/>Inner: Breathable quick-dry, anti-chafe <br/>Buckles: Tactical quick-release buckles</p>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "mobile_alignment": "left",
-                        "type_preset": "custom",
-                        "font": "var(--font-body--family)",
-                        "font_size": "0.875rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "color": "var(--color-foreground)",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "text_Yphnqh"
-                  ]
-                },
-                "accordion_row_WRcKCz": {
-                  "type": "_accordion-row",
-                  "settings": {
-                    "heading": "Key Features",
-                    "open_by_default": false,
-                    "icon": "none",
-                    "image_upload": "shopify://shop_images/Icon_Frame.png",
-                    "width": 20
-                  },
-                  "blocks": {
-                    "text_CMWyAm": {
-                      "type": "text",
-                      "settings": {
-                        "text": "<ul><li>Patented 2-in-1 conversion: half vest to full vest in seconds</li><li>13 padded gold brick plates included</li><li>Bounce-free fit: stable on runs; secure under load</li><li>Anti-chafe interior: breathable, quick-dry mesh for comfort</li><li>Overhead mobility cut: pull-ups, presses, and HSPU-friendly</li><li>Front phone pocket + rear gear pocket: carry essentials without extra accessories</li><li>Adjustable straps: fits a wide range of heights/torso lengths</li></ul>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "mobile_alignment": "left",
-                        "type_preset": "custom",
-                        "font": "var(--font-body--family)",
-                        "font_size": "0.875rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "color": "var(--color-foreground)",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "text_CMWyAm"
-                  ]
-                }
-              },
-              "block_order": [
-                "accordion_row_KKcTcf",
-                "accordion_row_xgYrKm",
-                "accordion_row_qAHynz",
-                "accordion_row_WRcKCz"
-              ]
             }
           },
           "block_order": [
@@ -1944,8 +1944,8 @@
             "group_6Rdn7K",
             "group_dPM4eV",
             "group_aFtJW8",
-            "group_Aaybk9",
-            "accordion_bCga7n"
+            "accordion_bCga7n",
+            "group_Aaybk9"
           ]
         }
       },
