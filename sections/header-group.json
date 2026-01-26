@@ -17,7 +17,7 @@
         "announcement_BxgCk9": {
           "type": "_announcement",
           "settings": {
-            "text": "Launch Freebies Running Out.",
+            "text": "Launch freebies running out.",
             "link": "",
             "enable_countdown": true,
             "starting_count": 150,
