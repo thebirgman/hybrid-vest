@@ -213,7 +213,7 @@
                     "max_width": "normal",
                     "alignment": "left",
                     "mobile_alignment": "left",
-                    "type_preset": "h1",
+                    "type_preset": "h2",
                     "font": "var(--font-primary--family)",
                     "font_size": "",
                     "line_height": "normal",
