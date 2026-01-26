@@ -17,7 +17,7 @@
         "announcement_BxgCk9": {
           "type": "_announcement",
           "settings": {
-            "text": "Developed by a Lead Safety Expert",
+            "text": "LAUNCH PROMO ONGOING!",
             "link": "",
             "font": "var(--font-subheading--family)",
             "font_size": "0.75rem",
@@ -31,7 +31,6 @@
       "block_order": [
         "announcement_BxgCk9"
       ],
-      "disabled": true,
       "custom_css": [
         "p {opacity: 0.7;}"
       ],
