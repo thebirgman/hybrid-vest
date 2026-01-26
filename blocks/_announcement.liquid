@@ -33,6 +33,8 @@
           class="countdown-inline"
           data-starting-count="{{ block_settings.starting_count }}"
           data-decrement-interval="{{ block_settings.decrement_interval }}"
+          data-reset-hour="{{ block_settings.reset_hour }}"
+          data-zero-behavior="{{ block_settings.zero_behavior }}"
           style="display: inline-flex; align-items: center; gap: 6px; margin-left: 8px;"
         >
           <span style="color: {{ block_settings.countdown_text_color }}; font-weight: {{ block_settings.countdown_font_weight }};">
@@ -74,9 +76,11 @@
     class CountdownInline{{ countdown_id }} extends HTMLElement {
       constructor() {
         super();
+        this.element = this;
         this.storageKey = 'countdown_{{ countdown_id }}_data';
         this.startingCount = parseInt(this.dataset.startingCount) || 100;
         this.decrementInterval = parseInt(this.dataset.decrementInterval) * 60000 || 300000;
+        this.resetHour = parseInt(this.dataset.resetHour) || 0;
         this.numberElement = this.querySelector('[data-countdown-number]');
         this.currentCount = this.startingCount;
         this.intervalId = null;
@@ -157,6 +161,24 @@
           this.currentCount--;
           this.saveData();
           this.updateDisplay();
+          
+          if (this.currentCount === 0) {
+            this.handleZeroCount();
+          }
+        }
+      }
+
+      handleZeroCount() {
+        const behavior = this.element.dataset.zeroBehavior || 'stop';
+        
+        if (behavior === 'stop') {
+          clearInterval(this.intervalId);
+        } else if (behavior === 'hide') {
+          this.style.display = 'none';
+        } else if (behavior === 'reset') {
+          setTimeout(() => {
+            this.resetCount();
+          }, 1000);
         }
       }
 
@@ -173,25 +195,31 @@
       }
 
       scheduleMidnightReset() {
-        const checkMidnight = () => {
+        const checkReset = () => {
           const now = new Date();
           const estNow = this.convertToEST(now);
           const stored = this.getStoredData();
 
           if (stored && stored.lastReset) {
             const lastResetEST = this.convertToEST(new Date(stored.lastReset));
-            const isSameDay = 
-              estNow.getFullYear() === lastResetEST.getFullYear() &&
-              estNow.getMonth() === lastResetEST.getMonth() &&
-              estNow.getDate() === lastResetEST.getDate();
+            
+            // Check if we've passed the reset hour today
+            const hasPassedResetHour = estNow.getHours() >= this.resetHour;
+            const lastResetPassedHour = lastResetEST.getHours() >= this.resetHour;
+            
+            const shouldReset = 
+              estNow.getFullYear() > lastResetEST.getFullYear() ||
+              estNow.getMonth() > lastResetEST.getMonth() ||
+              (estNow.getDate() > lastResetEST.getDate()) ||
+              (estNow.getDate() === lastResetEST.getDate() && hasPassedResetHour && !lastResetPassedHour);
 
-            if (!isSameDay) {
+            if (shouldReset) {
               this.resetCount();
             }
           }
         };
 
-        setInterval(checkMidnight, 60000);
+        setInterval(checkReset, 60000);
       }
     }
 
@@ -305,7 +333,18 @@
       "max": 500,
       "step": 10,
       "default": 100,
-      "info": "Resets to this number every midnight EST"
+      "info": "Resets to this number at the configured time each day"
+    },
+    {
+      "type": "range",
+      "id": "reset_hour",
+      "label": "Daily reset time",
+      "min": 0,
+      "max": 23,
+      "step": 1,
+      "unit": "h",
+      "default": 0,
+      "info": "Hour (0-23) in EST when counter resets. 0 = midnight, 12 = noon"
     },
     {
       "type": "range",
@@ -329,6 +368,27 @@
       "id": "countdown_text_after",
       "label": "Countdown text after number",
       "default": "units left"
+    },
+    {
+      "type": "select",
+      "id": "zero_behavior",
+      "label": "When count reaches zero",
+      "options": [
+        {
+          "value": "stop",
+          "label": "Stop at 0"
+        },
+        {
+          "value": "hide",
+          "label": "Hide countdown"
+        },
+        {
+          "value": "reset",
+          "label": "Reset to starting count"
+        }
+      ],
+      "default": "stop",
+      "info": "Choose what happens when the counter hits zero"
     },
     {
       "type": "select",
