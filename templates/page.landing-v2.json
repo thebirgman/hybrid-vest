@@ -1219,8 +1219,8 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>WHY MOST WEIGHT VESTS END UP IN THE CLOSET</h2>",
-                    "width": "fit-content",
+                    "text": "<h2>MOST WEIGHT VESTS MAKE TRAINING WORSE</h2>",
+                    "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
                     "mobile_alignment": "left",
@@ -1266,7 +1266,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<h4>Traditional vests are supposed to make you better.</h4><h4>But most of them do the opposite.</h4><h4>They bruise you. They bounce. They chafe. They restrict movement. Loading them feels unsafe and annoying.</h4><h4>If a vest makes training uncomfortable, <strong>you don’t wear it.</strong></h4>",
+                    "text": "<h4>Traditional vests are supposed to make you better.</h4><h4>But most of them do the opposite.</h4><h4>They slam into your chest when you run.<br/>They rub your skin raw.<br/>They block your shoulders overhead.<br/>They’re annoying, and sometimes, unsafe to load.</h4><h4>So what happens?</h4><h4>You stop wearing them.</h4><h4>If your vest makes training miserable, <strong>consistency dies. And so do results.</strong></h4>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
