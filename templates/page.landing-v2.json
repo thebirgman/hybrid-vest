@@ -1448,7 +1448,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h3>I BUILT<strong> HYBRID VEST </strong>BECAUSE I WAS TIRED OF QUITTING.</h3>",
+                    "text": "<h3>I didn’t quit training. <strong>I quit bad gear.</strong></h3>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1475,7 +1475,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>I wanted weighted training to be simple: Put it on. Move better. Push harder. <strong>Get 1% better.</strong></p><p>But every vest I tried felt like body armor. Metal plates dug into my chest and ribs. The vest bounced every time I ran. And when I changed plates? It felt sketchy.</p><p>I’ve smacked myself in the face loading plates. I’ve even chipped a tooth doing handstand push-ups because the whole setup is awkward and not built for real training.</p><p>So I stopped looking.</p><p>And I built the vest I wished existed.</p>",
+                    "text": "<p>I wanted weighted training to be simple:</p><p>Put it on. Move well. Push harder. <strong>Get 1% better.</strong></p><p>But every vest I tried felt like punishment. Heavy metal plates dug into my ribs. The vest bounced every time I ran. Changing weight felt awkward and sketchy — I’ve smacked my face loading plates and even chipped a tooth during handstand work.</p><p>That’s when it clicked:</p><p>The problem wasn’t weighted training.</p><p>The problem was vests built like body armor — not performance gear.</p><p>So I built the vest I wished existed.</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
