@@ -145,7 +145,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p><strong>Run faster. Move better. Suffer less. </strong>One vest that outperforms traditional weight vests where it actually matters: running, conditioning, and high-rep training.</p>",
+                    "text": "<p><strong>Run faster. Move better. Suffer less. </strong>A modular vest that outperforms traditional weight vests where it actually matters: running, conditioning, and high-rep training.</p>",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "center",
@@ -243,7 +243,7 @@
                       "type": "button",
                       "name": "t:names.button",
                       "settings": {
-                        "label": "GET THE HYBRID VEST",
+                        "label": "LEARN MORE ABOUT HYBRID VEST",
                         "link": "shopify://products/hybrid-vest",
                         "enable_popup": false,
                         "popup_section_type": "anchor",
@@ -485,7 +485,7 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "price_tag",
-                        "image_upload": "shopify://shop_images/Mask_group_10.png",
+                        "image_upload": "shopify://shop_images/Mask_group_1.png",
                         "width": 40,
                         "link": "",
                         "open_in_new_tab": false
@@ -496,7 +496,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>Adapt to your workout with 2-in-1 design</p>",
+                        "text": "<p>No bounce at speed, no matter the speed</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -592,7 +592,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>Easily transform, wear & release</p>",
+                        "text": "<p>Easily adjust weight, wear & store</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -688,7 +688,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>Premium durability with Condura 100D outer</p>",
+                        "text": "<p>Built for daily use with Condura 100D outer</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -775,6 +775,102 @@
                 "padding-inline-end-mobile": 0
               },
               "blocks": {
+                "group_bMH4jD": {
+                  "type": "group",
+                  "name": "t:names.group",
+                  "settings": {
+                    "custom_class": "",
+                    "reverse_on_mobile": false,
+                    "slider_on_mobile": false,
+                    "content_direction": "row",
+                    "vertical_on_mobile": false,
+                    "horizontal_alignment": "flex-start",
+                    "vertical_alignment": "center",
+                    "align_baseline": false,
+                    "horizontal_alignment_flex_direction_column": "flex-start",
+                    "vertical_alignment_flex_direction_column": "center",
+                    "gap": 16,
+                    "gap_mobile": 10,
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "max_width_mobile": "fill",
+                    "custom_max_width_mobile": 700,
+                    "height": "fit",
+                    "custom_height": 100,
+                    "inherit_color_scheme": true,
+                    "color_scheme": "",
+                    "background_media": "none",
+                    "video_position": "cover",
+                    "background_image_position": "cover",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "toggle_overlay": false,
+                    "overlay_color": "#00000026",
+                    "overlay_style": "solid",
+                    "gradient_direction": "to top",
+                    "link": "",
+                    "open_in_new_tab": false,
+                    "placeholder": "",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0,
+                    "enable_mobile_padding": false,
+                    "padding-block-start-mobile": 0,
+                    "padding-block-end-mobile": 0,
+                    "padding-inline-start-mobile": 0,
+                    "padding-inline-end-mobile": 0
+                  },
+                  "blocks": {
+                    "icon_QBCxPY": {
+                      "type": "icon",
+                      "name": "t:names.icon",
+                      "settings": {
+                        "icon": "leaf",
+                        "image_upload": "shopify://shop_images/Mask_group_4.png",
+                        "width": 40,
+                        "link": "",
+                        "open_in_new_tab": false
+                      },
+                      "blocks": {}
+                    },
+                    "text_t7PbEy": {
+                      "type": "text",
+                      "name": "t:names.text",
+                      "settings": {
+                        "text": "<p>Overhead-flexibility for pulls and presses</p>",
+                        "width": "fit-content",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "mobile_alignment": "left",
+                        "type_preset": "custom",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "icon_QBCxPY",
+                    "text_t7PbEy"
+                  ]
+                },
                 "group_yxtVDV": {
                   "type": "group",
                   "name": "t:names.group",
@@ -842,7 +938,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>Comfortable workouts with anti-chafe mesh inner</p>",
+                        "text": "<p>No bruising or \"body armor\" feel</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -938,7 +1034,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>Extremely breathable</p>",
+                        "text": "<p>Designed to keep you comfy</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -966,108 +1062,12 @@
                     "icon_bErWzF",
                     "text_GXzN8H"
                   ]
-                },
-                "group_bMH4jD": {
-                  "type": "group",
-                  "name": "t:names.group",
-                  "settings": {
-                    "custom_class": "",
-                    "reverse_on_mobile": false,
-                    "slider_on_mobile": false,
-                    "content_direction": "row",
-                    "vertical_on_mobile": false,
-                    "horizontal_alignment": "flex-start",
-                    "vertical_alignment": "center",
-                    "align_baseline": false,
-                    "horizontal_alignment_flex_direction_column": "flex-start",
-                    "vertical_alignment_flex_direction_column": "center",
-                    "gap": 16,
-                    "gap_mobile": 10,
-                    "width": "fill",
-                    "custom_width": 100,
-                    "width_mobile": "fill",
-                    "custom_width_mobile": 100,
-                    "max_width_mobile": "fill",
-                    "custom_max_width_mobile": 700,
-                    "height": "fit",
-                    "custom_height": 100,
-                    "inherit_color_scheme": true,
-                    "color_scheme": "",
-                    "background_media": "none",
-                    "video_position": "cover",
-                    "background_image_position": "cover",
-                    "border": "none",
-                    "border_width": 1,
-                    "border_opacity": 100,
-                    "border_radius": 0,
-                    "toggle_overlay": false,
-                    "overlay_color": "#00000026",
-                    "overlay_style": "solid",
-                    "gradient_direction": "to top",
-                    "link": "",
-                    "open_in_new_tab": false,
-                    "placeholder": "",
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0,
-                    "enable_mobile_padding": false,
-                    "padding-block-start-mobile": 0,
-                    "padding-block-end-mobile": 0,
-                    "padding-inline-start-mobile": 0,
-                    "padding-inline-end-mobile": 0
-                  },
-                  "blocks": {
-                    "icon_QBCxPY": {
-                      "type": "icon",
-                      "name": "t:names.icon",
-                      "settings": {
-                        "icon": "price_tag",
-                        "image_upload": "shopify://shop_images/Mask_group_15.png",
-                        "width": 40,
-                        "link": "",
-                        "open_in_new_tab": false
-                      },
-                      "blocks": {}
-                    },
-                    "text_t7PbEy": {
-                      "type": "text",
-                      "name": "t:names.text",
-                      "settings": {
-                        "text": "<p>Bring what you need with utility pockets</p>",
-                        "width": "fit-content",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "mobile_alignment": "left",
-                        "type_preset": "custom",
-                        "font": "var(--font-body--family)",
-                        "font_size": "1rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "color": "var(--color-foreground)",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "icon_QBCxPY",
-                    "text_t7PbEy"
-                  ]
                 }
               },
               "block_order": [
+                "group_bMH4jD",
                 "group_yxtVDV",
-                "group_aPc6iq",
-                "group_bMH4jD"
+                "group_aPc6iq"
               ]
             }
           },
