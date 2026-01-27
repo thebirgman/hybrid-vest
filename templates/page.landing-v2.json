@@ -5286,7 +5286,7 @@
                       "type": "text",
                       "name": "t:names.heading",
                       "settings": {
-                        "text": "<h2>1% BETTER ISN’T A SLOGAN.<strong> IT’S A SYSTEM.</strong></h2>",
+                        "text": "<p>Built for people who actually train</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -5319,7 +5319,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>The goal isn’t perfection. It’s showing up.</p><p>Hybrid Vest is built for people who want to run, ruck, and train consistently — because the gear makes it easier to do the work.</p>",
+                    "text": "<p>Hybrid Vest is for athletes who run, lift, and condition — and want gear that helps them show up consistently.<br/><br/>• HYROX & CrossFit athletes<br/>• Hybrid runners and ruckers<br/>• Garage gym owners<br/>• Busy adults who want one premium solution instead of five mediocre ones<br/><br/>This isn’t about perfection.<br/><br/>It’s about stacking reps, sessions, and days.</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
