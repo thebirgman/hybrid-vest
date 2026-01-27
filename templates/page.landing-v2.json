@@ -118,9 +118,9 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>THE NEW<strong> GOLD STANDARD</strong> IN WEIGHT VESTS HAS ARRIVED</h2>",
+                    "text": "<h2>THE WEIGHT VEST BUILT FOR <strong>REAL HYBRID TRAINING</strong></h2>",
                     "width": "100%",
-                    "max_width": "none",
+                    "max_width": "normal",
                     "alignment": "center",
                     "mobile_alignment": "center",
                     "type_preset": "h1",
@@ -145,7 +145,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Run. Ruck. Train. One vest that actually does it all without bounce, bruising, or the “body armor” feel of traditional vests.</p>",
+                    "text": "<p><strong>Run faster. Move better. Suffer less. </strong>One vest that outperforms traditional weight vests where it actually matters: running, conditioning, and high-rep training.</p>",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "center",
