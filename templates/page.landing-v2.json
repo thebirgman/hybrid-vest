@@ -1970,7 +1970,7 @@
                       "type": "text",
                       "name": "t:names.heading",
                       "settings": {
-                        "text": "<h2>THE VEST SHOULD MATCH THE WORKOUT.</h2>",
+                        "text": "<h2>One vest shouldn’t train every workout the same way.</h2>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -2080,7 +2080,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Most people don’t need the same vest for:</p>",
+                    "text": "<p>HYROX, CrossFit, and hybrid training demand range.</p><p>You don’t train a fast run the same way you train Murph.<br/>You don’t need full load for every session.</p><p><strong>That’s where every other vest fails.</strong></p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -2106,6 +2106,7 @@
                 "group_n4XWtk": {
                   "type": "group",
                   "name": "t:names.group",
+                  "disabled": true,
                   "settings": {
                     "custom_class": "",
                     "reverse_on_mobile": false,
@@ -2713,7 +2714,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>Hybrid Vest is a patented 2-in-1 system:</p>",
+                        "text": "<p>The Hybrid Vest adapts to the workout. Not the other way around.</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
