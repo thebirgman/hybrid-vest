@@ -9376,7 +9376,7 @@
       ],
       "custom_css": [
         "p {font-weight: 300;}",
-        ".faq .details {border: 1px solid #ffffff33 !important; box-shadow: -4px 4px 10px #fff; background: #F5F7F8; margin-bottom: 16px;}"
+        ".faq .details {border: 1px solid #ffffff33 !important; box-shadow: -4px 4px 10px 0 rgba(0, 0, 0, 0.15); background: #f5f7f8; margin-bottom: 16px;}"
       ],
       "name": "t:names.faq_section",
       "settings": {
