@@ -8011,7 +8011,7 @@
                                   "type": "text",
                                   "name": "t:names.text",
                                   "settings": {
-                                    "text": "<p>+ FREE GOLDEN JUMP ROPE</p>",
+                                    "text": "<p>FREE GOLD JUMP ROPE</p>",
                                     "width": "fit-content",
                                     "max_width": "normal",
                                     "alignment": "left",
@@ -8059,7 +8059,7 @@
                                     "height": "fit",
                                     "custom_height": 100,
                                     "inherit_color_scheme": false,
-                                    "color_scheme": "scheme-2ff1c8a2-5e3e-4664-b49d-be5e47e5dd20",
+                                    "color_scheme": "scheme-0d8bdbce-d83d-4c66-af5e-9559096c8a31",
                                     "background_media": "none",
                                     "video_position": "cover",
                                     "background_image_position": "cover",
