@@ -91,6 +91,9 @@
           "blocks": {}
         }
       },
+      "custom_css": [
+        "header-menu{display: none;}"
+      ],
       "settings": {
         "logo_position": "left",
         "menu_position": "left",
