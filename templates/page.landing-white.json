@@ -6199,7 +6199,7 @@
                                   "name": "t:names.icon",
                                   "settings": {
                                     "icon": "price_tag",
-                                    "image_upload": "shopify://shop_images/Mask_group_1.png",
+                                    "image_upload": "shopify://shop_images/running_light_mode.png",
                                     "width": 40,
                                     "link": "",
                                     "open_in_new_tab": false
@@ -6295,7 +6295,7 @@
                                   "name": "t:names.icon",
                                   "settings": {
                                     "icon": "price_tag",
-                                    "image_upload": "shopify://shop_images/Mask_group_2.png",
+                                    "image_upload": "shopify://shop_images/pull_ups_light_mode.png",
                                     "width": 40,
                                     "link": "",
                                     "open_in_new_tab": false
@@ -6448,7 +6448,7 @@
                                   "name": "t:names.icon",
                                   "settings": {
                                     "icon": "price_tag",
-                                    "image_upload": "shopify://shop_images/Mask_group_3.png",
+                                    "image_upload": "shopify://shop_images/push_ups_light_mode.png",
                                     "width": 40,
                                     "link": "",
                                     "open_in_new_tab": false
@@ -6544,7 +6544,7 @@
                                   "name": "t:names.icon",
                                   "settings": {
                                     "icon": "price_tag",
-                                    "image_upload": "shopify://shop_images/Mask_group_4.png",
+                                    "image_upload": "shopify://shop_images/squats_light_mode.png",
                                     "width": 40,
                                     "link": "",
                                     "open_in_new_tab": false
