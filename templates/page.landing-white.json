@@ -1629,7 +1629,7 @@
                       "type": "image",
                       "name": "t:names.image",
                       "settings": {
-                        "image": "shopify://shop_images/Dr_Garrett_Drumheller.png",
+                        "image": "shopify://shop_images/Dr_Garrett_Drumheller_light_mode.png",
                         "link": "",
                         "image_ratio": "adapt",
                         "width": "fill",
