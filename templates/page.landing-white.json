@@ -8722,7 +8722,7 @@
         "div:has(.button-secondary) {width: 100%;}",
         ".button-secondary {text-transform: initial; color: #ffffffd1;}",
         ".price-container em {color: rgba(0, 0, 0, 0.5) !important;}",
-        "strong {color: #fff;}",
+        ".price-container {margin: -16px 0 16px 0;}",
         ".yellow-bg {background: linear-gradient( 180deg, rgba(233, 219, 165, 0.1) 0%, rgba(184, 153, 99, 0.1) 100% ); min-width: calc(100% + 48px); margin: 0 0 -16px -24px; padding: 16px 24px;}",
         "@media screen and (max-width: 768px) {.price-container .layout-panel-flex--row:not(.mobile-column) > .text-block {flex: initial; }}"
       ],
