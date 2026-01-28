@@ -4887,11 +4887,11 @@ h1 strong,
 h2 strong,
 h3 strong,
 h4 strong{
-  color: #d7b26e;
+  color: #A36A00;
 }
 p strong{
   font-weight: 400;
-  color: #d7b26e;
+  color: #A36A00;
 }
 .price-container .text-block.h4 p{
   font-weight: 400;
@@ -5005,7 +5005,7 @@ h2 strong,
 .hero__container h3 strong,
 .hero__container h4 strong,
 em strong{
-    background: linear-gradient(180deg, #E9DBA5 0%, #B89963 100%);
+    background: linear-gradient(180deg,#e9dba5 0%,#A36A00 100%)
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
