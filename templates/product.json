@@ -3193,10 +3193,10 @@
         "anchor_id": ""
       }
     },
-    "section_Ajgbbn": {
+    "section_pawUFY": {
       "type": "section",
       "blocks": {
-        "group_NkUxWX": {
+        "group_Mn3x7C": {
           "type": "group",
           "name": "t:names.group",
           "settings": {
@@ -3247,11 +3247,11 @@
             "padding-inline-end-mobile": 0
           },
           "blocks": {
-            "text_HatYhF": {
+            "text_qg9DCy": {
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<p>WHY IT’S DIFFERENT</p>",
+                "text": "<p>WHY IT BEATS OTHER VESTS</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -3274,9 +3274,9 @@
               },
               "blocks": {}
             },
-            "group_9WgL8U": {
+            "group_UiHqNt": {
               "type": "group",
-              "name": "t:names.group",
+              "name": "DESKTOP",
               "settings": {
                 "custom_class": "bento-grid-container desktop-cards",
                 "reverse_on_mobile": false,
@@ -3325,7 +3325,7 @@
                 "padding-inline-end-mobile": 0
               },
               "blocks": {
-                "group_PijPqg": {
+                "group_ynrdP3": {
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
@@ -3376,7 +3376,7 @@
                     "padding-inline-end-mobile": 0
                   },
                   "blocks": {
-                    "image_card_QaAMhj": {
+                    "image_card_6BRtQd": {
                       "type": "image-card",
                       "name": "Image Card",
                       "settings": {
@@ -3386,8 +3386,8 @@
                         "inactive_image_mobile": "shopify://shop_images/Bounce-Free_Stability_Ghost_Mobile.jpg",
                         "active_image_desktop": "shopify://shop_images/Bounce-Free_Stability_Active.jpg",
                         "active_image_mobile": "shopify://shop_images/Bounce-Free_Stability_Active_Mobile.jpg",
-                        "heading": "<h4>Bounce-Free Stability</h4>",
-                        "subheading": "<p>Built through extensive prototyping so it moves with you — not against you.</p>",
+                        "heading": "<h4>Stays Locked In When You Run</h4>",
+                        "subheading": "<p>Engineered through real-world testing to stay tight at speed, so you stop fighting bounce and start holding pace.</p>",
                         "badge": "#1",
                         "default_active_state": true,
                         "activate_only_on_hover": false,
@@ -3429,7 +3429,7 @@
                       },
                       "blocks": {}
                     },
-                    "image_card_ADjFUC": {
+                    "image_card_mBEpFq": {
                       "type": "image-card",
                       "name": "Image Card",
                       "settings": {
@@ -3439,8 +3439,8 @@
                         "inactive_image_mobile": "shopify://shop_images/Gold_Brick_Ghost_Mobile.jpg",
                         "active_image_desktop": "shopify://shop_images/Gold_Brick_Active.jpg",
                         "active_image_mobile": "shopify://shop_images/Gold_Brick_Active_Mobile.jpg",
-                        "heading": "<h4>Comfortable “Gold Brick” Plates</h4>",
-                        "subheading": "<p>13 padded plates included. Designed to be comfortable during burpees, push-ups, and floor contact.</p>",
+                        "heading": "<h4>Comfortable Under Fatigue</h4>",
+                        "subheading": "<p>Padded “Gold Brick” plates spread load evenly so burpees, push-ups, and floor work don’t feel like concrete on your chest.</p>",
                         "badge": "#2",
                         "default_active_state": false,
                         "activate_only_on_hover": false,
@@ -3484,11 +3484,11 @@
                     }
                   },
                   "block_order": [
-                    "image_card_QaAMhj",
-                    "image_card_ADjFUC"
+                    "image_card_6BRtQd",
+                    "image_card_mBEpFq"
                   ]
                 },
-                "group_wFRzYV": {
+                "group_bXNhA4": {
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
@@ -3539,7 +3539,7 @@
                     "padding-inline-end-mobile": 0
                   },
                   "blocks": {
-                    "image_card_ML8TJw": {
+                    "image_card_bYf8XL": {
                       "type": "image-card",
                       "name": "Image Card",
                       "settings": {
@@ -3549,8 +3549,8 @@
                         "inactive_image_mobile": "shopify://shop_images/Overhead_Mobility_Ghost_Mobile.jpg",
                         "active_image_desktop": "shopify://shop_images/Overhead_Mobility_Active.jpg",
                         "active_image_mobile": "shopify://shop_images/Overhead_Mobility_Active_Mobile.jpg",
-                        "heading": "<h4>Overhead Mobility</h4>",
-                        "subheading": "<p>Designed to keep your shoulders and torso free so you can press, pull up, and train overhead.</p>",
+                        "heading": "<h4>Train Overhead Without Restriction</h4>",
+                        "subheading": "<p>Designed to keep shoulders free so pull-ups, presses, and HSPU feel natural, not blocked.</p>",
                         "badge": "#3",
                         "default_active_state": false,
                         "activate_only_on_hover": false,
@@ -3592,7 +3592,7 @@
                       },
                       "blocks": {}
                     },
-                    "image_card_RaWLE9": {
+                    "image_card_CbxFfN": {
                       "type": "image-card",
                       "name": "Image Card",
                       "settings": {
@@ -3602,8 +3602,8 @@
                         "inactive_image_mobile": "shopify://shop_images/Anti-Chafe_Ghost_Mobile.jpg",
                         "active_image_desktop": "shopify://shop_images/airflow_desktop_1.jpg",
                         "active_image_mobile": "shopify://shop_images/airflow_mobile_1.jpg",
-                        "heading": "<h4>Anti-Chafe + Quick-Dry Interior</h4>",
-                        "subheading": "<p>Breathable quick-dry mesh plus airflow channels between plates to reduce heat, friction, and sweat saturation.</p>",
+                        "heading": "<h4>No Chafe, Less Heat</h4>",
+                        "subheading": "<p>Breathable quick-dry interior plus airflow channels reduce sweat buildup, friction, and skin irritation.</p>",
                         "badge": "#4",
                         "default_active_state": false,
                         "activate_only_on_hover": false,
@@ -3647,11 +3647,11 @@
                     }
                   },
                   "block_order": [
-                    "image_card_ML8TJw",
-                    "image_card_RaWLE9"
+                    "image_card_bYf8XL",
+                    "image_card_CbxFfN"
                   ]
                 },
-                "group_nzJaww": {
+                "group_aapeiU": {
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
@@ -3702,7 +3702,7 @@
                     "padding-inline-end-mobile": 0
                   },
                   "blocks": {
-                    "image_card_6wMhNB": {
+                    "image_card_YWBnWw": {
                       "type": "image-card",
                       "name": "Image Card",
                       "settings": {
@@ -3711,10 +3711,11 @@
                         "inactive_image_desktop_short": "shopify://shop_images/Fast_Transitions_Ghost_short.jpg",
                         "inactive_image_mobile": "shopify://shop_images/Fast_Transitions_Ghost_Mobile.jpg",
                         "active_image_desktop": "shopify://shop_images/Fast_Transitions_Active.jpg",
-                        "active_video_desktop": "shopify://files/videos/HALF TO FULL.webm",
+                        "active_video_desktop": "shopify://files/videos/HALF TO FULL TRANSITION.webm",
                         "active_image_mobile": "shopify://shop_images/Fast_Transitions_Active_Mobile.jpg",
-                        "heading": "<h4>Fast Transitions</h4>",
-                        "subheading": "<p>Tactical quick-release buckles make it simple to go half mode → full mode without a frustrating re-setup.</p>",
+                        "active_video_mobile": "shopify://files/videos/HALF TO FULL TRANSITION.webm",
+                        "heading": "<h4>Fast On. Fast Off. Fast Changes.</h4>",
+                        "subheading": "<p>Quick-release buckles make transitions effortless, so the vest doesn’t slow your session down.</p>",
                         "badge": "#5",
                         "default_active_state": false,
                         "activate_only_on_hover": false,
@@ -3756,7 +3757,7 @@
                       },
                       "blocks": {}
                     },
-                    "image_card_pL8Gdm": {
+                    "image_card_g6g9nW": {
                       "type": "image-card",
                       "name": "Image Card",
                       "settings": {
@@ -3766,8 +3767,8 @@
                         "inactive_image_mobile": "shopify://shop_images/Carry_Essentials_Ghost_Mobile.jpg",
                         "active_image_desktop": "shopify://shop_images/Carry_Essentials_Active.jpg",
                         "active_image_mobile": "shopify://shop_images/Carry_Essentials_Active_Mobile.jpg",
-                        "heading": "<h4>Carry Essentials Built In</h4>",
-                        "subheading": "<p>Front phone pocket + rear gear pocket so you don’t need additional accessories.</p>",
+                        "heading": "<h4>Go Hands-free</h4>",
+                        "subheading": "<p>Built-in phone and gear pockets mean fewer distractions and fewer accessories.</p>",
                         "badge": "#6",
                         "default_active_state": false,
                         "activate_only_on_hover": false,
@@ -3811,20 +3812,20 @@
                     }
                   },
                   "block_order": [
-                    "image_card_6wMhNB",
-                    "image_card_pL8Gdm"
+                    "image_card_YWBnWw",
+                    "image_card_g6g9nW"
                   ]
                 }
               },
               "block_order": [
-                "group_PijPqg",
-                "group_wFRzYV",
-                "group_nzJaww"
+                "group_ynrdP3",
+                "group_bXNhA4",
+                "group_aapeiU"
               ]
             },
-            "group_PkiR3n": {
+            "group_jPFy9z": {
               "type": "group",
-              "name": "t:names.group",
+              "name": "MOBILE",
               "settings": {
                 "custom_class": "bento-grid-container mobile-cards",
                 "reverse_on_mobile": false,
@@ -3873,7 +3874,7 @@
                 "padding-inline-end-mobile": 0
               },
               "blocks": {
-                "image_card_8tMM6P": {
+                "image_card_3aEfdF": {
                   "type": "image-card",
                   "name": "Image Card",
                   "settings": {
@@ -3883,8 +3884,8 @@
                     "inactive_image_mobile": "shopify://shop_images/Bounce-Free_Stability_Ghost_Mobile.jpg",
                     "active_image_desktop": "shopify://shop_images/Bounce-Free_Stability_Active.jpg",
                     "active_image_mobile": "shopify://shop_images/Bounce-Free_Stability_Active_Mobile.jpg",
-                    "heading": "<h4>Bounce-Free Stability</h4>",
-                    "subheading": "<p>Built through extensive prototyping so it moves with you — not against you.</p>",
+                    "heading": "<h4>Stays Locked In When You Run</h4>",
+                    "subheading": "<p>Engineered through real-world testing to stay tight at speed, so you stop fighting bounce and start holding pace.</p>",
                     "badge": "#1",
                     "default_active_state": true,
                     "activate_only_on_hover": false,
@@ -3926,7 +3927,7 @@
                   },
                   "blocks": {}
                 },
-                "image_card_6BtLG8": {
+                "image_card_m6YCLi": {
                   "type": "image-card",
                   "name": "Image Card",
                   "settings": {
@@ -3936,8 +3937,8 @@
                     "inactive_image_mobile": "shopify://shop_images/Gold_Brick_Ghost_Mobile.jpg",
                     "active_image_desktop": "shopify://shop_images/Gold_Brick_Active.jpg",
                     "active_image_mobile": "shopify://shop_images/Gold_Brick_Active_Mobile.jpg",
-                    "heading": "<h4>Comfortable “Gold Brick” Plates</h4>",
-                    "subheading": "<p>13 padded plates included. Designed to be comfortable during burpees, push-ups, and floor contact.</p>",
+                    "heading": "<h4>Comfortable Under Fatigue</h4>",
+                    "subheading": "<p>Padded “Gold Brick” plates spread load evenly so burpees, push-ups, and floor work don’t feel like concrete on your chest.</p>",
                     "badge": "#2",
                     "default_active_state": false,
                     "activate_only_on_hover": false,
@@ -3979,7 +3980,7 @@
                   },
                   "blocks": {}
                 },
-                "image_card_g6yqVB": {
+                "image_card_a7VCtf": {
                   "type": "image-card",
                   "name": "Image Card",
                   "settings": {
@@ -3989,8 +3990,8 @@
                     "inactive_image_mobile": "shopify://shop_images/Overhead_Mobility_Ghost_Mobile.jpg",
                     "active_image_desktop": "shopify://shop_images/Overhead_Mobility_Active.jpg",
                     "active_image_mobile": "shopify://shop_images/Overhead_Mobility_Active_Mobile.jpg",
-                    "heading": "<h4>Overhead Mobility</h4>",
-                    "subheading": "<p>Designed to keep your shoulders and torso free so you can press, pull up, and train overhead.</p>",
+                    "heading": "<h4>Train Overhead Without Restriction</h4>",
+                    "subheading": "<p>Designed to keep shoulders free so pull-ups, presses, and HSPU feel natural, not blocked.</p>",
                     "badge": "#3",
                     "default_active_state": false,
                     "activate_only_on_hover": false,
@@ -4032,7 +4033,7 @@
                   },
                   "blocks": {}
                 },
-                "image_card_UNjyXV": {
+                "image_card_wGUV3T": {
                   "type": "image-card",
                   "name": "Image Card",
                   "settings": {
@@ -4042,8 +4043,8 @@
                     "inactive_image_mobile": "shopify://shop_images/Anti-Chafe_Ghost_Mobile.jpg",
                     "active_image_desktop": "shopify://shop_images/airflow_desktop_1.jpg",
                     "active_image_mobile": "shopify://shop_images/airflow_mobile_1.jpg",
-                    "heading": "<h4>Anti-Chafe + Quick-Dry Interior</h4>",
-                    "subheading": "<p>Breathable quick-dry mesh plus airflow channels between plates to reduce heat, friction, and sweat saturation.</p>",
+                    "heading": "<h4>No Chafe, Less Heat</h4>",
+                    "subheading": "<p>Breathable quick-dry interior plus airflow channels reduce sweat buildup, friction, and skin irritation.</p>",
                     "badge": "#4",
                     "default_active_state": false,
                     "activate_only_on_hover": false,
@@ -4085,7 +4086,7 @@
                   },
                   "blocks": {}
                 },
-                "image_card_K7fJWB": {
+                "image_card_BCNUVh": {
                   "type": "image-card",
                   "name": "Image Card",
                   "settings": {
@@ -4093,11 +4094,11 @@
                     "inactive_image_desktop_large": "shopify://shop_images/Fast_Transitions_Ghost_large_f29d65f9-fee8-4275-85ba-92c73cb71f6c.jpg",
                     "inactive_image_desktop_short": "shopify://shop_images/Fast_Transitions_Ghost_short.jpg",
                     "inactive_image_mobile": "shopify://shop_images/Fast_Transitions_Ghost_Mobile.jpg",
-                    "active_video_desktop": "shopify://files/videos/HALF TO FULL.webm",
+                    "active_image_desktop": "shopify://shop_images/Fast_Transitions_Active.jpg",
                     "active_image_mobile": "shopify://shop_images/Fast_Transitions_Active_Mobile.jpg",
-                    "active_video_mobile": "shopify://files/videos/SPLITTING_PORTRAIT.webm",
-                    "heading": "<h4>Fast Transitions</h4>",
-                    "subheading": "<p>Tactical quick-release buckles make it simple to go half mode → full mode without a frustrating re-setup.</p>",
+                    "active_video_mobile": "shopify://files/videos/HALF TO FULL TRANSITION.webm",
+                    "heading": "<h4>Fast On. Fast Off. Fast Changes.</h4>",
+                    "subheading": "<p>Quick-release buckles make transitions effortless, so the vest doesn’t slow your session down.</p>",
                     "badge": "#5",
                     "default_active_state": false,
                     "activate_only_on_hover": false,
@@ -4139,7 +4140,7 @@
                   },
                   "blocks": {}
                 },
-                "image_card_zGg8Mx": {
+                "image_card_Mq7mRj": {
                   "type": "image-card",
                   "name": "Image Card",
                   "settings": {
@@ -4149,8 +4150,8 @@
                     "inactive_image_mobile": "shopify://shop_images/Carry_Essentials_Ghost_Mobile.jpg",
                     "active_image_desktop": "shopify://shop_images/Carry_Essentials_Active.jpg",
                     "active_image_mobile": "shopify://shop_images/Carry_Essentials_Active_Mobile.jpg",
-                    "heading": "<h4>Carry Essentials Built In</h4>",
-                    "subheading": "<p>Front phone pocket + rear gear pocket so you don’t need additional accessories.</p>",
+                    "heading": "<h4>Go Hands-free</h4>",
+                    "subheading": "<p>Built-in phone and gear pockets mean fewer distractions and fewer accessories.</p>",
                     "badge": "#6",
                     "default_active_state": false,
                     "activate_only_on_hover": false,
@@ -4185,33 +4186,33 @@
                     "text_padding_inline_start": 32,
                     "text_padding_inline_end": 32,
                     "enable_mobile_text_padding": true,
-                    "text_padding_block_start_mobile": 0,
-                    "text_padding_block_end_mobile": 0,
-                    "text_padding_inline_start_mobile": 0,
-                    "text_padding_inline_end_mobile": 0
+                    "text_padding_block_start_mobile": 20,
+                    "text_padding_block_end_mobile": 20,
+                    "text_padding_inline_start_mobile": 20,
+                    "text_padding_inline_end_mobile": 20
                   },
                   "blocks": {}
                 }
               },
               "block_order": [
-                "image_card_8tMM6P",
-                "image_card_6BtLG8",
-                "image_card_g6yqVB",
-                "image_card_UNjyXV",
-                "image_card_K7fJWB",
-                "image_card_zGg8Mx"
+                "image_card_3aEfdF",
+                "image_card_m6YCLi",
+                "image_card_a7VCtf",
+                "image_card_wGUV3T",
+                "image_card_BCNUVh",
+                "image_card_Mq7mRj"
               ]
             }
           },
           "block_order": [
-            "text_HatYhF",
-            "group_9WgL8U",
-            "group_PkiR3n"
+            "text_qg9DCy",
+            "group_UiHqNt",
+            "group_jPFy9z"
           ]
         }
       },
       "block_order": [
-        "group_NkUxWX"
+        "group_Mn3x7C"
       ],
       "name": "Why it's Different",
       "settings": {
@@ -6337,7 +6338,7 @@
   "order": [
     "main",
     "section_MFnacD",
-    "section_Ajgbbn",
+    "section_pawUFY",
     "comparison_table_kfKNt3",
     "section_eDik78",
     "marquee_4AQU36",
