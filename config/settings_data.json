@@ -645,12 +645,12 @@
       "scheme-20c8b9aa-44e8-4db0-8dc1-3ab9688aed59": {
         "settings": {
           "background": "#ffffff80",
-          "foreground_heading": "#ffffff",
-          "foreground": "#ffffffcc",
+          "foreground_heading": "#000000",
+          "foreground": "#000000",
           "primary": "#ffffff",
-          "primary_hover": "#d7b26f",
+          "primary_hover": "#a36a00",
           "border": "#ffffff",
-          "shadow": "#ffffff",
+          "shadow": "#a36a00",
           "primary_button_background": "#ffffff",
           "primary_button_text": "#ffffff",
           "primary_button_border": "#ffffff",
