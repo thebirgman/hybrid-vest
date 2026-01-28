@@ -8790,7 +8790,7 @@
           "type": "group",
           "name": "t:names.group",
           "settings": {
-            "custom_class": "",
+            "custom_class": "faq",
             "reverse_on_mobile": false,
             "slider_on_mobile": false,
             "content_direction": "column",
@@ -9375,7 +9375,8 @@
         "group_RBdXDY"
       ],
       "custom_css": [
-        "p {font-weight: 300;}"
+        "p {font-weight: 300;}",
+        ".faq .details {border: 1px solid #ffffff33 !important; box-shadow: -4px 4px 10px #fff; background: #fff; margin-bottom: 16px;}"
       ],
       "name": "t:names.faq_section",
       "settings": {
@@ -9390,7 +9391,7 @@
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-20c8b9aa-44e8-4db0-8dc1-3ab9688aed59",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
