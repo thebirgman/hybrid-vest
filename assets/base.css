@@ -5005,7 +5005,7 @@ h2 strong,
 .hero__container h3 strong,
 .hero__container h4 strong,
 em strong{
-    background: linear-gradient(180deg,#e9dba5 0%,#A36A00 100%)
+    background: linear-gradient(180deg,#e9dba5 0%,#A36A00 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
