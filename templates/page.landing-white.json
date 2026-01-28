@@ -485,7 +485,7 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "price_tag",
-                        "image_upload": "shopify://shop_images/Mask_group_1.png",
+                        "image_upload": "shopify://shop_images/running_light_mode.png",
                         "width": 40,
                         "link": "",
                         "open_in_new_tab": false
@@ -581,7 +581,7 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "price_tag",
-                        "image_upload": "shopify://shop_images/Mask_group_11.png",
+                        "image_upload": "shopify://shop_images/adjust_weight_light_mode.png",
                         "width": 40,
                         "link": "",
                         "open_in_new_tab": false
@@ -677,7 +677,7 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "price_tag",
-                        "image_upload": "shopify://shop_images/Mask_group_12.png",
+                        "image_upload": "shopify://shop_images/built_for_daily_use_light_mode.png",
                         "width": 40,
                         "link": "",
                         "open_in_new_tab": false
@@ -831,7 +831,7 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "leaf",
-                        "image_upload": "shopify://shop_images/Mask_group_4.png",
+                        "image_upload": "shopify://shop_images/squats_light_mode.png",
                         "width": 40,
                         "link": "",
                         "open_in_new_tab": false
@@ -927,7 +927,7 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "price_tag",
-                        "image_upload": "shopify://shop_images/Mask_group_13.png",
+                        "image_upload": "shopify://shop_images/no_bruising_light_mode.png",
                         "width": 40,
                         "link": "",
                         "open_in_new_tab": false
@@ -1023,7 +1023,7 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "price_tag",
-                        "image_upload": "shopify://shop_images/Mask_group_14.png",
+                        "image_upload": "shopify://shop_images/comfy_light_mode.png",
                         "width": 40,
                         "link": "",
                         "open_in_new_tab": false
