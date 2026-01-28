@@ -253,7 +253,7 @@
                         "style_class": "button",
                         "visibility": "all",
                         "icon": "none",
-                        "image_upload": "shopify://shop_images/Arrow_1_2.svg",
+                        "image_upload": "shopify://shop_images/white_arrow.svg",
                         "icon_width": 16,
                         "icon_gap": 8,
                         "type_preset": "rte",
@@ -292,7 +292,7 @@
         "group_krqcPD"
       ],
       "custom_css": [
-        "strong {color: #A36A00;}"
+        "strong {color: #a36a00;}"
       ],
       "name": "Hero",
       "settings": {
