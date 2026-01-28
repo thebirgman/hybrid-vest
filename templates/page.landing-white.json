@@ -7370,15 +7370,15 @@
                         "link": "",
                         "open_in_new_tab": false,
                         "placeholder": "",
-                        "padding-block-start": 16,
-                        "padding-block-end": 16,
-                        "padding-inline-start": 24,
-                        "padding-inline-end": 24,
-                        "enable_mobile_padding": false,
-                        "padding-block-start-mobile": 0,
-                        "padding-block-end-mobile": 0,
-                        "padding-inline-start-mobile": 0,
-                        "padding-inline-end-mobile": 0
+                        "padding-block-start": 12,
+                        "padding-block-end": 12,
+                        "padding-inline-start": 16,
+                        "padding-inline-end": 16,
+                        "enable_mobile_padding": true,
+                        "padding-block-start-mobile": 8,
+                        "padding-block-end-mobile": 8,
+                        "padding-inline-start-mobile": 12,
+                        "padding-inline-end-mobile": 12
                       },
                       "blocks": {
                         "text_deBR74": {
@@ -8680,7 +8680,7 @@
                         "style_class": "button-secondary",
                         "visibility": "all",
                         "icon": "none",
-                        "image_upload": "shopify://shop_images/Img_Placeholder_1_1.png",
+                        "image_upload": "shopify://shop_images/specs_light_mode.png",
                         "icon_width": 16,
                         "icon_gap": 8,
                         "type_preset": "rte",
