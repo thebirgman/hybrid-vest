@@ -63,10 +63,37 @@
             "padding-inline-end-mobile": 20
           },
           "blocks": {
+            "text_K9nzTq": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<h2><strong>GRAND LAUNCH</strong></h2>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "mobile_alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-accent--family)",
+                "font_size": "0.875rem",
+                "line_height": "tight",
+                "letter_spacing": "normal",
+                "case": "uppercase",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
             "text_L6FU9N": {
               "type": "text",
               "settings": {
-                "text": "<h1>The Hybrid Vest</h1>",
+                "text": "<h1>Hybrid Weight Vest</h1>",
                 "width": "100%",
                 "max_width": "narrow",
                 "alignment": "left",
@@ -83,33 +110,6 @@
                 "background_color": "#00000026",
                 "corner_radius": 0,
                 "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_K9nzTq": {
-              "type": "text",
-              "name": "t:names.text",
-              "settings": {
-                "text": "<h2><strong>The Gold Standard in Weight Vests</strong></h2>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "mobile_alignment": "left",
-                "type_preset": "custom",
-                "font": "var(--font-heading--family)",
-                "font_size": "2rem",
-                "line_height": "tight",
-                "letter_spacing": "normal",
-                "case": "uppercase",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
                 "padding-block-end": 12,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
@@ -119,7 +119,7 @@
             "text_AmmUJM": {
               "type": "text",
               "settings": {
-                "text": "<p>One vest. Two training modes.<br/>Built for running, lifting, and everything in between.</p>",
+                "text": "<p>Two-in-one vest. 5-20 lbs.<br/>Built for running, lifting, and everything in between.</p>",
                 "width": "fit-content",
                 "max_width": "narrow",
                 "alignment": "left",
@@ -144,8 +144,8 @@
             }
           },
           "block_order": [
-            "text_L6FU9N",
             "text_K9nzTq",
+            "text_L6FU9N",
             "text_AmmUJM"
           ]
         },
