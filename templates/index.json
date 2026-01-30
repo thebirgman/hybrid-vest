@@ -3336,10 +3336,10 @@
         "anchor_id": ""
       }
     },
-    "section_nG8yDc": {
+    "section_4eVjHd": {
       "type": "section",
       "blocks": {
-        "group_JBLt33": {
+        "group_BDWBjq": {
           "type": "group",
           "name": "t:names.group",
           "settings": {
@@ -3390,7 +3390,7 @@
             "padding-inline-end-mobile": 0
           },
           "blocks": {
-            "text_gRr4cn": {
+            "text_9At667": {
               "type": "text",
               "name": "t:names.heading",
               "settings": {
@@ -3417,7 +3417,7 @@
               },
               "blocks": {}
             },
-            "group_MbC7tt": {
+            "group_Fqw37w": {
               "type": "group",
               "name": "DESKTOP",
               "settings": {
@@ -3468,7 +3468,7 @@
                 "padding-inline-end-mobile": 0
               },
               "blocks": {
-                "group_nDXHp8": {
+                "group_HEP77A": {
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
@@ -3493,7 +3493,7 @@
                     "height": "fit",
                     "custom_height": 100,
                     "inherit_color_scheme": false,
-                    "color_scheme": "scheme-1",
+                    "color_scheme": "scheme-1accbcb6-d943-4b31-8ebe-1496edee50b9",
                     "background_media": "none",
                     "video_position": "cover",
                     "background_image_position": "cover",
@@ -3519,7 +3519,7 @@
                     "padding-inline-end-mobile": 0
                   },
                   "blocks": {
-                    "image_card_7BzWrp": {
+                    "image_card_BN7KJa": {
                       "type": "image-card",
                       "name": "Image Card",
                       "settings": {
@@ -3572,7 +3572,7 @@
                       },
                       "blocks": {}
                     },
-                    "image_card_z7zi4M": {
+                    "image_card_kp7c48": {
                       "type": "image-card",
                       "name": "Image Card",
                       "settings": {
@@ -3627,11 +3627,11 @@
                     }
                   },
                   "block_order": [
-                    "image_card_7BzWrp",
-                    "image_card_z7zi4M"
+                    "image_card_BN7KJa",
+                    "image_card_kp7c48"
                   ]
                 },
-                "group_Jb8a74": {
+                "group_dkGUY8": {
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
@@ -3656,7 +3656,7 @@
                     "height": "fit",
                     "custom_height": 100,
                     "inherit_color_scheme": false,
-                    "color_scheme": "scheme-1",
+                    "color_scheme": "scheme-1accbcb6-d943-4b31-8ebe-1496edee50b9",
                     "background_media": "none",
                     "video_position": "cover",
                     "background_image_position": "cover",
@@ -3682,7 +3682,7 @@
                     "padding-inline-end-mobile": 0
                   },
                   "blocks": {
-                    "image_card_bWwqKH": {
+                    "image_card_4KqPDr": {
                       "type": "image-card",
                       "name": "Image Card",
                       "settings": {
@@ -3735,7 +3735,7 @@
                       },
                       "blocks": {}
                     },
-                    "image_card_TrkfjD": {
+                    "image_card_fgn8ch": {
                       "type": "image-card",
                       "name": "Image Card",
                       "settings": {
@@ -3790,11 +3790,11 @@
                     }
                   },
                   "block_order": [
-                    "image_card_bWwqKH",
-                    "image_card_TrkfjD"
+                    "image_card_4KqPDr",
+                    "image_card_fgn8ch"
                   ]
                 },
-                "group_b6BAi7": {
+                "group_AnVtwC": {
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
@@ -3819,7 +3819,7 @@
                     "height": "fit",
                     "custom_height": 100,
                     "inherit_color_scheme": false,
-                    "color_scheme": "scheme-1",
+                    "color_scheme": "scheme-1accbcb6-d943-4b31-8ebe-1496edee50b9",
                     "background_media": "none",
                     "video_position": "cover",
                     "background_image_position": "cover",
@@ -3845,7 +3845,7 @@
                     "padding-inline-end-mobile": 0
                   },
                   "blocks": {
-                    "image_card_cPihrp": {
+                    "image_card_TUrjfe": {
                       "type": "image-card",
                       "name": "Image Card",
                       "settings": {
@@ -3900,7 +3900,7 @@
                       },
                       "blocks": {}
                     },
-                    "image_card_pkDT4z": {
+                    "image_card_YUEd7K": {
                       "type": "image-card",
                       "name": "Image Card",
                       "settings": {
@@ -3955,18 +3955,18 @@
                     }
                   },
                   "block_order": [
-                    "image_card_cPihrp",
-                    "image_card_pkDT4z"
+                    "image_card_TUrjfe",
+                    "image_card_YUEd7K"
                   ]
                 }
               },
               "block_order": [
-                "group_nDXHp8",
-                "group_Jb8a74",
-                "group_b6BAi7"
+                "group_HEP77A",
+                "group_dkGUY8",
+                "group_AnVtwC"
               ]
             },
-            "group_RdkqJj": {
+            "group_dxdV7e": {
               "type": "group",
               "name": "MOBILE",
               "settings": {
@@ -4017,7 +4017,7 @@
                 "padding-inline-end-mobile": 0
               },
               "blocks": {
-                "image_card_ffwmnY": {
+                "image_card_WACGqF": {
                   "type": "image-card",
                   "name": "Image Card",
                   "settings": {
@@ -4070,7 +4070,7 @@
                   },
                   "blocks": {}
                 },
-                "image_card_qLBfzb": {
+                "image_card_4xFPP4": {
                   "type": "image-card",
                   "name": "Image Card",
                   "settings": {
@@ -4123,7 +4123,7 @@
                   },
                   "blocks": {}
                 },
-                "image_card_UFLBXk": {
+                "image_card_PdcGtt": {
                   "type": "image-card",
                   "name": "Image Card",
                   "settings": {
@@ -4176,7 +4176,7 @@
                   },
                   "blocks": {}
                 },
-                "image_card_DMCKz9": {
+                "image_card_8YnBBK": {
                   "type": "image-card",
                   "name": "Image Card",
                   "settings": {
@@ -4229,7 +4229,7 @@
                   },
                   "blocks": {}
                 },
-                "image_card_t3Lq6V": {
+                "image_card_QcqGjm": {
                   "type": "image-card",
                   "name": "Image Card",
                   "settings": {
@@ -4283,7 +4283,7 @@
                   },
                   "blocks": {}
                 },
-                "image_card_mF6YeF": {
+                "image_card_XFKyXj": {
                   "type": "image-card",
                   "name": "Image Card",
                   "settings": {
@@ -4338,26 +4338,25 @@
                 }
               },
               "block_order": [
-                "image_card_ffwmnY",
-                "image_card_qLBfzb",
-                "image_card_UFLBXk",
-                "image_card_DMCKz9",
-                "image_card_t3Lq6V",
-                "image_card_mF6YeF"
+                "image_card_WACGqF",
+                "image_card_4xFPP4",
+                "image_card_PdcGtt",
+                "image_card_8YnBBK",
+                "image_card_QcqGjm",
+                "image_card_XFKyXj"
               ]
             }
           },
           "block_order": [
-            "text_gRr4cn",
-            "group_MbC7tt",
-            "group_RdkqJj"
+            "text_9At667",
+            "group_Fqw37w",
+            "group_dxdV7e"
           ]
         }
       },
       "block_order": [
-        "group_JBLt33"
+        "group_BDWBjq"
       ],
-      "disabled": true,
       "name": "Why it's Different",
       "settings": {
         "content_direction": "column",
@@ -4493,7 +4492,7 @@
                 "custom_max_width_mobile": 1280,
                 "height": "fit",
                 "custom_height": 100,
-                "inherit_color_scheme": false,
+                "inherit_color_scheme": true,
                 "color_scheme": "scheme-1",
                 "background_media": "none",
                 "video_position": "cover",
@@ -4614,8 +4613,8 @@
                         "custom_max_width_mobile": 700,
                         "height": "fill",
                         "custom_height": 100,
-                        "inherit_color_scheme": false,
-                        "color_scheme": "scheme-5",
+                        "inherit_color_scheme": true,
+                        "color_scheme": "scheme-3",
                         "background_media": "none",
                         "video_position": "cover",
                         "background_image_position": "cover",
@@ -5115,7 +5114,7 @@
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -6164,7 +6163,7 @@
         "section_width": "full-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -6499,7 +6498,7 @@
     "section_C8Tjme",
     "hero_DTf69E",
     "section_KxGMV4",
-    "section_nG8yDc",
+    "section_4eVjHd",
     "section_kUfByM",
     "section_zcR3yc",
     "section_HqAtqt",
