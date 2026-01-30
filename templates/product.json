@@ -3193,10 +3193,10 @@
         "anchor_id": ""
       }
     },
-    "section_pawUFY": {
+    "section_KxjpjE": {
       "type": "section",
       "blocks": {
-        "group_Mn3x7C": {
+        "group_pnGTMi": {
           "type": "group",
           "name": "t:names.group",
           "settings": {
@@ -3247,7 +3247,7 @@
             "padding-inline-end-mobile": 0
           },
           "blocks": {
-            "text_qg9DCy": {
+            "text_7jVXAq": {
               "type": "text",
               "name": "t:names.heading",
               "settings": {
@@ -3274,7 +3274,7 @@
               },
               "blocks": {}
             },
-            "group_UiHqNt": {
+            "group_eMNwwn": {
               "type": "group",
               "name": "DESKTOP",
               "settings": {
@@ -3325,7 +3325,7 @@
                 "padding-inline-end-mobile": 0
               },
               "blocks": {
-                "group_ynrdP3": {
+                "group_8wXHqU": {
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
@@ -3350,7 +3350,7 @@
                     "height": "fit",
                     "custom_height": 100,
                     "inherit_color_scheme": false,
-                    "color_scheme": "scheme-1",
+                    "color_scheme": "scheme-1accbcb6-d943-4b31-8ebe-1496edee50b9",
                     "background_media": "none",
                     "video_position": "cover",
                     "background_image_position": "cover",
@@ -3376,7 +3376,7 @@
                     "padding-inline-end-mobile": 0
                   },
                   "blocks": {
-                    "image_card_6BRtQd": {
+                    "image_card_Tdqdpd": {
                       "type": "image-card",
                       "name": "Image Card",
                       "settings": {
@@ -3429,7 +3429,7 @@
                       },
                       "blocks": {}
                     },
-                    "image_card_mBEpFq": {
+                    "image_card_TzkGxm": {
                       "type": "image-card",
                       "name": "Image Card",
                       "settings": {
@@ -3484,11 +3484,11 @@
                     }
                   },
                   "block_order": [
-                    "image_card_6BRtQd",
-                    "image_card_mBEpFq"
+                    "image_card_Tdqdpd",
+                    "image_card_TzkGxm"
                   ]
                 },
-                "group_bXNhA4": {
+                "group_Qgn4qH": {
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
@@ -3513,7 +3513,7 @@
                     "height": "fit",
                     "custom_height": 100,
                     "inherit_color_scheme": false,
-                    "color_scheme": "scheme-1",
+                    "color_scheme": "scheme-1accbcb6-d943-4b31-8ebe-1496edee50b9",
                     "background_media": "none",
                     "video_position": "cover",
                     "background_image_position": "cover",
@@ -3539,7 +3539,7 @@
                     "padding-inline-end-mobile": 0
                   },
                   "blocks": {
-                    "image_card_bYf8XL": {
+                    "image_card_wkXBFY": {
                       "type": "image-card",
                       "name": "Image Card",
                       "settings": {
@@ -3592,7 +3592,7 @@
                       },
                       "blocks": {}
                     },
-                    "image_card_CbxFfN": {
+                    "image_card_a8bU7r": {
                       "type": "image-card",
                       "name": "Image Card",
                       "settings": {
@@ -3647,11 +3647,11 @@
                     }
                   },
                   "block_order": [
-                    "image_card_bYf8XL",
-                    "image_card_CbxFfN"
+                    "image_card_wkXBFY",
+                    "image_card_a8bU7r"
                   ]
                 },
-                "group_aapeiU": {
+                "group_C9cbAD": {
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
@@ -3676,7 +3676,7 @@
                     "height": "fit",
                     "custom_height": 100,
                     "inherit_color_scheme": false,
-                    "color_scheme": "scheme-1",
+                    "color_scheme": "scheme-1accbcb6-d943-4b31-8ebe-1496edee50b9",
                     "background_media": "none",
                     "video_position": "cover",
                     "background_image_position": "cover",
@@ -3702,7 +3702,7 @@
                     "padding-inline-end-mobile": 0
                   },
                   "blocks": {
-                    "image_card_YWBnWw": {
+                    "image_card_CAVRnC": {
                       "type": "image-card",
                       "name": "Image Card",
                       "settings": {
@@ -3757,7 +3757,7 @@
                       },
                       "blocks": {}
                     },
-                    "image_card_g6g9nW": {
+                    "image_card_JdHBtd": {
                       "type": "image-card",
                       "name": "Image Card",
                       "settings": {
@@ -3812,18 +3812,18 @@
                     }
                   },
                   "block_order": [
-                    "image_card_YWBnWw",
-                    "image_card_g6g9nW"
+                    "image_card_CAVRnC",
+                    "image_card_JdHBtd"
                   ]
                 }
               },
               "block_order": [
-                "group_ynrdP3",
-                "group_bXNhA4",
-                "group_aapeiU"
+                "group_8wXHqU",
+                "group_Qgn4qH",
+                "group_C9cbAD"
               ]
             },
-            "group_jPFy9z": {
+            "group_bpx3je": {
               "type": "group",
               "name": "MOBILE",
               "settings": {
@@ -3874,7 +3874,7 @@
                 "padding-inline-end-mobile": 0
               },
               "blocks": {
-                "image_card_3aEfdF": {
+                "image_card_Qc7H4W": {
                   "type": "image-card",
                   "name": "Image Card",
                   "settings": {
@@ -3927,7 +3927,7 @@
                   },
                   "blocks": {}
                 },
-                "image_card_m6YCLi": {
+                "image_card_LYxTTB": {
                   "type": "image-card",
                   "name": "Image Card",
                   "settings": {
@@ -3980,7 +3980,7 @@
                   },
                   "blocks": {}
                 },
-                "image_card_a7VCtf": {
+                "image_card_XyHqyE": {
                   "type": "image-card",
                   "name": "Image Card",
                   "settings": {
@@ -4033,7 +4033,7 @@
                   },
                   "blocks": {}
                 },
-                "image_card_wGUV3T": {
+                "image_card_MQapft": {
                   "type": "image-card",
                   "name": "Image Card",
                   "settings": {
@@ -4086,7 +4086,7 @@
                   },
                   "blocks": {}
                 },
-                "image_card_BCNUVh": {
+                "image_card_WtUVqN": {
                   "type": "image-card",
                   "name": "Image Card",
                   "settings": {
@@ -4140,7 +4140,7 @@
                   },
                   "blocks": {}
                 },
-                "image_card_Mq7mRj": {
+                "image_card_knTUUT": {
                   "type": "image-card",
                   "name": "Image Card",
                   "settings": {
@@ -4195,24 +4195,24 @@
                 }
               },
               "block_order": [
-                "image_card_3aEfdF",
-                "image_card_m6YCLi",
-                "image_card_a7VCtf",
-                "image_card_wGUV3T",
-                "image_card_BCNUVh",
-                "image_card_Mq7mRj"
+                "image_card_Qc7H4W",
+                "image_card_LYxTTB",
+                "image_card_XyHqyE",
+                "image_card_MQapft",
+                "image_card_WtUVqN",
+                "image_card_knTUUT"
               ]
             }
           },
           "block_order": [
-            "text_qg9DCy",
-            "group_UiHqNt",
-            "group_jPFy9z"
+            "text_7jVXAq",
+            "group_eMNwwn",
+            "group_bpx3je"
           ]
         }
       },
       "block_order": [
-        "group_Mn3x7C"
+        "group_pnGTMi"
       ],
       "name": "Why it's Different",
       "settings": {
@@ -4227,7 +4227,7 @@
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "",
+        "color_scheme": "scheme-3",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -6338,7 +6338,7 @@
   "order": [
     "main",
     "section_MFnacD",
-    "section_pawUFY",
+    "section_KxjpjE",
     "comparison_table_kfKNt3",
     "section_eDik78",
     "marquee_4AQU36",

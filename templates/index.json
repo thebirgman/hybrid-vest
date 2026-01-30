@@ -4357,6 +4357,7 @@
       "block_order": [
         "group_JBLt33"
       ],
+      "disabled": true,
       "name": "Why it's Different",
       "settings": {
         "content_direction": "column",
@@ -4370,7 +4371,7 @@
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "",
+        "color_scheme": "scheme-3",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
