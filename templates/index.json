@@ -2508,7 +2508,7 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "price_tag",
-                        "image_upload": "shopify://shop_images/Mask_group.png",
+                        "image_upload": "shopify://shop_images/bone_density.png",
                         "width": 40,
                         "link": "",
                         "open_in_new_tab": false
@@ -2632,7 +2632,7 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "price_tag",
-                        "image_upload": "shopify://shop_images/Mask_group_1_a282a8d8-7347-4a5b-b646-c73028d15c77.png",
+                        "image_upload": "shopify://shop_images/cardiovascular.png",
                         "width": 40,
                         "link": "",
                         "open_in_new_tab": false
@@ -2756,7 +2756,7 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "price_tag",
-                        "image_upload": "shopify://shop_images/Mask_group_2_c07af47e-102a-45bd-990b-f2fa35aade82.png",
+                        "image_upload": "shopify://shop_images/strength_power.png",
                         "width": 40,
                         "link": "",
                         "open_in_new_tab": false
@@ -2938,7 +2938,7 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "price_tag",
-                        "image_upload": "shopify://shop_images/Mask_group_3_19af2129-4029-4e29-9b19-a759a46b88f5.png",
+                        "image_upload": "shopify://shop_images/vo2.png",
                         "width": 40,
                         "link": "",
                         "open_in_new_tab": false
@@ -3062,7 +3062,7 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "price_tag",
-                        "image_upload": "shopify://shop_images/Mask_group_4_7def8054-8617-4092-8ef9-cc5b87e9c649.png",
+                        "image_upload": "shopify://shop_images/calorie_2.png",
                         "width": 40,
                         "link": "",
                         "open_in_new_tab": false
@@ -3186,7 +3186,7 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "price_tag",
-                        "image_upload": "shopify://shop_images/Mask_group_5_a7582dbc-f185-4338-8274-635ea8a35751.png",
+                        "image_upload": "shopify://shop_images/posture.png",
                         "width": 40,
                         "link": "",
                         "open_in_new_tab": false
