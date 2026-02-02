@@ -61,22 +61,23 @@
     "section_b6wVJe": {
       "type": "section",
       "blocks": {
-        "group_mEptqY": {
+        "group_jHJnHC": {
           "type": "group",
+          "name": "t:names.group",
           "settings": {
             "custom_class": "normal-image-with-text",
-            "reverse_on_mobile": false,
+            "reverse_on_mobile": true,
             "slider_on_mobile": false,
-            "content_direction": "column",
+            "content_direction": "row",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
             "align_baseline": false,
             "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "gap_mobile": 12,
-            "width": "custom",
+            "gap": 80,
+            "gap_mobile": 24,
+            "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
@@ -111,87 +112,142 @@
             "padding-inline-end-mobile": 0
           },
           "blocks": {
-            "text_f8YpXr": {
-              "type": "text",
-              "name": "t:names.heading",
+            "group_kya8gq": {
+              "type": "group",
               "settings": {
-                "text": "<h2><strong>1. </strong>TWO-IN-One Vest Instead Of A Closet Full Of Gear</h2>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "mobile_alignment": "left",
-                "type_preset": "h2",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
+                "custom_class": "",
+                "reverse_on_mobile": false,
+                "slider_on_mobile": false,
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "gap_mobile": 12,
+                "width": "custom",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "max_width_mobile": "fill",
+                "custom_max_width_mobile": 700,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "padding-inline-end": 0,
+                "enable_mobile_padding": false,
+                "padding-block-start-mobile": 0,
+                "padding-block-end-mobile": 0,
+                "padding-inline-start-mobile": 0,
+                "padding-inline-end-mobile": 0
               },
-              "blocks": {}
+              "blocks": {
+                "text_f8YpXr": {
+                  "type": "text",
+                  "name": "t:names.heading",
+                  "settings": {
+                    "text": "<h2><strong>1. </strong>TWO-IN-One Vest Instead Of A Closet Full Of Gear</h2>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "mobile_alignment": "left",
+                    "type_preset": "h2",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_nAhrfk": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Most people quit using weighted vests because they’re built for one thing: rucking or running or lifting. Sometimes, it’s not even good at that one job.</p><p>The Hybrid Vest replaces all of it.</p><p>Half-vest mode for runs, HIIT, and conditioning. Up to 10 lbs.Full-vest mode for lifting, rucking, Murph, and strength work. Up to 20 lbs.</p><p><strong>Less gear. More consistency.</strong></p>",
+                    "width": "fit-content",
+                    "max_width": "narrow",
+                    "alignment": "left",
+                    "mobile_alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_f8YpXr",
+                "text_nAhrfk"
+              ]
             },
-            "text_nAhrfk": {
-              "type": "text",
+            "image_98nzeF": {
+              "type": "image",
               "settings": {
-                "text": "<p>Most people quit using weighted vests because they’re built for one thing: rucking or running or lifting. Sometimes, it’s not even good at that one job.</p><p>The Hybrid Vest replaces all of it.</p><p>Half-vest mode for runs, HIIT, and conditioning. Up to 10 lbs.Full-vest mode for lifting, rucking, Murph, and strength work. Up to 20 lbs.</p><p><strong>Less gear. More consistency.</strong></p>",
-                "width": "fit-content",
-                "max_width": "narrow",
-                "alignment": "left",
-                "mobile_alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "image": "shopify://shop_images/Image_11_1.jpg",
+                "link": "",
+                "image_ratio": "square",
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "max_width_mobile": "fill",
+                "custom_max_width_mobile": 10,
+                "enable_mobile_width_px": false,
+                "mobile_width_px": 116,
+                "height": "fit"
               },
               "blocks": {}
             }
           },
           "block_order": [
-            "text_f8YpXr",
-            "text_nAhrfk"
+            "group_kya8gq",
+            "image_98nzeF"
           ]
-        },
-        "image_pD8aHc": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Image_11_1.jpg",
-            "link": "",
-            "image_ratio": "square",
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "max_width_mobile": "fill",
-            "custom_max_width_mobile": 10,
-            "enable_mobile_width_px": false,
-            "mobile_width_px": 116,
-            "height": "fit"
-          },
-          "blocks": {}
         }
       },
       "block_order": [
-        "group_mEptqY",
-        "image_pD8aHc"
+        "group_jHJnHC"
       ],
       "custom_css": [
         "strong {}"
