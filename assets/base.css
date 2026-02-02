@@ -5058,3 +5058,11 @@ em strong{
     width: 100%;
 }
 }
+
+.normal-image-with-text h2 strong{
+  color: #AE8B4A;
+}
+
+.normal-image-with-text p strong{
+  color: #000000E5;
+}
