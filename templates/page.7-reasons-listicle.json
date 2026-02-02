@@ -141,7 +141,7 @@
             "text_nAhrfk": {
               "type": "text",
               "settings": {
-                "text": "<p>Most people quit using weighted vests because they’re built for one thing: rucking or running or lifting. Sometimes, it’s not even good at that one job.</p><p>The Hybrid Vest replaces all of it.Half-vest mode for runs, HIIT, and conditioning. Up to 10 lbs.Full-vest mode for lifting, rucking, Murph, and strength work. Up to 20 lbs.</p><p><strong>Less gear. More consistency.</strong></p>",
+                "text": "<p>Most people quit using weighted vests because they’re built for one thing: rucking or running or lifting. Sometimes, it’s not even good at that one job.</p><p>The Hybrid Vest replaces all of it.</p><p>Half-vest mode for runs, HIIT, and conditioning. Up to 10 lbs.Full-vest mode for lifting, rucking, Murph, and strength work. Up to 20 lbs.</p><p><strong>Less gear. More consistency.</strong></p>",
                 "width": "fit-content",
                 "max_width": "narrow",
                 "alignment": "left",
@@ -163,45 +163,17 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
-            },
-            "button_BxgDLY": {
-              "type": "button",
-              "settings": {
-                "label": "Shop now",
-                "link": "shopify://collections/all",
-                "enable_popup": false,
-                "popup_section_type": "anchor",
-                "popup_section_anchor": "",
-                "popup_section_id": "",
-                "open_in_new_tab": false,
-                "style_class": "button",
-                "visibility": "all",
-                "icon": "none",
-                "icon_width": 24,
-                "icon_gap": 8,
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
             }
           },
           "block_order": [
             "text_f8YpXr",
-            "text_nAhrfk",
-            "button_BxgDLY"
+            "text_nAhrfk"
           ]
         },
         "image_pD8aHc": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Image_11_1.jpg",
             "link": "",
             "image_ratio": "square",
             "width": "fill",
