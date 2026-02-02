@@ -5062,8 +5062,9 @@ em strong{
 .normal-image-with-text h2 strong{
   color: #AE8B4A;
   background: transparent;
-      -webkit-background-clip: none;
-    background-clip: none;
+      -webkit-background-clip: initial;
+    background-clip: initial;
+    -webkit-text-fill-color: initial;
 }
 
 .normal-image-with-text p strong{
