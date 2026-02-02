@@ -64,7 +64,7 @@
         "group_mEptqY": {
           "type": "group",
           "settings": {
-            "custom_class": "",
+            "custom_class": "normal-image-with-text",
             "reverse_on_mobile": false,
             "slider_on_mobile": false,
             "content_direction": "column",
@@ -220,6 +220,9 @@
       "block_order": [
         "group_mEptqY",
         "image_pD8aHc"
+      ],
+      "custom_css": [
+        "strong {}"
       ],
       "name": "t:names.image_with_text",
       "settings": {
