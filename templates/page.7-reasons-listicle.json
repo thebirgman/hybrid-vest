@@ -3690,6 +3690,17 @@
         "padding-block-end": 0,
         "anchor_id": ""
       }
+    },
+    "custom_liquid_dF3tXM": {
+      "type": "custom-liquid",
+      "name": "t:names.custom_liquid",
+      "settings": {
+        "custom_liquid": "<style>\n.shopify-section-group-header-group {display: none}\n</style>",
+        "color_scheme": "",
+        "section_width": "page-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
     }
   },
   "order": [
@@ -3702,6 +3713,7 @@
     "section_CdL4Fy",
     "section_CKQW8e",
     "section_qQE6me",
-    "section_NzUhPc"
+    "section_NzUhPc",
+    "custom_liquid_dF3tXM"
   ]
 }
