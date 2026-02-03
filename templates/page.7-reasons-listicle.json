@@ -143,9 +143,9 @@
                 "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "flex-start",
                 "vertical_alignment_flex_direction_column": "center",
-                "gap": 12,
-                "gap_mobile": 12,
-                "width": "custom",
+                "gap": 16,
+                "gap_mobile": 16,
+                "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "fill",
                 "custom_width_mobile": 100,
@@ -172,7 +172,7 @@
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
-                "padding-inline-end": 0,
+                "padding-inline-end": 80,
                 "enable_mobile_padding": false,
                 "padding-block-start-mobile": 0,
                 "padding-block-end-mobile": 0,
@@ -227,7 +227,7 @@
                     "background_color": "#00000026",
                     "corner_radius": 0,
                     "padding-block-start": 0,
-                    "padding-block-end": 0,
+                    "padding-block-end": 16,
                     "padding-inline-start": 0,
                     "padding-inline-end": 0
                   },
@@ -237,7 +237,7 @@
                   "type": "button",
                   "name": "t:names.button",
                   "settings": {
-                    "label": "Shop now",
+                    "label": "Upgrade My Training",
                     "link": "shopify://collections/all",
                     "enable_popup": false,
                     "popup_section_type": "anchor",
@@ -247,8 +247,9 @@
                     "style_class": "button",
                     "visibility": "all",
                     "icon": "none",
-                    "icon_width": 24,
-                    "icon_gap": 8,
+                    "image_upload": "shopify://shop_images/white_arrow.svg",
+                    "icon_width": 16,
+                    "icon_gap": 12,
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
                     "font_size": "",
@@ -261,12 +262,25 @@
                     "custom_width_mobile": 100
                   },
                   "blocks": {}
+                },
+                "divider_4d9wcC": {
+                  "type": "_divider",
+                  "name": "t:names.divider",
+                  "settings": {
+                    "thickness": 1,
+                    "corner_radius": "square",
+                    "width_percent": 100,
+                    "padding-block-start": 16,
+                    "padding-block-end": 16
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
                 "text_QGpLf7",
                 "text_iECAxb",
-                "button_p3VH84"
+                "button_p3VH84",
+                "divider_4d9wcC"
               ]
             }
           },
