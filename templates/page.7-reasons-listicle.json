@@ -130,8 +130,9 @@
               },
               "blocks": {}
             },
-            "group_FTCnRQ": {
+            "group_rVgWwN": {
               "type": "group",
+              "name": "t:names.group",
               "settings": {
                 "custom_class": "",
                 "reverse_on_mobile": false,
@@ -143,14 +144,14 @@
                 "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "flex-start",
                 "vertical_alignment_flex_direction_column": "center",
-                "gap": 16,
-                "gap_mobile": 16,
+                "gap": 12,
+                "gap_mobile": 12,
                 "width": "custom",
                 "custom_width": 100,
                 "width_mobile": "fill",
                 "custom_width_mobile": 100,
-                "max_width_mobile": "custom",
-                "custom_max_width_mobile": 560,
+                "max_width_mobile": "fill",
+                "custom_max_width_mobile": 700,
                 "height": "fit",
                 "custom_height": 100,
                 "inherit_color_scheme": true,
@@ -172,7 +173,7 @@
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
-                "padding-inline-end": 24,
+                "padding-inline-end": 0,
                 "enable_mobile_padding": false,
                 "padding-block-start-mobile": 0,
                 "padding-block-end-mobile": 0,
@@ -180,113 +181,168 @@
                 "padding-inline-end-mobile": 0
               },
               "blocks": {
-                "text_QGpLf7": {
-                  "type": "text",
-                  "name": "t:names.heading",
+                "group_eEWMcA": {
+                  "type": "group",
                   "settings": {
-                    "text": "<h2>What If One Weight Vest Actually Worked For <strong>Everything</strong> You Do?</h2>",
-                    "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "mobile_alignment": "left",
-                    "type_preset": "h2",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
+                    "custom_class": "",
+                    "reverse_on_mobile": false,
+                    "slider_on_mobile": false,
+                    "content_direction": "column",
+                    "vertical_on_mobile": true,
+                    "horizontal_alignment": "flex-start",
+                    "vertical_alignment": "center",
+                    "align_baseline": false,
+                    "horizontal_alignment_flex_direction_column": "flex-start",
+                    "vertical_alignment_flex_direction_column": "center",
+                    "gap": 16,
+                    "gap_mobile": 16,
+                    "width": "custom",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "max_width_mobile": "custom",
+                    "custom_max_width_mobile": 560,
+                    "height": "fit",
+                    "custom_height": 100,
+                    "inherit_color_scheme": true,
+                    "color_scheme": "",
+                    "background_media": "none",
+                    "video_position": "cover",
+                    "background_image_position": "cover",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "toggle_overlay": false,
+                    "overlay_color": "#00000026",
+                    "overlay_style": "solid",
+                    "gradient_direction": "to top",
+                    "link": "",
+                    "open_in_new_tab": false,
+                    "placeholder": "",
                     "padding-block-start": 0,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
-                    "padding-inline-end": 0
+                    "padding-inline-end": 0,
+                    "enable_mobile_padding": false,
+                    "padding-block-start-mobile": 0,
+                    "padding-block-end-mobile": 0,
+                    "padding-inline-start-mobile": 0,
+                    "padding-inline-end-mobile": 0
                   },
-                  "blocks": {}
-                },
-                "text_iECAxb": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p><strong>Run. Ruck. Lift. Condition.</strong> Two in one vest designed to keep up with hybrid training — without bounce, bruising, or friction.</p>",
-                    "width": "fit-content",
-                    "max_width": "narrow",
-                    "alignment": "left",
-                    "mobile_alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 16,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
+                  "blocks": {
+                    "text_QGpLf7": {
+                      "type": "text",
+                      "name": "t:names.heading",
+                      "settings": {
+                        "text": "<h2>What If One Weight Vest Actually Worked For <strong>Everything</strong> You Do?</h2>",
+                        "width": "fit-content",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "mobile_alignment": "left",
+                        "type_preset": "h2",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    },
+                    "text_iECAxb": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p><strong>Run. Ruck. Lift. Condition.</strong> Two in one vest designed to keep up with hybrid training — without bounce, bruising, or friction.</p>",
+                        "width": "fit-content",
+                        "max_width": "narrow",
+                        "alignment": "left",
+                        "mobile_alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 16,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    },
+                    "button_p3VH84": {
+                      "type": "button",
+                      "name": "t:names.button",
+                      "settings": {
+                        "label": "Upgrade My Training",
+                        "link": "shopify://collections/all",
+                        "enable_popup": false,
+                        "popup_section_type": "anchor",
+                        "popup_section_anchor": "",
+                        "popup_section_id": "",
+                        "open_in_new_tab": false,
+                        "style_class": "button",
+                        "visibility": "all",
+                        "icon": "none",
+                        "image_upload": "shopify://shop_images/white_arrow.svg",
+                        "icon_width": 16,
+                        "icon_gap": 12,
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "width": "fit-content",
+                        "custom_width": 100,
+                        "width_mobile": "fit-content",
+                        "custom_width_mobile": 100
+                      },
+                      "blocks": {}
+                    },
+                    "divider_4d9wcC": {
+                      "type": "_divider",
+                      "name": "t:names.divider",
+                      "settings": {
+                        "thickness": 1,
+                        "corner_radius": "square",
+                        "width_percent": 100,
+                        "padding-block-start": 16,
+                        "padding-block-end": 16
+                      },
+                      "blocks": {}
+                    }
                   },
-                  "blocks": {}
-                },
-                "button_p3VH84": {
-                  "type": "button",
-                  "name": "t:names.button",
-                  "settings": {
-                    "label": "Upgrade My Training",
-                    "link": "shopify://collections/all",
-                    "enable_popup": false,
-                    "popup_section_type": "anchor",
-                    "popup_section_anchor": "",
-                    "popup_section_id": "",
-                    "open_in_new_tab": false,
-                    "style_class": "button",
-                    "visibility": "all",
-                    "icon": "none",
-                    "image_upload": "shopify://shop_images/white_arrow.svg",
-                    "icon_width": 16,
-                    "icon_gap": 12,
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "width": "fit-content",
-                    "custom_width": 100,
-                    "width_mobile": "fit-content",
-                    "custom_width_mobile": 100
-                  },
-                  "blocks": {}
-                },
-                "divider_4d9wcC": {
-                  "type": "_divider",
-                  "name": "t:names.divider",
-                  "settings": {
-                    "thickness": 1,
-                    "corner_radius": "square",
-                    "width_percent": 100,
-                    "padding-block-start": 16,
-                    "padding-block-end": 16
-                  },
-                  "blocks": {}
+                  "block_order": [
+                    "text_QGpLf7",
+                    "text_iECAxb",
+                    "button_p3VH84",
+                    "divider_4d9wcC"
+                  ]
                 }
               },
               "block_order": [
-                "text_QGpLf7",
-                "text_iECAxb",
-                "button_p3VH84",
-                "divider_4d9wcC"
+                "group_eEWMcA"
               ]
             }
           },
           "block_order": [
             "image_DVUfpE",
-            "group_FTCnRQ"
+            "group_rVgWwN"
           ]
         }
       },
