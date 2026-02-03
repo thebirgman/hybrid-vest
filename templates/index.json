@@ -204,7 +204,7 @@
               "type": "button",
               "name": "t:names.button",
               "settings": {
-                "label": "Shop The Hybrid Vest",
+                "label": "Shop Hybrid Vest",
                 "link": "shopify://products/hybrid-vest",
                 "enable_popup": false,
                 "popup_section_type": "anchor",
