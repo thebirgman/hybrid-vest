@@ -1059,7 +1059,8 @@
         "group_8teyVe"
       ],
       "custom_css": [
-        "strong {}"
+        "strong {}",
+        "@media screen and (max-width: 768px) {div:has(a){width: 100%;}}"
       ],
       "name": "t:names.image_with_text",
       "settings": {
