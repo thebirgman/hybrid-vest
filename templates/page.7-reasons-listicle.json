@@ -117,7 +117,7 @@
               "settings": {
                 "image": "shopify://shop_images/Image_18_1.jpg",
                 "link": "",
-                "image_ratio": "square",
+                "image_ratio": "adapt",
                 "width": "custom",
                 "custom_width": 100,
                 "width_mobile": "fill",
@@ -2717,9 +2717,9 @@
             "image_bpmUii": {
               "type": "image",
               "settings": {
-                "image": "shopify://shop_images/Image_18_1.jpg",
+                "image": "shopify://shop_images/Image_19_1.jpg",
                 "link": "",
-                "image_ratio": "square",
+                "image_ratio": "adapt",
                 "width": "custom",
                 "custom_width": 100,
                 "width_mobile": "fill",
@@ -3568,7 +3568,7 @@
                           "name": "t:names.icon",
                           "settings": {
                             "icon": "price_tag",
-                            "image_upload": "shopify://shop_images/Mask_group_5.png",
+                            "image_upload": "shopify://shop_images/Mask_group_19.png",
                             "width": 40,
                             "link": "",
                             "open_in_new_tab": false
@@ -3662,7 +3662,7 @@
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 0,
-        "padding-block-end": 40,
+        "padding-block-end": 0,
         "anchor_id": ""
       }
     }
