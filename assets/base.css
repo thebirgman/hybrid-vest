@@ -4889,7 +4889,7 @@ h3 strong,
 h4 strong{
   color: #A36A00;
 }
-p strong{
+.brown-bold-text p strong{
   font-weight: 400;
   color: #A36A00;
 }
@@ -5070,4 +5070,8 @@ em strong{
 .normal-image-with-text p strong{
   color: #000000E5;
   font-weight: 600;
+}
+
+header .header__drawer {
+    display: none;
 }
