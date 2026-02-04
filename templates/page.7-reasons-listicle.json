@@ -733,7 +733,7 @@
                                   "name": "t:names.icon",
                                   "settings": {
                                     "icon": "price_tag",
-                                    "image_upload": "shopify://shop_images/favorite_4.png",
+                                    "image_upload": "shopify://shop_images/favorite_3.png",
                                     "width": 24,
                                     "link": "",
                                     "open_in_new_tab": false
@@ -829,7 +829,7 @@
                                   "name": "t:names.icon",
                                   "settings": {
                                     "icon": "price_tag",
-                                    "image_upload": "shopify://shop_images/favorite_5.png",
+                                    "image_upload": "shopify://shop_images/favorite_4.png",
                                     "width": 24,
                                     "link": "",
                                     "open_in_new_tab": false
@@ -1261,6 +1261,7 @@
               "settings": {
                 "source": "uploaded",
                 "video": "shopify://files/videos/HALF TO FULL.webm",
+                "video_url": "",
                 "video_autoplay": true,
                 "video_loop": true,
                 "alt": "",
