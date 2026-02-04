@@ -5071,3 +5071,7 @@ em strong{
   color: #000000E5;
   font-weight: 600;
 }
+
+header .header__drawer {
+    display: none;
+}
