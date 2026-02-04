@@ -1346,7 +1346,7 @@
           "type": "group",
           "name": "t:names.group",
           "settings": {
-            "custom_class": "",
+            "custom_class": "brown-bold-text",
             "reverse_on_mobile": true,
             "slider_on_mobile": false,
             "content_direction": "row",
