@@ -16,7 +16,7 @@
     {% render 'gap-style', value: gap_between_elements, name: 'marquee-gap' %}
     --marquee-direction: {{ section.settings.movement_direction }};
   "
-  data-speed-factor="25"
+  data-speed-factor="{{ section.settings.speed | default: 25 }}"
   data-movement-direction="{{ section.settings.movement_direction }}"
 >
   <div
@@ -69,7 +69,6 @@
     min-width: max-content;
     display: flex;
     gap: var(--marquee-gap);
-    align-items: center;
     justify-content: center;
   }
 
@@ -117,6 +116,16 @@
     }
   ],
   "settings": [
+    {
+      "type": "range",
+      "id": "speed",
+      "label": "Speed",
+      "min": 5,
+      "max": 100,
+      "step": 1,
+      "default": 25,
+      "info": "Lower values scroll faster, higher values scroll slower"
+    },
     {
       "type": "select",
       "id": "movement_direction",

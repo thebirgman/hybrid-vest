@@ -31,8 +31,10 @@
       {% if block_settings.enable_countdown %}
         <countdown-inline-{{ countdown_id }}
           class="countdown-inline"
-          data-starting-count="{{ block_settings.starting_count }}"
-          data-decrement-interval="{{ block_settings.decrement_interval }}"
+          data-min-starting-count="{{ block_settings.min_starting_count }}"
+          data-max-starting-count="{{ block_settings.max_starting_count }}"
+          data-min-decrement-interval="{{ block_settings.min_decrement_interval }}"
+          data-max-decrement-interval="{{ block_settings.max_decrement_interval }}"
           data-reset-hour="{{ block_settings.reset_hour }}"
           data-zero-behavior="{{ block_settings.zero_behavior }}"
           style="display: inline-flex; align-items: center; gap: 3px;"
@@ -46,7 +48,7 @@
             data-countdown-number 
             style="color: {{ block_settings.countdown_number_color }}; font-weight: {{ block_settings.countdown_number_weight }};"
           >
-            {{ block_settings.starting_count }}
+            {{ block_settings.max_starting_count }}
           </span>
           <span style="color: {{ block_settings.countdown_text_color }}; font-weight: {{ block_settings.countdown_font_weight }};">
             {% if block_settings.countdown_text_after != blank %}
@@ -78,11 +80,13 @@
         super();
         this.element = this;
         this.storageKey = 'countdown_{{ countdown_id }}_data';
-        this.startingCount = parseInt(this.dataset.startingCount) || 100;
-        this.decrementInterval = parseInt(this.dataset.decrementInterval) * 60000 || 300000;
+        this.minStartingCount = parseInt(this.dataset.minStartingCount) || 50;
+        this.maxStartingCount = parseInt(this.dataset.maxStartingCount) || 100;
+        this.minDecrementInterval = parseInt(this.dataset.minDecrementInterval) * 60000 || 180000; // Convert minutes to ms
+        this.maxDecrementInterval = parseInt(this.dataset.maxDecrementInterval) * 60000 || 600000; // Convert minutes to ms
         this.resetHour = parseInt(this.dataset.resetHour) || 0;
         this.numberElement = this.querySelector('[data-countdown-number]');
-        this.currentCount = this.startingCount;
+        this.currentCount = this.maxStartingCount;
         this.intervalId = null;
       }
 
@@ -96,6 +100,16 @@
         if (this.intervalId) {
           clearInterval(this.intervalId);
         }
+      }
+
+      getRandomInt(min, max) {
+        // Generate random integer between min and max (inclusive)
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+
+      getRandomInterval() {
+        // Generate random interval in milliseconds
+        return this.getRandomInt(this.minDecrementInterval, this.maxDecrementInterval);
       }
 
       initializeCount() {
@@ -117,7 +131,9 @@
             this.resetCount();
           }
         } else {
-          this.resetCount();
+          // First time visitor - set random starting count
+          this.currentCount = this.getRandomInt(this.minStartingCount, this.maxStartingCount);
+          this.saveData();
         }
 
         this.updateDisplay();
@@ -151,7 +167,8 @@
       }
 
       resetCount() {
-        this.currentCount = this.startingCount;
+        // Choose a new random starting count on reset
+        this.currentCount = this.getRandomInt(this.minStartingCount, this.maxStartingCount);
         this.saveData();
         this.updateDisplay();
         
@@ -174,6 +191,9 @@
           
           if (this.currentCount === 0) {
             this.handleZeroCount();
+          } else {
+            // Schedule next decrement with a new random interval
+            this.scheduleNextDecrement();
           }
         }
       }
@@ -182,12 +202,24 @@
         const behavior = this.element.dataset.zeroBehavior || 'stop';
         
         if (behavior === 'stop') {
-          clearInterval(this.intervalId);
+          if (this.intervalId) {
+            clearInterval(this.intervalId);
+            this.intervalId = null;
+          }
         } else if (behavior === 'hide') {
           this.style.display = 'none';
+          if (this.intervalId) {
+            clearInterval(this.intervalId);
+            this.intervalId = null;
+          }
         } else if (behavior === 'reset') {
+          if (this.intervalId) {
+            clearInterval(this.intervalId);
+            this.intervalId = null;
+          }
           setTimeout(() => {
             this.resetCount();
+            this.startCountdown();
           }, 1000);
         }
       }
@@ -198,10 +230,29 @@
         }
       }
 
-      startCountdown() {
-        this.intervalId = setInterval(() => {
+      scheduleNextDecrement() {
+        // Clear any existing interval
+        if (this.intervalId) {
+          clearInterval(this.intervalId);
+          this.intervalId = null;
+        }
+        
+        // Schedule next decrement with random interval
+        const nextInterval = this.getRandomInterval();
+        this.intervalId = setTimeout(() => {
           this.decrementCount();
-        }, this.decrementInterval);
+        }, nextInterval);
+      }
+
+      startCountdown() {
+        // Clear any existing interval first
+        if (this.intervalId) {
+          clearInterval(this.intervalId);
+          this.intervalId = null;
+        }
+        
+        // Start the first countdown with a random interval
+        this.scheduleNextDecrement();
       }
 
       scheduleMidnightReset() {
@@ -225,6 +276,7 @@
 
             if (shouldReset) {
               this.resetCount();
+              this.startCountdown();
             }
           }
         };
@@ -337,13 +389,23 @@
     },
     {
       "type": "range",
-      "id": "starting_count",
-      "label": "Starting count",
+      "id": "min_starting_count",
+      "label": "Minimum starting count",
+      "min": 10,
+      "max": 500,
+      "step": 10,
+      "default": 50,
+      "info": "Random starting count will be between min and max"
+    },
+    {
+      "type": "range",
+      "id": "max_starting_count",
+      "label": "Maximum starting count",
       "min": 10,
       "max": 500,
       "step": 10,
       "default": 100,
-      "info": "Resets to this number at the configured time each day"
+      "info": "Random starting count will be between min and max"
     },
     {
       "type": "range",
@@ -358,14 +420,25 @@
     },
     {
       "type": "range",
-      "id": "decrement_interval",
-      "label": "Decrement interval",
+      "id": "min_decrement_interval",
+      "label": "Minimum decrement interval",
       "min": 1,
       "max": 60,
       "step": 1,
       "unit": "min",
-      "default": 5,
-      "info": "How often the count decreases"
+      "default": 3,
+      "info": "Minimum time between decrements"
+    },
+    {
+      "type": "range",
+      "id": "max_decrement_interval",
+      "label": "Maximum decrement interval",
+      "min": 1,
+      "max": 60,
+      "step": 1,
+      "unit": "min",
+      "default": 10,
+      "info": "Maximum time between decrements"
     },
     {
       "type": "text",
