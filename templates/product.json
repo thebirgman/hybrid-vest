@@ -2575,7 +2575,7 @@
         ".review-group {border: solid 1px #ffffff33;}",
         "h5 {color: #a36a00 !important;}",
         ".h5 h3 {font-weight: 700; text-transform: uppercase;}",
-        "p {opacity: 0.5;}",
+        "p {opacity: 0.7;}",
         "@media screen and (max-width: 768px) {.review-group > .group-block-content.layout-panel-flex {flex-wrap: nowrap; } .layout-panel-flex--row:not(.mobile-column) > .image-block, .image-block__image {height: 100%; }}"
       ],
       "name": "t:names.custom_section",
