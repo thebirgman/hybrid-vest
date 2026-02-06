@@ -4749,7 +4749,7 @@
         "group_RYKMXx"
       ],
       "custom_css": [
-        ".marquee__repeated-items>* {max-width: 350px!important;}",
+        ".marquee__repeated-items > * {max-width: 350px !important;}",
         "p {line-height: 1em; font-size: 16px; font-weight: 300;}",
         ".marquee__content * {opacity: 1;}",
         ".marquee__content :is(p, h1, h2, h3, h4, h5, h6) {white-space: normal;}",
@@ -4757,6 +4757,7 @@
       ],
       "name": "t:names.marquee_section",
       "settings": {
+        "speed": 60,
         "movement_direction": "normal",
         "color_scheme": "scheme-2",
         "padding-block-start": 40,
