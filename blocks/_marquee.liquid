@@ -21,7 +21,7 @@
     --marquee-direction: {{ block_settings.movement_direction }};
     {%- if block_settings.transparent_background == true -%}background-color: transparent;{%- endif -%}
   "
-  data-speed-factor="25"
+  data-speed-factor="{{ block_settings.speed | default: 25 }}"
   data-movement-direction="{{ block_settings.movement_direction }}"
 >
   <div
@@ -118,6 +118,16 @@
     }
   ],
   "settings": [
+    {
+      "type": "range",
+      "id": "speed",
+      "label": "Speed",
+      "min": 5,
+      "max": 60,
+      "step": 1,
+      "default": 25,
+      "info": "Lower values scroll faster, higher values scroll slower"
+    },
     {
       "type": "select",
       "id": "movement_direction",
