@@ -88,6 +88,14 @@
         this.numberElement = this.querySelector('[data-countdown-number]');
         this.currentCount = this.maxStartingCount;
         this.intervalId = null;
+        
+        // Debug logging
+        console.log('Countdown initialized with:', {
+          minStartingCount: this.minStartingCount,
+          maxStartingCount: this.maxStartingCount,
+          minDecrementInterval: this.minDecrementInterval / 1000 + 's',
+          maxDecrementInterval: this.maxDecrementInterval / 1000 + 's'
+        });
       }
 
       connectedCallback() {
@@ -103,13 +111,20 @@
       }
 
       getRandomInt(min, max) {
+        // Ensure min is not greater than max
+        if (min > max) {
+          [min, max] = [max, min];
+        }
         // Generate random integer between min and max (inclusive)
-        return Math.floor(Math.random() * (max - min + 1)) + min;
+        const result = Math.floor(Math.random() * (max - min + 1)) + min;
+        return result;
       }
 
       getRandomInterval() {
         // Generate random interval in milliseconds
-        return this.getRandomInt(this.minDecrementInterval, this.maxDecrementInterval);
+        const interval = this.getRandomInt(this.minDecrementInterval, this.maxDecrementInterval);
+        console.log('Next countdown interval:', interval / 1000 + ' seconds');
+        return interval;
       }
 
       initializeCount() {
@@ -129,9 +144,11 @@
             // Check if stored count is within current min/max range
             if (stored.count >= this.minStartingCount && stored.count <= this.maxStartingCount) {
               this.currentCount = Math.max(0, stored.count);
+              console.log('Using stored count:', this.currentCount);
             } else {
               // Stored count is outside range, reset with new random value
               this.currentCount = this.getRandomInt(this.minStartingCount, this.maxStartingCount);
+              console.log('Stored count outside range, generated new:', this.currentCount);
               this.saveData();
             }
           } else {
@@ -140,6 +157,7 @@
         } else {
           // First time visitor - set random starting count
           this.currentCount = this.getRandomInt(this.minStartingCount, this.maxStartingCount);
+          console.log('First visit, generated random count:', this.currentCount);
           this.saveData();
         }
 
@@ -176,6 +194,7 @@
       resetCount() {
         // Choose a new random starting count on reset
         this.currentCount = this.getRandomInt(this.minStartingCount, this.maxStartingCount);
+        console.log('Reset count to:', this.currentCount);
         this.saveData();
         this.updateDisplay();
         
