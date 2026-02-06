@@ -126,7 +126,14 @@
             estNow.getDate() === lastResetEST.getDate();
 
           if (isSameDay && stored.count !== undefined) {
-            this.currentCount = Math.max(0, stored.count);
+            // Check if stored count is within current min/max range
+            if (stored.count >= this.minStartingCount && stored.count <= this.maxStartingCount) {
+              this.currentCount = Math.max(0, stored.count);
+            } else {
+              // Stored count is outside range, reset with new random value
+              this.currentCount = this.getRandomInt(this.minStartingCount, this.maxStartingCount);
+              this.saveData();
+            }
           } else {
             this.resetCount();
           }
