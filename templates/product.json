@@ -4749,7 +4749,7 @@
         "group_RYKMXx"
       ],
       "custom_css": [
-        ".marquee__repeated-items {max-width: 350px; min-width: 350px;}",
+        ".marquee__repeated-items>* {max-width: 350px!important;}",
         "p {line-height: 1em; font-size: 16px; font-weight: 300;}",
         ".marquee__content * {opacity: 1;}",
         ".marquee__content :is(p, h1, h2, h3, h4, h5, h6) {white-space: normal;}",
