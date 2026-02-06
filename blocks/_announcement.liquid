@@ -82,8 +82,8 @@
         this.storageKey = 'countdown_{{ countdown_id }}_data';
         this.minStartingCount = parseInt(this.dataset.minStartingCount) || 50;
         this.maxStartingCount = parseInt(this.dataset.maxStartingCount) || 100;
-        this.minDecrementInterval = parseInt(this.dataset.minDecrementInterval) * 60000 || 180000; // Convert minutes to ms
-        this.maxDecrementInterval = parseInt(this.dataset.maxDecrementInterval) * 60000 || 600000; // Convert minutes to ms
+        this.minDecrementInterval = parseInt(this.dataset.minDecrementInterval) * 1000 || 10000; // Convert seconds to ms
+        this.maxDecrementInterval = parseInt(this.dataset.maxDecrementInterval) * 1000 || 30000; // Convert seconds to ms
         this.resetHour = parseInt(this.dataset.resetHour) || 0;
         this.numberElement = this.querySelector('[data-countdown-number]');
         this.currentCount = this.maxStartingCount;
@@ -388,23 +388,17 @@
       "default": false
     },
     {
-      "type": "range",
+      "type": "text",
       "id": "min_starting_count",
       "label": "Minimum starting count",
-      "min": 10,
-      "max": 500,
-      "step": 10,
-      "default": 50,
+      "default": "50",
       "info": "Random starting count will be between min and max"
     },
     {
-      "type": "range",
+      "type": "text",
       "id": "max_starting_count",
       "label": "Maximum starting count",
-      "min": 10,
-      "max": 500,
-      "step": 10,
-      "default": 100,
+      "default": "100",
       "info": "Random starting count will be between min and max"
     },
     {
@@ -419,26 +413,18 @@
       "info": "Hour (0-23) in EST when counter resets. 0 = midnight, 12 = noon"
     },
     {
-      "type": "range",
+      "type": "text",
       "id": "min_decrement_interval",
-      "label": "Minimum decrement interval",
-      "min": 1,
-      "max": 60,
-      "step": 1,
-      "unit": "min",
-      "default": 3,
-      "info": "Minimum time between decrements"
+      "label": "Minimum decrement interval (seconds)",
+      "default": "10",
+      "info": "Minimum time between decrements (in seconds)"
     },
     {
-      "type": "range",
+      "type": "text",
       "id": "max_decrement_interval",
-      "label": "Maximum decrement interval",
-      "min": 1,
-      "max": 60,
-      "step": 1,
-      "unit": "min",
-      "default": 10,
-      "info": "Maximum time between decrements"
+      "label": "Maximum decrement interval (seconds)",
+      "default": "30",
+      "info": "Maximum time between decrements (in seconds)"
     },
     {
       "type": "text",
