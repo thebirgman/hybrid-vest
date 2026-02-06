@@ -80,14 +80,22 @@
         super();
         this.element = this;
         this.storageKey = 'countdown_{{ countdown_id }}_data';
-        this.minStartingCount = parseInt(this.dataset.minStartingCount) || 50;
-        this.maxStartingCount = parseInt(this.dataset.maxStartingCount) || 100;
-        this.minDecrementInterval = parseInt(this.dataset.minDecrementInterval) * 60000 || 180000; // Convert minutes to ms
-        this.maxDecrementInterval = parseInt(this.dataset.maxDecrementInterval) * 60000 || 600000; // Convert minutes to ms
+        this.minStartingCount = parseInt(this.dataset.minStartingCount, 10) || 50;
+        this.maxStartingCount = parseInt(this.dataset.maxStartingCount, 10) || 100;
+        this.minDecrementInterval = (parseInt(this.dataset.minDecrementInterval, 10) || 10) * 1000; // Convert seconds to ms
+        this.maxDecrementInterval = (parseInt(this.dataset.maxDecrementInterval, 10) || 30) * 1000; // Convert seconds to ms
         this.resetHour = parseInt(this.dataset.resetHour) || 0;
         this.numberElement = this.querySelector('[data-countdown-number]');
         this.currentCount = this.maxStartingCount;
         this.intervalId = null;
+        
+        // Debug logging
+        console.log('Countdown initialized with:', {
+          minStartingCount: this.minStartingCount,
+          maxStartingCount: this.maxStartingCount,
+          minDecrementInterval: this.minDecrementInterval / 1000 + 's',
+          maxDecrementInterval: this.maxDecrementInterval / 1000 + 's'
+        });
       }
 
       connectedCallback() {
@@ -103,13 +111,20 @@
       }
 
       getRandomInt(min, max) {
+        // Ensure min is not greater than max
+        if (min > max) {
+          [min, max] = [max, min];
+        }
         // Generate random integer between min and max (inclusive)
-        return Math.floor(Math.random() * (max - min + 1)) + min;
+        const result = Math.floor(Math.random() * (max - min + 1)) + min;
+        return result;
       }
 
       getRandomInterval() {
         // Generate random interval in milliseconds
-        return this.getRandomInt(this.minDecrementInterval, this.maxDecrementInterval);
+        const interval = this.getRandomInt(this.minDecrementInterval, this.maxDecrementInterval);
+        console.log('Next countdown interval:', interval / 1000 + ' seconds');
+        return interval;
       }
 
       initializeCount() {
@@ -126,13 +141,23 @@
             estNow.getDate() === lastResetEST.getDate();
 
           if (isSameDay && stored.count !== undefined) {
-            this.currentCount = Math.max(0, stored.count);
+            // Check if stored count is within current min/max range
+            if (stored.count >= this.minStartingCount && stored.count <= this.maxStartingCount) {
+              this.currentCount = Math.max(0, stored.count);
+              console.log('Using stored count:', this.currentCount);
+            } else {
+              // Stored count is outside range, reset with new random value
+              this.currentCount = this.getRandomInt(this.minStartingCount, this.maxStartingCount);
+              console.log('Stored count outside range, generated new:', this.currentCount);
+              this.saveData();
+            }
           } else {
             this.resetCount();
           }
         } else {
           // First time visitor - set random starting count
           this.currentCount = this.getRandomInt(this.minStartingCount, this.maxStartingCount);
+          console.log('First visit, generated random count:', this.currentCount);
           this.saveData();
         }
 
@@ -169,6 +194,7 @@
       resetCount() {
         // Choose a new random starting count on reset
         this.currentCount = this.getRandomInt(this.minStartingCount, this.maxStartingCount);
+        console.log('Reset count to:', this.currentCount);
         this.saveData();
         this.updateDisplay();
         
@@ -388,22 +414,16 @@
       "default": false
     },
     {
-      "type": "range",
+      "type": "number",
       "id": "min_starting_count",
       "label": "Minimum starting count",
-      "min": 10,
-      "max": 500,
-      "step": 10,
       "default": 50,
       "info": "Random starting count will be between min and max"
     },
     {
-      "type": "range",
+      "type": "number",
       "id": "max_starting_count",
       "label": "Maximum starting count",
-      "min": 10,
-      "max": 500,
-      "step": 10,
       "default": 100,
       "info": "Random starting count will be between min and max"
     },
@@ -419,26 +439,18 @@
       "info": "Hour (0-23) in EST when counter resets. 0 = midnight, 12 = noon"
     },
     {
-      "type": "range",
+      "type": "number",
       "id": "min_decrement_interval",
-      "label": "Minimum decrement interval",
-      "min": 1,
-      "max": 60,
-      "step": 1,
-      "unit": "min",
-      "default": 3,
-      "info": "Minimum time between decrements"
+      "label": "Minimum decrement interval (seconds)",
+      "default": 10,
+      "info": "Minimum time between decrements (in seconds)"
     },
     {
-      "type": "range",
+      "type": "number",
       "id": "max_decrement_interval",
-      "label": "Maximum decrement interval",
-      "min": 1,
-      "max": 60,
-      "step": 1,
-      "unit": "min",
-      "default": 10,
-      "info": "Maximum time between decrements"
+      "label": "Maximum decrement interval (seconds)",
+      "default": 30,
+      "info": "Maximum time between decrements (in seconds)"
     },
     {
       "type": "text",
