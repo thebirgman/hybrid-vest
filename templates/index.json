@@ -68,7 +68,7 @@
               "name": "t:names.text",
               "settings": {
                 "text": "<h2><strong>GRAND LAUNCH</strong></h2>",
-                "width": "fit-content",
+                "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
                 "mobile_alignment": "left",
