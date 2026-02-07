@@ -70,7 +70,7 @@
                 "text": "<h2><strong>GRAND LAUNCH</strong></h2>",
                 "width": "100%",
                 "max_width": "normal",
-                "alignment": "center",
+                "alignment": "left",
                 "mobile_alignment": "center",
                 "type_preset": "custom",
                 "font": "var(--font-accent--family)",
