@@ -1541,7 +1541,7 @@
                     "text_pGphxp": {
                       "type": "text",
                       "settings": {
-                        "text": "<p>Full Vest: 18\" L x 14\" W<br/>Half Vest: 12\" L x 13\" W<br/>Plates Dimensions: 4\" L x 2\" W x 1/2\" D<br/>Plate Count: 13 pcs<br/>Strap Width: 2.5\" W<br/>Head Opening: 11\" L x 11\" W<br/>Weight: 21 lbs.</p>",
+                        "text": "<p>Half Vest Mode: 12\" L x 13\" W<br/>Full Vest Mode: 18\" L x 14\" W<br/>Half Vest Mode Weight: 5-10 lbs.<br/>Full Vest Mode Weight: 5-20 lbs.<br/>Included Plate Count: 13 pcs<br/>Padding Thickness: .8mm<br/>Strap Width: 2.5\" W<br/>Head Opening: 11\" L x 11\" W<br/>Total Weight with Plates: 21 lbs.<br/>Plates Dimensions: 4\" L x 2\" W x 1/2\" D</p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
