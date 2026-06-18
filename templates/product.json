@@ -1059,7 +1059,7 @@
                               "type": "text",
                               "name": "t:names.text",
                               "settings": {
-                                "text": "<p>Complete Murph program</p>",
+                                "text": "<p>Longevity Program</p>",
                                 "width": "fit-content",
                                 "max_width": "normal",
                                 "alignment": "left",
@@ -1218,7 +1218,7 @@
                               "type": "text",
                               "name": "t:names.text",
                               "settings": {
-                                "text": "<p>13x weight plates</p>",
+                                "text": "<p>9 to 13x weight plates</p>",
                                 "width": "fit-content",
                                 "max_width": "normal",
                                 "alignment": "left",
