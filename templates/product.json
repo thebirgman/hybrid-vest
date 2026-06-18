@@ -8705,7 +8705,7 @@
       "type": "custom-liquid",
       "name": "t:names.custom_liquid",
       "settings": {
-        "custom_liquid": "<div class=\"jdgm-widget jdgm-review-widget jdgm-outside-widget\" data-id=\"10291512541316\" data-product-title=\"The Hybrid Vest: 2 in 1 Weight Vest\"></div>",
+        "custom_liquid": "<div class=\"jdgm-widget jdgm-review-widget jdgm-outside-widget\" data-id=\"10291512541316\" data-product-title=\"The Hybrid Vest: 2 in 1 Weight Vest\"></div>\n<div class=\"jdgm-widget jdgm-preview-badge\" data-id=\"10291512541316\"></div>",
         "color_scheme": "",
         "section_width": "page-width",
         "padding-block-start": 0,
