@@ -1542,7 +1542,7 @@
                       "type": "custom-liquid",
                       "name": "t:names.custom_liquid",
                       "settings": {
-                        "custom_liquid": "{% assign current_variant = product.selected_or_first_available_variant %}\n\n{%- for variant in product.variants -%}\n  {%- if variant.metafields.custom.variant_specs != blank -%}\n    <div\n      class=\"prose\"\n      data-specs-variant=\"{{ variant.id }}\"\n      {% unless variant.id == current_variant.id %}hidden{% endunless %}\n    >\n      {{ variant.metafields.custom.variant_specs }}\n    </div>\n  {%- endif -%}\n{%- endfor -%}"
+                        "custom_liquid": "{% assign current_variant = product.selected_or_first_available_variant %}\n\n{%- for variant in product.variants -%}\n  {%- if variant.metafields.custom.variant_specs != blank -%}\n    <div\n      class=\"prose js-variant-specs\"\n      data-specs-variant=\"{{ variant.id }}\"\n      {% unless variant.id == current_variant.id %}hidden{% endunless %}\n    >\n      {{ variant.metafields.custom.variant_specs }}\n    </div>\n  {%- endif -%}\n{%- endfor -%}"
                       },
                       "blocks": {}
                     }
