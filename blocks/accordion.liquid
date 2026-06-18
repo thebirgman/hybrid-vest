@@ -69,12 +69,12 @@
 {% endstylesheet %}
 
 {% javascript %}
-(function() {
-  var specBlocks = document.querySelectorAll('.js-variant-specs');
-  if (!specBlocks.length) return;
-
+(function () {
   function showSpecsForVariant(variantId) {
-    specBlocks.forEach(function(block) {
+    var specBlocks = document.querySelectorAll('.js-variant-specs');
+    if (!specBlocks.length) return;
+
+    specBlocks.forEach(function (block) {
       var id = block.getAttribute('data-specs-variant');
 
       if (id === String(variantId)) {
@@ -85,16 +85,10 @@
     });
   }
 
-  // Basic case: standard product form with <form action="/cart/add"> and a variant select named "id"
-  var variantSelect = document.querySelector('form[action^="/cart/add"] [name="id"]');
-  if (!variantSelect) return;
-
-  // Initialize to the currently selected option on load
-  showSpecsForVariant(variantSelect.value);
-
-  // Update when the customer changes variant
-  variantSelect.addEventListener('change', function(event) {
-    showSpecsForVariant(event.target.value);
+  document.addEventListener('variant:update', function (event) {
+    var variant = event.detail && event.detail.resource;
+    if (!variant || variant.id == null) return;
+    showSpecsForVariant(variant.id);
   });
 })();
 {% endjavascript %}
