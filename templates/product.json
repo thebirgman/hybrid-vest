@@ -1951,6 +1951,14 @@
     "section_MFnacD": {
       "type": "section",
       "blocks": {
+        "custom_liquid_zRJUqg": {
+          "type": "custom-liquid",
+          "name": "t:names.custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- assign current_variant = product.selected_or_first_available_variant -%}\n<div class=\"js-variant-modes-root\" data-current-variant=\"{{ current_variant.id }}\" hidden>\n  {%- for variant in product.variants -%}\n    {%- assign modes = variant.metafields.custom.variant_vest_modes_title.value -%}\n    {%- if modes != blank -%}\n      <div class=\"js-variant-modes\" data-modes-variant=\"{{ variant.id }}\">\n        {%- for mode in modes -%}\n          <span class=\"js-variant-modes-item\">{{ mode }}</span>\n        {%- endfor -%}\n      </div>\n    {%- endif -%}\n  {%- endfor -%}\n</div>\n<script>\n(function () {\n  var root = document.querySelector('.js-variant-modes-root');\n  if (!root) return;\n  var originals = new WeakMap();\n\n  function itemsFor(id) {\n    var src = root.querySelector('.js-variant-modes[data-modes-variant=\"' + id + '\"]');\n    return src ? [].map.call(src.querySelectorAll('.js-variant-modes-item'), function (n) { return n.textContent; }) : [];\n  }\n\n  function apply(id) {\n    var items = itemsFor(id);\n    document.querySelectorAll('.image-card-block__heading h4').forEach(function (h, i) {\n      if (!originals.has(h)) originals.set(h, h.textContent);\n      h.textContent = (items[i] != null && items[i] !== '') ? items[i] : originals.get(h);\n    });\n  }\n\n  function init() { apply(root.getAttribute('data-current-variant')); }\n  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);\n  else init();\n\n  document.addEventListener('variant:update', function (event) {\n    var v = event.detail && event.detail.resource;\n    if (v && v.id != null) apply(v.id);\n  });\n})();\n</script>"
+          },
+          "blocks": {}
+        },
         "group_aW64g3": {
           "type": "group",
           "name": "t:names.group",
@@ -3138,6 +3146,7 @@
         }
       },
       "block_order": [
+        "custom_liquid_zRJUqg",
         "group_aW64g3"
       ],
       "custom_css": [
