@@ -7821,11 +7821,20 @@
           "block_order": [
             "group_7hGGiD"
           ]
+        },
+        "custom_liquid_tazmFh": {
+          "type": "custom-liquid",
+          "name": "t:names.custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- assign current_variant = product.selected_or_first_available_variant -%}\n<div class=\"js-variant-faq-root\" data-current-variant=\"{{ current_variant.id }}\" hidden>\n  {%- for variant in product.variants -%}\n    {%- assign faq_entries = variant.metafields.custom.variant_faq_custom.value -%}\n    {%- if faq_entries != blank -%}\n      <div class=\"js-variant-faq\" data-faq-variant=\"{{ variant.id }}\">\n        {%- for entry in faq_entries -%}\n          {%- capture faq_title -%}{{ entry.title.value }}{%- endcapture -%}\n          {%- capture faq_answer -%}{{ entry.answer }}{%- endcapture -%}\n          {%- if faq_title != blank -%}\n            <template\n              class=\"js-variant-faq-entry\"\n              data-faq-title=\"{{ faq_title | strip | escape }}\"\n            >{{ faq_answer }}</template>\n          {%- endif -%}\n        {%- endfor -%}\n      </div>\n    {%- endif -%}\n  {%- endfor -%}\n</div>"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
         "text_wDLfL3",
-        "group_NFBNBa"
+        "group_NFBNBa",
+        "custom_liquid_tazmFh"
       ],
       "custom_css": [
         "details.details {background-color: #f5f5f5; margin-bottom: 16px; box-shadow: -4px 4px 10px 0 rgba(0, 0, 0, 0.15);}",
