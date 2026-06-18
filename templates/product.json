@@ -231,6 +231,14 @@
                   },
                   "blocks": {}
                 },
+                "custom_liquid_hYrfbW": {
+                  "type": "custom-liquid",
+                  "name": "t:names.custom_liquid",
+                  "settings": {
+                    "custom_liquid": "<div class=\"jdgm-widget jdgm-preview-badge\" data-id=\"10291512541316\"></div>"
+                  },
+                  "blocks": {}
+                },
                 "price_tVjtKg": {
                   "type": "price",
                   "settings": {
@@ -258,6 +266,7 @@
               "block_order": [
                 "group_caNmgK",
                 "text_xrnftG",
+                "custom_liquid_hYrfbW",
                 "price_tVjtKg"
               ]
             },
