@@ -91,6 +91,72 @@
     showSpecsForVariant(variant.id);
   });
 })();
+
+(function () {
+  var root = document.querySelector('.js-variant-faq-root');
+  if (!root) return;
+
+  function norm(s) {
+    return (s || '')
+      .replace(/[\u2018\u2019]/g, "'")
+      .replace(/[\u201C\u201D]/g, '"')
+      .replace(/\s+/g, ' ')
+      .trim()
+      .toLowerCase();
+  }
+
+  var managed = {};
+  root.querySelectorAll('.js-variant-faq-entry').forEach(function (t) {
+    managed[norm(t.getAttribute('data-faq-title'))] = true;
+  });
+  if (!Object.keys(managed).length) return;
+
+  var scope = document.querySelector('.product') || document;
+  var originals = new WeakMap();
+
+  function rowTitle(summary) {
+    var clone = summary.cloneNode(true);
+    clone.querySelectorAll('.svg-wrapper, .details__icon').forEach(function (n) {
+      n.remove();
+    });
+    return clone.textContent;
+  }
+
+  function apply(variantId) {
+    var overrides = {};
+    var source = root.querySelector('.js-variant-faq[data-faq-variant="' + variantId + '"]');
+    if (source) {
+      source.querySelectorAll('.js-variant-faq-entry').forEach(function (t) {
+        overrides[norm(t.getAttribute('data-faq-title'))] = t.innerHTML;
+      });
+    }
+
+    scope.querySelectorAll('.accordion .details').forEach(function (details) {
+      var summary = details.querySelector('summary.details__header');
+      var content = details.querySelector('.details-content');
+      if (!summary || !content) return;
+
+      var key = norm(rowTitle(summary));
+      if (!managed[key]) return;
+
+      if (!originals.has(content)) originals.set(content, content.innerHTML);
+
+      if (Object.prototype.hasOwnProperty.call(overrides, key)) {
+        content.innerHTML = overrides[key];
+      } else {
+        content.innerHTML = originals.get(content);
+      }
+    });
+  }
+
+  apply(root.getAttribute('data-current-variant'));
+
+  document.addEventListener('variant:update', function (event) {
+    var variant = event.detail && event.detail.resource;
+    if (!variant || variant.id == null) return;
+    apply(variant.id);
+  });
+})();
 {% endjavascript %}
 
 {% schema %}
