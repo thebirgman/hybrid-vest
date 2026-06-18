@@ -235,7 +235,7 @@
                   "type": "custom-liquid",
                   "name": "t:names.custom_liquid",
                   "settings": {
-                    "custom_liquid": "<div class=\"jdgm-widget jdgm-preview-badge\" data-id=\"10291512541316\"></div>"
+                    "custom_liquid": "<div class=\"jdgm-widget jdgm-preview-badge\" data-id=\"10291512541316\"></div>\n<style>.jdgm-preview-badge .jdgm-star.jdgm-star{color:var(--color-primary-badge-text)}</style>"
                   },
                   "blocks": {}
                 },
