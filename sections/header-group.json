@@ -17,8 +17,8 @@
         "announcement_BxgCk9": {
           "type": "_announcement",
           "settings": {
-            "text": "Launch freebies running out.",
-            "link": "",
+            "text": "Prime time freebies running out.",
+            "link": "shopify://products/hybrid-vest",
             "enable_countdown": true,
             "min_starting_count": 91,
             "max_starting_count": 188,
