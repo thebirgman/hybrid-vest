@@ -8712,6 +8712,7 @@
     },
     "custom_liquid_3hKJtG": {
       "type": "custom-liquid",
+      "disabled": true,
       "name": "t:names.custom_liquid",
       "settings": {
         "custom_liquid": "<div class=\"jdgm-widget jdgm-review-widget jdgm-outside-widget\" data-id=\"10291512541316\" data-product-title=\"The Hybrid Vest: 2 in 1 Weight Vest\"></div>\n<style>.jdgm-star {color:var(--color-primary-badge-text) !important} .jdgm-histogram__bar-content{background-color:var(--color-primary-badge-text) !important}</style>",
