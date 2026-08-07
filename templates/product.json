@@ -6285,6 +6285,148 @@
         "column_header_pkiXXd": {
           "type": "column_header",
           "settings": {
+            "row_1": "Two vests in one",
+            "row_2": "Adjust weight in seconds",
+            "row_3": "Breathable",
+            "row_4": "Quick-dry",
+            "row_5": "Cost per pound",
+            "row_6": "",
+            "row_7": "",
+            "row_8": "",
+            "row_9": ""
+          }
+        },
+        "column_featured_product_pBjxfK": {
+          "type": "column_featured_product",
+          "settings": {
+            "product_image": "shopify://shop_images/Logo_1.png",
+            "product_name": "",
+            "data_1_type": "check",
+            "data_1_text": "",
+            "data_2_type": "check",
+            "data_2_text": "",
+            "data_3_type": "check",
+            "data_3_text": "",
+            "data_4_type": "check",
+            "data_4_text": "",
+            "data_5_type": "text",
+            "data_5_text": "<p>$4.95 / lb</p>",
+            "data_6_type": "check",
+            "data_6_text": "",
+            "data_7_type": "text",
+            "data_7_text": "",
+            "data_8_type": "text",
+            "data_8_text": "",
+            "data_9_type": "text",
+            "data_9_text": ""
+          }
+        },
+        "column_product_FXaPYB": {
+          "type": "column_product",
+          "settings": {
+            "product_name": "Brand R",
+            "data_1_type": "x",
+            "data_1_text": "",
+            "data_2_type": "x",
+            "data_2_text": "",
+            "data_3_type": "x",
+            "data_3_text": "",
+            "data_4_type": "x",
+            "data_4_text": "",
+            "data_5_type": "text",
+            "data_5_text": "<p>$11.50 / lb</p>",
+            "data_6_type": "x",
+            "data_6_text": "",
+            "data_7_type": "text",
+            "data_7_text": "",
+            "data_8_type": "text",
+            "data_8_text": "",
+            "data_9_type": "text",
+            "data_9_text": ""
+          }
+        },
+        "column_product_kKCPtK": {
+          "type": "column_product",
+          "settings": {
+            "product_name": "Brand T",
+            "data_1_type": "x",
+            "data_1_text": "",
+            "data_2_type": "check",
+            "data_2_text": "",
+            "data_3_type": "x",
+            "data_3_text": "",
+            "data_4_type": "x",
+            "data_4_text": "",
+            "data_5_type": "text",
+            "data_5_text": "<p>$13.50 / lb</p>",
+            "data_6_type": "x",
+            "data_6_text": "",
+            "data_7_type": "text",
+            "data_7_text": "",
+            "data_8_type": "text",
+            "data_8_text": "",
+            "data_9_type": "text",
+            "data_9_text": ""
+          }
+        },
+        "column_product_kQG3hT": {
+          "type": "column_product",
+          "settings": {
+            "product_name": "Brand H",
+            "data_1_type": "x",
+            "data_1_text": "",
+            "data_2_type": "x",
+            "data_2_text": "",
+            "data_3_type": "check",
+            "data_3_text": "",
+            "data_4_type": "x",
+            "data_4_text": "",
+            "data_5_type": "text",
+            "data_5_text": "<p>$17.50 / lb</p>",
+            "data_6_type": "x",
+            "data_6_text": "",
+            "data_7_type": "text",
+            "data_7_text": "",
+            "data_8_type": "text",
+            "data_8_text": "",
+            "data_9_type": "text",
+            "data_9_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_header_pkiXXd",
+        "column_featured_product_pBjxfK",
+        "column_product_FXaPYB",
+        "column_product_kKCPtK",
+        "column_product_kQG3hT"
+      ],
+      "custom_css": [
+        "h2.comparison-table__heading {font-size: 44px; font-weight: 700;}",
+        "@media screen and (max-width: 768px) {h2.comparison-table__heading {font-size: 32px; font-weight: 700; }}",
+        ".comparison-table__see-more-button {border-radius: 200px;}",
+        ".comparison-table__column.comparison-table__column--featured {box-shadow: -6px 6px 12.7px rgba(215, 178, 111, 0.5) !important;}",
+        "strong {font-weight: 700; color: inherit;}"
+      ],
+      "name": "Comparison Table",
+      "settings": {
+        "heading": "US VS THEM",
+        "subheading": "<p>We hyper-focused on creating a vest that does multiple things well and avoids what you hate. It's designed by our physical therapist founder and has been iterated to perfection.</p>",
+        "background_image": "shopify://shop_images/eb12aa5f1e2ca8a2d48cc3c3732ee97ff0d8c110_1.png",
+        "button_text": "",
+        "button_link": "#",
+        "section_width": "full-width",
+        "color_scheme": "scheme-3",
+        "padding-block-start": 80,
+        "padding-block-end": 80
+      }
+    },
+    "comparison_table_tBccxU": {
+      "type": "comparison-table",
+      "blocks": {
+        "column_header_A8RQbR": {
+          "type": "column_header",
+          "settings": {
             "row_1": "Bounce During Movement",
             "row_2": "Overall Comfort",
             "row_3": "Adjustability Speed",
@@ -6296,7 +6438,7 @@
             "row_9": ""
           }
         },
-        "column_featured_product_pBjxfK": {
+        "column_featured_product_NFdrNh": {
           "type": "column_featured_product",
           "settings": {
             "product_image": "shopify://shop_images/Logo_1.png",
@@ -6321,7 +6463,7 @@
             "data_9_text": ""
           }
         },
-        "column_product_FXaPYB": {
+        "column_product_kyRwNQ": {
           "type": "column_product",
           "settings": {
             "product_name": "TACTICAL WEIGHT VEST",
@@ -6345,7 +6487,7 @@
             "data_9_text": ""
           }
         },
-        "column_product_kKCPtK": {
+        "column_product_4EpEyH": {
           "type": "column_product",
           "settings": {
             "product_name": "CHEAP SAND-FILLED VESTS",
@@ -6371,11 +6513,12 @@
         }
       },
       "block_order": [
-        "column_header_pkiXXd",
-        "column_featured_product_pBjxfK",
-        "column_product_FXaPYB",
-        "column_product_kKCPtK"
+        "column_header_A8RQbR",
+        "column_featured_product_NFdrNh",
+        "column_product_kyRwNQ",
+        "column_product_4EpEyH"
       ],
+      "disabled": true,
       "custom_css": [
         "h2.comparison-table__heading {font-size: 44px; font-weight: 700;}",
         "@media screen and (max-width: 768px) {h2.comparison-table__heading {font-size: 32px; font-weight: 700; }}",
@@ -8730,6 +8873,7 @@
     "section_eDik78",
     "marquee_4AQU36",
     "comparison_table_kfKNt3",
+    "comparison_table_tBccxU",
     "section_PnCaAL",
     "section_MFnacD",
     "product_list_AjGhaL",
