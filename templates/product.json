@@ -1963,6 +1963,7 @@
         "custom_liquid_zRJUqg": {
           "type": "custom-liquid",
           "name": "t:names.custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "{%- assign current_variant = product.selected_or_first_available_variant -%}\n<div class=\"js-variant-modes-root\" data-current-variant=\"{{ current_variant.id }}\" hidden>\n  {%- for variant in product.variants -%}\n    {%- assign modes = variant.metafields.custom.variant_vest_modes_title.value -%}\n    {%- if modes != blank -%}\n      <div class=\"js-variant-modes\" data-modes-variant=\"{{ variant.id }}\">\n        {%- for mode in modes -%}\n          <span class=\"js-variant-modes-item\">{{ mode }}</span>\n        {%- endfor -%}\n      </div>\n    {%- endif -%}\n  {%- endfor -%}\n</div>\n<script>\n(function () {\n  var root = document.querySelector('.js-variant-modes-root');\n  if (!root) return;\n  var originals = new WeakMap();\n\n  function itemsFor(id) {\n    var src = root.querySelector('.js-variant-modes[data-modes-variant=\"' + id + '\"]');\n    return src ? [].map.call(src.querySelectorAll('.js-variant-modes-item'), function (n) { return n.textContent; }) : [];\n  }\n\n  function apply(id) {\n    var items = itemsFor(id);\n    document.querySelectorAll('.image-card-block__heading h4').forEach(function (h, i) {\n      if (!originals.has(h)) originals.set(h, h.textContent);\n      h.textContent = (items[i] != null && items[i] !== '') ? items[i] : originals.get(h);\n    });\n  }\n\n  function init() { apply(root.getAttribute('data-current-variant')); }\n  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);\n  else init();\n\n  document.addEventListener('variant:update', function (event) {\n    var v = event.detail && event.detail.resource;\n    if (v && v.id != null) apply(v.id);\n  });\n})();\n</script>"
           },
@@ -8712,7 +8713,6 @@
     },
     "custom_liquid_3hKJtG": {
       "type": "custom-liquid",
-      "disabled": true,
       "name": "t:names.custom_liquid",
       "settings": {
         "custom_liquid": "<div class=\"jdgm-widget jdgm-review-widget jdgm-outside-widget\" data-id=\"10291512541316\" data-product-title=\"The Hybrid Vest: 2 in 1 Weight Vest\"></div>\n<style>.jdgm-star {color:var(--color-primary-badge-text) !important} .jdgm-histogram__bar-content{background-color:var(--color-primary-badge-text) !important}</style>",
