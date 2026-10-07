@@ -1276,7 +1276,7 @@
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/Prime_Time_HV_Desktop.jpg",
+        "image_1": "shopify://shop_images/Prime_Time_2026_HV_D.jpg",
         "media_type_2": "image",
         "stack_media_on_mobile": true,
         "custom_mobile_media": true,
@@ -1286,7 +1286,7 @@
         "padding_block_start_mobile": 0,
         "padding_block_end_mobile": 60,
         "media_type_1_mobile": "image",
-        "image_1_mobile": "shopify://shop_images/HV_Prime_Time_Bottom_Only.jpg",
+        "image_1_mobile": "shopify://shop_images/Prime_Time_2026_HV_M.jpg",
         "media_type_2_mobile": "image",
         "link": "",
         "open_in_new_tab": false,
