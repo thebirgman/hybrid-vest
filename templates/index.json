@@ -709,7 +709,7 @@
             "padding-inline-start": 0,
             "padding-inline-end": 0,
             "enable_mobile_padding": true,
-            "padding-block-start-mobile": 50,
+            "padding-block-start-mobile": 16,
             "padding-block-end-mobile": 0,
             "padding-inline-start-mobile": 20,
             "padding-inline-end-mobile": 20
@@ -1301,15 +1301,15 @@
         "section_width": "page-width",
         "section_height": "auto",
         "section_height_custom": 50,
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-5e1cf173-4cb5-4a58-95ae-5f525b1fc61e",
         "toggle_overlay": true,
         "overlay_color": "#00000026",
         "overlay_style": "gradient",
         "gradient_direction": "to top",
         "blurred_reflection": false,
         "reflection_opacity": 75,
-        "padding-block-start": 100,
-        "padding-block-end": 100
+        "padding-block-start": 48,
+        "padding-block-end": 48
       }
     },
     "section_jW8yr8": {
