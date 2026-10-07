@@ -617,6 +617,7 @@
         "group_7CiCTT",
         "group_Kb6TgF"
       ],
+      "disabled": true,
       "custom_css": [
         "span.button__label {font-size: 16px;}",
         "a.size-style.button {min-width: 250px;}"
@@ -1268,7 +1269,6 @@
         "group_D6r7bg",
         "group_RwWCDn"
       ],
-      "disabled": true,
       "custom_css": [
         "span.button__label {font-size: 16px;}",
         "a.size-style.button {min-width: 250px;}"
@@ -1299,7 +1299,7 @@
         "vertical_alignment_flex_direction_column": "center",
         "gap": 32,
         "section_width": "page-width",
-        "section_height": "large",
+        "section_height": "auto",
         "section_height_custom": 50,
         "color_scheme": "scheme-1",
         "toggle_overlay": true,
