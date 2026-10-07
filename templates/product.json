@@ -27,7 +27,7 @@
             "thumbnail_width": 44,
             "thumbnail_radius": 0,
             "aspect_ratio": "adapt",
-            "constrain_to_viewport": true,
+            "constrain_to_viewport": false,
             "media_fit": "cover",
             "media_radius": 0,
             "extend_media": false,
@@ -6407,7 +6407,7 @@
         ".comparison-table__see-more-button {border-radius: 200px;}",
         ".comparison-table__column.comparison-table__column--featured {box-shadow: -6px 6px 12.7px rgba(215, 178, 111, 0.5) !important;}",
         "strong {font-weight: 700; color: inherit;}",
-        ".comparison-table__row:nth-child(7) {display: none}"
+        ".comparison-table__row:nth-child(7) {display: none;}"
       ],
       "name": "Comparison Table",
       "settings": {
