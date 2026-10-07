@@ -44,9 +44,9 @@
         "announcement_46GwqG": {
           "type": "_announcement",
           "settings": {
-            "text": "Prime Time Sale! $30 Off. Until stocks last!",
+            "text": "Prime Time Sale! $30 Off.&nbsp;",
             "link": "shopify://products/hybrid-vest",
-            "enable_countdown": false,
+            "enable_countdown": true,
             "min_starting_count": 91,
             "max_starting_count": 188,
             "reset_hour": 7,
